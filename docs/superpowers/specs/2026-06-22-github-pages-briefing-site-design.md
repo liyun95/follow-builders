@@ -19,6 +19,7 @@ The local repository now pushes to `git@github.com:liyun95/follow-builders.git`,
 - Keep every daily briefing as an archive.
 - Maintain an index page that links to recent issues.
 - Use the "Newspaper Issue" layout direction, similar to the project author's demo.
+- Use Chinese as the default site and report language.
 - Send a short Telegram notification containing the public issue URL.
 - Avoid requiring X/Twitter or podcast transcript API keys in this fork.
 
@@ -165,6 +166,48 @@ Use the Newspaper Issue direction:
 
 The first version should be restrained and content-focused. It should resemble a serious daily briefing rather than a marketing landing page.
 
+The visual style should use the approved "Editorial Paper" direction:
+
+- Warm light paper-like background.
+- Editorial/newsletter typography.
+- Strong issue header with date and stats.
+- Clean dividers rather than heavy cards.
+- Mobile-first single-column reading, with archive/navigation blocks moving below the content on small screens.
+
+## Language and Copy
+
+The report should be written in natural Simplified Chinese by default. The site UI should also be Chinese, using labels such as:
+
+- `今日简报`
+- `编辑手记`
+- `Builder 动态`
+- `官方博客`
+- `播客精选`
+- `往期简报`
+
+Do not translate `builder` as `建造者`; keep `builder` in English because it reads more naturally in this context. Also keep common AI/product terms in English where Chinese tech readers usually expect them, including:
+
+```text
+AI
+LLM
+agent
+API
+prompt
+token
+fine-tuning
+RAG
+builder
+```
+
+Names, companies, products, and source titles should remain in English unless a Chinese name is already standard. Summaries should be Chinese, but original source URLs must remain unchanged.
+
+Telegram notifications should also be Chinese, for example:
+
+```text
+今日 AI Builders 简报已更新：
+https://liyun95.github.io/follow-builders/issues/YYYY-MM-DD.html
+```
+
 ## Data Contract
 
 The LLM output should be structured JSON with fields similar to:
@@ -172,8 +215,8 @@ The LLM output should be structured JSON with fields similar to:
 ```json
 {
   "date": "2026-06-22",
-  "title": "AI Builders Digest",
-  "editorNote": "...",
+  "title": "AI Builders 简报",
+  "editorNote": "中文编辑手记...",
   "stats": {
     "xBuilders": 12,
     "totalTweets": 24,
@@ -183,7 +226,7 @@ The LLM output should be structured JSON with fields similar to:
   "sections": [
     {
       "id": "x",
-      "title": "X / Twitter",
+      "title": "Builder 动态",
       "items": [
         {
           "source": "Thibault Sottiaux",
