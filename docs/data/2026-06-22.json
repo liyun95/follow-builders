@@ -1,7 +1,7 @@
 {
   "date": "2026-06-22",
   "title": "AI Builders 简报",
-  "editorNote": "今天的主线是 agent 工程进入“长时程、可托管、可隔离”的新阶段：Claude Managed Agents 强调 brain 与 hands 解耦，builder 们则在讨论 coding agent、open weights 成本优化与团队角色重塑。",
+  "editorNote": "今天的主线是 agent 工程化与成本现实：Claude 复盘了质量波动和 Managed Agents 架构，X 上 builder 们也在讨论 coding model、open weights、PM 工作流与个人 eval。对团队来说，持续重测假设、拆分 harness 与执行环境、用更便宜模型优化任务，正在变成日常能力。",
   "stats": {
     "xBuilders": 12,
     "totalTweets": 24,
@@ -16,8 +16,8 @@
         {
           "source": "Thibault Sottiaux",
           "role": "Codex & ChatGPT @OpenAI",
-          "headline": "Codex App 的前端能力还只是开始",
-          "summary": "Thibault Sottiaux 表示 Codex App 是在模型前端能力“okayish”的阶段构建出来的；如果模型的 front-end 能力显著提升，Codex App 能做到的事情还会有明显变化。他还提到 Codex app 中有些 token 的价值特别高。",
+          "headline": "Codex App 的前端能力还有明显上升空间",
+          "summary": "Thibault Sottiaux 表示，Codex App 是在模型前端能力“还可以”的阶段构建出来的；一旦模型的 front-end capabilities 显著提升，产品形态会更有想象力。他还提到 Codex app 中有些 token 的价值特别高。",
           "urls": [
             "https://x.com/thsottiaux/status/2068568650924409260",
             "https://x.com/thsottiaux/status/2068443037907522002"
@@ -25,9 +25,9 @@
         },
         {
           "source": "Peter Yang",
-          "role": "Practical AI tutorials and interviews",
-          "headline": "高价订阅与本地模型之间的取舍",
-          "summary": "Peter Yang 认为自己很难用满 Codex 和 Claude 的 200 美元订阅，因此暂时看不到尝试 local models 的必要；他还指出运行最新 glm 本地模型可能需要很高的硬件成本，例如高配 Mac Studio。",
+          "role": "AI tutorials and interviews",
+          "headline": "订阅前沿 coding 工具后，本地模型的吸引力下降",
+          "summary": "Peter Yang 认为自己很难用完 Codex 和 Claude 的 200 美元订阅额度，因此不太看到尝试 local models 的必要；他还提到运行最新 glm 本地版本可能需要很高规格硬件，引发关于成本与便利性的讨论。",
           "urls": [
             "https://x.com/petergyang/status/2068411894185295969"
           ]
@@ -35,26 +35,35 @@
         {
           "source": "Madhu Guru",
           "role": "Prev: Product Leader at Google - Gemini, Veo, Nano Banana",
-          "headline": "PM 角色正在向 Builder PM 演化",
-          "summary": "Madhu Guru 认为 Product 角色也在经历身份危机。旧式 PM 用 AI 生产更多 PRD、策略文档和 deck；Builder PM 则用 agent 做市场与用户研究、查询日志和 analytics、生成并筛选方案，并把输出从文档转向 prototype，同时保留产品判断力。",
+          "headline": "AI-native 时代 PM 角色正在转向 Builder PM",
+          "summary": "Madhu Guru 认为 Product 角色也在经历身份危机：传统 PM 用 AI 生成更多 PRD、策略文档和 deck；Builder PM 则用 agent 扩展产品全流程，包括市场与用户研究、查询日志和 analytics、生成并筛选方案，并越来越多用 prototype 而非文档来推动协作。",
           "urls": [
             "https://x.com/realmadhuguru/status/2068350509027876876"
           ]
         },
         {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Replit Japan 正在招聘",
+          "summary": "Amjad Masad 转发并表示欢迎加入 Replit Japan。对关注 AI coding 与在线开发环境的 builder 来说，这是 Replit 在日本市场动作的一个信号。",
+          "urls": [
+            "https://x.com/amasad/status/2068537084877643943"
+          ]
+        },
+        {
           "source": "Guillermo Rauch",
           "role": "@vercel CEO",
-          "headline": "GLM-5.2 的 coding 能力让 Vercel CEO 印象深刻",
-          "summary": "Guillermo Rauch 表示 @zai_org 的 GLM-5.2 在 coding 上表现好到令他震惊，并称“这会改变事情”。这是 builder 圈对新一代 coding model 能力提升的又一个强信号。",
+          "headline": "Vercel CEO 称 GLM-5.2 编码能力令人震惊",
+          "summary": "Guillermo Rauch 表示，@zai_org 的 GLM-5.2 在 coding 上表现“好到令人震惊”，并认为这会改变局面。这条反馈延续了近期 builder 圈对非传统 frontier coding model 的关注。",
           "urls": [
             "https://x.com/rauchg/status/2068517095818809770"
           ]
         },
         {
           "source": "Aaron Levie",
-          "role": "ceo @box",
-          "headline": "open weights AI 对应用层成本优化越来越重要",
-          "summary": "Aaron Levie 认为 open weights AI 正在特定任务上达到 SOTA，并在 coding 等领域接近 frontier。只要与 frontier 的差距维持在边际水平，应用层就能用更便宜或经 post-train 的模型优化成本；frontier models 仍可能用于 planning、orchestration、review 等环节。",
+          "role": "CEO @box",
+          "headline": "open weights AI 缩小与 frontier 差距将利好应用层",
+          "summary": "Aaron Levie 认为 open weights AI 在特定任务上达到 SOTA、并在 coding 等领域接近 frontier，是非常重要的趋势。只要与 frontier 的差距保持在较小范围，应用层就能用更便宜或经 post-trained 的模型优化成本与性能；frontier models 仍可能用于 planning、orchestration、review 等环节。",
           "urls": [
             "https://x.com/levie/status/2068434042148782515"
           ]
@@ -62,8 +71,8 @@
         {
           "source": "Zara Zhang",
           "role": "Builder",
-          "headline": "把 X bookmarks 重新注入主 feed 的小工具",
-          "summary": "Zara Zhang 发现自己收藏了很多 X bookmarks 却从不阅读，于是构建了一个 extension：每次打开 X 时，把一个已收藏帖子插入主 feed，像广告一样占用自己本来就会频繁查看的位置，从而提高阅读率。",
+          "headline": "用浏览器扩展把 X bookmarks 重新注入主 feed",
+          "summary": "Zara Zhang 说自己收藏了很多 X bookmarks 却从不阅读，于是构建了一个 extension：每次打开 X 时，把一条已收藏帖子像广告一样注入主 feed。她的核心技巧是占用自己每天已经会反复查看的界面位置。",
           "urls": [
             "https://x.com/zarazhangrui/status/2068568920613953626"
           ]
@@ -71,8 +80,8 @@
         {
           "source": "Nikunj Kothari",
           "role": "partner @fpvventures",
-          "headline": "AI builder 需要每周重置 priors",
-          "summary": "Nikunj Kothari 认为 AI 最大的问题之一是人们不愿每几周重置判断。他建议每个人都维护自己的 hard task evals，并安排每周 tinker time 来理解 frontier；同时每周与 enterprise buyers 交流，因为买方认知通常落后于前沿。",
+          "headline": "AI 判断需要每周重置 priors 与自建 evals",
+          "summary": "Nikunj Kothari 认为 AI 最大问题之一是人们不会每隔几周重置 priors，很多人基于几个月前的体验判断“某件事不可行”。他的建议是：每个人都应有自己的 hard tasks evals，并安排 weekly tinker time，同时每周与 enterprise buyers 交流，理解市场认知与采购节奏。",
           "urls": [
             "https://x.com/nikunj/status/2068411460620042720"
           ]
@@ -80,8 +89,8 @@
         {
           "source": "Nikunj Kothari",
           "role": "partner @fpvventures",
-          "headline": "用 Claude Code 试用 UCP CLI 并给出反馈",
-          "summary": "Nikunj Kothari 表示自己和 Claude Code 一起把 UCP CLI 用在一个 side project 上，并向 @tobi 分享了一些观察和反馈，体现了 builder 把 agent 纳入工具评测与开发流程的日常化趋势。",
+          "headline": "与 Claude Code 一起测试 UCP CLI 并给出反馈",
+          "summary": "Nikunj Kothari 表示自己和 Claude Code 一起为 side project 试用了 UCP CLI，并向 @tobi 提供观察与反馈。这是一个小但典型的 builder 工作流信号：用 coding agent 协助评测开发工具。",
           "urls": [
             "https://x.com/nikunj/status/2068372026268811517"
           ]
@@ -94,27 +103,27 @@
       "items": [
         {
           "source": "Anthropic Engineering",
-          "role": "Official engineering blog",
-          "headline": "Anthropic 复盘近期 Claude Code 质量报告",
-          "summary": "Anthropic 说明过去一个月部分用户感知 Claude 质量下降，原因来自三处互不相同的变更：Claude Code 默认 reasoning effort 从 high 调到 medium、空闲 session 的 thinking 清理 bug、以及降低 verbosity 的 system prompt 调整。API 与 inference layer 未受影响，相关问题已在 April 20 的 v2.1.116 解决。",
+          "role": "Engineering Blog",
+          "headline": "Claude Code 质量报告复盘：三类变更导致体验下降",
+          "summary": "Anthropic 复盘了过去一个月部分用户感知 Claude 变差的原因，问题集中在 Claude Code、Claude Agent SDK 和 Claude Cowork，API 未受影响。三项根因分别是默认 reasoning effort 从 high 调到 medium、空闲 session 的 thinking 清理逻辑 bug、以及降低 verbosity 的 system prompt 影响 coding 质量；相关问题已在 April 20 的 v2.1.116 解决，并为订阅用户重置 usage limits。",
           "urls": [
             "https://www.anthropic.com/engineering/april-23-postmortem"
           ]
         },
         {
           "source": "Anthropic Engineering",
-          "role": "Official engineering blog",
-          "headline": "Claude Managed Agents：将 brain 与 hands 解耦",
-          "summary": "Anthropic 介绍 Managed Agents 的系统设计：把 session、harness、sandbox 虚拟化为可替换接口。核心思路是将“brain”（Claude 与 harness）从“hands”（sandbox 和工具）以及持久 session log 中解耦，使容器和 harness 都可以像 cattle 一样失败、重启与替换，同时降低凭证暴露风险并支持长时程任务的上下文恢复。",
+          "role": "Engineering Blog",
+          "headline": "Managed Agents 架构：把 brain 与 hands 解耦",
+          "summary": "Anthropic 介绍 Claude Managed Agents 的工程设计：将 agent 分成 session、harness 和 sandbox 三个可替换接口，避免把所有组件塞进单一 container 形成难以恢复的“pet”。新架构让 harness、sandbox 都可像 cattle 一样失败后重建，session log 独立持久化；同时把凭证隔离在 sandbox 外，并用 getEvents() 让 session 成为 Claude context window 之外的可查询上下文对象。",
           "urls": [
             "https://www.anthropic.com/engineering/managed-agents"
           ]
         },
         {
           "source": "Claude Blog",
-          "role": "Official blog",
-          "headline": "Claude Managed Agents 新增 self-hosted sandboxes 与 MCP tunnels",
-          "summary": "Claude Blog 宣布 Claude Managed Agents 支持在企业自控 sandbox 中执行工具，并通过 MCP tunnels 连接私有 Model Context Protocol servers。self-hosted sandboxes 已在 Claude Platform public beta，MCP tunnels 为 research preview。支持的 sandbox providers 包括 Cloudflare、Daytona、Modal 和 Vercel。",
+          "role": "Product Blog",
+          "headline": "Claude Managed Agents 支持 self-hosted sandboxes 与 MCP tunnels",
+          "summary": "Claude Managed Agents 新增 self-hosted sandboxes 和 MCP tunnels。企业可把 agent 的工具执行放在自有基础设施或 Cloudflare、Daytona、Modal、Vercel 等 managed providers 中，agent loop 仍由 Anthropic 处理；MCP tunnels 则让 agent 通过出站连接访问私有网络中的 MCP servers，无需公开 endpoint。self-hosted sandboxes 已 public beta，MCP tunnels 为 research preview。",
           "urls": [
             "https://claude.com/blog/claude-managed-agents-updates"
           ]
@@ -129,7 +138,7 @@
           "source": "Unsupervised Learning",
           "role": "Podcast",
           "headline": "AI Vibe Check：coding agents、open weights 与 API 未来",
-          "summary": "这一期由 Jacob Efron 与 Ari、Rob 讨论 AI 近况。重点包括 coding agents 开始在更长时间范围内有效工作，工程师从 IC 转向管理多个 agents；同时嘉宾讨论 open weight AI 的经济激励变化、API 业务是否会受 compute crunch 影响，以及企业开始更强烈地关注 token 成本。",
+          "summary": "这一期由 Jacob Efron 与 Ari、Rob 讨论近期 AI 走势。核心观点包括：coding agents 已开始在更长时间跨度上工作，工程师越来越像 agents 的管理者；agent 输出大量代码后，review 与理解成本成为新瓶颈；open weight AI 的经济激励正在变化，部分 labs 可能更倾向把高性能模型留在 API 后面；与此同时，企业因 token 成本上升而更积极寻找便宜、快速、可替代的模型组合。",
           "urls": [
             "https://www.youtube.com/watch?v=W_iO8XxgD_I"
           ]
