@@ -1,0 +1,98 @@
+name: Publish Briefing Site
+
+on:
+  schedule:
+    # 07:30 UTC = 15:30 Asia/Shanghai. Upstream central feeds run around 06:17 UTC.
+    - cron: "30 7 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: publish-briefing-site
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+      OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      SITE_BASE_URL: https://liyun95.github.io/follow-builders
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: cd scripts && npm install
+
+      - name: Run tests
+        run: cd scripts && npm test
+
+      - name: Prepare feed data
+        run: cd scripts && node prepare-digest.js > ../prepared-digest.json
+
+      - name: Generate briefing JSON
+        id: briefing
+        run: |
+          DATE="$(date -u +%F)"
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          cd scripts
+          node generate-briefing.js \
+            --input ../prepared-digest.json \
+            --output ../docs/data/$DATE.json \
+            --date "$DATE"
+
+      - name: Render site
+        run: |
+          cd scripts
+          node render-site.js \
+            --input ../docs/data/${{ steps.briefing.outputs.date }}.json \
+            --docs-dir ../docs
+
+      - name: Commit site updates
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: publish briefing ${{ steps.briefing.outputs.date }}"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Notify Telegram
+        if: steps.commit.outputs.changed == 'true' && env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_ID != ''
+        env:
+          ISSUE_URL: ${{ env.SITE_BASE_URL }}/issues/${{ steps.briefing.outputs.date }}.html
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          payload = {
+              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
+              "text": f"今日 AI Builders 简报已更新：\n{os.environ['ISSUE_URL']}",
+              "disable_web_page_preview": False,
+          }
+          request = urllib.request.Request(
+              f"https://api.telegram.org/bot{token}/sendMessage",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json"},
+              method="POST",
+          )
+          with urllib.request.urlopen(request) as response:
+              response.read()
+          PY
