@@ -73,26 +73,8 @@ jobs:
 
       - name: Notify Telegram
         if: steps.commit.outputs.changed == 'true' && env.TELEGRAM_BOT_TOKEN != '' && env.TELEGRAM_CHAT_ID != ''
-        env:
-          ISSUE_URL: ${{ env.SITE_BASE_URL }}/issues/${{ steps.briefing.outputs.date }}.html
         run: |
-          python3 - <<'PY'
-          import json
-          import os
-          import urllib.request
-
-          token = os.environ["TELEGRAM_BOT_TOKEN"]
-          payload = {
-              "chat_id": os.environ["TELEGRAM_CHAT_ID"],
-              "text": f"今日 AI Builders 简报已更新：\n{os.environ['ISSUE_URL']}",
-              "disable_web_page_preview": False,
-          }
-          request = urllib.request.Request(
-              f"https://api.telegram.org/bot{token}/sendMessage",
-              data=json.dumps(payload).encode("utf-8"),
-              headers={"Content-Type": "application/json"},
-              method="POST",
-          )
-          with urllib.request.urlopen(request) as response:
-              response.read()
-          PY
+          cd scripts
+          node notify-telegram.js \
+            --date "${{ steps.briefing.outputs.date }}" \
+            --url "$SITE_BASE_URL/issues/${{ steps.briefing.outputs.date }}.html"
