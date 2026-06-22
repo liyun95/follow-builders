@@ -153,7 +153,7 @@ async function sendEmail(text, apiKey, toEmail) {
 
 async function main() {
   // Load env and config
-  loadEnv({ path: ENV_PATH });
+  loadEnv({ path: ENV_PATH, override: true });
 
   let config = {};
   if (existsSync(CONFIG_PATH)) {
