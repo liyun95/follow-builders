@@ -1,11 +1,11 @@
 {
   "date": "2026-06-22",
   "title": "AI Builders 简报",
-  "editorNote": "今天的主线是 agent 工程化与成本现实：Claude 复盘了质量波动和 Managed Agents 架构，X 上 builder 们也在讨论 coding model、open weights、PM 工作流与个人 eval。对团队来说，持续重测假设、拆分 harness 与执行环境、用更便宜模型优化任务，正在变成日常能力。",
+  "editorNote": "今天的信号集中在 agent 基础设施与 context 工程：从 Google 的 agent harness、Sakana 式多模型路由，到企业软件为 headless agent 准备权限、审计和数据边界。另一个共同点是，builders 正在把“多给 context、少靠 prompt”视为提升质量的核心手段。",
   "stats": {
-    "xBuilders": 12,
-    "totalTweets": 24,
-    "blogPosts": 3,
+    "xBuilders": 11,
+    "totalTweets": 27,
+    "blogPosts": 0,
     "podcastEpisodes": 1
   },
   "sections": [
@@ -16,116 +16,88 @@
         {
           "source": "Thibault Sottiaux",
           "role": "Codex & ChatGPT @OpenAI",
-          "headline": "Codex App 的前端能力还有明显上升空间",
-          "summary": "Thibault Sottiaux 表示，Codex App 是在模型前端能力“还可以”的阶段构建出来的；一旦模型的 front-end capabilities 显著提升，产品形态会更有想象力。他还提到 Codex app 中有些 token 的价值特别高。",
+          "headline": "OpenAI Codex 团队征集 app 体验改进",
+          "summary": "Thibault Sottiaux 连续询问 Codex app 哪些地方“不够 delightful”，并讨论 Codex usage resets 可以累积后，用户会如何管理与消耗额度。这类高互动反馈显示，coding agent 产品正在围绕配额、使用节奏和开发者体验快速迭代。",
           "urls": [
-            "https://x.com/thsottiaux/status/2068568650924409260",
-            "https://x.com/thsottiaux/status/2068443037907522002"
+            "https://x.com/thsottiaux/status/2068736857312198928",
+            "https://x.com/thsottiaux/status/2068792010715324444"
           ]
         },
         {
           "source": "Peter Yang",
-          "role": "AI tutorials and interviews",
-          "headline": "订阅前沿 coding 工具后，本地模型的吸引力下降",
-          "summary": "Peter Yang 认为自己很难用完 Codex 和 Claude 的 200 美元订阅额度，因此不太看到尝试 local models 的必要；他还提到运行最新 glm 本地版本可能需要很高规格硬件，引发关于成本与便利性的讨论。",
+          "role": "Practical AI tutorials and interviews for busy people",
+          "headline": "用 HTML 作为 agentic video 的中间表示",
+          "summary": "Peter Yang 转述 liu8in 的观点：video agent 直接依赖视觉智能会很难，而 HTML、CSS、JavaScript 是 LLM 更“原生”的表达方式，可同时承载信息、视觉美学、footage、images、assets 和 SVG。因此，从网站 URL 生成产品视频时，HTML 可成为更适合 LLM 操作的中间层。",
           "urls": [
-            "https://x.com/petergyang/status/2068411894185295969"
-          ]
-        },
-        {
-          "source": "Madhu Guru",
-          "role": "Prev: Product Leader at Google - Gemini, Veo, Nano Banana",
-          "headline": "AI-native 时代 PM 角色正在转向 Builder PM",
-          "summary": "Madhu Guru 认为 Product 角色也在经历身份危机：传统 PM 用 AI 生成更多 PRD、策略文档和 deck；Builder PM 则用 agent 扩展产品全流程，包括市场与用户研究、查询日志和 analytics、生成并筛选方案，并越来越多用 prototype 而非文档来推动协作。",
-          "urls": [
-            "https://x.com/realmadhuguru/status/2068350509027876876"
-          ]
-        },
-        {
-          "source": "Amjad Masad",
-          "role": "CEO @replit",
-          "headline": "Replit Japan 正在招聘",
-          "summary": "Amjad Masad 转发并表示欢迎加入 Replit Japan。对关注 AI coding 与在线开发环境的 builder 来说，这是 Replit 在日本市场动作的一个信号。",
-          "urls": [
-            "https://x.com/amasad/status/2068537084877643943"
+            "https://x.com/petergyang/status/2068755908319236338"
           ]
         },
         {
           "source": "Guillermo Rauch",
           "role": "@vercel CEO",
-          "headline": "Vercel CEO 称 GLM-5.2 编码能力令人震惊",
-          "summary": "Guillermo Rauch 表示，@zai_org 的 GLM-5.2 在 coding 上表现“好到令人震惊”，并认为这会改变局面。这条反馈延续了近期 builder 圈对非传统 frontier coding model 的关注。",
+          "headline": "Vercel 将分享一次全链路性能优化经验",
+          "summary": "Guillermo Rauch 表示团队对一个站点做了全面性能优化，涵盖 painting、layout、WebGPU shaders、blocking scripts，并逐帧审查效果。他还表示会把经验更新到相关资源中。另一条动态中，他指出 coding agents 会放大用户的 IKEA effect：如果放任，它们会让你更深度参与“亲手打造”的过程。",
           "urls": [
-            "https://x.com/rauchg/status/2068517095818809770"
+            "https://x.com/rauchg/status/2068838709517336756",
+            "https://x.com/rauchg/status/2068778558672273422"
           ]
         },
         {
           "source": "Aaron Levie",
-          "role": "CEO @box",
-          "headline": "open weights AI 缩小与 frontier 差距将利好应用层",
-          "summary": "Aaron Levie 认为 open weights AI 在特定任务上达到 SOTA、并在 coding 等领域接近 frontier，是非常重要的趋势。只要与 frontier 的差距保持在较小范围，应用层就能用更便宜或经 post-trained 的模型优化成本与性能；frontier models 仍可能用于 planning、orchestration、review 等环节。",
+          "role": "ceo @box",
+          "headline": "企业软件需要为 agent 使用量和治理重新设计",
+          "summary": "Aaron Levie 认为，agents 使用软件的频率可能是人的 100 倍，这会带来 guardrails、数据防泄漏、authoritative sources of truth、logging、auditing、人机协作等新需求。一次简单 agentic task 可能读取比用户一个月接触还多的数据，因此 CRM、文档、企业知识和 analytics 等平台在 headless interaction 中的价值会显著上升。",
           "urls": [
-            "https://x.com/levie/status/2068434042148782515"
+            "https://x.com/levie/status/2068851573175021864"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Sakana 的 Fugu 展示单 API 多模型协作方向",
+          "summary": "Aaron Levie 评论 Sakana 的新模型思路：开发者面对的是单一 API，而系统会自动进行 model selection、delegation、verification 和 synthesis，把任务交给最适合的模型。Levies 认为，这类似许多 applied AI 产品正在构建的 agent harness，但将其做成开发者可直接交互的 LLM 层，会在 frontier closed models 与 OSS models 并存时产生大量路由价值。",
+          "urls": [
+            "https://x.com/levie/status/2068917230570795178"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "在 ryOS 中用 Cursor mobile 做出 Books 阅读体验",
+          "summary": "Ryo Lu 展示了 ryOS 里的 Books：支持任意 epub，并可用 ryOS account 同步阅读进度。他提到原型从 Cursor mobile 开始，再手工调动画和纹理直到质感合适，体现了 AI-assisted building 与人工设计打磨结合的工作流。",
+          "urls": [
+            "https://x.com/ryolu_/status/2068923971136098633",
+            "https://x.com/ryolu_/status/2068924375341179347"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Garry Tan：可用 AGI 早期，个人和公司 context 是关键解锁",
+          "summary": "Garry Tan 表示，在 2026 年可用 AGI 的开端，拥有自己的 personal brain 和 company brain 可能被低估了。AGI 提供 intelligence，但真正的解锁仍需要持续收集个人 context。他也称这正是自己做 GBrain 并将其开源的原因。",
+          "urls": [
+            "https://x.com/garrytan/status/2068701356358308112",
+            "https://x.com/garrytan/status/2068701357696323769"
           ]
         },
         {
           "source": "Zara Zhang",
           "role": "Builder",
-          "headline": "用浏览器扩展把 X bookmarks 重新注入主 feed",
-          "summary": "Zara Zhang 说自己收藏了很多 X bookmarks 却从不阅读，于是构建了一个 extension：每次打开 X 时，把一条已收藏帖子像广告一样注入主 feed。她的核心技巧是占用自己每天已经会反复查看的界面位置。",
+          "headline": "防止 AI slop 的经验法则：context 应长于输出",
+          "summary": "Zara Zhang 提出一个写作、设计等场景中避免 AI slop 的经验法则：输入的 context 是否比输出更长。她观察到，为了让 AI 产出高质量结果，输入通常需要达到输出长度的 3-5 倍；如果输入远短于输出，结果很可能变成 slop。她也强调自己讨论的是 context，不是 prompt。",
           "urls": [
-            "https://x.com/zarazhangrui/status/2068568920613953626"
+            "https://x.com/zarazhangrui/status/2068923768500793603",
+            "https://x.com/zarazhangrui/status/2068964055235321954"
           ]
         },
         {
-          "source": "Nikunj Kothari",
-          "role": "partner @fpvventures",
-          "headline": "AI 判断需要每周重置 priors 与自建 evals",
-          "summary": "Nikunj Kothari 认为 AI 最大问题之一是人们不会每隔几周重置 priors，很多人基于几个月前的体验判断“某件事不可行”。他的建议是：每个人都应有自己的 hard tasks evals，并安排 weekly tinker time，同时每周与 enterprise buyers 交流，理解市场认知与采购节奏。",
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "OpenClaw 进入质量提升与团队建设阶段",
+          "summary": "Peter Steinberger 回应 OpenClaw 的热度变化：虽然 hype 降温，但团队提升了质量、扩大了团队，并创建了非营利组织；他还称这是 OpenClaw 目前最强的一周。他另外表示自己曾怀疑 multi-model routing，并认为最新情况印证了这种怀疑。",
           "urls": [
-            "https://x.com/nikunj/status/2068411460620042720"
-          ]
-        },
-        {
-          "source": "Nikunj Kothari",
-          "role": "partner @fpvventures",
-          "headline": "与 Claude Code 一起测试 UCP CLI 并给出反馈",
-          "summary": "Nikunj Kothari 表示自己和 Claude Code 一起为 side project 试用了 UCP CLI，并向 @tobi 提供观察与反馈。这是一个小但典型的 builder 工作流信号：用 coding agent 协助评测开发工具。",
-          "urls": [
-            "https://x.com/nikunj/status/2068372026268811517"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "blogs",
-      "title": "官方博客",
-      "items": [
-        {
-          "source": "Anthropic Engineering",
-          "role": "Engineering Blog",
-          "headline": "Claude Code 质量报告复盘：三类变更导致体验下降",
-          "summary": "Anthropic 复盘了过去一个月部分用户感知 Claude 变差的原因，问题集中在 Claude Code、Claude Agent SDK 和 Claude Cowork，API 未受影响。三项根因分别是默认 reasoning effort 从 high 调到 medium、空闲 session 的 thinking 清理逻辑 bug、以及降低 verbosity 的 system prompt 影响 coding 质量；相关问题已在 April 20 的 v2.1.116 解决，并为订阅用户重置 usage limits。",
-          "urls": [
-            "https://www.anthropic.com/engineering/april-23-postmortem"
-          ]
-        },
-        {
-          "source": "Anthropic Engineering",
-          "role": "Engineering Blog",
-          "headline": "Managed Agents 架构：把 brain 与 hands 解耦",
-          "summary": "Anthropic 介绍 Claude Managed Agents 的工程设计：将 agent 分成 session、harness 和 sandbox 三个可替换接口，避免把所有组件塞进单一 container 形成难以恢复的“pet”。新架构让 harness、sandbox 都可像 cattle 一样失败后重建，session log 独立持久化；同时把凭证隔离在 sandbox 外，并用 getEvents() 让 session 成为 Claude context window 之外的可查询上下文对象。",
-          "urls": [
-            "https://www.anthropic.com/engineering/managed-agents"
-          ]
-        },
-        {
-          "source": "Claude Blog",
-          "role": "Product Blog",
-          "headline": "Claude Managed Agents 支持 self-hosted sandboxes 与 MCP tunnels",
-          "summary": "Claude Managed Agents 新增 self-hosted sandboxes 和 MCP tunnels。企业可把 agent 的工具执行放在自有基础设施或 Cloudflare、Daytona、Modal、Vercel 等 managed providers 中，agent loop 仍由 Anthropic 处理；MCP tunnels 则让 agent 通过出站连接访问私有网络中的 MCP servers，无需公开 endpoint。self-hosted sandboxes 已 public beta，MCP tunnels 为 research preview。",
-          "urls": [
-            "https://claude.com/blog/claude-managed-agents-updates"
+            "https://x.com/steipete/status/2068961217524490739",
+            "https://x.com/steipete/status/2068960117253632160"
           ]
         }
       ]
@@ -135,12 +107,12 @@
       "title": "播客精选",
       "items": [
         {
-          "source": "Unsupervised Learning",
+          "source": "Training Data",
           "role": "Podcast",
-          "headline": "AI Vibe Check：coding agents、open weights 与 API 未来",
-          "summary": "这一期由 Jacob Efron 与 Ari、Rob 讨论近期 AI 走势。核心观点包括：coding agents 已开始在更长时间跨度上工作，工程师越来越像 agents 的管理者；agent 输出大量代码后，review 与理解成本成为新瓶颈；open weight AI 的经济激励正在变化，部分 labs 可能更倾向把高性能模型留在 API 后面；与此同时，企业因 token 成本上升而更积极寻找便宜、快速、可替代的模型组合。",
+          "headline": "Google DeepMind's Logan Kilpatrick: Why the Model Eats the Harness",
+          "summary": "Logan Kilpatrick 介绍 Google AI Studio、Gemini API 与 Gemini 进入 agentic era 后的变化。他认为，过去 Gemini API 是贯穿 Google 产品的 AI through line，而现在 Antigravity agent harness 正成为新的连接层：它不只是 IDE，还包括 web agent-first experience、CLI、SDK，并会支撑 Search、Gemini app、Cloud、AI Studio 等产品中的 agent 能力。对 Google 来说，当前多数产品的 agenticness 仍处于 crawl 阶段，Gemini app 和 Antigravity 更接近 walk；长期目标不是最大化 eyeball time，而是最大化用户 outcome。",
           "urls": [
-            "https://www.youtube.com/watch?v=W_iO8XxgD_I"
+            "https://www.youtube.com/watch?v=cMAs8z2dehs"
           ]
         }
       ]

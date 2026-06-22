@@ -2,8 +2,11 @@
 
 import { mkdir, readFile, writeFile } from "fs/promises";
 import { dirname, join } from "path";
+import { pathToFileURL } from "url";
 import { normalizeBriefing, assertPublishableBriefing } from "./lib/briefing.js";
 import { todayIsoDate } from "./lib/html.js";
+
+export const MAX_BLOG_AGE_DAYS = 5;
 
 function parseArgs(argv) {
   const args = { date: todayIsoDate() };
@@ -24,10 +27,46 @@ function requireEnv(name) {
   return value;
 }
 
-function compactPreparedData(prepared, date) {
+function parsePublishedAt(value) {
+  if (!value) return null;
+  const raw = String(value).trim();
+  const hasTimezone = /(?:Z|[+-]\d{2}:?\d{2})$/.test(raw);
+  const hasTime = /T|\d{1,2}:\d{2}/.test(raw);
+  const parsed = new Date(hasTimezone || hasTime ? raw : `${raw} UTC`);
+  if (Number.isNaN(parsed.getTime())) return null;
+  return parsed;
+}
+
+export function isRecentBlogPost(blog, date, maxAgeDays = MAX_BLOG_AGE_DAYS) {
+  const publishedAt = parsePublishedAt(blog?.publishedAt);
+  if (!publishedAt) return false;
+
+  const start = new Date(`${date}T00:00:00.000Z`);
+  start.setUTCDate(start.getUTCDate() - maxAgeDays);
+  const end = new Date(`${date}T23:59:59.999Z`);
+
+  return publishedAt >= start && publishedAt <= end;
+}
+
+export function compactPreparedData(prepared, date) {
+  const blogs = (prepared.blogs || [])
+    .filter((blog) => isRecentBlogPost(blog, date))
+    .map((blog) => ({
+      name: blog.name,
+      title: blog.title,
+      url: blog.url,
+      publishedAt: blog.publishedAt,
+      author: blog.author,
+      description: blog.description,
+      content: String(blog.content || "").slice(0, 8000),
+    }));
+
   return {
     date,
-    stats: prepared.stats,
+    stats: {
+      ...(prepared.stats || {}),
+      blogPosts: blogs.length,
+    },
     x: (prepared.x || []).map((account) => ({
       name: account.name,
       handle: account.handle,
@@ -42,15 +81,7 @@ function compactPreparedData(prepared, date) {
         isQuote: tweet.isQuote,
       })),
     })),
-    blogs: (prepared.blogs || []).map((blog) => ({
-      name: blog.name,
-      title: blog.title,
-      url: blog.url,
-      publishedAt: blog.publishedAt,
-      author: blog.author,
-      description: blog.description,
-      content: String(blog.content || "").slice(0, 8000),
-    })),
+    blogs,
     podcasts: (prepared.podcasts || []).map((podcast) => ({
       name: podcast.name,
       title: podcast.title,
@@ -169,7 +200,9 @@ async function main() {
   console.log(JSON.stringify({ status: "ok", output: args.output }));
 }
 
-main().catch((err) => {
-  console.error(err.message);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
+}

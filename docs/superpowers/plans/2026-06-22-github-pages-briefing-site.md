@@ -982,8 +982,8 @@ name: Publish Briefing Site
 
 on:
   schedule:
-    # 07:30 UTC = 15:30 Asia/Shanghai. Upstream central feeds run around 06:17 UTC.
-    - cron: "30 7 * * *"
+    # 10:00 UTC = 18:00 Asia/Shanghai. This leaves room for upstream central feeds to finish publishing.
+    - cron: "0 10 * * *"
   workflow_dispatch:
 
 jobs:

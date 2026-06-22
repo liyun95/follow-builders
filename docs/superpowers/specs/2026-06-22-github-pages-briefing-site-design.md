@@ -69,6 +69,7 @@ Responsibilities:
 - Instruct the model to use only the feed JSON.
 - Ask for a structured JSON response, not HTML.
 - Filter low-signal social posts.
+- Pass only blog posts with a parseable `publishedAt` date within the last 5 days. Blog posts with missing, invalid, or older dates are skipped before the LLM prompt is built.
 - Produce sections for X/Twitter, official blogs, and podcasts.
 - Preserve original URLs for every included item.
 - Write a dated issue JSON file for the renderer.
@@ -120,7 +121,7 @@ The index page should show the latest issue prominently and list recent issues i
 Responsibilities:
 
 - Run on a daily schedule and by manual dispatch.
-- Schedule the daily run for `07:30 UTC`, which is `15:30 Asia/Shanghai`. The upstream central feed is scheduled around `06:17 UTC`, so this gives it time to publish before the site reads the latest feeds.
+- Schedule the daily run for `10:00 UTC`, which is `18:00 Asia/Shanghai`. This gives the upstream central feeds time to finish publishing before the site reads the latest feeds.
 - Install Node dependencies in `scripts/`.
 - Run the prepare, generate, and render scripts.
 - Commit changed `docs/` files back to the fork.
