@@ -328,7 +328,10 @@ function renderStats(stats) {
 
 function renderItem(item, index) {
   const links = item.urls
-    .map((url, i) => `<a href="${escapeAttribute(url)}" rel="noopener noreferrer">原文 ${i + 1}</a>`)
+    .map(
+      (url, i) =>
+        `<a href="${escapeAttribute(url)}" target="_blank" rel="noopener noreferrer">原文 ${i + 1}</a>`,
+    )
     .join("");
   const source = item.role
     ? `${escapeHtml(item.source)} · ${escapeHtml(item.role)}`
