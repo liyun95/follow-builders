@@ -24,63 +24,63 @@
       <article>
         <section class="editor-note">
           <strong>编辑手记</strong>
-          今天的信号集中在 agent 基础设施与 context 工程：从 Google 的 agent harness、Sakana 式多模型路由，到企业软件为 headless agent 准备权限、审计和数据边界。另一个共同点是，builders 正在把“多给 context、少靠 prompt”视为提升质量的核心手段。
+          今天的信号集中在 agent harness、模型路由、上下文工程与 AI coding 产品体验。Google DeepMind 关于“模型吃掉 harness”的讨论，和 Aaron Levie 对 headless agent 使用企业软件的判断，值得 builder 重点关注。
         </section>
         <section class="section">
       <h2>Builder 动态</h2>
       <article class="item">
     <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
-    <h3>OpenAI Codex 团队征集 app 体验改进</h3>
-    <p>Thibault Sottiaux 连续询问 Codex app 哪些地方“不够 delightful”，并讨论 Codex usage resets 可以累积后，用户会如何管理与消耗额度。这类高互动反馈显示，coding agent 产品正在围绕配额、使用节奏和开发者体验快速迭代。</p>
+    <h3>OpenAI 征集 Codex app 改进反馈</h3>
+    <p>Thibault Sottiaux 连续询问用户 Codex app 中哪些体验“不够 delightful”，以及在 Codex 可累积 usage resets 后，用户会囤积还是直接消耗。这是 Codex 团队围绕 AI coding 产品使用节奏、配额心理和开发者体验做公开反馈收集。</p>
     <div class="links"><a href="https://x.com/thsottiaux/status/2068736857312198928" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2068792010715324444" target="_blank" rel="noopener noreferrer">原文 2</a></div>
   </article>
 <article class="item">
-    <div class="source">Peter Yang · Practical AI tutorials and interviews for busy people</div>
-    <h3>用 HTML 作为 agentic video 的中间表示</h3>
-    <p>Peter Yang 转述 liu8in 的观点：video agent 直接依赖视觉智能会很难，而 HTML、CSS、JavaScript 是 LLM 更“原生”的表达方式，可同时承载信息、视觉美学、footage、images、assets 和 SVG。因此，从网站 URL 生成产品视频时，HTML 可成为更适合 LLM 操作的中间层。</p>
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>用 HTML 作为 agentic video making 的基础层</h3>
+    <p>Peter Yang 转述 @liu8in 的观点：视频 agent 难点在于 agent 缺乏视觉智能，因此转向代码表达。HTML、CSS、JavaScript 是 LLM 的“native language”，可同时承载信息、视觉审美、素材、SVG 与交互，用于从网站 URL 生成产品视频。</p>
     <div class="links"><a href="https://x.com/petergyang/status/2068755908319236338" target="_blank" rel="noopener noreferrer">原文 1</a></div>
   </article>
 <article class="item">
     <div class="source">Guillermo Rauch · @vercel CEO</div>
-    <h3>Vercel 将分享一次全链路性能优化经验</h3>
-    <p>Guillermo Rauch 表示团队对一个站点做了全面性能优化，涵盖 painting、layout、WebGPU shaders、blocking scripts，并逐帧审查效果。他还表示会把经验更新到相关资源中。另一条动态中，他指出 coding agents 会放大用户的 IKEA effect：如果放任，它们会让你更深度参与“亲手打造”的过程。</p>
+    <h3>Vercel 优化站点性能并计划公开经验</h3>
+    <p>Guillermo Rauch 表示团队对 Vercel 相关站点性能做了细粒度优化，覆盖 painting、layout、WebGPU shaders、blocking scripts 等，每一帧都被审视，并计划在后续更新中分享经验。他还指出 coding agents 会强化用户的 IKEA effect。</p>
     <div class="links"><a href="https://x.com/rauchg/status/2068838709517336756" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2068778558672273422" target="_blank" rel="noopener noreferrer">原文 2</a></div>
   </article>
 <article class="item">
     <div class="source">Aaron Levie · ceo @box</div>
-    <h3>企业软件需要为 agent 使用量和治理重新设计</h3>
-    <p>Aaron Levie 认为，agents 使用软件的频率可能是人的 100 倍，这会带来 guardrails、数据防泄漏、authoritative sources of truth、logging、auditing、人机协作等新需求。一次简单 agentic task 可能读取比用户一个月接触还多的数据，因此 CRM、文档、企业知识和 analytics 等平台在 headless interaction 中的价值会显著上升。</p>
+    <h3>企业软件将被 agent 以 headless 方式高频使用</h3>
+    <p>Aaron Levie 认为 agents 使用软件的频率会比人类高 100 倍，这将带来对 guardrails、权威数据源、日志审计、人机协作等能力的巨大需求。一次 agentic task 查询可能拉取超过单个用户一个月接触的数据量，因此能支撑 headless interactions 的平台将更有价值。</p>
     <div class="links"><a href="https://x.com/levie/status/2068851573175021864" target="_blank" rel="noopener noreferrer">原文 1</a></div>
   </article>
 <article class="item">
     <div class="source">Aaron Levie · ceo @box</div>
-    <h3>Sakana 的 Fugu 展示单 API 多模型协作方向</h3>
-    <p>Aaron Levie 评论 Sakana 的新模型思路：开发者面对的是单一 API，而系统会自动进行 model selection、delegation、verification 和 synthesis，把任务交给最适合的模型。Levies 认为，这类似许多 applied AI 产品正在构建的 agent harness，但将其做成开发者可直接交互的 LLM 层，会在 frontier closed models 与 OSS models 并存时产生大量路由价值。</p>
+    <h3>Sakana 的 Fugu 展示单 API 多模型路由思路</h3>
+    <p>Aaron Levie 评价 Sakana 新模型 Fugu：开发者面对的是单一 API，背后由系统自动做 model selection、delegation、verification 和 synthesis，把任务分派给更适合的模型。他认为 applied AI 产品已在 agent harness 中采用类似路由思想，而将其产品化为可直接交互的 LLM 层很有价值。</p>
     <div class="links"><a href="https://x.com/levie/status/2068917230570795178" target="_blank" rel="noopener noreferrer">原文 1</a></div>
   </article>
 <article class="item">
     <div class="source">Ryo Lu · Design @Cursor_ai</div>
-    <h3>在 ryOS 中用 Cursor mobile 做出 Books 阅读体验</h3>
-    <p>Ryo Lu 展示了 ryOS 里的 Books：支持任意 epub，并可用 ryOS account 同步阅读进度。他提到原型从 Cursor mobile 开始，再手工调动画和纹理直到质感合适，体现了 AI-assisted building 与人工设计打磨结合的工作流。</p>
+    <h3>用 Cursor mobile 开始制作 ryOS Books</h3>
+    <p>Ryo Lu 发布 ryOS 中的 Books：支持任意 epub，并可与 ryOS account 同步阅读进度。他表示项目从 Cursor mobile 开始，再手工调校动画和纹理，直到视觉与触感“felt right”。</p>
     <div class="links"><a href="https://x.com/ryolu_/status/2068923971136098633" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/ryolu_/status/2068924375341179347" target="_blank" rel="noopener noreferrer">原文 2</a></div>
   </article>
 <article class="item">
     <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
-    <h3>Garry Tan：可用 AGI 早期，个人和公司 context 是关键解锁</h3>
-    <p>Garry Tan 表示，在 2026 年可用 AGI 的开端，拥有自己的 personal brain 和 company brain 可能被低估了。AGI 提供 intelligence，但真正的解锁仍需要持续收集个人 context。他也称这正是自己做 GBrain 并将其开源的原因。</p>
+    <h3>AGI 时代仍需要个人与公司上下文大脑</h3>
+    <p>Garry Tan 认为，在 2026 年可用 AGI 早期，一个被低估的关键是拥有 personal brain 和 company brain。AGI 提供智能，但真正解锁价值仍需要持续收集个人与公司上下文。他也提到这正是自己开源 GBrain 的原因。</p>
     <div class="links"><a href="https://x.com/garrytan/status/2068701356358308112" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/garrytan/status/2068701357696323769" target="_blank" rel="noopener noreferrer">原文 2</a></div>
   </article>
 <article class="item">
     <div class="source">Zara Zhang · Builder</div>
-    <h3>防止 AI slop 的经验法则：context 应长于输出</h3>
-    <p>Zara Zhang 提出一个写作、设计等场景中避免 AI slop 的经验法则：输入的 context 是否比输出更长。她观察到，为了让 AI 产出高质量结果，输入通常需要达到输出长度的 3-5 倍；如果输入远短于输出，结果很可能变成 slop。她也强调自己讨论的是 context，不是 prompt。</p>
+    <h3>防止 AI slop 的关键是输入上下文足够长</h3>
+    <p>Zara Zhang 给出经验法则：判断 AI 写作、设计等输出是否容易变成 slop，可看输入 context 是否长于输出。她发现高质量结果往往需要输入达到输出的 3-5 倍，并强调自己讨论的是 context，而不是 prompt。</p>
     <div class="links"><a href="https://x.com/zarazhangrui/status/2068923768500793603" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2068964055235321954" target="_blank" rel="noopener noreferrer">原文 2</a></div>
   </article>
 <article class="item">
     <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
-    <h3>OpenClaw 进入质量提升与团队建设阶段</h3>
-    <p>Peter Steinberger 回应 OpenClaw 的热度变化：虽然 hype 降温，但团队提升了质量、扩大了团队，并创建了非营利组织；他还称这是 OpenClaw 目前最强的一周。他另外表示自己曾怀疑 multi-model routing，并认为最新情况印证了这种怀疑。</p>
-    <div class="links"><a href="https://x.com/steipete/status/2068961217524490739" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/steipete/status/2068960117253632160" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+    <h3>OpenClaw 以非营利团队方式继续提升质量</h3>
+    <p>Peter Steinberger 回应关于 OpenClaw 热度变化的讨论：团队在 hype 降温后提升质量并扩大团队，创建了非营利组织，而竞品多为 VC funded。他称本周是 OpenClaw 目前最强的一周。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2068961217524490739" target="_blank" rel="noopener noreferrer">原文 1</a></div>
   </article>
     </section>
 <section class="section">
@@ -88,7 +88,19 @@
       <article class="item">
     <div class="source">Training Data · Podcast</div>
     <h3>Google DeepMind&#39;s Logan Kilpatrick: Why the Model Eats the Harness</h3>
-    <p>Logan Kilpatrick 介绍 Google AI Studio、Gemini API 与 Gemini 进入 agentic era 后的变化。他认为，过去 Gemini API 是贯穿 Google 产品的 AI through line，而现在 Antigravity agent harness 正成为新的连接层：它不只是 IDE，还包括 web agent-first experience、CLI、SDK，并会支撑 Search、Gemini app、Cloud、AI Studio 等产品中的 agent 能力。对 Google 来说，当前多数产品的 agenticness 仍处于 crawl 阶段，Gemini app 和 Antigravity 更接近 walk；长期目标不是最大化 eyeball time，而是最大化用户 outcome。</p>
+    <p>Logan Kilpatrick 讨论 Google AI Studio、Gemini API 与 agentic AI。他表示 Google 正进入“agentic Gemini era”，Antigravity 不只是 IDE，还包括 web agent-first experience、CLI、SDK，并作为 agent harness 贯穿 Search、Gemini app、Cloud、AI Studio 等产品。对 Google 来说，Gemini 曾是 AI 能力的统一 through line，而现在 agent harness 正成为新的连接层。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=cMAs8z2dehs" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Training Data · Podcast</div>
+    <h3>Google 将 coding harness 视为通用 agent harness 的重要形态</h3>
+    <p>节目中 Logan Kilpatrick 认为 coding 是 agent harness 的 specialized use case，但 coding harness 已证明可作为 general purpose agent harness。不同产品会在约 80% 共用基础上做 specialized：AI Studio 偏 vibe coding，Gemini app 偏 consumer always-on agent。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=cMAs8z2dehs" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Training Data · Podcast</div>
+    <h3>Google 认为 agentic 产品当前仍处于 crawl 阶段</h3>
+    <p>Logan Kilpatrick 将 Google 产品的 agenticness 评价为整体仍在 crawl 阶段。原因是 Google 拥有大量十亿级用户产品，需要谨慎承担产品责任；Gemini app 和 Antigravity 更接近 walk，后者可支持 autonomous coding agents 消耗大量 token 并执行复杂任务。</p>
     <div class="links"><a href="https://www.youtube.com/watch?v=cMAs8z2dehs" target="_blank" rel="noopener noreferrer">原文 1</a></div>
   </article>
     </section>
