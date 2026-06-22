@@ -1,5 +1,7 @@
 scripts/node_modules/
 .superpowers/
+.playwright-cli/
+output/
 .env
 *.log
 .DS_Store

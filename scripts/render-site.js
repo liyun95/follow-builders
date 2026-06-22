@@ -317,6 +317,9 @@ const STAT_ROWS = [
   ["podcastEpisodes", "podcasts"],
 ];
 
+const FAVICON =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E";
+
 function renderStats(stats) {
   return STAT_ROWS.map(([key, label]) => {
     return `<div class="stat"><strong>${escapeHtml(stats[key] || 0)}</strong><span>${escapeHtml(label)}</span></div>`;
@@ -368,6 +371,7 @@ function renderIssue(briefing, archiveDates) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(briefing.title)} · ${escapeHtml(formatDisplayDate(briefing.date))}</title>
+  <link rel="icon" href="${FAVICON}">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -417,6 +421,7 @@ function renderIndex(latest, archiveDates) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Builders 简报</title>
+  <link rel="icon" href="${FAVICON}">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
