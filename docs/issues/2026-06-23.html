@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年6月23日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年6月23日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的高信号集中在 agentic coding、安全与部署工作流：OpenAI 推出 GPT-5.5-Cyber、Codex Security 和 Patch The Planet；Vercel 继续把 AI 设计产物接入部署链路；多位 builder 都在讨论更长周期的 AI 委派、evals 与团队协作方式。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Sam Altman · OpenAI</div>
+    <h3>OpenAI 推出 GPT-5.5-Cyber、Codex Security 与 Patch The Planet</h3>
+    <p>Sam Altman 表示 OpenAI 希望与 USG 和安全生态合作，帮助所有公司提升安全性。完整版本 GPT-5.5-Cyber 已发布，并在 CyberGym 上达到 state of the art；Patch The Planet 和 Codex Security 的目标是让 AI 不只是发现安全问题，也能帮助修复问题。</p>
+    <div class="links"><a href="https://x.com/sama/status/2069121360744550796" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 安全更新与 GPT-5.5-Cyber 聚焦防御加速</h3>
+    <p>Thibault Sottiaux 转发并强调“Let&#39;s Patch The Planet”，称这是 Codex security 更新和新 GPT-5.5-Cyber 的发布日，主题是加速 cyber defense。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2069152290326630518" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Claude Design 到 Vercel 支持一键发布</h3>
+    <p>Guillermo Rauch 展示 Claude Design → Vercel 的一键流程，指向更顺滑的 AI 生成设计到部署链路，降低从 prototype 到上线的摩擦。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2069219190834127276" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel 支持 WebSocket 与 socket.io</h3>
+    <p>Vercel 现在支持 WebSocket 和 socket.io，覆盖从 CDN 到 Fluid 的场景。对实时应用、AI agent 协作界面和需要持续连接的产品来说，这是重要基础设施更新。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2069109057433035171" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>企业 AI 落地的核心能力会是 evals</h3>
+    <p>Aaron Levie 认为几乎所有 AI model 与 agent 进展都离不开 evals：开放权重模型的特定领域 post training、应用层 agent 改进、企业级 agentic deployment 都取决于 evals。未来企业需要理解自身 workflow，并衡量 agent 参与工作的效果。</p>
+    <div class="links"><a href="https://x.com/levie/status/2069228335255949775" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Box 支持预览、编辑和安全分享 HTML 内容</h3>
+    <p>Box 新增对 HTML based content 的预览、编辑、版本管理和安全分享能力。Aaron Levie 指出，这适合立即处理 agent 生成的内容，呼应 HTML 在 AI 工作流中的回潮。</p>
+    <div class="links"><a href="https://x.com/levie/status/2069140445205348432" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Ryo Lu · Design @Cursor_ai</div>
+    <h3>Cursor Compile 演讲：AI 时代如何 build，以及什么不会改变</h3>
+    <p>Ryo Lu 分享了自己在 Cursor Compile 的 talk，主题是 AI 时代的构建方式，以及在工具快速变化中仍然不变的部分。内容面向使用 AI coding 工具的 builder 和设计/产品团队。</p>
+    <div class="links"><a href="https://x.com/ryolu_/status/2069218497272717661" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/ryolu_/status/2069218604449771989" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>用 Claude Code 制作 HTML slides 的完整 walkthrough</h3>
+    <p>Zara Zhang 发布 11 分钟视频，讲解其 Frontend Slides skill：如何用 Claude Code 创建漂亮的 HTML slides、如何创建自己的 skill、插入图片和视频、发布 deck，以及她在过程中学到的经验。该项目在 GitHub 上已有 22k+ stars。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2069311440692072481" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2069311581985665385" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @aidotengineer, @latentspacepod</div>
+    <h3>模型实验室与 neocloud 结合可能形成独特 go-to-market</h3>
+    <p>Swyx 讨论 SpaceX、NeoCloud 与 NeoLab 的组合，认为“领先 model lab + neocloud”在 GPU 供给规划充分时可能形成强大的 go-to-market 结构。他强调关键在于同时应对内部训练进展很好或不好的两种情况。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2069301071965741388" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">AI &amp; I by Every · Podcast</div>
+    <h3>Mike Krieger 谈 Anthropic 如何使用 Claude Fable 5</h3>
+    <p>Anthropic Labs 负责人、Instagram cofounder Mike Krieger 讨论 Claude Fable 5 的实际使用方式。他强调强模型会迫使 builder 重新思考 prompt、任务拆解和时间跨度：从即时问答转向更长周期的委派、架构规划、并行 Claude Code session，以及对结果进行 verification。对团队来说，早期对齐文档、HTML/Markdown diagrams 和人类之间的协作仍然关键。</p>
+    <div class="links"><a href="https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>13</strong><span>builders</span></div><div class="stat"><strong>27</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+{
+  "date": "2026-06-23",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在 agentic coding、安全与部署工作流：OpenAI 推出 GPT-5.5-Cyber、Codex Security 和 Patch The Planet；Vercel 继续把 AI 设计产物接入部署链路；多位 builder 都在讨论更长周期的 AI 委派、evals 与团队协作方式。",
+  "stats": {
+    "xBuilders": 13,
+    "totalTweets": 27,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "OpenAI 推出 GPT-5.5-Cyber、Codex Security 与 Patch The Planet",
+          "summary": "Sam Altman 表示 OpenAI 希望与 USG 和安全生态合作，帮助所有公司提升安全性。完整版本 GPT-5.5-Cyber 已发布，并在 CyberGym 上达到 state of the art；Patch The Planet 和 Codex Security 的目标是让 AI 不只是发现安全问题，也能帮助修复问题。",
+          "urls": [
+            "https://x.com/sama/status/2069121360744550796"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 安全更新与 GPT-5.5-Cyber 聚焦防御加速",
+          "summary": "Thibault Sottiaux 转发并强调“Let's Patch The Planet”，称这是 Codex security 更新和新 GPT-5.5-Cyber 的发布日，主题是加速 cyber defense。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2069152290326630518"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Claude Design 到 Vercel 支持一键发布",
+          "summary": "Guillermo Rauch 展示 Claude Design → Vercel 的一键流程，指向更顺滑的 AI 生成设计到部署链路，降低从 prototype 到上线的摩擦。",
+          "urls": [
+            "https://x.com/rauchg/status/2069219190834127276"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 支持 WebSocket 与 socket.io",
+          "summary": "Vercel 现在支持 WebSocket 和 socket.io，覆盖从 CDN 到 Fluid 的场景。对实时应用、AI agent 协作界面和需要持续连接的产品来说，这是重要基础设施更新。",
+          "urls": [
+            "https://x.com/rauchg/status/2069109057433035171"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "企业 AI 落地的核心能力会是 evals",
+          "summary": "Aaron Levie 认为几乎所有 AI model 与 agent 进展都离不开 evals：开放权重模型的特定领域 post training、应用层 agent 改进、企业级 agentic deployment 都取决于 evals。未来企业需要理解自身 workflow，并衡量 agent 参与工作的效果。",
+          "urls": [
+            "https://x.com/levie/status/2069228335255949775"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Box 支持预览、编辑和安全分享 HTML 内容",
+          "summary": "Box 新增对 HTML based content 的预览、编辑、版本管理和安全分享能力。Aaron Levie 指出，这适合立即处理 agent 生成的内容，呼应 HTML 在 AI 工作流中的回潮。",
+          "urls": [
+            "https://x.com/levie/status/2069140445205348432"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "Cursor Compile 演讲：AI 时代如何 build，以及什么不会改变",
+          "summary": "Ryo Lu 分享了自己在 Cursor Compile 的 talk，主题是 AI 时代的构建方式，以及在工具快速变化中仍然不变的部分。内容面向使用 AI coding 工具的 builder 和设计/产品团队。",
+          "urls": [
+            "https://x.com/ryolu_/status/2069218497272717661",
+            "https://x.com/ryolu_/status/2069218604449771989"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "用 Claude Code 制作 HTML slides 的完整 walkthrough",
+          "summary": "Zara Zhang 发布 11 分钟视频，讲解其 Frontend Slides skill：如何用 Claude Code 创建漂亮的 HTML slides、如何创建自己的 skill、插入图片和视频、发布 deck，以及她在过程中学到的经验。该项目在 GitHub 上已有 22k+ stars。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2069311440692072481",
+            "https://x.com/zarazhangrui/status/2069311581985665385"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer, @latentspacepod",
+          "headline": "模型实验室与 neocloud 结合可能形成独特 go-to-market",
+          "summary": "Swyx 讨论 SpaceX、NeoCloud 与 NeoLab 的组合，认为“领先 model lab + neocloud”在 GPU 供给规划充分时可能形成强大的 go-to-market 结构。他强调关键在于同时应对内部训练进展很好或不好的两种情况。",
+          "urls": [
+            "https://x.com/swyx/status/2069301071965741388"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "Mike Krieger 谈 Anthropic 如何使用 Claude Fable 5",
+          "summary": "Anthropic Labs 负责人、Instagram cofounder Mike Krieger 讨论 Claude Fable 5 的实际使用方式。他强调强模型会迫使 builder 重新思考 prompt、任务拆解和时间跨度：从即时问答转向更长周期的委派、架构规划、并行 Claude Code session，以及对结果进行 verification。对团队来说，早期对齐文档、HTML/Markdown diagrams 和人类之间的协作仍然关键。",
+          "urls": [
+            "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+          ]
+        }
+      ]
+    }
+  ]
+}
