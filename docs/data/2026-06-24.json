@@ -1,0 +1,175 @@
+{
+  "date": "2026-06-24",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线是 agent 从单人工具走向团队协作基础设施：Claude Tag 把 Slack channel 变成持久工作空间，触发了 UIUX、权限、记忆与企业知识库的新讨论。另一条线是模型成本与应用层价值分配，builder 们开始更关心 routing、evals、数据与 workflow。",
+  "stats": {
+    "xBuilders": 19,
+    "totalTweets": 41,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Andrej Karpathy",
+          "role": "I like training large deep neural nets.",
+          "headline": "Karpathy：LLM UIUX 进入“组织内持久协作者”阶段",
+          "summary": "Andrej Karpathy 评论 Claude 的新交互范式：第一代 LLM 是网站，第二代是桌面 app，第三代则是一个自包含、持久、异步、拥有组织级工具和上下文的实体。它能像团队成员一样被对话和分配任务，但前提是底层工具集成、compute 环境、memory、安全与权限都要工程化到“just work”。",
+          "urls": [
+            "https://x.com/karpathy/status/2069547676849557725"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "Claude is an AI assistant built by @anthropicai",
+          "headline": "Claude Tag 在 Slack 上开启 beta",
+          "summary": "Claude 宣布 Claude Tag 面向 Claude Enterprise 和 Team plans 在 Slack 上 beta。它支持在 channel 中由一个 Claude 与所有人互动，持续积累工作上下文；开启 ambient behavior 后，Claude 可以主动跟进沉寂 thread，并从 channel 与工具中标记相关信息。",
+          "urls": [
+            "https://x.com/claudeai/status/2069468701548531895",
+            "https://x.com/claudeai/status/2069468699766005847",
+            "https://x.com/claudeai/status/2069468698071494976"
+          ]
+        },
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Tag 的执行模型：每个 thread 一个 sandbox",
+          "summary": "Boris Cherny 介绍 Claude Tag 的工作方式：在 Slack channel 中 tag Claude 后，它会启动带独立 sandbox 的实例，clone repo、写代码、测试和编译，完成后销毁环境。每个 thread 有自己的实例、memory 和 channel 权限。Claude 还可被配置为监控 Slack、回答问题、draft PR，并用 emoji 标记 thread 状态。",
+          "urls": [
+            "https://x.com/bcherny/status/2069474691010707486",
+            "https://x.com/bcherny/status/2069474689819480394",
+            "https://x.com/bcherny/status/2069474688619958517"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Anthropic 内部版 Claude Tag 合并 65% 产品 PR",
+          "summary": "Cat Wu 称 Claude Tag 是 Anthropic 发货方式的一次范式变化：内部版本合并了 65% 的产品 PR，也是 Anthropic 首个原生 multi-player 且 proactive 的产品。她还分享了 agent permissions 配置指南，以及 6 个常见 flow，展示 Claude Tag 可按不同 use case 深度定制。",
+          "urls": [
+            "https://x.com/_catwu/status/2069473118742331608",
+            "https://x.com/_catwu/status/2069484330938998993",
+            "https://x.com/_catwu/status/2069486403696869555"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Tag 使用技巧：状态 emoji、pinned message 与日程 channel",
+          "summary": "Thariq 分享了 Claude Tag 在团队 Slack 中的实践：为 thread 顶层消息添加 ⏲️✅❓🛑 等 emoji 便于快速查看状态；在个人 channel 中让 Claude 维护一个持续更新的 pinned message；还可以创建 scheduling channel，让团队 tag Claude 查找日历空档。",
+          "urls": [
+            "https://x.com/trq212/status/2069474343512617390",
+            "https://x.com/trq212/status/2069474342220820657",
+            "https://x.com/trq212/status/2069474339679052144"
+          ]
+        },
+        {
+          "source": "Alex Albert",
+          "role": "Research @AnthropicAI",
+          "headline": "Alex Albert：使用 Claude 更像管理一个团队",
+          "summary": "Alex Albert 表示，Claude 的新工作方式已经改变了他与 Claude 协作的方式：感觉不像在使用一个工具，更像是在管理一个团队。这与 Claude Tag 所代表的 persistent、multi-player agent 方向一致。",
+          "urls": [
+            "https://x.com/alexalbert__/status/2069470389391241314"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Box CEO：Claude Tag 展示 headless software 与企业内容知识库的力量",
+          "summary": "Aaron Levie 认为 Claude Tag 是 headless software with agents 的又一例子：通过 Slack 给 Claude 访问 Box 企业文件的能力后，企业内容就变成了可携带的 knowledge base。他还讨论 AI pricing：市场可能呈现高成本 frontier models 与便宜但足够好的开放或闭源权重模型的杠铃结构，applied AI 层的价值在于 routing、evals、数据准备与 workflow 调优。",
+          "urls": [
+            "https://x.com/levie/status/2069596515560267891",
+            "https://x.com/levie/status/2069639600310767616"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Prev: Product Leader at Google - Gemini, Veo, Nano Banana.",
+          "headline": "Madhu Guru：token pricing 之争本质是价值归属之争",
+          "summary": "Madhu Guru 从企业、agent startup、数据提供方和 lab 的不同视角出发，指出当前生态的 business model、moat、value exchange 和执行 playbook 都在实时形成。围绕 token pricing 的争论，本质上是在争论价值会沉淀到模型、应用层、分发还是其他层。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2069455097193697393"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews for busy people",
+          "headline": "Peter Yang：当访问产品的是 agent，design 该如何定义",
+          "summary": "Peter Yang 提出一个面向 AI product 的设计问题：如果访问产品的主体只是一个寻找 API 或 CLI 的 agent，那么 design 是什么？他还认为 human-agent interaction 正走向“管理一个高能力员工”的形态，并提到 Google Workspace CLI 很有用，值得被更多关注。",
+          "urls": [
+            "https://x.com/petergyang/status/2069603490524254473",
+            "https://x.com/petergyang/status/2069530765352907180",
+            "https://x.com/petergyang/status/2069551302246592799"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "headline": "GeminiApp 推出足球主题图像模板，NotebookLM 获校园案例反馈",
+          "summary": "Josh Woodward 介绍 GeminiApp 的“Get in the game”图像模板，用户可上传照片生成 custom trading card、mural 或 virtual plushie。他还引用 Florida State University 的反馈：引入 NotebookLM 后，一些原本 C 等级的学生在数周内改变了学习习惯和成绩。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2069408025362714957",
+            "https://x.com/joshwoodward/status/2069406832523624696"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 征集 eve agent builder 的高质量反馈",
+          "summary": "Guillermo Rauch 表示将为 eve 建立一个 X Chat 反馈群。如果有人正在深入构建 agent，并能提供高质量的批判性反馈或需求，可以 DM 他加入与 eve engineers 的群组。他还转发了 Vercel + Cursor 的相关动态。",
+          "urls": [
+            "https://x.com/rauchg/status/2069590431646769472",
+            "https://x.com/rauchg/status/2069513849578082474"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Garry Tan：Linzumi 是真正 multiplayer 的 Codex",
+          "summary": "Garry Tan 介绍 Linzumi，称它像 Codex 但真正支持 multiplayer，对团队来说很有魔力。他还提到 Sean Grove 曾在 OpenAI 参与降低 ChatGPT sycophancy 的工作，之后离开创办这家 YC startup。",
+          "urls": [
+            "https://x.com/garrytan/status/2069474420113146355"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "用 Shopify UCP CLI 构建 contextual embedded shops",
+          "summary": "Nikunj Kothari 发布 Plug That Shop。基于 Shopify 的 UCP CLI，他将商店商品通过 command line 暴露出来，并生成可嵌入网站的高度相关 shop。买家可点击购买并通过 Shop 一键 checkout。项目使用 @conductor_build、@AnthropicAI Opus 4.8、@shopify UCP CLI 和 @Railway 构建。",
+          "urls": [
+            "https://x.com/nikunj/status/2069534712763490668",
+            "https://x.com/nikunj/status/2069547206504566980"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI Codex 团队快速修复反馈中的 bug",
+          "summary": "Thibault Sottiaux 表示 Codex 曾有一个 bug，已经修复，并鼓励用户继续提供反馈以改进产品。他还用“Codex loves slurping up bugs”形容团队吸收 bug report、快速迭代的节奏。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2069579993588625574",
+            "https://x.com/thsottiaux/status/2069592160966733853"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Biohub：Mark Zuckerberg、Priscilla Chan 与 Alex Rives 谈开源生物学和 AI",
+          "summary": "本期 No Priors 讨论 Biohub 与 virtual biology initiative。Mark Zuckerberg 和 Priscilla Chan 表示，目标不是由他们直接治愈疾病，而是构建开源工具和共享数据，加速整个科学社区。Alex Rives 认为下一代科学机构需要同时具备 frontier AI 与 frontier biology，并让模型从生物实验与数据反馈中学习。节目还谈到单细胞测序、Human Cell Atlas、CellByGene、蛋白质结构预测，以及从蛋白到细胞和系统层级的 biology world models。",
+          "urls": [
+            "https://www.youtube.com/@NoPriorsPodcast"
+          ]
+        }
+      ]
+    }
+  ]
+}
