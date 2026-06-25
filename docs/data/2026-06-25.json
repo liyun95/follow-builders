@@ -1,0 +1,117 @@
+{
+  "date": "2026-06-25",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号内容集中在 agent 工作流、AI 产品基础设施和模型训练数据三条线：Claude 进入团队协作语境后，权限与资源边界变成关键设计问题；Vercel、Cursor、Notion 等 builder 继续把 AI 融进开发与运营栈；播客则讨论了数据、eval 与 AGI 能力跃迁。",
+  "stats": {
+    "xBuilders": 13,
+    "totalTweets": 29,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "Latent Space / AI Engineer",
+          "headline": "给 AI 工程师演讲的实战建议：少放 AI 图，多放代码和 thesis",
+          "summary": "Swyx 总结了面向工程师和研究者做 talk 的经验：AI 生成 SVG 优于泛滥的 AI 图片；每场 talk 要有一个清晰 thesis 和一张可传播的 thesis slide；工程师喜欢看代码；好音频、情绪曲线、现场 demo、数据图表和娱乐性都比堆 bullet point 更重要。",
+          "urls": [
+            "https://x.com/swyx/status/2069964772003770673"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "Latent Space / AI Engineer",
+          "headline": "Software Factories 时代需要重建大量基础设施",
+          "summary": "Swyx 认为，随着 Software Factories 成为新的软件生产形态，现有基础设施将有大量部分需要重建。这一判断延续了他近期对 agent cloud、软件生产自动化和开发平台演进的关注。",
+          "urls": [
+            "https://x.com/swyx/status/2069937175899275475"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI 教程作者",
+          "headline": "Claude Design 可读取 repo 并复现移动应用界面",
+          "summary": "Peter Yang 试用 Claude Design 后表示，他把一个正在构建的 mobile app repo 交给它，Claude Design 能较好复现应用 screen。不过在一次 prompt 后，它已经开始提醒节省 token。",
+          "urls": [
+            "https://x.com/petergyang/status/2069992268963135897"
+          ]
+        },
+        {
+          "source": "Google Labs",
+          "role": "Google AI experiments",
+          "headline": "Project Genie 获 Cannes Lions Grand Prix for AI Craft",
+          "summary": "Google Labs 宣布 Project Genie 获得 Cannes Lions Grand Prix for AI Craft，并向 Labs community 致谢。这是 Google Labs 最新 AI 工具与实验项目获得创意行业认可的信号。",
+          "urls": [
+            "https://x.com/GoogleLabs/status/2069827839826809042"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "Vercel CEO",
+          "headline": "AI 将推动新一轮创业浪潮，Vercel 继续强化 AI Gateway",
+          "summary": "Guillermo Rauch 认为 AI 会带来前所未有的创业增长，从 solopreneurs 到中小企业复兴，再到新一代大公司出现。他还提到 Vercel AI Gateway 在 token 与 uptime 恢复方面的数据令人惊讶，并转发了“Really fast GLM now live”的更新。",
+          "urls": [
+            "https://x.com/rauchg/status/2070001110866354345",
+            "https://x.com/rauchg/status/2069863762694459805",
+            "https://x.com/rauchg/status/2069819652365242765"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "Box CEO",
+          "headline": "Claude 作为 Slack coworker 时，agent 权限不能等同于个人权限",
+          "summary": "Aaron Levie 指出，Claude 在 Slack 中不只是 1:1 助手，而是可被团队共享调用的 agentic coworker。因此它需要自己的资源、工具和数据访问边界，不能简单继承某个用户的个人权限，否则可能把信息错误分享给其他人。他认为 agent 应像系统中的独立用户一样被配置访问范围。",
+          "urls": [
+            "https://x.com/levie/status/2069975251476422664"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "Cursor 与 Notion 的双向工作流：use cursor in notion, use notion in cursor",
+          "summary": "Ryo Lu 用一句话概括了 Cursor 与 Notion 之间的 AI 工作流想象：在 Notion 中使用 Cursor，也在 Cursor 中使用 Notion。这反映了 coding agent 与知识工作工具进一步融合的方向。",
+          "urls": [
+            "https://x.com/ryolu_/status/2069830172354986418"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Figma Config 观点：Community 是新的 moat",
+          "summary": "Zara Zhang 引用 Figma Config session 的观点：community 是用户与你以及彼此之间的关系，很多团队从未主动设计它。功能可以被复制，但归属感难以复制，因此 community 可能成为新的 moat。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2069900496304042343"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SouthPkCommons",
+          "headline": "AI 时代领导者需要无畏、乐观、同理心与谦逊",
+          "summary": "Aditya Agarwal 表示，现在是一个做 leader 很奇特的时期：既要 fearless、optimistic，也要对即将到来的变化保持 empathy，同时保留 humility。他称自己被 @Snowflake 的 @RamaswmySridhar 如何应对这一时刻所触动。",
+          "urls": [
+            "https://x.com/adityaag/status/2069861187479618042"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "Surge AI 的 Edwin Chen：为 AGI 建一所理解人类的学校",
+          "summary": "Dan Shipper 采访 Surge AI CEO Edwin Chen。Chen 将 Surge 描述为“school for AGI”，通过数据、环境和 eval 教模型理解人类与现实世界。他们讨论了从 GSM8K 到研究级数学 benchmark 的能力跃迁、AI 是否会让人类停止尝试、LLM 缺少内在目标、模型为 engagement 优化的陷阱，以及为什么模型写作仍会过度迎合指标。",
+          "urls": [
+            "https://www.youtube.com/watch?v=omX6wrLuX08"
+          ]
+        }
+      ]
+    }
+  ]
+}
