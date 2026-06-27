@@ -1,0 +1,162 @@
+{
+  "date": "2026-06-27",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的 builder 讨论集中在三条线：frontier model 访问与政策边界、agent 产品的可观测性与调试、以及 test-time compute 如何改写评测方式。对团队来说，模型能力之外，预算、分发和工程体验正在同样关键。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 34,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "Sam Altman 称 ChatGPT 的 5.5 instant model 本周更新",
+          "summary": "Sam Altman 表示，ChatGPT 中使用的 5.5 instant model 本周已经更新，并称自己喜欢它的“vibes”。他还提到团队在 token 供给上“not quite all-you-can-eat tokens, but we are working on it”。",
+          "urls": [
+            "https://x.com/sama/status/2070612055225483692",
+            "https://x.com/sama/status/2070614769678393846"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 为 Codex 用户重置 usage",
+          "summary": "Thibault Sottiaux 表示，OpenAI 将为所有 Codex 用户提供一次 usage reset。团队已应用部分 mitigations，调查尚未显示用户受到大范围影响，并会继续监控情况。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2070653282440405046"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 强调 agent observability 是默认能力",
+          "summary": "Guillermo Rauch 指出，agents 是特别难调试的软件：AI model 本身非确定性，agent 又是涉及 functions、sandboxes 和多种 API 服务的复杂分布式系统。因此，在 Vercel 上为相关产品做好开箱即用的 observability 是团队重点。",
+          "urls": [
+            "https://x.com/rauchg/status/2070676383135834334"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 质疑 frontier model 封闭后对开源与创新的影响",
+          "summary": "Peter Yang 梳理了一个循环：frontier models 发布后被蒸馏成便宜的开源模型，美国公司因足够好且更便宜而采用，随后 frontier model 访问开始被 gating。他提出问题：这是否会让美国公司创新变少，或让开源模型更有吸引力。",
+          "urls": [
+            "https://x.com/petergyang/status/2070633838146134219"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Garry Tan 批评模型发布方式可能伤害小创业公司",
+          "summary": "Garry Tan 表示，某种模型发布与继续开发方式“is honestly no way to release a model”，并认为这种做法可能会抑制小型 startups 的创新空间。",
+          "urls": [
+            "https://x.com/garrytan/status/2070699046939820223"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "Dan Shipper 讨论 GPT-5.6 Sol 访问限制与民主化 access",
+          "summary": "Dan Shipper 称 OpenAI announced GPT-5.6 Sol，并表示按美国政府指令，当前访问仅限约 20 家预先批准公司，@every 不在名单内。他支持对先进能力进行一定政府 oversight，但强调 frontier models 的广泛民主化 access 对美国 AI 竞争力、worker upskilling 和 independent builders 都很重要。",
+          "urls": [
+            "https://x.com/danshipper/status/2070554118146412979",
+            "https://x.com/danshipper/status/2070554247301591163"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Aaron Levie 称 GPT-5.6 对知识工作者和长任务 agents 很强",
+          "summary": "Aaron Levie 表示 GPT-5.6 “looks very strong”，尤其适合需要 heavy tool use 的知识工作者任务，以及 long running agents。他认为 AI 进展目前没有撞墙。",
+          "urls": [
+            "https://x.com/levie/status/2070563281916620895"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Cat Wu 点名 Claude Code desktop 的 split screen",
+          "summary": "Cat Wu 表示，split screen 是她最喜欢的 Claude Code desktop features 之一，显示 Anthropic 工具团队正在强化桌面端 coding workflow 的多线程体验。",
+          "urls": [
+            "https://x.com/_catwu/status/2070613405237432766"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 给 Claude Code 提出产品细节建议",
+          "summary": "Peter Yang 列出希望 Claude Code 改进的小功能：恢复 Claude 工作时继续 steer conversations 的能力、默认开启所有 threads 的 mobile remote control、用 cmd+key 快捷键切换 threads，以及允许拖拽重排左侧 projects。",
+          "urls": [
+            "https://x.com/petergyang/status/2070545325497221248"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer / @latentspacepod",
+          "headline": "Swyx 在旧金山启动新 media lab",
+          "summary": "Swyx 表示 swyx inc 接手了新的 media lab，定位为旧金山 engineer-creatives 的第三空间、technical storytellers 的 finishing school，以及激发创作者的地方。场地里还意外带有一个已接线的 datacenter rack。",
+          "urls": [
+            "https://x.com/swyx/status/2070748857441362056"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer / @latentspacepod",
+          "headline": "Swyx 预告首个 AI FDE miniconference",
+          "summary": "Swyx 表示团队通过与 aligned domain experts 合作扩展覆盖面，避免 scaling with slop。随着 OpenAI 和 Anthropic 推出 multi-billion dollar services arms，他认为 FDE 正成为极受需求的 discipline，并预告首个 AI FDE miniconference。",
+          "urls": [
+            "https://x.com/swyx/status/2070606851377672675"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Zara Zhang 推荐 Borumi 作为视频录制与编辑工具",
+          "summary": "Zara Zhang 表示自己使用 Borumi 制作视频，并称它是被低估的视频 recording/editing tool，像 Screen Studio、Descript 和 CapCut 的组合。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2070584764315402405"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "Nikunj Kothari 谈 AI 是否能形成 taste",
+          "summary": "Nikunj Kothari 认为，taste 需要在实践中通过大量 iterations 和 variation 才能被 refine。他进一步提出，AI 也许有机会通过类似方式建立 taste，而不是只是在固定模式上 overfit。",
+          "urls": [
+            "https://x.com/nikunj/status/2070649602953576825"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SouthPkCommons",
+          "headline": "Aditya Agarwal：AI 让人更渴望深度人际连接",
+          "summary": "Aditya Agarwal 认为，AI 的一个副作用是自己对浅层人类互动的容忍度变低。他期待更深的人际关系，而其他事务则交给 agents，并猜测世界会变得更小、关系深度更丰富。",
+          "urls": [
+            "https://x.com/adityaag/status/2070621064271688021"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Noam Brown：传统 benchmark 难以评估现代 AI model",
+          "summary": "OpenAI Research Scientist Noam Brown 在 No Priors 中讨论 test-time compute 对评测的影响。他认为，现代模型能力是 inference budget 的函数，同一个模型在 10 美元、1 万美元或 1000 万美元预算下能力不同；因此评测应控制 token、cost 或 time，或画出 performance 随 test-time compute 变化的曲线。访谈还谈到 benchmark maxing、private held-out sets、长时间 reasoning、cyber eval 中 100,000,000 tokens 级别的持续改进，以及他用 poker bot 作为个人 eval 的方法。",
+          "urls": [
+            "https://www.youtube.com/watch?v=AZrU6y3pUcU"
+          ]
+        }
+      ]
+    }
+  ]
+}
