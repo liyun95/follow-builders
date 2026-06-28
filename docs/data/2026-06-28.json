@@ -1,0 +1,90 @@
+{
+  "date": "2026-06-28",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号内容集中在 agent 产品细节、企业 AI 成本结构与长期记忆。Codex 的交互体验继续打磨，Engram 则把 memory 从外部检索推进到持续训练，提示 builder 们重新思考 token、context 与模型权重之间的边界。",
+  "stats": {
+    "xBuilders": 10,
+    "totalTweets": 25,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 推出多项交互与稳定性改进",
+          "summary": "Thibault Sottiaux 提到 Codex 已落地一批更新：更顺畅处理超长 thread、可 hover 的导航栏用于预览和跳转 turn、Settings search 覆盖更多控制项、修复 zoom 后 tooltip 和菜单错位、复制到 Slack 保留 Markdown 格式，大段粘贴也不再卡住 UI；另有一个 dedicated Pets panel。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2071071289247244481"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@latentspacepod / @aidotengineer",
+          "headline": "开放模型 eval 应按美元 inference 成本比较 thinking level",
+          "summary": "Swyx 讨论 eval 报告中的 constant inference budget：如果按 token 数比较，开放模型与闭源 API 的成本差异会被掩盖。他认为发布或推动开放模型的一方，应在主流 inference provider 上用美元成本衡量 thinking level，而不是只把 token 数放在横轴。",
+          "urls": [
+            "https://x.com/swyx/status/2070949306060931312"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "企业 AI 的价值层：理解 workflow 才能优化 token 成本",
+          "summary": "Aaron Levie 认为，AI token cost optimization 不能脱离对实际工作的深度理解。真正有价值的中间层需要理解企业 workflow、context 与 business process，并通过 use case eval、领域理解、调优 UX 和 FDE 支持 adoption，从而让企业以更优架构获得更高 ROI。",
+          "urls": [
+            "https://x.com/levie/status/2070937863806751154"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "建议企业用 deepsec 等 harness 检查潜在漏洞",
+          "summary": "Guillermo Rauch 提到 Mythos / Sol 的 cybersecurity 能力既可用于进攻也可用于防御；如果对手获得同等 offensive capability，会对不了解自身 latent vulnerabilities 的美国公司构成严重威胁。他建议现阶段运行 deepsec 或类似 harness，并配合可用 frontier models 做检查。",
+          "urls": [
+            "https://x.com/rauchg/status/2071047674187714830"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "用 Hermes、API 与 MCP 自动生成个人健康周报",
+          "summary": "Peter Yang 分享了一个每周六自动发送的 health check email：Hermes 从 Withings API、Fitbit、Google Health，以及他 vibe coded 的 MCP server 和移动 fitness app 拉取数据，汇总 top takeaways 和 stats，帮助追踪健康目标。他也指向了自己的 Hermes tutorial。",
+          "urls": [
+            "https://x.com/petergyang/status/2070906940352520477"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "非工程师也能用 AI 做出多个 side projects",
+          "summary": "Zara Zhang 表示自己不是 engineer，这些都是出于兴趣构建的 side projects；她喜欢把技术与用户问题连接起来，用产品解决自己的 pain points，再讲述产品故事。她还提到过去一年从几乎不会用 GitHub，到获得 10k GitHub followers。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2071116793234813272",
+            "https://x.com/zarazhangrui/status/2070982170219593904",
+            "https://x.com/zarazhangrui/status/2070982013822333007"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Training Data",
+          "role": "Podcast",
+          "headline": "Engram 谈 memory 与 continual learning：让模型把团队 context 学进权重",
+          "summary": "本期采访 Engram 的 Dan Biderman 和 Jessy Lin，讨论 memory 与 continual learning。Engram 的核心观点是，模型瓶颈不只是 raw intelligence，而是理解新的、持续变化的 context；相比只把记忆放进 context window 或外部数据库，他们希望用 adapter fine tuning、LoRA、supervised fine tuning、RL、on-policy distillation 等方法，把团队 workspace 中重要的 context 持续训练进模型权重。访谈还提到，与 Notion、Microsoft、Harvey 等 workspace 场景合作时，目标是训练 per team models，让模型像在公司工作多年的人一样理解项目、流程、优先级和工具设置，并可能带来显著 token inference consumption 降低。",
+          "urls": [
+            "https://www.youtube.com/watch?v=aiR7F4jqjXY"
+          ]
+        }
+      ]
+    }
+  ]
+}
