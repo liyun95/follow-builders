@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年6月29日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年6月29日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的高信号集中在 AI 团队形态、coding agent 的产品运营，以及底层 GPU compute 供给。Claude Code 团队的角色拆分值得 builder 参考；Codex 用量重置事件提醒我们，AI 产品的 usage 体验本身就是核心产品面。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>Claude Code 团队视角：未来产品团队可能由五类角色组成</h3>
+    <p>Boris Cherny 观察到，engineering、product、design、DS 等边界正在融合。他把 Claude Code 团队中的新型角色概括为 Prototyper、Builder、Sweeper、Grower、Maintainer，并认为团队在不同 PMF 阶段需要不同组合。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2071379474277613732" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>OpenAI 为 Codex 用户硬重置 usage limits，并继续排查异常消耗</h3>
+    <p>Thibault Sottiaux 表示 Codex 团队周日在 warroom 排查日志，确认是否存在导致部分用户 usage drains 增加的问题。调查期间，团队已对所有人的 Codex usage limits 做 hard reset；若用户此前刚用过 reset 且未耗尽，也会在调查结束后获得更多 manual resets。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2071357473659707441" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2071381664853319742" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/thsottiaux/status/2071383430634344902" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Anthropic PM 如何用 agents 更贴近产品</h3>
+    <p>Peter Yang 摘录了 Claude Managed Agents 产品负责人 Jess 的观点：PM 获得 codebase 访问权是巨大 unlock，可以直接跟踪 PR、理解部署状态，不必频繁询问工程师，从而更深入地理解和互动自己的产品。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2071292628302434361" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Coding agents 可能改变 legacy codebase 的迁移与维护成本</h3>
+    <p>Thariq 提出一个值得关注的问题：coding agents 是否正在改变工程团队处理或迁移 legacy codebase 的经济账。他将其与 Riot 相关讨论联系起来，并征求内部人士确认。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2071419473433854221" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>给 builder 的职业建议：用个人网站展示你 ship 过什么</h3>
+    <p>Guillermo Rauch 认为，相比 LinkedIn，builder 更需要一个自己网站上的页面，清楚描述并链接到自己实际 shipped 的项目。这是面向 AI builder 时代更直接的作品集信号。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2071284129275285580" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2071287181650653372" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Aaron Levie：AI gatekeeping 可能削弱自身战略优势</h3>
+    <p>Aaron Levie 认为，未来会出现面向 cyber security 的高水平开放模型，先进模型开放可得可能难以避免。如果监管假设竞争者无法追上，可能会错误地通过 gatekeeping 让自己处于不对称劣势；更好的路径是持续站在 frontier 并推动 AI 架构演进。</p>
+    <div class="links"><a href="https://x.com/levie/status/2071253118252356001" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>Zara Zhang：做产品一小时，花两小时解释、演示和教学</h3>
+    <p>Zara Zhang 强调，builder 不应只埋头构建，还要投入更多时间解释、演示、销售和教学产品。她认为与真实世界接触后的反馈，会反过来帮助产品 refinement。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2071319754128978030" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2071335200802648420" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @aidotengineer / Latent Space</div>
+    <h3>AI Engineer 活动现场：单日注册 1000 人，并继续扩展 Design Engineers track</h3>
+    <p>Swyx 分享活动注册进展，称当天已注册 1000 人。他还提到自己并非 design engineer，因此 Design Engineers track 更难策划，并感谢 Geoff 过去两年帮助 AI UX meetups、如今担任 AIE 相关 track 开场嘉宾。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2071480924810969331" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/swyx/status/2071478390172049555" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">The MAD Podcast with Matt Turck · Podcast</div>
+    <h3>The GPU Myth: State of AI Compute 2026 | Stephen Balaban</h3>
+    <p>Lambda cofounder and CTO Stephen Balaban 讨论 AI compute 的物理层：GPU compute 并非 commodity，而是横跨土地、供电、数据中心建设、HPC 设计、虚拟化和 cloud software 的垂直整合业务。他认为行业总体仍在 underbuilding，scaling laws 继续扩大 LLM 应用范围，compute 效率提升反而可能带来更多 token 处理需求。当前瓶颈主要是 land powered shell，即已获许可、具备电力承诺并可承载数据中心 MEP 设备的土地与建筑资源。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=0NttU4CbyVs" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>12</strong><span>builders</span></div><div class="stat"><strong>23</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
