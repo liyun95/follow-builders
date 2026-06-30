@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年6月30日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年6月30日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的重点集中在 AI coding agent 的权限、后台任务与 token 消耗治理，以及模型进入企业云平台后的工程化落地。另一个主线是 open weights 与基础设施：从 Google Cloud、Vercel 到 Intel，builder 们都在讨论算力、部署与供应链如何重塑产品边界。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>Claude Code 下版默认让 subagents 后台运行</h3>
+    <p>Boris Cherny 预告，下一版 Claude Code 中 subagents 将默认在后台运行，用户可以在 subagents 工作时继续与 Claude 对话；如果希望 agent 前台运行，也可以直接告诉 Claude。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2071647677591466098" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 修复后台 token 消耗与用量展示问题</h3>
+    <p>Thibault Sottiaux 说明 Codex 将重置 usage limits，并额外发放一次 24 小时内可用的 reset。OpenAI 排查发现 auto-review 更主动、subagent 工作增加、后台 suggestions 重复或失败后重试过多等问题叠加，已回滚与修复，以降低不必要的后台 token 消耗。用量展示也修正为仅成功请求计入 turn graphs，auto-review 单独分类。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2071740419030053227" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 推出更细粒度的 permission profiles</h3>
+    <p>面向高级 Codex 用户，OpenAI 用可复用、可继承的 permission profiles 替代粗粒度 sandbox modes。新机制可绑定 OS-enforced 文件读写与 deny 规则，包括 **/*.env，并支持按 domain 的网络与 Unix sockets 权限，以及 fail-closed admin allowlists，以便按任务实现 least privilege。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2071636285807059315" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · Anthropic</div>
+    <h3>Claude in Microsoft Foundry 已在 Azure 上 GA</h3>
+    <p>Claude 宣布 Claude in Microsoft Foundry 现已 generally available，并托管在 Azure。Azure 客户可使用 Claude Opus 4.8 和 Claude Haiku 4.5，支持 Azure authentication、billing 与 commitment retirement。推理运行在由 Anthropic 运营的 Azure infrastructure 上，当前支持 prompt caching 和 extended thinking。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2071653958905467027" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/claudeai/status/2071653962013446586" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel 预告 20x larger functions</h3>
+    <p>Guillermo Rauch 转发并强调 Vercel 的 functions 将扩大到 20x，并表示“可以把任何东西部署到 Vercel”，更多细节将在次日公布。对 AI app 与 agent backend 来说，更大的 serverless function 容量可能影响部署形态。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2071716510389662153" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2071718135799927224" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>开源 Chrome extension 把 read later 自动排进日历</h3>
+    <p>Zara Zhang 展示了一个 Chrome extension：当用户保存 5 篇文章时，它会自动在 Google Calendar 上创建 30 分钟 reading block，并附上链接，帮助用户真正安排阅读时间。项目无账号、无服务器，所有内容本地运行，并已开源。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2071766827345285411" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2071766865245012255" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Prev: Product Leader at Google - Gemini, Veo, Nano Banana</div>
+    <h3>open-weight models 可能强化 Google Cloud 的基础设施位置</h3>
+    <p>Madhu Guru 认为，GLM 等强 open-weight models 的兴起反而可能强化 Google 的位置：更多企业会尝试 fine tuning open-weight models，而价值会流向 infra。企业需要可托管、可靠、安全并有支持的 managed platform 来运行和微调 open models，Google Cloud 在这方面具备优势。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2071637885154148785" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>open weights 与 frontier closed stack 的 token 归属之争</h3>
+    <p>Aaron Levie 将 AI 监管与商业格局的核心问题概括为：如果 closed stack 始终大幅领先 frontier，垂直整合与 access gatekeeping 可行；但如果 open weights 能长期接近 frontier，大多数 token 可能流向替代 stack，包括模型与底层硬件，并由其他方控制和变现。</p>
+    <div class="links"><a href="https://x.com/levie/status/2071775583072375214" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @aidotengineer / Latent Space</div>
+    <h3>AI Engineer Expo workshop 现场需求强劲</h3>
+    <p>Swyx 分享 AI Engineer Expo workshop day 的现场情况：即便是周一早上 9 点的非 lab workshops，且隔壁有 OpenAI workshop，Snyk、Atlassian、Neo4j、Arize AI、Akamai、Together AI 等房间仍同时吸引大量参与者。他评论 builder 对相关内容“很饥渴”。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2071613383380770823" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/swyx/status/2071634789669777716" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>AI 时代继续强调电力与 datacenters</h3>
+    <p>Garry Tan 简短转发并强调“Build power and datacenters”。在当前 AI 基础设施讨论中，电力与数据中心建设仍是创业和产业扩张的关键瓶颈之一。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2071600933210100074" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>工程写作流程：先做、再讲、再反复重写</h3>
+    <p>Thariq 分享当前写作流程：先做工程工作，与多人讨论，再用 Claude brainstorm 和 research，写成文章，做一两次 talk 后重写，再继续改 intro，最后发布。这个过程体现了 AI 辅助写作与工程实践、口头表达之间的循环。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2071787401475960892" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">No Priors · Podcast</div>
+    <h3>Intel CEO Lip-Bu Tan 谈重塑半导体供应链</h3>
+    <p>No Priors 采访 Intel CEO Lip-Bu Tan，讨论他为何接下“save Intel”的任务、如何改变文化与决策速度、让工程直接向他汇报、强化 balance sheet、简化产品线并倾听客户。他还谈到美国政府成为重要股东、Jensen Huang 投资支持、agentic AI 推高 CPU 需求，以及 foundry 业务中 yield、defect density、cycle time、IP 与客户信任的重要性。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=asCgCv2XB4s" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>15</strong><span>builders</span></div><div class="stat"><strong>32</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
