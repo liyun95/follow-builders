@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月1日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月1日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的主线集中在 Claude Sonnet 5、Fable 回归与模型发布安全流程。builder 侧既有产品更新，也有对 agentic work、成本口径和硬件推理效率的讨论。值得关注的是，企业 AI benchmark 与发布治理正在同时走向更细颗粒度。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Claude · Anthropic / Claude</div>
+    <h3>Claude Sonnet 5 上线并成为 Free 与 Pro 默认模型</h3>
+    <p>Claude 宣布 Sonnet 5 已在所有 Claude apps 和 Claude Platform 上线，成为 Free 和 Pro 默认模型，并面向 Max、Team、Enterprise 用户开放。官方称其在 reasoning、tool use、coding 和 knowledge work 上较 Sonnet 4.6 有显著提升，性能接近 Opus 4.8，价格更低，且早期合作伙伴反馈其更擅长完成复杂 agentic tasks。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2072017457057853480" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/claudeai/status/2072017455833100494" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/claudeai/status/2072017452335087996" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>Claude Desktop for Linux 发布</h3>
+    <p>Boris Cherny 转发确认 Claude Desktop on Linux 已上线，并给出下载链接。这补齐了 Claude 桌面端在 Linux 开发者群体中的可用性，对日常 coding、agent workflow 和本地开发环境集成更友好。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2072000214634742243" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Claude Code 更新分类器：误伤任务会回退到 Opus</h3>
+    <p>Thariq 解释了更新后的 safeguards/classifiers：和原始分类器类似，少量常规 coding 与 debugging 请求可能会被标记，并回退到 Opus。他补充称团队会继续改进这些 safeguards，以更好区分真实滥用和合法请求、降低 false positives。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2072185565076988326" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/trq212/status/2072185566695977161" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @box</div>
+    <h3>Box 用企业文档 benchmark 测试 Claude Sonnet 5</h3>
+    <p>Aaron Levie 表示，Box 在 Box AI Complex Work Eval 上测试 Anthropic Claude Sonnet 5，发现其在复杂多步骤企业文档工作上保持 frontier-class 质量，并在 Energy、Retail、Professional Services 等领域相对 Sonnet 4.6 提升。他举例称 Sonnet 5 能处理融资尽调、overhaul cost analysis 和 SKU revenue analysis 等任务，并将进入 Box AI Studio 供客户构建 custom agents。</p>
+    <div class="links"><a href="https://x.com/levie/status/2072046374045249671" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @box</div>
+    <h3>模型发布安全流程开始形成行业框架</h3>
+    <p>围绕 Fable 及后续 frontier model 发布，Aaron Levie 认为行业正在形成对高能力 coding、cyber 等模型的发布治理先例。他引用 Anthropic 关于 shared industry framework 与更深政府协作的表述，并提醒风险评估中仍有大量主观判断；理想状态是流程足够高效，不拖慢增量模型更新。</p>
+    <div class="links"><a href="https://x.com/levie/status/2072172275017879829" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @box</div>
+    <h3>AI 采用率更高的公司未必减少招聘</h3>
+    <p>Aaron Levie 引用 Ramp 与 Box 调研讨论 AI adoption 与 headcount 的关系。Box 对 1,600+ 中大型公司调查显示，58% 预计未来三年 headcount 上升，而最成熟 AI adopter 中该比例升至 79%。他认为关键不是 AI 一定带来增长，而是“采用 AI 越多、招聘越少”的担忧并未得到验证。</p>
+    <div class="links"><a href="https://x.com/levie/status/2071992799109824562" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · CEO @vercel</div>
+    <h3>Vercel Services 支持一个项目内并置多类服务</h3>
+    <p>Guillermo Rauch 介绍 Vercel Services：开发者现在可以在一个 Vercel project 中并置 Python backend API、ExpressJS server 和 React SPA。能力包括用 vc dev 本地运行、统一 deploy 和 rollback、共同 observe/monitor/debug，以及 internal networking。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2071966055308607765" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · CEO @vercel</div>
+    <h3>Vercel 与 Shopify 推进 agentic web</h3>
+    <p>Guillermo Rauch 表示很高兴与 Tobi 和 Shopify 团队合作，并称将推动 agentic web 向前发展。该动态信号显示 Vercel 正把 agentic 体验与 web 平台能力更紧密结合。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2072044844965400589" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · CEO @replit</div>
+    <h3>Etched 被视为面向现代 inference 的专用系统</h3>
+    <p>Amjad Masad 转发讨论 Etched，称今天 AI 运行昂贵的部分原因是多数 workload 仍跑在 LLM 之前设计的通用硬件上；Etched 是从底层面向现代 inference 设计的系统。这呼应了 AI 成本优化从软件栈走向 hardware-software co-design 的趋势。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2071992110132117740" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · OpenClaw + OpenAI</div>
+    <h3>不要只看 price per token，要看 cost per task</h3>
+    <p>Peter Steinberger 强调“Price per token != cost per task”。对 builder 来说，模型选择不能只比较 token 单价，还要看完成任务所需轮次、tool use、成功率、延迟和返工成本。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2072144627474579925" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Prev: Product Leader at Google - Gemini, Veo, Nano Banana</div>
+    <h3>AI-native PM 需要恢复“magical thinking”</h3>
+    <p>Madhu Guru 认为传统 PM 适应 AI-native building 的最大挑战，是长期受 frameworks、agile 和 metrics 影响而形成 constraint-first、incremental thinking。他建议从“如果我们拥有 100 年后的技术，会创造什么体验”倒推产品，因为这种未来技术已经部分到来。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2071970221477470694" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aditya Agarwal · General Partner @SouthPkCommons</div>
+    <h3>美国创新正在使用中国开源模型这一现实值得关注</h3>
+    <p>Aditya Agarwal 指出，一个很奇特的现状是：驱动美国创新的模型中，有不少是 Chinese open source models。这反映了开源 LLM 生态在全球 AI builder 工具链中的影响力。</p>
+    <div class="links"><a href="https://x.com/adityaag/status/2071983952894837062" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>Gbrain 更适合大规模 markdown 个人或公司知识库</h3>
+    <p>Garry Tan 表示，Gbrain 在个人 brain 或 company brain 达到 10,000+ markdown files 时最有用。这给 RAG/knowledge base builder 一个实用信号：规模、结构化文本和长期积累会影响个人知识 agent 的价值。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2071910876496757145" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Fable 回归引发 builder 关注使用额度与项目修复</h3>
+    <p>Peter Yang 连续讨论 Fable，表示准备在午夜等待 Fable 来修复自己的项目，并追问周使用量达到 50% 后 Fable 是否不再可用。该讨论反映开发者对高能力 coding model 回归、额度策略和可用性的敏感度。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2072111311396438410" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/petergyang/status/2072165346476511583" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nan Yu · Head of product @linear</div>
+    <h3>围绕 distillation 定义的边界争议</h3>
+    <p>Nan Yu 评论“distillation”的定义，认为如果按某种逻辑，Cursor 早期训练数据也可被称为从 Claude distilled。这指向 AI 产品训练数据、模型输出使用与行业边界定义的持续争议。</p>
+    <div class="links"><a href="https://x.com/thenanyu/status/2071973229070033322" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">Training Data · Podcast</div>
+    <h3>Dylan Patel 谈 AI 真正的 100x 来自 hardware-software co-design</h3>
+    <p>Training Data 采访 SemiAnalysis 的 Dylan Patel。节目从 SemiAnalysis 的成长、半导体研究、供应链和经济分析谈起，延伸到 AI 基础设施为什么需要 hardware-software co-design。Dylan 回顾自己从硬件论坛、GPU 与手机架构观察、量化经历到创办 SemiAnalysis 的路径，也展现了工程视角与成本视角在 AI infra 判断中的碰撞。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=f6D_aiy8qyU" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>17</strong><span>builders</span></div><div class="stat"><strong>38</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>

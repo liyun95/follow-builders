@@ -1,0 +1,173 @@
+{
+  "date": "2026-07-01",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线集中在 Claude Sonnet 5、Fable 回归与模型发布安全流程。builder 侧既有产品更新，也有对 agentic work、成本口径和硬件推理效率的讨论。值得关注的是，企业 AI benchmark 与发布治理正在同时走向更细颗粒度。",
+  "stats": {
+    "xBuilders": 17,
+    "totalTweets": 38,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Claude",
+          "role": "Anthropic / Claude",
+          "headline": "Claude Sonnet 5 上线并成为 Free 与 Pro 默认模型",
+          "summary": "Claude 宣布 Sonnet 5 已在所有 Claude apps 和 Claude Platform 上线，成为 Free 和 Pro 默认模型，并面向 Max、Team、Enterprise 用户开放。官方称其在 reasoning、tool use、coding 和 knowledge work 上较 Sonnet 4.6 有显著提升，性能接近 Opus 4.8，价格更低，且早期合作伙伴反馈其更擅长完成复杂 agentic tasks。",
+          "urls": [
+            "https://x.com/claudeai/status/2072017457057853480",
+            "https://x.com/claudeai/status/2072017455833100494",
+            "https://x.com/claudeai/status/2072017452335087996"
+          ]
+        },
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Desktop for Linux 发布",
+          "summary": "Boris Cherny 转发确认 Claude Desktop on Linux 已上线，并给出下载链接。这补齐了 Claude 桌面端在 Linux 开发者群体中的可用性，对日常 coding、agent workflow 和本地开发环境集成更友好。",
+          "urls": [
+            "https://x.com/bcherny/status/2072000214634742243"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 更新分类器：误伤任务会回退到 Opus",
+          "summary": "Thariq 解释了更新后的 safeguards/classifiers：和原始分类器类似，少量常规 coding 与 debugging 请求可能会被标记，并回退到 Opus。他补充称团队会继续改进这些 safeguards，以更好区分真实滥用和合法请求、降低 false positives。",
+          "urls": [
+            "https://x.com/trq212/status/2072185565076988326",
+            "https://x.com/trq212/status/2072185566695977161"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "Box 用企业文档 benchmark 测试 Claude Sonnet 5",
+          "summary": "Aaron Levie 表示，Box 在 Box AI Complex Work Eval 上测试 Anthropic Claude Sonnet 5，发现其在复杂多步骤企业文档工作上保持 frontier-class 质量，并在 Energy、Retail、Professional Services 等领域相对 Sonnet 4.6 提升。他举例称 Sonnet 5 能处理融资尽调、overhaul cost analysis 和 SKU revenue analysis 等任务，并将进入 Box AI Studio 供客户构建 custom agents。",
+          "urls": [
+            "https://x.com/levie/status/2072046374045249671"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "模型发布安全流程开始形成行业框架",
+          "summary": "围绕 Fable 及后续 frontier model 发布，Aaron Levie 认为行业正在形成对高能力 coding、cyber 等模型的发布治理先例。他引用 Anthropic 关于 shared industry framework 与更深政府协作的表述，并提醒风险评估中仍有大量主观判断；理想状态是流程足够高效，不拖慢增量模型更新。",
+          "urls": [
+            "https://x.com/levie/status/2072172275017879829"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "AI 采用率更高的公司未必减少招聘",
+          "summary": "Aaron Levie 引用 Ramp 与 Box 调研讨论 AI adoption 与 headcount 的关系。Box 对 1,600+ 中大型公司调查显示，58% 预计未来三年 headcount 上升，而最成熟 AI adopter 中该比例升至 79%。他认为关键不是 AI 一定带来增长，而是“采用 AI 越多、招聘越少”的担忧并未得到验证。",
+          "urls": [
+            "https://x.com/levie/status/2071992799109824562"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @vercel",
+          "headline": "Vercel Services 支持一个项目内并置多类服务",
+          "summary": "Guillermo Rauch 介绍 Vercel Services：开发者现在可以在一个 Vercel project 中并置 Python backend API、ExpressJS server 和 React SPA。能力包括用 vc dev 本地运行、统一 deploy 和 rollback、共同 observe/monitor/debug，以及 internal networking。",
+          "urls": [
+            "https://x.com/rauchg/status/2071966055308607765"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @vercel",
+          "headline": "Vercel 与 Shopify 推进 agentic web",
+          "summary": "Guillermo Rauch 表示很高兴与 Tobi 和 Shopify 团队合作，并称将推动 agentic web 向前发展。该动态信号显示 Vercel 正把 agentic 体验与 web 平台能力更紧密结合。",
+          "urls": [
+            "https://x.com/rauchg/status/2072044844965400589"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Etched 被视为面向现代 inference 的专用系统",
+          "summary": "Amjad Masad 转发讨论 Etched，称今天 AI 运行昂贵的部分原因是多数 workload 仍跑在 LLM 之前设计的通用硬件上；Etched 是从底层面向现代 inference 设计的系统。这呼应了 AI 成本优化从软件栈走向 hardware-software co-design 的趋势。",
+          "urls": [
+            "https://x.com/amasad/status/2071992110132117740"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "OpenClaw + OpenAI",
+          "headline": "不要只看 price per token，要看 cost per task",
+          "summary": "Peter Steinberger 强调“Price per token != cost per task”。对 builder 来说，模型选择不能只比较 token 单价，还要看完成任务所需轮次、tool use、成功率、延迟和返工成本。",
+          "urls": [
+            "https://x.com/steipete/status/2072144627474579925"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Prev: Product Leader at Google - Gemini, Veo, Nano Banana",
+          "headline": "AI-native PM 需要恢复“magical thinking”",
+          "summary": "Madhu Guru 认为传统 PM 适应 AI-native building 的最大挑战，是长期受 frameworks、agile 和 metrics 影响而形成 constraint-first、incremental thinking。他建议从“如果我们拥有 100 年后的技术，会创造什么体验”倒推产品，因为这种未来技术已经部分到来。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2071970221477470694"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SouthPkCommons",
+          "headline": "美国创新正在使用中国开源模型这一现实值得关注",
+          "summary": "Aditya Agarwal 指出，一个很奇特的现状是：驱动美国创新的模型中，有不少是 Chinese open source models。这反映了开源 LLM 生态在全球 AI builder 工具链中的影响力。",
+          "urls": [
+            "https://x.com/adityaag/status/2071983952894837062"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Gbrain 更适合大规模 markdown 个人或公司知识库",
+          "summary": "Garry Tan 表示，Gbrain 在个人 brain 或 company brain 达到 10,000+ markdown files 时最有用。这给 RAG/knowledge base builder 一个实用信号：规模、结构化文本和长期积累会影响个人知识 agent 的价值。",
+          "urls": [
+            "https://x.com/garrytan/status/2071910876496757145"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Fable 回归引发 builder 关注使用额度与项目修复",
+          "summary": "Peter Yang 连续讨论 Fable，表示准备在午夜等待 Fable 来修复自己的项目，并追问周使用量达到 50% 后 Fable 是否不再可用。该讨论反映开发者对高能力 coding model 回归、额度策略和可用性的敏感度。",
+          "urls": [
+            "https://x.com/petergyang/status/2072111311396438410",
+            "https://x.com/petergyang/status/2072165346476511583"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "Head of product @linear",
+          "headline": "围绕 distillation 定义的边界争议",
+          "summary": "Nan Yu 评论“distillation”的定义，认为如果按某种逻辑，Cursor 早期训练数据也可被称为从 Claude distilled。这指向 AI 产品训练数据、模型输出使用与行业边界定义的持续争议。",
+          "urls": [
+            "https://x.com/thenanyu/status/2071973229070033322"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Training Data",
+          "role": "Podcast",
+          "headline": "Dylan Patel 谈 AI 真正的 100x 来自 hardware-software co-design",
+          "summary": "Training Data 采访 SemiAnalysis 的 Dylan Patel。节目从 SemiAnalysis 的成长、半导体研究、供应链和经济分析谈起，延伸到 AI 基础设施为什么需要 hardware-software co-design。Dylan 回顾自己从硬件论坛、GPU 与手机架构观察、量化经历到创办 SemiAnalysis 的路径，也展现了工程视角与成本视角在 AI infra 判断中的碰撞。",
+          "urls": [
+            "https://www.youtube.com/watch?v=f6D_aiy8qyU"
+          ]
+        }
+      ]
+    }
+  ]
+}
