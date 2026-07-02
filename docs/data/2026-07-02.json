@@ -1,0 +1,111 @@
+{
+  "date": "2026-07-02",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在两条线：一是 Fable 5 限时回归带来的模型体验讨论，二是 agent 进入真实工作流后，开始与现有 SaaS、部署、CRM、沙盒验证等工程系统深度结合。对 builder 来说，重点不只是能不能生成，而是如何降低维护、成本和风险。",
+  "stats": {
+    "xBuilders": 17,
+    "totalTweets": 35,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Claude",
+          "role": "Anthropic AI assistant",
+          "headline": "Claude Fable 5 限时回归至 7 月 7 日",
+          "summary": "Claude 宣布 Fable 5 对包含用量的所有付费计划开放至 7 月 7 日。用户最多可将每周用量上限的 50% 用于 Fable 5，之后可切换到其他模型；也可继续通过 usage credits 使用 Fable。Claude 还提示，如果 Claude Code 请求被误判，可用 /feedback 反馈。",
+          "urls": [
+            "https://x.com/claudeai/status/2072402639644766602",
+            "https://x.com/claudeai/status/2072402640907162072",
+            "https://x.com/claudeai/status/2072402642836615273"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 发布 Fable 5 使用教程",
+          "summary": "Peter Yang 表示 Fable 5 仍然非常强，并发布了一个新教程，演示 5 个值得尝试的用例：寻找适合 Fable 的工作、获得生活与商业建议、让项目达到可发布状态、规划下一件大事，以及重构项目或代码库。",
+          "urls": [
+            "https://x.com/petergyang/status/2072458983886205333",
+            "https://x.com/petergyang/status/2072470191511113732"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "Vercel CEO",
+          "headline": "Vercel 推出 agentic deployments 的 dry-run 步骤",
+          "summary": "Guillermo Rauch 提到，agent 在 push 前经常会运行 node --check、tsc --noEmit、next build 等检查。Vercel 正在发布用于 agentic deployments 的 dry-run step，以降低部署成本和风险。他还展示了从单个 Dockerfile.vercel 部署 WordPress 到 Vercel Fluid、MySQL 使用 PlanetScale 的流程。",
+          "urls": [
+            "https://x.com/rauchg/status/2072398926175404250",
+            "https://x.com/rauchg/status/2072463293654942090"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "Replit CEO",
+          "headline": "Replit app 可在 Whop 上销售",
+          "summary": "Amjad Masad 表示，随着构建变得更容易，Replit 越来越关注帮助创业者走向市场、获得第一个客户和第一笔收入。现在用户可以在 Whop 上销售自己的 Replit apps。",
+          "urls": [
+            "https://x.com/amasad/status/2072385092824260748"
+          ]
+        },
+        {
+          "source": "Google Labs",
+          "role": "Google AI tools and experiments",
+          "headline": "Google Labs 将于 7 月 31 日告别 MusicFX 和 MusicFX DJ",
+          "summary": "Google Labs 宣布，为了专注于 Google Flow Music，将在 2026 年 7 月 31 日关闭 MusicFX 和 MusicFX DJ。这些早期实验推动了实时 AI 音乐创作边界，相关经验将用于为音乐项目提供长期承载。",
+          "urls": [
+            "https://x.com/GoogleLabs/status/2072417166952136789"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "Box CEO",
+          "headline": "Aaron Levie：agentic mapreduce 将推动 AI inference 需求增长",
+          "summary": "Aaron Levie 认为 Devin 展示的 agentic mapreduce 是未来需要 100 倍 AI inference 的例子：多个 agent 可在代码仓库中 map 相关信号、对分片任务并行处理、汇总发现，并在隔离沙盒中验证漏洞。他认为类似模式也会出现在文档、风险、洞察、关系分析等企业知识工作中。",
+          "urls": [
+            "https://x.com/levie/status/2072519377371459836"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Zara Zhang：构建 skill 应该是工作流最后一步",
+          "summary": "Zara Zhang 分享了关于构建 skill 的观点：不要从 skill 开始，而应在形成完整工作流之后，把 skill 作为最后产物。她还提醒用户可以将 Codex 的 model 改为 GLM。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2072381929366987087",
+            "https://x.com/zarazhangrui/status/2072391971721884073"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "Latent Space / AI Engineer",
+          "headline": "AI Engineer 现场深入讨论 sandboxing 与 world models",
+          "summary": "Swyx 表示，在 AI Engineer 活动中，他只会在非常确信演讲者和内容都值得时安排双倍时长 keynote。当天 chrmanning 和 abshkbh 进行了关于 sandboxing 与 world models 的深入分享，现场反响很好，线上观众规模预计会更大。",
+          "urls": [
+            "https://x.com/swyx/status/2072562702703046855"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "Every 咨询团队的 AI workflows：agent、CRM 与“该不该自建”",
+          "summary": "本期讨论 Every 咨询团队如何使用内部 AI agent Claudie。Claudie 已能处理销售提案、CRM、dashboard 等运营任务，但仍需要持续监督、管理和判断。节目也强调，AI 很适合按 SOP 执行，但真实软件包含大量细小业务规则；因此团队从自建 Google Sheets/agent CRM 转向 Atio，并用 Asana 管理项目，以减少维护负担。",
+          "urls": [
+            "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+          ]
+        }
+      ]
+    }
+  ]
+}
