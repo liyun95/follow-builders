@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月3日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月3日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 Claude 生态、生产级 AI 基础设施和 enterprise agent 落地。Claude Tag、Fable 可用性与 Vercel AI Gateway Rules 都指向同一件事：builder 正在把模型能力转化为可运营、可迁移、可治理的工作流。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>Claude Code 的 Artifacts 扩展到 Pro 和 Max</h3>
+    <p>Boris Cherny 表示，Claude Code 中的 Artifacts 对其工作流带来显著改变，并对其扩展到 Pro 和 Max 感到期待。对 builder 来说，这意味着 Claude Code 的交互式产物能力可能进入更广泛的日常开发场景。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2072777472970563995" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · @anthropicai product account</div>
+    <h3>Claude Tag 引入 Claude Fable 5，并分享从 Claude Code 到 Claude Tag 的路径</h3>
+    <p>Claude 发布 Boris Cherny 与 Cat Wu 的对话，介绍 Claude Code 如何演进到 Claude Tag，以及它如何从工程团队扩散到 Anthropic 其他团队。同时，Claude Fable 5 已在 Claude Tag 中可用。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2072725610061803522" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Cat Wu · claude code + cowork @anthropicai</div>
+    <h3>Claude Tag 面向企业和团队提供使用 credits</h3>
+    <p>Cat Wu 表示，Claude Enterprise 组织可获得 25k credits，Claude Team 组织可获得 2.5k credits，用于在 9 月 1 日前使用 Claude Tag。她还称 Anthropic 内部版本可落地 65% 的 product PR，并覆盖工程、产品、数据、销售和营销等团队。</p>
+    <div class="links"><a href="https://x.com/_catwu/status/2072743070316257662" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/_catwu/status/2072731500928508331" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Fable 将暂时退出订阅，但目标是恢复为标准订阅能力</h3>
+    <p>Thariq 回应 Fable 在订阅计划中的可用性问题：Fable 会在 7 月 7 日后从订阅中移除，但团队目标是在容量允许时尽快将 Fable 恢复为订阅的标准组成部分。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2072814903170408784" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/trq212/status/2072814904210509905" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel 推出 AI Gateway Rules，应对模型退役与流量迁移</h3>
+    <p>Guillermo Rauch 将 AI Gateway 类比为 AI models 的 Token Delivery Network。新发布的 AI Gateway Rules 支持动态 rewrite model routes，例如在 Fable 退役时将流量改写到其他模型，帮助生产工作负载减少因模型变化导致的 token 丢失和业务中断。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2072741369848746315" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel 强调服务间 private connectivity 对 backend 的重要性</h3>
+    <p>Guillermo Rauch 介绍 Vercel 中服务绑定的用法：在 vercel.json 注册 bindings，然后通过环境变量读取内部 URL。该模式适用于 Node、Python、Dockerfile 等 backend 场景。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2072715658157027375" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>enterprise agent 落地需要流程、数据、evals 与变更管理</h3>
+    <p>Aaron Levie 认为，enterprise 中 AI 的部署不会只是把 agent 放进现有 workflow。企业需要清理数据、现代化 IT 系统、设计 evals、推进 change management，并明确 human-in-the-loop 的新交互方式。这也是 applied AI 公司加强 FDE 和 deployco 的原因。</p>
+    <div class="links"><a href="https://x.com/levie/status/2072875685811716182" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>用更便宜模型准备 context，再让 Fable 负责规划</h3>
+    <p>Peter Yang 分享自己在 7 月 7 日前最大化使用 Fable 的方法：先用更便宜的模型准备 context，让 Fable 做规划、其他模型执行，并用较低 effort 设置配合人工观察。他还发布了包含 5 个 Fable-worthy use cases 的教程。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2072842766053499353" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Dan Shipper · ceo @every</div>
+    <h3>长时间运行的 AI 需要更好的“讲述过程”能力</h3>
+    <p>Dan Shipper 提到，使用 Fable 时模型可能运行数小时，最后只返回两段说明。他认为我们需要更好的方式，让 AI 向用户讲清楚它在过程中做了什么。</p>
+    <div class="links"><a href="https://x.com/danshipper/status/2072805884376301737" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>agent 协作更适合群组对话而非 DM</h3>
+    <p>Zara Zhang 认为，对 agent 来说，让对话发生在 groups 而不是 DMs，是提升协作效果的重要做法。这与 multi-agent 协调、共享上下文和可见工作流有关。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2072726336158998760" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · @anthropicai product account</div>
+    <h3>Built with Claude: Life Sciences hackathon 开放申请</h3>
+    <p>Claude 宣布与 GladstoneInst 举办 Built with Claude: Life Sciences 全球虚拟 hackathon。活动时间为 7 月 7 日至 13 日，参与者将使用 Claude Science 和 Claude Code 做研究与构建，奖池为 100k credits，申请截止到周日。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2072681853971001849" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/claudeai/status/2072681856730792282" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Matt Turck · VC at @FirstMarkCap; Host: MAD Podcast</div>
+    <h3>NVIDIA Bryan Catanzaro 详谈 Nemotron、开放模型与 AI lab</h3>
+    <p>Matt Turck 发布与 NVIDIAAI 的 Bryan Catanzaro 的访谈，讨论 NVIDIA 为什么投入数百名研究人员构建并免费发布 AI models、Nemotron family、agent 速度、4-bit 训练 550B model、Hybrid Mamba-Transformer、MoE、1-million-token context window 和 open AI safety 等话题。</p>
+    <div class="links"><a href="https://x.com/mattturck/status/2072723410975629364" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/mattturck/status/2072723415870411232" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">No Priors · Podcast</div>
+    <h3>Valar Atomics 创始人 Isaiah Taylor：核能如何解锁 AI 时代的能源丰裕</h3>
+    <p>本期 No Priors 采访 Valar Atomics 创始人兼 CEO Isaiah Taylor。对话围绕 AI compute 带来的电力需求、美国重启核反应堆建设、从土建工程转向制造式 reactor、SMR、硬件迭代，以及通过 Department of Energy 测试路径获得真实数据展开。Taylor 强调，核能要实现规模化，关键不是只做 modeling and simulation，而是快速构建、测试并迭代硬件。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=5Xvbq_zvOQ4" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>18</strong><span>builders</span></div><div class="stat"><strong>36</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>

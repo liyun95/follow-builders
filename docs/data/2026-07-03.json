@@ -1,0 +1,146 @@
+{
+  "date": "2026-07-03",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 Claude 生态、生产级 AI 基础设施和 enterprise agent 落地。Claude Tag、Fable 可用性与 Vercel AI Gateway Rules 都指向同一件事：builder 正在把模型能力转化为可运营、可迁移、可治理的工作流。",
+  "stats": {
+    "xBuilders": 18,
+    "totalTweets": 36,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 的 Artifacts 扩展到 Pro 和 Max",
+          "summary": "Boris Cherny 表示，Claude Code 中的 Artifacts 对其工作流带来显著改变，并对其扩展到 Pro 和 Max 感到期待。对 builder 来说，这意味着 Claude Code 的交互式产物能力可能进入更广泛的日常开发场景。",
+          "urls": [
+            "https://x.com/bcherny/status/2072777472970563995"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "@anthropicai product account",
+          "headline": "Claude Tag 引入 Claude Fable 5，并分享从 Claude Code 到 Claude Tag 的路径",
+          "summary": "Claude 发布 Boris Cherny 与 Cat Wu 的对话，介绍 Claude Code 如何演进到 Claude Tag，以及它如何从工程团队扩散到 Anthropic 其他团队。同时，Claude Fable 5 已在 Claude Tag 中可用。",
+          "urls": [
+            "https://x.com/claudeai/status/2072725610061803522"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Claude Tag 面向企业和团队提供使用 credits",
+          "summary": "Cat Wu 表示，Claude Enterprise 组织可获得 25k credits，Claude Team 组织可获得 2.5k credits，用于在 9 月 1 日前使用 Claude Tag。她还称 Anthropic 内部版本可落地 65% 的 product PR，并覆盖工程、产品、数据、销售和营销等团队。",
+          "urls": [
+            "https://x.com/_catwu/status/2072743070316257662",
+            "https://x.com/_catwu/status/2072731500928508331"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Fable 将暂时退出订阅，但目标是恢复为标准订阅能力",
+          "summary": "Thariq 回应 Fable 在订阅计划中的可用性问题：Fable 会在 7 月 7 日后从订阅中移除，但团队目标是在容量允许时尽快将 Fable 恢复为订阅的标准组成部分。",
+          "urls": [
+            "https://x.com/trq212/status/2072814903170408784",
+            "https://x.com/trq212/status/2072814904210509905"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 推出 AI Gateway Rules，应对模型退役与流量迁移",
+          "summary": "Guillermo Rauch 将 AI Gateway 类比为 AI models 的 Token Delivery Network。新发布的 AI Gateway Rules 支持动态 rewrite model routes，例如在 Fable 退役时将流量改写到其他模型，帮助生产工作负载减少因模型变化导致的 token 丢失和业务中断。",
+          "urls": [
+            "https://x.com/rauchg/status/2072741369848746315"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 强调服务间 private connectivity 对 backend 的重要性",
+          "summary": "Guillermo Rauch 介绍 Vercel 中服务绑定的用法：在 vercel.json 注册 bindings，然后通过环境变量读取内部 URL。该模式适用于 Node、Python、Dockerfile 等 backend 场景。",
+          "urls": [
+            "https://x.com/rauchg/status/2072715658157027375"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "enterprise agent 落地需要流程、数据、evals 与变更管理",
+          "summary": "Aaron Levie 认为，enterprise 中 AI 的部署不会只是把 agent 放进现有 workflow。企业需要清理数据、现代化 IT 系统、设计 evals、推进 change management，并明确 human-in-the-loop 的新交互方式。这也是 applied AI 公司加强 FDE 和 deployco 的原因。",
+          "urls": [
+            "https://x.com/levie/status/2072875685811716182"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "用更便宜模型准备 context，再让 Fable 负责规划",
+          "summary": "Peter Yang 分享自己在 7 月 7 日前最大化使用 Fable 的方法：先用更便宜的模型准备 context，让 Fable 做规划、其他模型执行，并用较低 effort 设置配合人工观察。他还发布了包含 5 个 Fable-worthy use cases 的教程。",
+          "urls": [
+            "https://x.com/petergyang/status/2072842766053499353"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "长时间运行的 AI 需要更好的“讲述过程”能力",
+          "summary": "Dan Shipper 提到，使用 Fable 时模型可能运行数小时，最后只返回两段说明。他认为我们需要更好的方式，让 AI 向用户讲清楚它在过程中做了什么。",
+          "urls": [
+            "https://x.com/danshipper/status/2072805884376301737"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "agent 协作更适合群组对话而非 DM",
+          "summary": "Zara Zhang 认为，对 agent 来说，让对话发生在 groups 而不是 DMs，是提升协作效果的重要做法。这与 multi-agent 协调、共享上下文和可见工作流有关。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2072726336158998760"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "@anthropicai product account",
+          "headline": "Built with Claude: Life Sciences hackathon 开放申请",
+          "summary": "Claude 宣布与 GladstoneInst 举办 Built with Claude: Life Sciences 全球虚拟 hackathon。活动时间为 7 月 7 日至 13 日，参与者将使用 Claude Science 和 Claude Code 做研究与构建，奖池为 100k credits，申请截止到周日。",
+          "urls": [
+            "https://x.com/claudeai/status/2072681853971001849",
+            "https://x.com/claudeai/status/2072681856730792282"
+          ]
+        },
+        {
+          "source": "Matt Turck",
+          "role": "VC at @FirstMarkCap; Host: MAD Podcast",
+          "headline": "NVIDIA Bryan Catanzaro 详谈 Nemotron、开放模型与 AI lab",
+          "summary": "Matt Turck 发布与 NVIDIAAI 的 Bryan Catanzaro 的访谈，讨论 NVIDIA 为什么投入数百名研究人员构建并免费发布 AI models、Nemotron family、agent 速度、4-bit 训练 550B model、Hybrid Mamba-Transformer、MoE、1-million-token context window 和 open AI safety 等话题。",
+          "urls": [
+            "https://x.com/mattturck/status/2072723410975629364",
+            "https://x.com/mattturck/status/2072723415870411232"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Valar Atomics 创始人 Isaiah Taylor：核能如何解锁 AI 时代的能源丰裕",
+          "summary": "本期 No Priors 采访 Valar Atomics 创始人兼 CEO Isaiah Taylor。对话围绕 AI compute 带来的电力需求、美国重启核反应堆建设、从土建工程转向制造式 reactor、SMR、硬件迭代，以及通过 Department of Energy 测试路径获得真实数据展开。Taylor 强调，核能要实现规模化，关键不是只做 modeling and simulation，而是快速构建、测试并迭代硬件。",
+          "urls": [
+            "https://www.youtube.com/watch?v=5Xvbq_zvOQ4"
+          ]
+        }
+      ]
+    }
+  ]
+}
