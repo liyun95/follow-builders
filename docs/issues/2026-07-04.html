@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月4日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月4日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的 builder 讨论集中在 agent 的上下文、可观测性与自我改进，以及 Fable、Claude Code、Gemini、Replit 等工具的实际用法。一个共同信号是：单纯工具越来越难收费，能把领域知识、数据源和工作流组织起来的 applied AI layer 更有价值。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Swyx · affiliations: @dxtipshq, @cognition, @temporalio, @aidotengineer, @latentspacepod</div>
+    <h3>CLI 击败“tools for thought”画布式 demo</h3>
+    <p>Swyx 观察到一个反差：过去十年“tools for thought”领域做了很多漂亮的 canvas demo，但如今低对比度、设计粗糙的 CLI 因为能替用户完成“commodity thinking”而赢得采用。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2073220591684096087" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Cat Wu · claude code + cowork @anthropicai</div>
+    <h3>用 Claude Code 的 computer use 配置 Claude Tag</h3>
+    <p>Cat Wu 给出一个实用提示：可以把 Claude Tag docs 交给 Claude Code，并配合 computer use，让它帮团队连接 GitHub repo、data warehouse、Google Drive 等数据源。</p>
+    <div class="links"><a href="https://x.com/_catwu/status/2073149354412822738" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>用 HTML artifacts 发现未知，再改进 Fable prompt</h3>
+    <p>Thariq 分享自己使用 Fable 的关键方法：先发现“自己不知道什么”，再据此写出更好的 prompt；他还提供了 HTML artifacts 的例子，用于帮助定位 unknowns。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2073101078145724589" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/trq212/status/2073101079877943683" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Replit 上线视频生成尝试入口</h3>
+    <p>Amjad Masad 推动用户在 Replit 上尝试 video generation，显示 Replit 正把更多生成式能力纳入 builder 工作流。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2073003971287863717" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>agent observability 支撑 agentic self-improvement</h3>
+    <p>Guillermo Rauch 认为 agentic self-improvement 的关键是让 agent 能回看过去运行记录，识别低效、错误和重复 tool calls，并生成新的 prompts 与 skills；他称在 Vercel 部署时已内置 agent observability。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2073132174958841887" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>AI 竞争正在变成上下文之争</h3>
+    <p>Aaron Levie 认为 AI 的核心战场是 context：agent 是否有效，取决于领域知识、正确上下文、工具访问、工作流嵌入和用户审阅机制。能治理并持续改善上下文的 applied AI layer，不只是 LLM wrapper，也可能成为长期护城河。</p>
+    <div class="links"><a href="https://x.com/levie/status/2073138135014502777" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>AI 有望显著改善医疗照护质量</h3>
+    <p>Garry Tan 提到专科等待时间上升，而 AI 即将改变这一切；他预计 AI 可能把 care quality 提升 100x。该观点与医疗场景中 LLM 辅助医生的讨论形成呼应。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2073053799791710301" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nan Yu · head of product @linear</div>
+    <h3>最佳医疗场景：医生投入时间并配备 LLMs</h3>
+    <p>Nan Yu 表示，理想情况不是让 AI 单独替代医生，而是医生能在病例上投入大量时间，并同时配备 LLMs 来增强判断与处理能力。</p>
+    <div class="links"><a href="https://x.com/thenanyu/status/2073066919200956793" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>用户不再愿意为“只是工具”付费</h3>
+    <p>Zara Zhang 观察到，随着 coding agents 普及，用户对购买普通工具的意愿下降，因为他们觉得可以自己构建；他们更愿意为“雇到自己没有的 expertise”的感觉付费。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2073295900395606401" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nikunj Kothari · partner @fpvventures</div>
+    <h3>Gemini 单 API key 覆盖多种 builder 需求</h3>
+    <p>Nikunj Kothari 虽然批评 Gemini 的产品体验，但认为它仍是少数能用一个 API key 完成很多事的地方：Flash 适合快速、低成本、长上下文结构化任务，Nano banana 做图像，Search with grounding，以及 Realtime audio/video 等能力。</p>
+    <div class="links"><a href="https://x.com/nikunj/status/2073151491557478883" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>让 codex 调用 imagegen 改进设计</h3>
+    <p>Peter Steinberger 给出设计类 coding agent 用法：如果觉得 codex 设计能力差，可以尝试让它“use imagegen to re-imagine this design and implement that”，先生成视觉方向再落地实现。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2073277317464682723" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Dan Shipper · ceo @every</div>
+    <h3>Fable 工作流进入高 token 消耗时代</h3>
+    <p>Dan Shipper 用一组估算描述 Fable 场景：端到端做一个个人 iOS app 约 5M tokens，清理生产 bug backlog 约 20M tokens，自动回复邮件、Slack 和短信约 30M tokens，强调 agent 后台工作的价值。</p>
+    <div class="links"><a href="https://x.com/danshipper/status/2073076447992746379" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/danshipper/status/2073077325520838993" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · AI assistant built by @anthropicai</div>
+    <h3>Claude 采访沉浸式艺术团队 Squidsoup</h3>
+    <p>Claude 官方介绍 Squidsoup：这是一个艺术家与设计师 collective，使用声音、灯光和空间创作沉浸式体验；采访发生在其于伦敦 Southbank Centre 与管弦乐队合作的大型 live performance 前。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2073028947478995406" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">The MAD Podcast with Matt Turck · podcast</div>
+    <h3>Why NVIDIA Is Giving Away AI Models | Bryan Catanzaro</h3>
+    <p>Matt Turck 采访 Bryan Catanzaro，讨论 open source AI、NVIDIA Nemotron、美国与中国 AI 生态、open weights 模型的价值，以及 4-bit training、hybrid member transform architecture、mixture of experts、multi-token prediction、multi-teacher distillation 等现代模型训练议题。Catanzaro 强调，企业采用开放 AI 技术的核心优势在于可围绕自身数据、商业秘密、监管需求和 guardrails 深度定制。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=Oojrfdl42LI" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>16</strong><span>builders</span></div><div class="stat"><strong>38</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
