@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-05",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号内容集中在 agent 化互联网、AI coding 反馈循环与基础设施用量可视化。Cloudflare 访谈给出一个关键判断：bot/agent 流量已超过人类流量，广告驱动的互联网商业模式将被迫重写。",
+  "stats": {
+    "xBuilders": 13,
+    "totalTweets": 28,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI Codex 团队征集“早该做好但仍做不好”的问题",
+          "summary": "Thibault Sottiaux 直接向用户询问：Codex 还有哪些令人意外、且本应早已解决但仍做不好的能力。这类开放式反馈对 AI coding 产品很有信号，指向团队正在关注真实开发者工作流中的长期痛点。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2073551549494596079"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "Nan Yu：找 bug 不能只靠读代码，要真正使用并尝试打破产品",
+          "summary": "Nan Yu 认为，捕捉大多数 bug 的最好方式是使用产品并尝试 break it，而不是只靠对代码做推理式审查。代码 review 更适合关注架构与 API design，用来控制 technical debt 的增长。",
+          "urls": [
+            "https://x.com/thenanyu/status/2073410299680428445"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Cat Wu：Claude Fable 5 在分析任务中展现更好的判断力",
+          "summary": "Cat Wu 提到，Claude Fable 5 在一次 retention analysis 中主动使用 propensity score matching，将用户按活跃度匹配后再比较。她认为这体现了 Fable 5 在邮件、文档、Cowork 以及 Claude Code 复杂调试中的 judgment 提升。",
+          "urls": [
+            "https://x.com/_catwu/status/2073439890482794966"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel AI Gateway 用量动画显示 token 花费竞赛与模型生态变化",
+          "summary": "Guillermo Rauch 基于 Vercel AI Gateway 的近 lifetime usage 制作 token spend race 动画。该网关聚合了每月来自数百万开发者的 trillions of tokens；他指出可以看到各实验室之间的波动、Anthropic 的主导地位，以及 open weight AI 的上升。",
+          "urls": [
+            "https://x.com/rauchg/status/2073563586270781674"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "Peter Steinberger 预告产品将显示 reset 过期时间，方便管理 token 使用",
+          "summary": "Peter Steinberger 表示，下一版本的相关产品将让用户清楚看到 reset 何时过期，从而更好地进行所谓 valuemaxxing。虽然语气轻松，但反映出 AI 产品中 token、配额与重置周期正在成为用户体验的一部分。",
+          "urls": [
+            "https://x.com/steipete/status/2073482942513565713"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "Dan Shipper 关注 ChatGPT 中的 Codex 嵌套体验",
+          "summary": "Dan Shipper 用“Yo dawg we heard you like Codex in ChatGPT”调侃 Codex 与 ChatGPT 的组合体验。该动态本身信息量有限，但指向开发者正在围绕 ChatGPT 内的 coding agent 工作流进行观察和讨论。",
+          "urls": [
+            "https://x.com/danshipper/status/2073586548545638459"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "Cloudflare CEO：bot/AI agent 流量已超过人类，互联网商业模式将重写",
+          "summary": "Matthew Prince 在访谈中表示，Cloudflare 观察到 2026 年上半年 bot traffic 已超过 human traffic，增长主要由 AI、LLM、agent、crawler 等机器访问驱动。他预测未来五年互联网流量可能达到今天的千倍级，带来服务器、网络、CPU、GPU、内存等基础设施需求激增。更关键的是，过去 28 年以广告为核心的互联网商业模式会受到冲击，因为 bots don't click on ads。节目还讨论 Cloudflare 如何转向 AI infrastructure，包括 Cloudflare Workers、AI Gateway 与 agent security。",
+          "urls": [
+            "https://www.youtube.com/watch?v=UN47z_opfmo"
+          ]
+        }
+      ]
+    }
+  ]
+}
