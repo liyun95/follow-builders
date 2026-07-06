@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-06",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号内容集中在 agent 工作流与评测方法：一边是 Claude Code 被用于招聘、代码理解和投资沟通，另一边 Noam Brown 强调 test-time compute 正在改变 benchmark、安全策略与模型比较方式。",
+  "stats": {
+    "xBuilders": 14,
+    "totalTweets": 25,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "用 Claude Code 动态 workflow 批量 sourcing 候选人",
+          "summary": "Cat Wu 分享一个 Claude Code + workflows + artifacts 用例：告诉 Claude Code 岗位与候选人背景要求，让它启动动态 workflow 找到 100 位候选人，并整理 LinkedIn、Twitter、blog、podcast 与一句话 pitch，最后生成 artifact 并邮件发送，方便异步审核。",
+          "urls": [
+            "https://x.com/_catwu/status/2073806626965049686"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "多 agent 管理不应像实时战略游戏",
+          "summary": "Nan Yu 认为，把 agent 管理成“实时战略游戏”的模式显然是死路；即使是按当前标准已经很旧的 AI，也能击败 99% 以上人类玩家并在微操上远超人类。这暗示 builder 需要设计更高层、更少手动调度的 agent 交互范式。",
+          "urls": [
+            "https://x.com/thenanyu/status/2073920326304460847"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "当 leverage 约束被删除，剩下的瓶颈是好想法",
+          "summary": "Garry Tan 表示，人类财富的真正约束从来不是资源，而是服务彼此的好想法以及执行这些想法的 leverage；现在 leverage 约束被“删除”后，关键只剩下想法本身。他鼓励 builder 去提出想法并把它们做出来。",
+          "urls": [
+            "https://x.com/garrytan/status/2073881439700168925"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "把 VC 沟通从复述 deck 迁移到产品反馈与 prompt 化",
+          "summary": "Nikunj Kothari 期待创始人在见 VC 前，要求对方先试用产品并带来至少两条反馈。他认为相比整天在 Zoom 上重复讲 deck，产品 brainstorm 或互相了解更高效，甚至可以把双方的个人“prompts”上传给 Claude 来数字化处理部分沟通。",
+          "urls": [
+            "https://x.com/nikunj/status/2073903310982218088"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "用 Fable 和 ultracode 调侃“make no mistakes”式 agent",
+          "summary": "Dan Shipper 提到 Fable 在 ultracode 场景中的“make no mistakes”，并用“改按钮颜色却启动 100 个 agents”来调侃过度编排式 agent 工作流。这个观察呼应了 builder 对 agent 成本、复杂度与实际任务粒度的权衡。",
+          "urls": [
+            "https://x.com/danshipper/status/2073894034225897602",
+            "https://x.com/danshipper/status/2073764166700048480"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "重新提及代码理解相关 skill",
+          "summary": "Zara Zhang 重新提到自己此前构建的一个 skill，并指出“理解你的代码”正在重新流行。原帖未提供更多技术细节，但方向与当前 AI coding、codebase understanding 和 agent workflow 的关注点一致。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2073768913310200310"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Noam Brown：大规模 test-time compute 正在改写 benchmark、安全与研究",
+          "summary": "OpenAI Research Scientist Noam Brown 讨论了为什么传统 benchmark grid 难以比较新模型：模型能力现在取决于投入多少 test-time compute、token、时间或成本。不同模型在同一题目上如果思考预算不同，单一分数会误导评估。他建议要么固定预算，要么画出性能随 test-time compute 增长的曲线。他还指出，现代模型在合理 scaffold 下可持续思考很久，某些 cyber eval 在 100,000,000 tokens 后仍有提升，因此安全政策与 responsible scaling 也需要明确“按什么预算评估模型”。",
+          "urls": [
+            "https://www.youtube.com/watch?v=AZrU6y3pUcU"
+          ]
+        }
+      ]
+    }
+  ]
+}
