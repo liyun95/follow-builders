@@ -1,0 +1,167 @@
+{
+  "date": "2026-07-07",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 coding agent、eval 与模型使用策略：Claude Code 团队回顾从安全研究到产品发布，Replit、Vercel 都在强调 agent 自改进和内置 eval；同时，builder 们也在重新思考 AI 让个人与团队并行产出后的工作方式。",
+  "stats": {
+    "xBuilders": 16,
+    "totalTweets": 34,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "@dxtipshq / @cognition / @temporalio / @aidotengineer / @latentspacepod",
+          "headline": "Anthropic J-space 论文中的“推理干预”与 eval awareness",
+          "summary": "Swyx 认为 Anthropic J-space 论文最重要的部分是：研究者不仅能对模型推理做类似“脑手术”的干预、让话题中途改变，模型还能够检测到被做了什么干预；他将其视为接近 eval awareness 的信号。",
+          "urls": [
+            "https://x.com/swyx/status/2074344727202463832"
+          ]
+        },
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 团队首次讲述产品起源",
+          "summary": "Boris Cherny 表示，团队首次系统讲述 Claude Code 如何被构建和发布，起点来自 Anthropic safety research。他强调产品仍处于早期，“We are 1% done”。",
+          "urls": [
+            "https://x.com/bcherny/status/2074247226038063316"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "AI assistant by @anthropicai",
+          "headline": "Claude Code 历史回顾发布",
+          "summary": "Claude 官方称，团队整理了一段 Claude Code 的简史，由构建它的人和早期用户共同讲述，回顾它如何走到今天。",
+          "urls": [
+            "https://x.com/claudeai/status/2074244664199115201"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Claude Code 早期团队复盘发布",
+          "summary": "Cat Wu 转发并推荐 Claude Code 早期团队的 retrospective，聚焦产品从早期探索到形成当前形态的过程。",
+          "urls": [
+            "https://x.com/_catwu/status/2074258446686536167"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 相关内容上线 Claude blog",
+          "summary": "Thariq 表示相关内容已上线 Claude blog，并补充了一个具体时间点：7/7 太平洋时间 11:59:59pm。",
+          "urls": [
+            "https://x.com/trq212/status/2074186977147273540",
+            "https://x.com/trq212/status/2074185669598237047"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "ChatGPT、Codex 与 OpenClaw 团队将参加活动",
+          "summary": "Thibault Sottiaux 提醒活动报名本周关闭，称构建 ChatGPT、Codex 和 OpenClaw 的不少团队成员会到场，并会为参与者准备一些惊喜。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2074195169990357398"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Fable 5 离开 Claude 订阅前的 5 个高价值 prompt",
+          "summary": "Peter Yang 整理了 Fable 5 从 Claude 订阅移除前值得尝试的 5 类用例：寻找适合高级模型处理的任务、商业与人生建议、发版前代码审查、大项目规划，以及重构 AI skill system，并附上可复制的 prompt。",
+          "urls": [
+            "https://x.com/petergyang/status/2074206798631071796"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "agents 让早期团队能并行做更多事",
+          "summary": "Nan Yu 认为，过去年轻时的优势是能投入极长工时，但许多时间花在繁琐编程任务上；现在这些任务很大程度可自动化，即使早期 startup 也能借助 agents 并行推进更多工作。",
+          "urls": [
+            "https://x.com/thenanyu/status/2074258147015897357",
+            "https://x.com/thenanyu/status/2074133468007587932"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit 强调 agent 闭环自改进，并分享企业替换 Salesforce 案例",
+          "summary": "Amjad Masad 称 Replit 进步很快的原因是“closed the loop”，agent 正在自我改进，并指向技术细节；他还提到一家 Atlanta 房地产公司用 Replit 构建 CRM 替代 Salesforce，节省了 100k 美元。",
+          "urls": [
+            "https://x.com/amasad/status/2074257906594177279",
+            "https://x.com/amasad/status/2074274666709987663"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 视角：coding AI 的终极测试是软件是否真的变好",
+          "summary": "Guillermo Rauch 认为，coding AI 的关键不只是 benchmark，而是公司是否更快 ship、软件是否更好、个人是否获得更强 agency。他还介绍 eve 内置 eve eval，用于 agent 及其自身演进，因为 evals 对 agents 是必要能力。",
+          "urls": [
+            "https://x.com/rauchg/status/2074222247548735996",
+            "https://x.com/rauchg/status/2074287795028512773"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "企业 AI 中 frontier intelligence、开源模型与 applied AI layer 的分工",
+          "summary": "Aaron Levie 认为，frontier intelligence 会继续用于复杂 workflow 的编排与规划；当企业 use case 成熟、可预测后，可把部分 token 转向更低成本的开源或闭源模型，或任务专用模型。关键在 applied AI layer 能做 domain eval、选择模型组合，并在规模足够后训练自有模型。",
+          "urls": [
+            "https://x.com/levie/status/2074163686990913576"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "AI builder 值得系统观看三场会议的公开 talk",
+          "summary": "Zara Zhang 推荐想提升为 AI builder 的人集中观看 AI Engineer、Cursor Compile 和 Figma Config 的公开视频。她认为高质量 conference talks 被严重低估，而且不应被 title 或 role 限制，如今每个人都更像 engineer、PM 和 designer 的组合。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2074304295097561490",
+            "https://x.com/zarazhangrui/status/2074305070955639077"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "AI-assisted engineering interviews 成为新问题",
+          "summary": "Peter Steinberger 发问：现在大家如何进行 AI-assisted engineering interviews？同日他也提醒相关活动报名即将关闭，并表示会到场分享 OpenClaw 与 tokens。",
+          "urls": [
+            "https://x.com/steipete/status/2074380549318443311",
+            "https://x.com/steipete/status/2074389082017550720"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "如何用 Fable：大额押注还是小步推进",
+          "summary": "Dan Shipper 讨论使用模型的策略：是用 Fable 做一次昂贵的大型尝试，还是用更小的步骤持续推进；他也提到 gremlins 已出现在 fable 中。",
+          "urls": [
+            "https://x.com/danshipper/status/2074160886164451735",
+            "https://x.com/danshipper/status/2074160985452028406"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "podcast",
+          "headline": "Surge CEO 谈为 AGI 建一所“学习人类”的学校",
+          "summary": "本期访谈围绕 Surge 如何为模型公司提供 data environments 与 evals。嘉宾将其比作“AGI 的学校”：模型像孩子一样通过数据、专家判断、taste 与复杂任务训练学习人类世界。讨论还涉及从 GSM8K 到 Riemann bench 的数学能力演进、AI 对研究级数学的影响，以及当 AI 可能做得比人更好时，人类为何仍要主动学习、创造和设定目标。",
+          "urls": [
+            "https://www.youtube.com/watch?v=omX6wrLuX08"
+          ]
+        }
+      ]
+    }
+  ]
+}
