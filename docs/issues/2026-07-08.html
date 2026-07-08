@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月8日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月8日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在模型发布、企业 agent 落地与 autonomous system 规模化。OpenAI 与 Claude 都有产品/额度动态；企业侧更关注数据碎片、evals、multi-model 路由和业务指标。播客里 Zipline 的经验提醒 builder：硬件只是系统的一小部分，真正难的是端到端可靠运营。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Sam Altman · OpenAI</div>
+    <h3>Sam Altman 预告 GPT-5.6 sol 将于周四发布</h3>
+    <p>Sam Altman 发文称“GPT-5.6 sol launches thursday”，并以“happy building”面向 builder 社区预热。该信息仅来自其 X 动态，未包含更多功能或访问细节。</p>
+    <div class="links"><a href="https://x.com/sama/status/2074709023807664454" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · Anthropic</div>
+    <h3>Claude Fable 5 付费计划访问延长至 7 月 12 日</h3>
+    <p>Claude 宣布将所有 paid plans 上的 Claude Fable 5 访问延长至 7 月 12 日。官方同时说明，用户仍最多可将每周 usage limit 的 50% 用于 Claude Fable 5，之后可用 usage credits 继续使用，或切换到其他 model。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2074548242386178258" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/claudeai/status/2074548243971604641" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · Anthropic</div>
+    <h3>Claude Cowork 双倍 usage limits 延长至 8 月 5 日</h3>
+    <p>Claude 表示将 doubled Cowork usage limits 延长至 8 月 5 日，让用户可以把更大的工作委派给 Claude。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2074525821755101458" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · Box CEO</div>
+    <h3>企业 AI agents 落地的七个关键议题</h3>
+    <p>Aaron Levie 总结与多位 enterprise IT leaders 讨论 AI agents 后的共识：企业需要解决跨组织流程的 operating model，处理数据碎片化，建立核心 data moats，使用业务结果而非 token 衡量采用效果，并准备进入 multi-model 世界。他还强调，真正高价值的 AI use cases 往往不是简单替换旧流程，而是改变工作本身。</p>
+    <div class="links"><a href="https://x.com/levie/status/2074719479377109312" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · Box CEO</div>
+    <h3>企业私有数据将成为 agent 竞争力核心</h3>
+    <p>Aaron Levie 认为，开放网络上可供所有模型训练或 agent 使用的有用数据只占很小一部分；更多关键知识存在于组织内部、legacy systems、员工脑中和分散系统里。未来企业能否安全地把正确 context 提供给 agents，将决定 AI 使用效果和竞争力。</p>
+    <div class="links"><a href="https://x.com/levie/status/2074528241990394178" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Former Product Leader at Google - Gemini, Veo, Nano Banana</div>
+    <h3>模型生命周期应从 evals 表达产品判断开始</h3>
+    <p>Madhu Guru 认为，data 和 evals 不是低技能工作，而是模型策略的核心。模型生命周期大致是 model strategy → evals → pre/post training 与 RL 对齐 evals → GTM；团队需要先通过目标 eval sets 表达强观点，并在架构变化、回归、数据贡献和竞品压力中保持聚焦。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2074734468854899191" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Former Product Leader at Google - Gemini, Veo, Nano Banana</div>
+    <h3>企业 data 与 evals 机会巨大</h3>
+    <p>Madhu Guru 表示，结合自己在 enterprise AI models 的经验，围绕 enterprise data 和 evals 的机会“massive”。这与其对模型生命周期中 evals 重要性的判断相互呼应。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2074658481760821390" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · Vercel CEO</div>
+    <h3>Eve 以文件系统方式扩展 agent tools</h3>
+    <p>Guillermo Rauch 展示了为 agent 添加 GitHub 能力的方式：定义 tools/github.ts 并导出 createGithubTools()。他称 Eve 旨在塑造一个开放生态，支持可插拔的 models、skills、channels 和 tools。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2074630835878453601" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · Vercel CEO</div>
+    <h3>Vercel 欢迎 Better Auth 加入 Open SDK 愿景</h3>
+    <p>Guillermo Rauch 欢迎 @bekacru 加入 Vercel，并表示将与 Bereket 和 Better Auth 一起推进 Open SDK vision。他强调 developers 需要为 humans 与 agents 服务的 better auth，且应 built in the open。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2074523653488947338" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · AI tutorials and interviews</div>
+    <h3>本地 cron jobs 与云端 agent 工作流的边界问题</h3>
+    <p>Peter Yang 提出一个实践问题：很多 cron jobs 因为本机 Mac Mini 已登录 Google Workspace 等应用而在本地运行，但是否应迁移到 cloud，并让这些应用 OAuth 到 Claude 或 ChatGPT 账号？他希望厘清哪些 jobs 应留在 local，哪些适合移到 cloud。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2074616982197174515" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · AI tutorials and interviews</div>
+    <h3>寻找 AI-native designer 展示 design.md 与 components 工作流</h3>
+    <p>Peter Yang 希望采访一位 AI-native designer，展示如何围绕 design.md、components 等方式进行构建，并与传统设计流程对比。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2074705840284815678" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code at Anthropic</div>
+    <h3>用 Claude 将静态 slides 转为动画与短视频</h3>
+    <p>Thariq 展示 Claude 对演示内容的处理：它能把原本静态的 slides 转成动画，并尝试制作 YouTube short clips。当前 transcription 仍较混乱，视频质量也为快速渲染而故意降低，但体现了 Claude Code 在内容再生产工作流中的潜力。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2074619715826381168" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/trq212/status/2074619539145568562" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/trq212/status/2074622734118924561" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nikunj Kothari · Partner at FPV Ventures</div>
+    <h3>Fable 与 Claude Code 的组合用法：让工具反向优化工作流</h3>
+    <p>Nikunj Kothari 分享一个实用 Fable use case：先生成 /insights，再把它喂给 Claude Code，询问“在 Fable era，我应如何使用 Claude Code 来最大化效用？”随后可以要求 Claude Code 直接实现建议。</p>
+    <div class="links"><a href="https://x.com/nikunj/status/2074530614745960792" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · OpenClaw and OpenAI</div>
+    <h3>agent 工作流应明确指定 codex 作为 workhorse</h3>
+    <p>Peter Steinberger 建议在相关 workflow 中，让 Fable 把 codex 设为 workhorse。他还补充提到一个 skill：当 agents 需要更多 context 时，显示明确的大提醒，而不是只有缺少上下文的 1Password 弹窗。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2074638582418231495" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/steipete/status/2074624388301987947" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>Zara Zhang 分享“AI 时代如何学习”</h3>
+    <p>Zara Zhang 转发并强调“How to learn in the age of AI”这一主题，聚焦 AI 时代个人学习方式的变化。原动态未提供更多展开内容。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2074661564964307153" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">Training Data · Podcast</div>
+    <h3>Zipline：140M autonomous miles 与“无人机只是 15%”的系统经验</h3>
+    <p>本期 Training Data 访谈 Zipline 相关负责人，回顾其从 2016 年在 Rwanda 运送血液开始，扩展到 8 个国家、服务 5,000 家医院和 health facilities，并累计 140,000,000 commercial autonomous miles 的过程。核心经验是：客户并不关心 drone 本身，而关心 24/7、可靠、近似 teleportation 的物流体验；physical drone 只占解决方案复杂度约 15%，其余来自 inventory、maintenance、aviation authority integration、healthcare system integration、ordering 与 demand management 等端到端系统。节目还提到 University of Pennsylvania 研究显示 Zipline 带来 51% maternal mortality reduction，以及与 US State Department 的 $550,000,000 partnership。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=6bGxm8gX41o" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>16</strong><span>builders</span></div><div class="stat"><strong>32</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
