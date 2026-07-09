@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月9日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月9日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的主线是 agent 工具继续产品化：Claude Code 增加 /checkup，Claude Tag 走向团队协作；Grok 4.5 进入 Vercel、Cursor 等开发工作流。与此同时，builders 开始反思单人 agent 使用对团队文化、写作注意力和软件形态的影响。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>Claude Code 新增 /checkup，用于清理环境并优化上下文</h3>
+    <p>Boris Cherny 介绍 Claude Code 的新命令 /checkup：可清理未使用的 skills、MCPs、plugins，去重本地 CLAUDE.md，拆分根 CLAUDE.md，关闭慢 hooks，更新到最新版，并默认启用 auto mode。该命令会在修改前向用户确认。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2074997570317779038" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/bcherny/status/2074997571563479143" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Cat Wu · claude code + cowork @anthropicai</div>
+    <h3>Claude Tag 从单人 Claude Code 走向多人协作 agent</h3>
+    <p>Cat Wu 将主持 Claude Tag 直播 walkthrough，展示团队如何从 single-player Claude Code 发展到 multi-player Claude Tag。她描述 Claude Tag 可监控 channels、主动完成工作、让团队共同 steer，并记住上周的指令。</p>
+    <div class="links"><a href="https://x.com/_catwu/status/2074925531519468012" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>AI 时代的软件重写可能变得更好、更便宜、更快</h3>
+    <p>Thariq 认为 builders 应更新对软件工程的模型：rewrites 可以是 good、cheap、fast。虽然多数应用不像 Bun 那样易测试和验证，但模型会持续提升，补上这些缺口。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2074993112217461020" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Grok 4.5 已面向 Vercel 客户可用</h3>
+    <p>Guillermo Rauch 表示 Grok 4.5 now available to all Vercel customers，并进一步提出 AI 将让所有软件变得 Native，强调性能与平台亲和力。他还提到 agent stack 的组件正在逐步拼合，将支撑个人 productivity agents。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2074920996201796067" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2075018147330232707" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/rauchg/status/2074874713143460150" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Ryo Lu · Design @Cursor_ai</div>
+    <h3>Grok 4.5 进入 Cursor</h3>
+    <p>Ryo Lu 称这是“the start of a new era”，邀请用户在 Cursor 中尝试 Grok 4.5 并反馈体验，显示新模型正快速进入 coding 工具链。</p>
+    <div class="links"><a href="https://x.com/ryolu_/status/2074951992884244606" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Grok 4.5 被视为企业知识工作的新模型选择</h3>
+    <p>Aaron Levie 认为最新 AI models 在处理复杂 knowledge worker tasks 上快速变强，尤其适合法律、专业服务、医疗等领域。Grok 4.5 在 cost + performance 上是新的重要选项，未来将推动 enterprise data 和 documents 的更多用法。</p>
+    <div class="links"><a href="https://x.com/levie/status/2075073587015516228" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Josh Woodward · VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio</div>
+    <h3>GeminiApp 团队公开征集长期短板反馈</h3>
+    <p>Josh Woodward 向用户提问：GeminiApp 有哪些本该早就修好、但仍然做不好的事情？该帖获得大量回复，显示 Google 团队正在直接收集产品能力缺口。</p>
+    <div class="links"><a href="https://x.com/joshwoodward/status/2074847444823674883" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>从单人 agent 使用走向 human-human-agent collaboration</h3>
+    <p>Zara Zhang 分享一位 founder 给全员购买 Codex Max 后的副作用：团队成员大多通过和 Codex 对话完成工作，会议减少、协作变少，团队文化变差。她认为 enterprise AI usage 仍偏 single-player，需要走向 human-human-agent collaboration。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2075004775436005687" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>Codex 的 frontend design 能力仍是使用瓶颈</h3>
+    <p>Zara Zhang 表示非常希望 Codex 在 frontend design 上更好，这是阻止她更频繁使用 Codex 的单一关键因素。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2075003007520096416" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Replit 考虑加入 CAD 3D modeling</h3>
+    <p>Amjad Masad 询问是否应在 Replit 中加入 CAD 3D modeling。他也提出不应总拿 autonomous agents 和 hand-written code 比较，类比编译器不会与工程师手写 assembly 比较。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2075003156745089264" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/amasad/status/2075080984211624154" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @latentspacepod / @aidotengineer</div>
+    <h3>agent labs 对中文模型使用更谨慎，生产化需要评测和后训练</h3>
+    <p>Swyx 观察到许多 agent labs 因面向政府和 defense 销售而不愿承认使用 Chinese models。他称 cog team 做了更难的生产化工作：构建 multilingual propaganda 与 censorship eval，在 posttraining 中修正，并以低成本提供 1000 tok/s 服务。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2074919183947808881" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nikunj Kothari · partner @fpvventures</div>
+    <h3>开发者在 Codex 与 Claude Code 之间快速摆动</h3>
+    <p>Nikunj Kothari 说，作为中立观察者，看到开发者每周在 Codex 和 Claude Code models 之间“we’re so dead, we’re back again”式切换非常惊人；竞争中的团队推动彼此快速进步，生态因此受益。</p>
+    <div class="links"><a href="https://x.com/nikunj/status/2074878958525657452" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>OpenClaw Foundation 独立运行，OpenAI 雇佣的是 Peter Steinberger 本人</h3>
+    <p>Peter Steinberger 澄清 OpenAI hired me, not OpenClaw。OpenClaw Foundation 是独立组织，有 sponsors 而非 owners，并首次拥有全职团队来保持项目稳定。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2075046949896736835" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aditya Agarwal · General Partner @SouthPkCommons</div>
+    <h3>South Park Commons Founder Fellowship 寻找更高野心的 builders</h3>
+    <p>Aditya Agarwal 提醒 founder 不要浪费当下 AI 与技术变革的窗口。South Park Commons Founder Fellowship 申请截至 Aug 2，尤其希望看到 hardware tinkerers、mad scientists、biohackers，以及有强烈异端 thesis 的 builders。</p>
+    <div class="links"><a href="https://x.com/adityaag/status/2074892507306238235" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/adityaag/status/2074892952233705956" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">AI &amp; I by Every · podcast</div>
+    <h3>How a Writer Uses AI Without Losing His Voice</h3>
+    <p>本期讨论写作者如何使用 AI 而不失去自己的声音。嘉宾强调 AI 既能带来强大创造力，也像 slot machine 一样刺激多巴胺，因此他通过上午不碰手机、使用只能写作的 laptop 等方式保护 deep thinking。他还分享用 Opus、Fable 等工具重建 newsletter 软件、会员系统和私密社交空间的实践。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=7ND0lQmLJlA" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>20</strong><span>builders</span></div><div class="stat"><strong>40</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
