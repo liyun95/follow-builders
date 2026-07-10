@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月10日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月10日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的主线是新模型与 agent 产品化：OpenAI GPT-5.6 Sol、Codex、ChatGPT Work 引发大量一线反馈，Gemini 团队公开整理用户需求，企业侧开始用真实工作流评测模型。与此同时，builder 们也在讨论 AI 时代基础设施、数据与工作流差异化。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Josh Woodward · VP, Google / Google Labs / GeminiApp / GoogleAIStudio</div>
+    <h3>Gemini 团队公开回应用户十大反馈</h3>
+    <p>Josh Woodward 表示，Gemini 团队在 12 小时内收到 1,400+ 条反馈，并整理出 Top 10 优先事项：更可靠的 Google Workspace 集成、tool calling、项目与文件夹组织、MCPs 和 Custom Skills、Deep Research 改进、编辑历史消息、语音听写准确率与移动端滚动 bug 等。Celebrity Likeness guardrails 暂时会保持现状。</p>
+    <div class="links"><a href="https://x.com/joshwoodward/status/2075241749048401936" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>OpenAI 为 GPT-5.6 Sol 重置 ChatGPT Work 和 Codex 用量限制</h3>
+    <p>Thibault Sottiaux 表示，为庆祝 GPT-5.6 Sol 发布，OpenAI 将在 24 小时内再次为 ChatGPT Work 和 Codex 重置 rate limits，希望用户有足够时间尝试更有野心的任务。他还提到 ChatGPT Work 和 Codex 的使用限制会在一小时内完成一次完整 reset。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2075452680760443190" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2075330198887940337" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Sam Altman · OpenAI</div>
+    <h3>Sam Altman 强调 Codex 是新 work product 的核心</h3>
+    <p>Sam Altman 表示，Codex 是 OpenAI 新 work product 的核心，并且“not going anywhere”。他还回应企业对 AI 成本的担忧，称 GPT-5.6 Sol 以及 Terra、Luna 在 dollars-per-task 上是重要进展。</p>
+    <div class="links"><a href="https://x.com/sama/status/2075293792048136572" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/sama/status/2075267201058426944" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Peter Yang 详评 OpenAI 新发布：agent 主流化机会巨大，但产品命名和 UI 仍混乱</h3>
+    <p>Peter Yang 认为 OpenAI 最有机会让 agents 成为主流工作方式，ChatGPT 结合 images、live voice、browser/computer use 和插件，接近一个能学习并执行白领工作的超级同事。他称 GPT-5.6 “basically never gives up”，但也指出 ChatGPT Work vs. Codex、Sol/Terra/Luna 与 effort 选项、tasks vs. chat 等概念对普通用户不够清晰。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2075345016437039600" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @Box</div>
+    <h3>Box 用企业文档 eval 评估 GPT-5.6 Sol：复杂数据任务显著优于 GPT-5.5</h3>
+    <p>Aaron Levie 表示，Box 正在 Box AI Complex Work eval 上评估 GPT-5.6 model family。Sol 相比 GPT-5.5 在复杂数据导向任务上有明显提升，尤其是金融服务、医疗、公共部门和生命科学场景。Box 认为 Sol 更善于从源定义和文档中推理，而不是照单全收，这对处理非结构化企业数据的 enterprise agents 很关键。</p>
+    <div class="links"><a href="https://x.com/levie/status/2075287443411222628" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @Box</div>
+    <h3>Aaron Levie：当 AI intelligence 变得充足，企业差异化会转向数据与工作流复利</h3>
+    <p>Aaron Levie 讨论了 AI 模型在行业间共享、智能能力越来越强之后的竞争优势问题。他认为，如果 intelligence 广泛可得，真正的差异化会来自企业如何把模型、专有数据、工作流和员工交互连接起来，并让这些资产随时间复利增长。</p>
+    <div class="links"><a href="https://x.com/levie/status/2075416313481290077" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · CEO @Replit</div>
+    <h3>Amjad Masad：AI 让 coding 更灵活，runtime 反而需要更刚性</h3>
+    <p>Amjad Masad 观察到，当 AI 让 coding 变得 less rigid，Replit 的 runtime 和基础设施反而需要更 deterministic、更 resilient。他提到 infra 团队开始写 formal specs：移动越快，底层地基越要稳。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2075423115052790054" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · CEO @Replit</div>
+    <h3>Amjad Masad：LLM 市场正在快速动态化，单一模型垄断假设站不住</h3>
+    <p>Amjad Masad 表示，LLM 市场在短时间内变得非常动态。他认为 Anthropic 会继续做出强模型，但其他公司和新进入者也会持续推出优秀模型，市场不会轻易走向单一垄断。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2075413916491075755" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · CEO @Vercel</div>
+    <h3>Guillermo Rauch：模型发布周将改变 token 市场份额，open models 会变得非常快</h3>
+    <p>Guillermo Rauch 认为这是 model release week，并猜测 Meta Spark 1.1、Grok 4.5 和 GLM 5.2 会显著改变 token market share。他指出多数 agentic tasks 需要足够高的智能与快速速度，并补充称 open models 即将变得“exorbitantly fast”。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2075294130327196152" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2075294327354577256" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Sr Director, AI at Meta</div>
+    <h3>Madhu Guru 加入 Meta 构建 AI 产品</h3>
+    <p>Madhu Guru 宣布加入 Meta 构建 AI products。他认为 SWE agents 已经改变软件工程，但多数其他复杂系统中的 agents 仍处早期，很多人还没有真正感受到 AI agents 的全部力量；Meta 有机会改变这一点。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2075243087325217038" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @AnthropicAI</div>
+    <h3>Thariq：agentic coding 的核心技能之一是减少 unknowns</h3>
+    <p>Thariq 提出，agentic coding 的一个核心技能是 reducing your unknowns。这条观察很适合作为使用 coding agent 时的实践提醒：把不确定性前置暴露、拆解和验证，往往比直接让 agent 长时间执行更重要。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2075283841758183674" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @Y Combinator</div>
+    <h3>Garry Tan 称 Meta Muse Spark 1.1 在 OpenClaw 上表现很好</h3>
+    <p>Garry Tan 表示，Meta Muse Spark 1.1（early access 名为 Hornbill）在他的 OpenClaw 上表现“really good”，并向 Alexandr Wang 表示祝贺。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2075445455438385255" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Dan Shipper · CEO @Every</div>
+    <h3>Dan Shipper 关注 GPT-5.6 Sol 与 ChatGPT Work / Codex 命名问题</h3>
+    <p>Dan Shipper 转发称 GPT-5.6 SOL 是“the gold standard for knowledge work”，同时也吐槽 ChatGPT Work 与 Codex 的区分暗示“developers don&#39;t do work”，呼应了多个 builder 对产品命名与工作流边界的困惑。</p>
+    <div class="links"><a href="https://x.com/danshipper/status/2075264022988116280" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/danshipper/status/2075330044289802584" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · AI Engineer / Latent Space</div>
+    <h3>Swyx：frontier models 频繁推荐 Resend，AEO 正成为新分发面</h3>
+    <p>Swyx 观察到，多个 leading frontier models 在处理邮件相关任务时会持续尝试使用 Resend，即使用户已有 transactional infrastructure。他将这归因于 Resend 的 AEO 做得好，也提示 builder 需要关注 AI 时代产品被模型推荐与调用的新分发机制。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2075376938676621752" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">Unsupervised Learning · Podcast</div>
+    <h3>Jürgen Schmidhuber 谈 AI 现状：真正 AI 不止屏幕后模型，还需要现实世界 robotics</h3>
+    <p>在 Unsupervised Learning 第 90 期中，Jürgen Schmidhuber 讨论了当下 AI、recursive self improvement、robotics、CapEx 热潮、model companies 的商业前景以及 AI safety。他认为当前屏幕后的 AI 已经很强，但 true AI 还需要现实世界中的机器人和硬件能力；人类制造的 robot hardware 仍远不如人体，尤其是手这样的结构。他也回顾了自己关于 meta learning、self modification 和 Godel machine 的研究脉络。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=RKjR8DQ40po" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>19</strong><span>builders</span></div><div class="stat"><strong>44</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
