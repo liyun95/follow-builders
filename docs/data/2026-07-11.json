@@ -1,0 +1,28 @@
+{
+  "date": "2026-07-11",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的有效内容集中在 Stripe 对 agentic commerce 的判断：AI agent 不只是推荐商品，还会逐步承担授权支付、交易执行与业务运营。对 builder 来说，关键机会在标准协议、token 安全、商家目录暴露和新型计费基础设施。",
+  "stats": {
+    "xBuilders": 0,
+    "totalTweets": 0,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "Stripe 的 AI 负责人谈 agent 如何买、卖与支付",
+          "summary": "Matt Turck 与 Stripe head of data and AI Emily Sense 讨论 agentic commerce 的基础设施演进。她认为过去一年里，agent 作为买家的概念已从假设走向实际部署：Stripe 与 Google 合作让商家可在 AI mode 和 Gemini app 内销售，也在与 Microsoft、OpenAI、Meta 等推动 AI surface 内的发现、结账与交易执行。对商家而言，新的基础设施包括暴露产品目录、库存和价格，允许消费者授权 agent 代付，并让 agent 安全完成交易。她还提到与 OpenAI 共建的 agentic commerce protocol，类似 commerce 领域的 MCP，可让商家一次暴露目录并接入多个 agent，同时通过 shared payment token 安全传递支付凭证。访谈还强调 token theft 是 AI 领域被低估的问题，AI 公司超过六分之一注册可能涉及 token 滥用。",
+          "urls": [
+            "https://www.youtube.com/@DataDrivenNYC/videos"
+          ]
+        }
+      ]
+    }
+  ]
+}
