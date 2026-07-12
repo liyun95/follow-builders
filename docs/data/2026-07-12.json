@@ -1,0 +1,81 @@
+{
+  "date": "2026-07-12",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在 GPT 5.6 Sol 与 agentic engineering：一边是模型能力、Codex/Claude Code 接入实践和前端体验反馈，另一边是 Jevons paradox 式的软件需求扩张讨论。播客则从 Booking.com 的长期竞争视角提醒：AI 时代没有永久 moat，只有持续迭代。",
+  "stats": {
+    "xBuilders": 10,
+    "totalTweets": 15,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer / Latent Space 等",
+          "headline": "Jevons paradox 会从代码扩展到更广泛知识工作",
+          "summary": "Swyx 认为，如果只把 Jevons paradox 理解为 agentic engineering 带来的软件需求增长，可能低估了它的影响：当熟练使用 coding agents 的人类提升劳动效率，且 coding agents 外溢到其他知识工作时，单位知识工作的成本下降会推高总需求，而不是减少工作量。",
+          "urls": [
+            "https://x.com/swyx/status/2076155833428431012"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "GPT 5.6 Sol 强调速度、token 效率与前后端能力",
+          "summary": "Thibault Sottiaux 称 GPT 5.6 Sol 在新版本中改进了速度、token 效率、后端开发与前端质量，并特别提到不会到处使用 useEffect。他还分享了通过 CLIProxyAPI 将 Claude Code 指向 gpt-5.6-sol 的 alias 配置，方便未安装 Codex app 的用户尝试。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2076145711922696371",
+            "https://x.com/thsottiaux/status/2076119366647894371"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @Box",
+          "headline": "AI 降低软件生产成本后，软件岗位需求可能反而上升",
+          "summary": "Aaron Levie 指出，软件岗位发布量跑赢其他领域，符合成本下降带来需求扩张的逻辑：当软件单位生产成本下降，企业会启动更多软件项目。但由于系统维护、需求判断、长期运行和更新仍需要人，agent 更可能带来 abundance，而不只是 replacement。",
+          "urls": [
+            "https://x.com/levie/status/2076116544980214164"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "GPT 5.6 Sol 的前端能力获得 builder 反馈",
+          "summary": "Zara Zhang 简短评价 GPT 5.6 Sol 在 front end 上表现很好。这与同日关于 GPT 5.6 Sol 前端质量提升的讨论相互呼应。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2076130810143367453"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "Sam Altman 称多项 benchmarks 显示 5.6 Sol 领先",
+          "summary": "Sam Altman 表示，有很多 benchmarks 暗示 5.6 Sol 目前是世界上最好的模型。他还转发提到某项使用量下 30% 成本花在 fable 上的问题，但原文上下文有限。",
+          "urls": [
+            "https://x.com/sama/status/2075983427019612242",
+            "https://x.com/sama/status/2075982820322025788"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Booking.com CEO Glenn Fogel 谈 AI 时代的旅行、竞争与 moat",
+          "summary": "No Priors 采访 Booking Holdings CEO Glenn Fogel，回顾他从 Priceline 低谷加入并见证公司长期增长的经历。Fogel 将当前 AI 浪潮与互联网泡沫时期类比，认为 speculative boom 会带来创新也会带来大量失败；他强调不存在永久 moat，长期胜出依赖持续开发新服务、理解客户需求，并每天为客户而战。",
+          "urls": [
+            "https://www.youtube.com/watch?v=8nj_0wZkbtA"
+          ]
+        }
+      ]
+    }
+  ]
+}
