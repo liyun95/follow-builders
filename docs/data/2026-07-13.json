@@ -1,0 +1,148 @@
+{
+  "date": "2026-07-13",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线是前沿模型进入产品后的“运营细节”：用量、上下文、限额、multi-agent 成本与社区沟通都变成 builder 需要理解的基础设施。同时，企业 AI layer、agentic coding 工作流和能源供给也在被重新审视。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 30,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 与 ChatGPT Work 调整 GPT-5.6 Sol 用量与上下文策略",
+          "summary": "Thibault Sottiaux 说明，OpenAI 已为 GPT-5.6 Sol 落地 inference 优化，并将节省传导给订阅用户，预计带来约 10% 额外使用量。同时，产品内 context size limit 曾从 GPT-5.5 的 272k 提至 372k，导致计费使用量高于预期，现已回退到 272k，后续会再逐步推出 372k。他还提到已回滚 reasoning effort 实验，并将修复 high 与 xhigh reasoning effort 下 multi-agent 使用偏高的问题。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2076495156757577895"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "GPT 5.6 Sol 将继续包含在 ChatGPT 付费订阅中",
+          "summary": "Thibault Sottiaux 表示，GPT 5.6 Sol 会继续留在用户已付费的 ChatGPT 订阅中，包括 Go、Plus 和 Pro，直到推出更好的模型。随后他补充，Team、Edu 以及其他付费订阅也包含在内。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2076459871021736245",
+            "https://x.com/thsottiaux/status/2076460408437887268"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "Anthropic AI assistant",
+          "headline": "Claude 延长 Fable 5 与 Claude Code 更高限额",
+          "summary": "Claude 官方宣布，所有付费计划上的 Claude Fable 5 访问将延长，同时 Claude Code 的每周 rate limits 继续保持高出 50%，有效期至 7 月 19 日。Claude 还说明，用户最多可将每周使用限额的一半用于 Fable 5，之后可使用 usage credits 继续，或切换到其他模型。",
+          "urls": [
+            "https://x.com/claudeai/status/2076351399999557669",
+            "https://x.com/claudeai/status/2076351401006154204"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "Sam Altman 征集 GPT 5.6 Sol 作品",
+          "summary": "Sam Altman 表示希望看到大家用 5.6 sol 构建的有趣项目，并称会给最酷作品的作者送出一份来自 OpenAI archives 的特别礼物。这是一次面向 builder 社区的模型应用征集。",
+          "urls": [
+            "https://x.com/sama/status/2076398253332140410"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel CEO：把模型变成你拥有的机器中的齿轮",
+          "summary": "Guillermo Rauch 强调，startup 和企业不应把“brain”外包给模型供应商，而应掌握自己的数据、evals、模型选择与软件层。他列举 AI SDK 对应 open model API、相关 agent API 以及 AI Gateway 的 open ZDR inference，主张让 model 成为自有系统中的一个可替换部件。",
+          "urls": [
+            "https://x.com/rauchg/status/2076364176252191222"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "企业 AI 价值将集中在应用层与工作流资产复利",
+          "summary": "Aaron Levie 认为，企业在 AI 时代的关键架构问题，是如何最大化决策、洞察、workflow patterns 与 best practices 等 corporate IP。即使所有公司都能访问 frontier intelligence，真正的差异化来自 workflow evals、不同智能层级的模型路由、trace 捕获，以及让企业信息价值随 AI 进步持续复利的应用层。",
+          "urls": [
+            "https://x.com/levie/status/2076338364635287637"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit 上用 Qwen-8b 做国际象棋 fine-tuning 实验",
+          "summary": "Amjad Masad 分享了在 Replit 上 fine-tuning Qwen-8b 以玩国际象棋的实验：同时运行 3 个 parallel branches，进行不同实验并取得进展。他认为模型做 ML 的能力已经显著提升，有直觉的人即使过去没做过 ML，也可以指导流程并做出有意思的研究。",
+          "urls": [
+            "https://x.com/amasad/status/2076227936202662357",
+            "https://x.com/amasad/status/2076356893736673507"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "把会议纪要当作 PRD 交给 Codex",
+          "summary": "Zara Zhang 推荐尝试“meeting transcript as PRD”：和同事讨论一个功能实现后，把会议 transcript 发送给 Codex，由 Codex 按讨论内容构建 prototype。她总结说，meeting 本身就是 prompt。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2076300222884626754"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "tokenmaxxing 之前先回答为谁解决什么问题",
+          "summary": "Nikunj Kothari 观察到，很多人在 SF 声称自己在 tokenmaxxing、用 subagents 循环跑任务，但当被问到“在构建什么、为谁构建”时却答不上来。他提醒 builder，即使在 AI 高速发展的时期，简单性与方向感仍然重要，投入 token 之前要确认正在做的事是否真的重要。",
+          "urls": [
+            "https://x.com/nikunj/status/2076458876816540144"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "多机器分片运行 AI 工作会话",
+          "summary": "Peter Steinberger 分享自己通过 Jump Desktop 将工作分片到约 5 台机器上，并提到其中一台高性能 Mac Studio 已接近能承载的 session 数量上限。这反映了重度 agentic coding / AI workflow 用户对本地算力与多会话并行的需求。",
+          "urls": [
+            "https://x.com/steipete/status/2076553742883930455",
+            "https://x.com/steipete/status/2076552605262872904"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "AI 公司在社区情绪变化时应更透明沟通",
+          "summary": "Peter Yang 认为，当社区情绪转向时，公司往往倾向于减少沟通、说得更 corporate；他主张反过来，应以更 human 的方式沟通，向社区透明说明情况，并一起寻找解决方案。他也提到 Anthropic 应更直接地与社区互动，类似 OpenAI 的做法。",
+          "urls": [
+            "https://x.com/petergyang/status/2076512796481880270",
+            "https://x.com/petergyang/status/2076510899490480228"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@latentspacepod / @aidotengineer",
+          "headline": "Swyx：多次 rollout 的差异在于 introspection 与 backpropagation",
+          "summary": "Swyx 用一句话概括了多次 rollout 是否有效的关键：差异在 introspection / backpropagation。如果只是重复 rollout 而没有优势预期，就难以带来改进。他还指向了 @latentspacepod 的相关 writeup。",
+          "urls": [
+            "https://x.com/swyx/status/2076345087634620528",
+            "https://x.com/swyx/status/2076216180529156097"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "核能、AI compute 与能源丰裕：对话 Valar Atomics 创始人 Isaiah Taylor",
+          "summary": "本期 No Priors 采访 Valar Atomics 创始人 Isaiah Taylor，讨论 AI compute 对美国电力需求的推动、为什么核能需要从大型土建转向制造式 reactor，以及为什么硬件迭代而非仅靠 modeling and simulation 是重启核能产业的关键。Isaiah Taylor 表示 Valar 目标是制造面向 planetary scale 的核反应堆，让能源成本大幅下降，并强调 DOE 测试路径为核能 R&D 提供了不同于 NRC 商业部署路径的空间。",
+          "urls": [
+            "https://www.youtube.com/watch?v=5Xvbq_zvOQ4"
+          ]
+        }
+      ]
+    }
+  ]
+}
