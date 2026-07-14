@@ -1,0 +1,176 @@
+{
+  "date": "2026-07-14",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 AI 编程、Artifacts、模型路由与 open-weight 生态：builder 们一边把 agent 接入代码、费用报销和硬件固件，一边讨论企业如何在 frontier model、open weights 与自身数据边界之间取舍。",
+  "stats": {
+    "xBuilders": 16,
+    "totalTweets": 38,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "@dxtipshq, @cognition, @temporalio, @aidotengineer, @latentspacepod",
+          "headline": "Swyx 分享 Big Boy projects 的模型与流程搭配",
+          "summary": "Swyx 列出当前大型项目的 AI 工作流：用 sol ultra 做规划、fable 5 做 critique、sonnet 5/terra ultra/swe 1.7 做编码，并用 devin review 复查；他强调先用类似 “grill-me” 或 “interview-me” 的 prompt 提前逼出关键决策。",
+          "urls": [
+            "https://x.com/swyx/status/2076811977918484795"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Thibault Sottiaux 预告 ChatGPT Work",
+          "summary": "Thibault Sottiaux 发布 “ChatGPT Work presents” 并配上链接，同时提到可能迎来 8M active user celebration day。原帖信息较简短，但显示 OpenAI 内部围绕 ChatGPT Work 的新动向正在预热。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2076894071323537898",
+            "https://x.com/thsottiaux/status/2076907789763621237"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Claude Artifacts 获得升级",
+          "summary": "Cat Wu 转发表示 Artifacts just got an upgrade。结合 Anthropic builder 社区的讨论，这次升级被视为让 Artifacts 更适合协作、表达和项目化使用的一步。",
+          "urls": [
+            "https://x.com/_catwu/status/2076867882894684314"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Artifacts 可与 Claude Code session 组合使用",
+          "summary": "Thariq 认为新版 artifacts 更具表达力，并可创造性组合使用。他举例：为项目创建一个 Claude Tag dashboard，让他人或本地 Claude Code sessions 都能编辑，形成面向项目的可协作界面。",
+          "urls": [
+            "https://x.com/trq212/status/2076790799011131735"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit CEO 将个人模型训练比作早期 vibe coding",
+          "summary": "Amjad Masad 展示自己获得模型训练 run 的 realtime progress updates，并表示这感觉像早期 vibe coding，只是对象变成了 personal models，暗示个人化模型构建体验正在变得更即时、更可操作。",
+          "urls": [
+            "https://x.com/amasad/status/2076776737074184661"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 关注 filesystem API、Observability 与 agent 可调实验",
+          "summary": "Guillermo Rauch 表示某产品目前最受欢迎的两个特性是 ease of use / filesystem API 和 Observability，并称会继续加码。他还认为，让 agents 通过 feature flags 设置和调优实验，是 autonomous、self-optimizing websites and applications 的重要 building block。",
+          "urls": [
+            "https://x.com/rauchg/status/2076817174073880957",
+            "https://x.com/rauchg/status/2076786138195595704"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Open-weight models 在 gateway token 占比上升",
+          "summary": "Guillermo Rauch 引用数据称，open-weight models 运行了 29% 的 gateway tokens，高于 4 月的 11%。这与近期 builder 圈对 open weights、成本和模型路由的关注相呼应。",
+          "urls": [
+            "https://x.com/rauchg/status/2076713720731042174"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Aaron Levie 概括 AI stack：frontier、open weights、Applied AI 与企业上下文",
+          "summary": "Aaron Levie 认为未来 AI 结构不会是零和：frontier intelligence 持续推进并拉低单任务价格；open weights 快速吸收突破，提供低成本与可 post-train 能力；Applied AI 层通过 evals、领域上下文和企业数据编排 workflow；企业则重点建设可被 AI 系统持续访问的内部上下文。",
+          "urls": [
+            "https://x.com/levie/status/2076882332821373381"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "模型路由的未来：frontier model 做 manager，低成本模型做 workhorse",
+          "summary": "Aaron Levie 赞同一种成本优化模式：让更强的 frontier intelligence 像 manager 一样设定约束、目标和反馈，把大量 workhorse tasks 交给更便宜的模型。他认为在 customer support、legal、finance、coding 等 applied layer 中，理解业务问题并有效 route work 将成为核心差异化。",
+          "urls": [
+            "https://x.com/levie/status/2076839463410671637"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "每家企业训练自有模型并不简单",
+          "summary": "Aaron Levie 指出，企业最有价值的信息往往持续变化且高度敏感，不能简单塞进模型；访问控制和安全层也不能只放在 model 或 agent 内。他预计 custom trained models 的用例会增加，但“每家企业一个模型”会比看起来难得多。",
+          "urls": [
+            "https://x.com/levie/status/2076764958579446006"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "Ryo Lu 用 Cursor 构建自定义 e-reader firmware",
+          "summary": "Ryo Lu 表示自己用 Cursor 构建了 custom e-reader firmware，面向拉丁文字与 CJK typography、竖排与禁则处理、大字符集、与 ryOS 同步书籍和进度，以及更快的 rendering 与 caching。他还提到可让 Cursor 为 Xteink X3 + X4 刷入固件。",
+          "urls": [
+            "https://x.com/ryolu_/status/2076713331113734641",
+            "https://x.com/ryolu_/status/2076713700942295226"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Zara Zhang 总结组织 AI adoption 的三个层级",
+          "summary": "Zara Zhang 发布 “The 3 levels of AI adoption for organizations”，并称多数公司目前处在 level 2。她还分享了与 @ashebytes 关于 building in public、在 X 上增长受众以及 vibe coding 的 45 分钟对话。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2076862290985730481",
+            "https://x.com/zarazhangrui/status/2076860372993388663"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "Ramp-Autofill skill：用 Claude Code 自动处理报销",
+          "summary": "Nikunj Kothari 发布开源 Ramp-Autofill skill，基于 @tryramp CLI 与 @claudeai Fable。它可从 iMessage 和 Gmail 找收据、用 playwright 把链接转为 PDF 并附到 receipt、根据 Google Calendar 填写 meeting memo、学习过往交易的分类和 memo 风格，并可作为 scheduled job 自动运行。",
+          "urls": [
+            "https://x.com/nikunj/status/2076775924650107151",
+            "https://x.com/nikunj/status/2076776777884811671"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "Peter Steinberger 将 maintainer agent 搬到 cloud",
+          "summary": "Peter Steinberger 表示已把 maintainer agent 移到 cloud，并调侃 agents 已经开始“打架”。他还提到 iOS 和 Android apps 获得更新，并提示为了保持顺畅需要 bump Node；另称 “stress test” 是一个不错的 prompt。",
+          "urls": [
+            "https://x.com/steipete/status/2076923300593422560",
+            "https://x.com/steipete/status/2076917691139674373",
+            "https://x.com/steipete/status/2076886451455992249"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "AI is cool i guess",
+          "headline": "Sam Altman：模型终于擅长设计仍让人惊讶",
+          "summary": "Sam Altman 表示，看到 OpenAI 的 models finally good at design 仍让他有些“breaks my brain”。这反映出近期多模态与产品设计能力在 builder 圈的存在感持续上升。",
+          "urls": [
+            "https://x.com/sama/status/2076823209589313910"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "Inside Nemotron & NVIDIA’s AI Lab | Bryan Catanzaro",
+          "summary": "Matt Turck 采访 Bryan Catanzaro，围绕 NVIDIA Nemotron、open-weight models 与 open source AI 展开。对话讨论了 open technologies 对企业定制 AI 的价值、open source 与 closed source 的差距、美国与中国 AI 社区的开放贡献，以及 Nemotron 背后的 four bit training、hybrid Mamba transformer architecture、mixture of experts、multi token prediction 和 multi teacher distillation 等技术方向。",
+          "urls": [
+            "https://www.youtube.com/@DataDrivenNYC/videos"
+          ]
+        }
+      ]
+    }
+  ]
+}

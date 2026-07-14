@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月14日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月14日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 AI 编程、Artifacts、模型路由与 open-weight 生态：builder 们一边把 agent 接入代码、费用报销和硬件固件，一边讨论企业如何在 frontier model、open weights 与自身数据边界之间取舍。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Swyx · @dxtipshq, @cognition, @temporalio, @aidotengineer, @latentspacepod</div>
+    <h3>Swyx 分享 Big Boy projects 的模型与流程搭配</h3>
+    <p>Swyx 列出当前大型项目的 AI 工作流：用 sol ultra 做规划、fable 5 做 critique、sonnet 5/terra ultra/swe 1.7 做编码，并用 devin review 复查；他强调先用类似 “grill-me” 或 “interview-me” 的 prompt 提前逼出关键决策。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2076811977918484795" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Thibault Sottiaux 预告 ChatGPT Work</h3>
+    <p>Thibault Sottiaux 发布 “ChatGPT Work presents” 并配上链接，同时提到可能迎来 8M active user celebration day。原帖信息较简短，但显示 OpenAI 内部围绕 ChatGPT Work 的新动向正在预热。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2076894071323537898" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2076907789763621237" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Cat Wu · claude code + cowork @anthropicai</div>
+    <h3>Claude Artifacts 获得升级</h3>
+    <p>Cat Wu 转发表示 Artifacts just got an upgrade。结合 Anthropic builder 社区的讨论，这次升级被视为让 Artifacts 更适合协作、表达和项目化使用的一步。</p>
+    <div class="links"><a href="https://x.com/_catwu/status/2076867882894684314" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Artifacts 可与 Claude Code session 组合使用</h3>
+    <p>Thariq 认为新版 artifacts 更具表达力，并可创造性组合使用。他举例：为项目创建一个 Claude Tag dashboard，让他人或本地 Claude Code sessions 都能编辑，形成面向项目的可协作界面。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2076790799011131735" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Replit CEO 将个人模型训练比作早期 vibe coding</h3>
+    <p>Amjad Masad 展示自己获得模型训练 run 的 realtime progress updates，并表示这感觉像早期 vibe coding，只是对象变成了 personal models，暗示个人化模型构建体验正在变得更即时、更可操作。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2076776737074184661" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel 关注 filesystem API、Observability 与 agent 可调实验</h3>
+    <p>Guillermo Rauch 表示某产品目前最受欢迎的两个特性是 ease of use / filesystem API 和 Observability，并称会继续加码。他还认为，让 agents 通过 feature flags 设置和调优实验，是 autonomous、self-optimizing websites and applications 的重要 building block。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2076817174073880957" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2076786138195595704" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Open-weight models 在 gateway token 占比上升</h3>
+    <p>Guillermo Rauch 引用数据称，open-weight models 运行了 29% 的 gateway tokens，高于 4 月的 11%。这与近期 builder 圈对 open weights、成本和模型路由的关注相呼应。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2076713720731042174" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Aaron Levie 概括 AI stack：frontier、open weights、Applied AI 与企业上下文</h3>
+    <p>Aaron Levie 认为未来 AI 结构不会是零和：frontier intelligence 持续推进并拉低单任务价格；open weights 快速吸收突破，提供低成本与可 post-train 能力；Applied AI 层通过 evals、领域上下文和企业数据编排 workflow；企业则重点建设可被 AI 系统持续访问的内部上下文。</p>
+    <div class="links"><a href="https://x.com/levie/status/2076882332821373381" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>模型路由的未来：frontier model 做 manager，低成本模型做 workhorse</h3>
+    <p>Aaron Levie 赞同一种成本优化模式：让更强的 frontier intelligence 像 manager 一样设定约束、目标和反馈，把大量 workhorse tasks 交给更便宜的模型。他认为在 customer support、legal、finance、coding 等 applied layer 中，理解业务问题并有效 route work 将成为核心差异化。</p>
+    <div class="links"><a href="https://x.com/levie/status/2076839463410671637" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>每家企业训练自有模型并不简单</h3>
+    <p>Aaron Levie 指出，企业最有价值的信息往往持续变化且高度敏感，不能简单塞进模型；访问控制和安全层也不能只放在 model 或 agent 内。他预计 custom trained models 的用例会增加，但“每家企业一个模型”会比看起来难得多。</p>
+    <div class="links"><a href="https://x.com/levie/status/2076764958579446006" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Ryo Lu · Design @Cursor_ai</div>
+    <h3>Ryo Lu 用 Cursor 构建自定义 e-reader firmware</h3>
+    <p>Ryo Lu 表示自己用 Cursor 构建了 custom e-reader firmware，面向拉丁文字与 CJK typography、竖排与禁则处理、大字符集、与 ryOS 同步书籍和进度，以及更快的 rendering 与 caching。他还提到可让 Cursor 为 Xteink X3 + X4 刷入固件。</p>
+    <div class="links"><a href="https://x.com/ryolu_/status/2076713331113734641" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/ryolu_/status/2076713700942295226" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>Zara Zhang 总结组织 AI adoption 的三个层级</h3>
+    <p>Zara Zhang 发布 “The 3 levels of AI adoption for organizations”，并称多数公司目前处在 level 2。她还分享了与 @ashebytes 关于 building in public、在 X 上增长受众以及 vibe coding 的 45 分钟对话。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2076862290985730481" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2076860372993388663" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nikunj Kothari · partner @fpvventures</div>
+    <h3>Ramp-Autofill skill：用 Claude Code 自动处理报销</h3>
+    <p>Nikunj Kothari 发布开源 Ramp-Autofill skill，基于 @tryramp CLI 与 @claudeai Fable。它可从 iMessage 和 Gmail 找收据、用 playwright 把链接转为 PDF 并附到 receipt、根据 Google Calendar 填写 meeting memo、学习过往交易的分类和 memo 风格，并可作为 scheduled job 自动运行。</p>
+    <div class="links"><a href="https://x.com/nikunj/status/2076775924650107151" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/nikunj/status/2076776777884811671" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>Peter Steinberger 将 maintainer agent 搬到 cloud</h3>
+    <p>Peter Steinberger 表示已把 maintainer agent 移到 cloud，并调侃 agents 已经开始“打架”。他还提到 iOS 和 Android apps 获得更新，并提示为了保持顺畅需要 bump Node；另称 “stress test” 是一个不错的 prompt。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2076923300593422560" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/steipete/status/2076917691139674373" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/steipete/status/2076886451455992249" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Sam Altman · AI is cool i guess</div>
+    <h3>Sam Altman：模型终于擅长设计仍让人惊讶</h3>
+    <p>Sam Altman 表示，看到 OpenAI 的 models finally good at design 仍让他有些“breaks my brain”。这反映出近期多模态与产品设计能力在 builder 圈的存在感持续上升。</p>
+    <div class="links"><a href="https://x.com/sama/status/2076823209589313910" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">The MAD Podcast with Matt Turck · Podcast</div>
+    <h3>Inside Nemotron &amp; NVIDIA’s AI Lab | Bryan Catanzaro</h3>
+    <p>Matt Turck 采访 Bryan Catanzaro，围绕 NVIDIA Nemotron、open-weight models 与 open source AI 展开。对话讨论了 open technologies 对企业定制 AI 的价值、open source 与 closed source 的差距、美国与中国 AI 社区的开放贡献，以及 Nemotron 背后的 four bit training、hybrid Mamba transformer architecture、mixture of experts、multi token prediction 和 multi teacher distillation 等技术方向。</p>
+    <div class="links"><a href="https://www.youtube.com/@DataDrivenNYC/videos" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>16</strong><span>builders</span></div><div class="stat"><strong>38</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
