@@ -1,0 +1,150 @@
+{
+  "date": "2026-07-15",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 agent 平台化与开发者工作流：OpenAI 侧讨论 GPT-5.6 Sol、Codex credits 与 ChatGPT Work 反馈，Anthropic 强调 Claude for Teachers 与平台抽象层，Vercel 开放 AI Gateway token flows 数据集。企业采用层面，evals、harness、sandbox 与协调层正在成为 builder 的共同语言。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 39,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 征集 ChatGPT Work 反馈，并用 Codex credits 推动 GPT-5.6 Sol 讨论",
+          "summary": "Thibault Sottiaux 表示正在查看 ChatGPT Work 反馈，询问用户希望改进什么；同时提到如果用户分享喜欢 GPT-5.6 Sol 或迁移原因，前 10k 名可获得 $100 Codex credits。另称 ChatGPT Work 和 Codex 使用量可能很快接近 9M，并讨论是否再次 reset usage。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2077212009071075330",
+            "https://x.com/thsottiaux/status/2077248807533003257",
+            "https://x.com/thsottiaux/status/2077271889626706300"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "Sam Altman：GPT-5.6 Sol 增长很快，推理团队正扩容但可能有 hiccups",
+          "summary": "Sam Altman 称 5.6 Sol growth is insane，inference team 为支撑需求做了 heroic work，并表示会继续 move mountains to scale，但近期可能出现一些 hiccups。他还补充提到 favor open-source harnesses 的理由。",
+          "urls": [
+            "https://x.com/sama/status/2077106587307798989",
+            "https://x.com/sama/status/2077053226080436235"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "Anthropic",
+          "headline": "Claude for Teachers 面向 K-12 隐私与课程标准工作流",
+          "summary": "Claude 官方介绍 Claude for Teachers：不会用教师对话训练模型，student information 通过符合 FERPA 的 data processing agreement 保护。教师可从 state standards 和 Learning Commons 中的高质量 curricula 出发，让 Claude 起草 lesson plan 与 student-facing materials，再进行修改后带入课堂。",
+          "urls": [
+            "https://x.com/claudeai/status/2077047282109714488",
+            "https://x.com/claudeai/status/2077047280767488218",
+            "https://x.com/claudeai/status/2077047279689535705"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 开放 AI Gateway 上的 AI token flows 数据集",
+          "summary": "Guillermo Rauch 表示 Vercel 正在开放 @vercel AI Gateway 上 AI token flows 的数据集，并称其中包含有意思的 insights。他还提到自己用这个 dataset 创建了后续内容。",
+          "urls": [
+            "https://x.com/rauchg/status/2077176141790752798",
+            "https://x.com/rauchg/status/2077176287131840734"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "agentmail 支持通过 Vercel 安装，面向 agent 邮件能力",
+          "summary": "Guillermo Rauch 转发称 @agentmail 团队在推进新能力：让 agent 执行 `vercel install agentmail`，无需 signup，自动 setup，并统一 billing。",
+          "urls": [
+            "https://x.com/rauchg/status/2077154901013221444"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Aaron Levie：agent 普及需要把知识工作也做成可测试、可 eval 的系统",
+          "summary": "Aaron Levie 指出 code 适合 agents 的关键原因之一是可以快速测试：手动验证应用或运行 test。但大多数企业工作只有在真实世界交付后才能知道结果。他认为未来会出现一整套测试其他工作的机会，也意味着更多 agents 会进入 workflows；企业需要更好的 evals 来判断 model、prompt 或 system 改动是否让知识工作变好或变坏。",
+          "urls": [
+            "https://x.com/levie/status/2077201458546745553"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 将分享用 ChatGPT Work / Codex 管理电脑工作流的 7 步教程",
+          "summary": "Peter Yang 预告新视频，介绍如何使用 ChatGPT Work（也称 Codex）完成电脑上的多数任务，覆盖从选择 GPT-5.6 model，到管理 email、calendar 与 recurring tasks 的完整 7 步 setup。",
+          "urls": [
+            "https://x.com/petergyang/status/2077196815951417649"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "用 Claude Code 辅助 Pokemon Champions 策略分析",
+          "summary": "Thariq 展示了一个把 Claude Code 用于游戏策略研究的案例：它可调用 Smogon 的 npm library，拉取 live usage stats，并生成 reports，用于理解 matchups、breakpoints 或 theorycraft teams。他还发布了 Mega Sceptile team breakdown，并表示如果有兴趣会 open source。",
+          "urls": [
+            "https://x.com/trq212/status/2077051280267399550",
+            "https://x.com/trq212/status/2077051282146431092"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "Peter Steinberger 建议在 agent 编码中运行 autoreview",
+          "summary": "Peter Steinberger 提醒总是运行 autoreview，并补充说这会 burn tokens，但能让人更安心。该观点延续了 AI coding workflow 中用额外 token 换取 review 与安全感的实践。",
+          "urls": [
+            "https://x.com/steipete/status/2077265627379843242",
+            "https://x.com/steipete/status/2077266132625698820"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SouthPkCommons",
+          "headline": "Aditya Agarwal：新版 ChatGPT app 对高频轻量查询变得更重",
+          "summary": "Aditya Agarwal 表示认可新版 “ChatGPT” app 的深入 feature set，但也指出 tradeoff：自己过去每天用 ChatGPT (Legacy) 进行 15-20 次查询，现在对这种用例感觉过于 heavyweight。",
+          "urls": [
+            "https://x.com/adityaag/status/2077130899733553560"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "Ryo Lu：AI 时代要回到创作热爱的源头",
+          "summary": "Ryo Lu 反思当 hobby 变成工作后，创作会被 deadline、team、customer、strategy 和 money 重新塑形；而 AI 正在逼近 writing、coding、designing、reasoning 等曾被视为个人特殊性的部分。他认为 AI 能加快 output、提高 craft floor，但不能替人决定什么值得热爱；builder 更需要保留没有 audience、roadmap 和 deadline 的原初 curiosity。",
+          "urls": [
+            "https://x.com/ryolu_/status/2077162119506833627"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer / @latentspacepod",
+          "headline": "Swyx 邀请 SF personal AI engineers 展示 personal agents",
+          "summary": "Swyx 邀请旧金山正在构建 personal agents 的 engineers 到 new media lab demo，并提到上一次相关 meetup 的 featured speakers 后来被 @Amazon hardware division 收购，他至今仍是 daily active user。",
+          "urls": [
+            "https://x.com/swyx/status/2077243443391422813"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Training Data",
+          "role": "Podcast",
+          "headline": "Anthropic's Katelyn Lesse &amp; Angela Jiang: Building an Ecosystem, not a Walled Garden",
+          "summary": "本期讨论 Anthropic Platform 的定位：既包括面向外部的 APIs 和 developer platform，也支撑内部 product infrastructure。嘉宾强调平台目标是让 builder 能围绕 Claude 构建产品，并通过 hyperscalers 集成、primitives、APIs、higher order abstractions、skills 与 MCP 支持生态。对 agent 平台层次的描述包括 knowledge、execution 与 coordination：从 messages API、SDKs、docs、console，到 sandboxes、transcript sessions、prompt caching、context window 管理和 harness engineering，未来抽象会更多走向协调层与 strategies。",
+          "urls": [
+            "https://www.youtube.com/watch?v=vPnVTHYplrQ"
+          ]
+        }
+      ]
+    }
+  ]
+}
