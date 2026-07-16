@@ -1,0 +1,133 @@
+{
+  "date": "2026-07-16",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在 agent 落地：从 Codex 安全边界、Claude Code 团队对自动化与上下文工程的讨论，到企业 IT 如何重构流程与权限。应用层则继续围绕语音、文档、会议上下文和 headless 软件形态展开。",
+  "stats": {
+    "xBuilders": 18,
+    "totalTweets": 40,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "把团队知识编码成 agent 可用的基础设施",
+          "summary": "Boris Cherny 认为，工程团队过去通过 lint、CI、测试和脚本放大个人产出；在 agent 时代，这类自动化更重要，因为它会同时加速一整支 agent 队伍。他主张把领域知识写进 CLAUDE.md、REVIEW.md、skills、docs、代码注释和 memories，让 agent 在没有额外上下文的情况下也能高质量贡献代码。",
+          "urls": [
+            "https://x.com/bcherny/status/2077460395279692197"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 调整使用限制，并回应 GPT-5.6 误删文件风险",
+          "summary": "Thibault Sottiaux 表示 Codex plus 和 pro 已取消 5 小时限制数日，正在征询用户对周限额管理的反馈。他还说明 GPT-5.6 误删文件报告多发生在 full access、无 sandbox、无 auto review 的场景，OpenAI 将更新 developer message、引导更安全权限模式，并增加 harness safeguards，后续会发布 post-mortem。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2077632589498913087",
+            "https://x.com/thsottiaux/status/2077630111499882637",
+            "https://x.com/thsottiaux/status/2077627035418239230"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "headline": "Gemini Spark 扩展 Ultra 覆盖并加入 Docs、Sheets、Slides 能力",
+          "summary": "Josh Woodward 称 Gemini Spark 将面向更多 Ultra 订阅用户开放，并新增四项能力：可打开和编辑 Google Docs、读取 Google Sheets 与 Slides 评论、速度提升超过 50%、可跨多个来源并行处理任务。他还分享 Gemini Southeast Asia Report：活跃用户过去一年翻倍，70% prompt 使用本地语言，40% prompt 仅使用语音、图像或视频。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2077471111240204457",
+            "https://x.com/joshwoodward/status/2077411104775406045",
+            "https://x.com/joshwoodward/status/2077411109326221322"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "企业 agent 采用的关键：流程、数据、权限与 headless 软件",
+          "summary": "Aaron Levie 总结与大型企业 IT 负责人讨论 agent 采用的要点：变革管理仍是核心，企业需要把结构化和非结构化数据整理到适合 agent 的形态；越来越多 IT 团队把工程师嵌入业务流程，类似内部 FDE；跨职能 workflow 的权限与数据建模很复杂，agentic systems 可能需要自己的角色与权限。他还指出，企业软件未来需要更 headless，否则会被 agent 集成体验和成本拖累。",
+          "urls": [
+            "https://x.com/levie/status/2077526010753581156",
+            "https://x.com/levie/status/2077471148699439152"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code builder 的 prompt 经验：thin prompts、thick artifacts",
+          "summary": "Thariq 给出简洁的 prompting 公式：thin prompts、thick artifacts + context、thin skills。也就是说，不把复杂性堆在 prompt 本身，而是把可复用上下文、产物和技能设计好，让模型在更稳定的结构中工作。",
+          "urls": [
+            "https://x.com/trq212/status/2077539537992229076",
+            "https://x.com/trq212/status/2077490092290253259"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel Sandbox 日创建量超过 350 万，并展示 Web Analytics API 用例",
+          "summary": "Guillermo Rauch 称 Vercel Sandbox DAU 以 100% m/o/m 增长，每天创建 350 万以上 sandboxes，并由 Notion、Airtable、Meta、Zapier、CodeRabbitAI 等使用。他还提到 Web Analytics API 可让 agent 关联访客、购买、checkout 等 custom events，与部署和性能演进一起分析，也可构建自定义前端展示数据。",
+          "urls": [
+            "https://x.com/rauchg/status/2077559189015335019",
+            "https://x.com/rauchg/status/2077426190386946539"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews for busy people",
+          "headline": "ChatGPT Live 与 Codex 不互通，是语音 assistant 的缺口",
+          "summary": "Peter Yang 认为 ChatGPT Live 和 Codex 都很强，但彼此不连通是 @OpenAI 的重大机会损失。他举例说，散步时想让 ChatGPT Live 打开 Google Doc，却需要手动触发 Documents plugin 才能获得上下文。他希望 Live 能使用 Codex 可访问的 plugins、tools 和 browser use，从而在实时对话中处理邮件、会议、文档和代码。",
+          "urls": [
+            "https://x.com/petergyang/status/2077572198655754583"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer / @latentspacepod",
+          "headline": "CUA 进展被低估，真实使用者感受到速度很快",
+          "summary": "Swyx 回顾自己长期关注 computer use：从 World of Bits、Adept、Anthropic Computer Use 到 @aidotengineer 的 computer use track。他认为 GPT 5.6 + Superapp 在 CUA 上进展很快，并建议团队把注册、支付、发票、speaker、sponsor、attendee、vendor 等知识工作尽量交给 CUA，以便真实理解能力边界。",
+          "urls": [
+            "https://x.com/swyx/status/2077475285205958771"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "让 agent 在公司内工作，先让公司变得可读",
+          "summary": "Zara Zhang 认为，如果希望 agents 真正在公司内部工作，就要把公司设计成它们可以读取的形态。她提到 Shopify 的一个 agent 没有私聊功能、只在公开频道中工作，副作用是促进了 peer learning。她还说，自己没有以传统方式学习编程，coding agents 对她更像创造和自我表达。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2077417579837309040",
+            "https://x.com/zarazhangrui/status/2077388091044635010"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Skill files 的可移植性可降低对 frontier model 的依赖",
+          "summary": "Garry Tan 认为 skill files 是 portable 的，可以让 builders 不那么依赖某个特定 frontier model。他将这种可迁移的技能文件视为好事，呼应了今天多位 builder 对 skills、上下文和团队知识基础设施的讨论。",
+          "urls": [
+            "https://x.com/garrytan/status/2077626565517590618"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps",
+          "summary": "Dan Shipper 与 Granola cofounder and CEO Chris Pedregal 讨论 AI 应用层下一阶段。Chris 认为 meeting notes 不是终局，真正的竞争是 AI-native world 中工作界面的归属；他也谈到高增长 startup 仍像“knife fight”，即使产品有效、团队扩张到六七十人，组织、产品一致性、角色边界和未来工作流仍充满挑战。",
+          "urls": [
+            "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+            "https://x.com/danshipper/status/2077410279474770229"
+          ]
+        }
+      ]
+    }
+  ]
+}

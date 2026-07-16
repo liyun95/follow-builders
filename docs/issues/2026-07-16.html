@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月16日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月16日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的高信号集中在 agent 落地：从 Codex 安全边界、Claude Code 团队对自动化与上下文工程的讨论，到企业 IT 如何重构流程与权限。应用层则继续围绕语音、文档、会议上下文和 headless 软件形态展开。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>把团队知识编码成 agent 可用的基础设施</h3>
+    <p>Boris Cherny 认为，工程团队过去通过 lint、CI、测试和脚本放大个人产出；在 agent 时代，这类自动化更重要，因为它会同时加速一整支 agent 队伍。他主张把领域知识写进 CLAUDE.md、REVIEW.md、skills、docs、代码注释和 memories，让 agent 在没有额外上下文的情况下也能高质量贡献代码。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2077460395279692197" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 调整使用限制，并回应 GPT-5.6 误删文件风险</h3>
+    <p>Thibault Sottiaux 表示 Codex plus 和 pro 已取消 5 小时限制数日，正在征询用户对周限额管理的反馈。他还说明 GPT-5.6 误删文件报告多发生在 full access、无 sandbox、无 auto review 的场景，OpenAI 将更新 developer message、引导更安全权限模式，并增加 harness safeguards，后续会发布 post-mortem。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2077632589498913087" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2077630111499882637" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/thsottiaux/status/2077627035418239230" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Josh Woodward · VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio</div>
+    <h3>Gemini Spark 扩展 Ultra 覆盖并加入 Docs、Sheets、Slides 能力</h3>
+    <p>Josh Woodward 称 Gemini Spark 将面向更多 Ultra 订阅用户开放，并新增四项能力：可打开和编辑 Google Docs、读取 Google Sheets 与 Slides 评论、速度提升超过 50%、可跨多个来源并行处理任务。他还分享 Gemini Southeast Asia Report：活跃用户过去一年翻倍，70% prompt 使用本地语言，40% prompt 仅使用语音、图像或视频。</p>
+    <div class="links"><a href="https://x.com/joshwoodward/status/2077471111240204457" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/joshwoodward/status/2077411104775406045" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/joshwoodward/status/2077411109326221322" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>企业 agent 采用的关键：流程、数据、权限与 headless 软件</h3>
+    <p>Aaron Levie 总结与大型企业 IT 负责人讨论 agent 采用的要点：变革管理仍是核心，企业需要把结构化和非结构化数据整理到适合 agent 的形态；越来越多 IT 团队把工程师嵌入业务流程，类似内部 FDE；跨职能 workflow 的权限与数据建模很复杂，agentic systems 可能需要自己的角色与权限。他还指出，企业软件未来需要更 headless，否则会被 agent 集成体验和成本拖累。</p>
+    <div class="links"><a href="https://x.com/levie/status/2077526010753581156" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/levie/status/2077471148699439152" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Claude Code builder 的 prompt 经验：thin prompts、thick artifacts</h3>
+    <p>Thariq 给出简洁的 prompting 公式：thin prompts、thick artifacts + context、thin skills。也就是说，不把复杂性堆在 prompt 本身，而是把可复用上下文、产物和技能设计好，让模型在更稳定的结构中工作。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2077539537992229076" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/trq212/status/2077490092290253259" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel Sandbox 日创建量超过 350 万，并展示 Web Analytics API 用例</h3>
+    <p>Guillermo Rauch 称 Vercel Sandbox DAU 以 100% m/o/m 增长，每天创建 350 万以上 sandboxes，并由 Notion、Airtable、Meta、Zapier、CodeRabbitAI 等使用。他还提到 Web Analytics API 可让 agent 关联访客、购买、checkout 等 custom events，与部署和性能演进一起分析，也可构建自定义前端展示数据。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2077559189015335019" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2077426190386946539" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews for busy people</div>
+    <h3>ChatGPT Live 与 Codex 不互通，是语音 assistant 的缺口</h3>
+    <p>Peter Yang 认为 ChatGPT Live 和 Codex 都很强，但彼此不连通是 @OpenAI 的重大机会损失。他举例说，散步时想让 ChatGPT Live 打开 Google Doc，却需要手动触发 Documents plugin 才能获得上下文。他希望 Live 能使用 Codex 可访问的 plugins、tools 和 browser use，从而在实时对话中处理邮件、会议、文档和代码。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2077572198655754583" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @aidotengineer / @latentspacepod</div>
+    <h3>CUA 进展被低估，真实使用者感受到速度很快</h3>
+    <p>Swyx 回顾自己长期关注 computer use：从 World of Bits、Adept、Anthropic Computer Use 到 @aidotengineer 的 computer use track。他认为 GPT 5.6 + Superapp 在 CUA 上进展很快，并建议团队把注册、支付、发票、speaker、sponsor、attendee、vendor 等知识工作尽量交给 CUA，以便真实理解能力边界。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2077475285205958771" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>让 agent 在公司内工作，先让公司变得可读</h3>
+    <p>Zara Zhang 认为，如果希望 agents 真正在公司内部工作，就要把公司设计成它们可以读取的形态。她提到 Shopify 的一个 agent 没有私聊功能、只在公开频道中工作，副作用是促进了 peer learning。她还说，自己没有以传统方式学习编程，coding agents 对她更像创造和自我表达。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2077417579837309040" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2077388091044635010" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>Skill files 的可移植性可降低对 frontier model 的依赖</h3>
+    <p>Garry Tan 认为 skill files 是 portable 的，可以让 builders 不那么依赖某个特定 frontier model。他将这种可迁移的技能文件视为好事，呼应了今天多位 builder 对 skills、上下文和团队知识基础设施的讨论。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2077626565517590618" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">AI &amp; I by Every · Podcast</div>
+    <h3>The Founder of a $1.5B AI Company on What Comes After the First Wave of AI Apps</h3>
+    <p>Dan Shipper 与 Granola cofounder and CEO Chris Pedregal 讨论 AI 应用层下一阶段。Chris 认为 meeting notes 不是终局，真正的竞争是 AI-native world 中工作界面的归属；他也谈到高增长 startup 仍像“knife fight”，即使产品有效、团队扩张到六七十人，组织、产品一致性、角色边界和未来工作流仍充满挑战。</p>
+    <div class="links"><a href="https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/danshipper/status/2077410279474770229" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>18</strong><span>builders</span></div><div class="stat"><strong>40</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
