@@ -1,0 +1,165 @@
+{
+  "date": "2026-07-17",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线是开放模型、agentic coding 与企业 AI 落地。Kimi K3 引发 builder 对成本、benchmark、模型路由和 stack 重构的集中讨论；同时 ChatGPT/Codex、Claude Code、NotebookLM、Vercel 和 Box 都有值得关注的产品与组织信号。",
+  "stats": {
+    "xBuilders": 18,
+    "totalTweets": 38,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "ChatGPT desktop app 更新侧边栏、同步与模式切换",
+          "summary": "Thibault Sottiaux 表示，团队根据用户反馈调整了新的 ChatGPT desktop app：conversation history 和 projects 现在会显示在 sidebar，Chat 和 Work history 可在 web、mobile、desktop 间同步；用户也能在 desktop 内更方便地切换 Chat 与 Work modes。Codex mode 保持不变，团队还会继续修复体验细节并提升性能、可靠性和效率。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2077928427936710901"
+          ]
+        },
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 的团队采用成熟度：从使用量到自动化整类工作",
+          "summary": "Boris Cherny 讨论团队如何衡量 Claude Code 的 return：仅看 usage dashboard 不够，更应判断这些任务原本是否会消耗 engineering effort，以及节省了多少 manual eng-hours。他还强调，要让 Claude 端到端验证自己的工作，需要 auto mode、自动 code/security review、多 agent 管理界面，以及 /loop、/batch、dynamic workflows、worktree isolation 等 guardrails。",
+          "urls": [
+            "https://x.com/bcherny/status/2077929404219474148",
+            "https://x.com/bcherny/status/2077929397495959693",
+            "https://x.com/bcherny/status/2077929390806073807"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "开放模型推动企业 AI stack 重新设计",
+          "summary": "Madhu Guru 认为 Kimi、GLM 等 open-weight models 会迫使企业重新思考 AI stack，核心是最大化 model optionality。他建议企业构建高速度 evals，包括 regression evals 与 aspirational evals；自行建立能在 quality、cost、latency 间权衡的 model routing；并使用 model-agnostic harness，将 prompt structure、context management、tool definitions 和 output parsing 统一抽象，避免系统绑定特定模型 API。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2077885624607228018"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Kimi K3 在 web engineering benchmark 上领先 proprietary models",
+          "summary": "Guillermo Rauch 表示，Kimi K3 在相关 web engineering benchmark 上表现最佳，领先 Fable，并以更短时间达到相近成功率。他认为这是 open model 首次在这一综合 benchmark 中超过所有 proprietary models，是开放模型可能迎来突破时刻的重要信号；同时也提醒 benchmark 不能代表全部，目前还没有模型在该 eval set 上达到 100% 完成率。",
+          "urls": [
+            "https://x.com/rauchg/status/2077900518404321759"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 邀请 React 与 GraphQL 早期关键人物加入",
+          "summary": "Guillermo Rauch 宣布 Pete Hunt 和 Nick Schrock 加入 Vercel。Pete Hunt 曾在 Meta 推动 React 并将负责 Frameworks、领导 Next.js；Nick Schrock 共同发明 GraphQL，将参与 Agentic Developer Experience，面向“next billion agents”和自我改进软件的开发体验建设。",
+          "urls": [
+            "https://x.com/rauchg/status/2077870043833229692"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Aaron Levie：开放模型降低 token 成本会扩大企业 AI 用例",
+          "summary": "Aaron Levie 认为，开放模型达到当前性能水平非常重要，因为每次 frontier intelligence 成本下降，企业可承担的 workflow 就会增加。很多企业场景此前受限于 token 成本；开放与闭源实验室的共同突破，会让 applied AI layer 能利用多模型完成完整任务，并按 workflow 调优和 route intelligence。",
+          "urls": [
+            "https://x.com/levie/status/2077857617859535112"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Box 与 Databricks 打通企业非结构化内容查询",
+          "summary": "Aaron Levie 介绍 Box 与 Databricks 的集成：企业可从合同、财务文档、供应链资料等 content 中提取 structured data，并连接到 Databricks，而无需移动或重新处理原始内容。这让用户可以在大规模文档数据集上查询，并与 ERP、CRM、product analytics 等系统结合，体现 headless software 与 agents 对企业内容工作流的推动。",
+          "urls": [
+            "https://x.com/levie/status/2077782120232350205"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "headline": "NotebookLM 更名为 Gemini Notebook，用户与组织规模继续增长",
+          "summary": "Josh Woodward 回顾 NotebookLM 的起点来自 Steven Johnson 对写书流程的拆解。如今该产品已有超过 3000 万用户和 60 万个组织使用。团队过去内部简称其为 “Notebook”，现在对外正式启用新名称。Google Labs 也提到 Project Tailwind 最终成长为 NotebookLM，并祝贺其成为 @Gemini_Notebook。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2077811657385079045",
+            "https://x.com/GoogleLabs/status/2077832590132949268"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Anthropic Cowork 邀请非工程团队分享真实 workflow",
+          "summary": "Cat Wu 向 marketing、sales、finance、legal 等 non-engineering 角色征集 Cowork 使用反馈，邀请用户与团队进行 30 分钟 screen share。信号显示 Anthropic 正在面向工程之外的业务职能打磨 agent/cowork 工作流。",
+          "urls": [
+            "https://x.com/_catwu/status/2077933568282755145"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit CEO 展示 WIP chess engine：微调与 GRPO RL",
+          "summary": "Amjad Masad 发布了一个可试玩的 WIP chess engine，并称它在国际象棋上似乎已经优于 frontier models。该引擎基于 200 万个 Stockfish 标注局面 fine-tune，随后进行短程 GRPO RL pass；他还提供了包含实验与 annotated code 的 documentation/tutorial。",
+          "urls": [
+            "https://x.com/amasad/status/2077908032944779732"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "Dan Shipper 复盘 OpenAI 如何把 Codex 重新并回主产品",
+          "summary": "Dan Shipper 认为 OpenAI 近期的 Codex 路线很值得研究：GPT-5 曾被定位为 pair programmer，但早期没有完全抓住 Claude Code 式 agentic coding；随后小团队独立推进 Codex model line 和产品，到 Codex Desktop app 后形成明显优势。Codex 走红后，OpenAI 又将其并回 ChatGPT 体系，他认为这是少见的“自我颠覆后再顺利整合”。",
+          "urls": [
+            "https://x.com/danshipper/status/2077825318992429286"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "AI is cool i guess",
+          "headline": "Sam Altman：ChatGPT 新 voice model 跨过门槛",
+          "summary": "Sam Altman 表示自己现在与 ChatGPT 语音对话的频率已经超过打字，并认为新的 voice model 已经跨过一个重要门槛。他同时提到 OpenAI 过去 12 个月并非最佳表现，但团队正在做大量工作，未来 12 个月可能会是迄今最好的一年。",
+          "urls": [
+            "https://x.com/sama/status/2077842579232895286",
+            "https://x.com/sama/status/2077817060068057493"
+          ]
+        },
+        {
+          "source": "Matt Turck",
+          "role": "VC at @FirstMarkCap; Host: MAD Podcast",
+          "headline": "OpenAI 工业算力话题：Stargate、Jalapeño 与 tokens per watt",
+          "summary": "Matt Turck 发布与 OpenAI Head of Industrial Compute Sachin Katti 的对话，主题覆盖 Stargate、Jalapeño、AI data center financing 和 compute。提纲中包括“AI data centers 是把 electrons 变成 tokens 的工厂”、液冷、电力与电网、nuclear、OpenAI 自研 AI chips、tokens per watt、inference 是否主导 compute、100,000 GPUs 的 networking 问题等。",
+          "urls": [
+            "https://x.com/mattturck/status/2077791541167268243",
+            "https://x.com/mattturck/status/2077791545323864405"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "中国硬件创意：可兼作私密麦克风的口罩",
+          "summary": "Zara Zhang 观察到中国出现不少有趣硬件创意，其中一个例子是可作为麦克风使用的 face mask，让用户在公共场所进行 voice dictation 时不易被旁人听到。这类设备反映了语音 AI 交互普及后，对隐私与公共场景输入方式的新需求。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2077953473535176772"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Unsupervised Learning",
+          "role": "Podcast",
+          "headline": "Benedict Evans 解读 AI hype cycle、模型价值与企业采用",
+          "summary": "本期 Jacob Efron 对话 Benedict Evans，讨论 AI 与互联网、mobile、PC 等历史平台转移的相似与不同，尤其是 foundation models 的竞争动态、token pricing、价值会在 stack 哪一层沉淀，以及 LLM 是否具备 Windows 式 network effects。节目还谈到 consumer AI application 现阶段为什么不够奏效、模型能力的 jagged edge 对企业采用的影响，以及 AI 对就业与 productivity 的现实含义。",
+          "urls": [
+            "https://www.youtube.com/watch?v=vDY_ocrkQ5w"
+          ]
+        }
+      ]
+    }
+  ]
+}
