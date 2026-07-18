@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月18日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月18日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 AI agent 的真实落地：从 Codex/Claude 使用限制、浏览器操作与 VM 隔离，到企业 evals、harness 和算力瓶颈。Builder 讨论不再只围绕模型能力，而是转向成本、容量、工作流与基础设施。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>OpenAI 重置 Codex 与 ChatGPT Work 付费用户使用限制</h3>
+    <p>Thibault Sottiaux 表示，Codex 和 ChatGPT Work 的所有付费用户使用限制已被重置，并感谢团队在高速扩展中保持 infra 稳定。他还提到这可能连带重置其他 rate limits。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2078320950488297917" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2078321266524881065" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · Claude by @anthropicai</div>
+    <h3>Claude Fable 5 将纳入 Max 与 Team Premium 计划</h3>
+    <p>Claude 宣布自 7 月 20 日起，Claude Fable 5 将包含在所有 Max 和 Team Premium plans 中，按 50% limits 提供。Pro 和 Team Standard 用户将继续通过 usage credits 访问，并获得一次性 100 美元 credit。Claude 称 Fable 需求难以预测，正在继续投入新容量。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2078302415804379218" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/claudeai/status/2078302417100394737" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Sr Director, AI at Meta</div>
+    <h3>企业 AI 落地的瓶颈是 evals、harness 与人才</h3>
+    <p>Madhu Guru 认为，企业难以超越基础 chatbot，关键在于缺少能构建 evals 和 harness 的人才。evals 需要表达业务目标并帮助在质量、成本、延迟曲线上选模型；harness 则要管理 routing、multiagency orchestration、context、tool calling 和 memory，并独立于模型存在。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2078131628262752550" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @latentspacepod, @aidotengineer, @cognition, @temporalio</div>
+    <h3>用 agent 定期自动研究 SEO/AEO 优化</h3>
+    <p>Swyx 建议将 Codex、Claude、Gemini 或 Devin automation 设置为每周自动研究如何改进 SEO/AEO，称这是仍未被充分利用的 alpha。他进一步提出 on-policy auto AEO 与 generalizable AEO 的讨论方向。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2078244735794413786" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/swyx/status/2078293998398263587" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>Codex 用 browser 与 computer use 完成 GitHub 图片上传</h3>
+    <p>Peter Steinberger 观察到 Codex 会打开 Chrome、进入 PR、点击评论并操作 macOS picker，只为上传一张图片。他表示自己让 Codex 在 VMs 中运行，以免抢占应用焦点。这反映了 agent 在缺少 API 或绕过 API 时的实际操作路径。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2078318731785359634" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>Codex 参与构建 codexbar 图标编辑器</h3>
+    <p>Peter Steinberger 称，由于 codexbar icon customization 问题太多，他构建了一个 editor；并补充“by me, I mean codex”，暗示该工具主要由 Codex 协助完成。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2078264088644276598" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>先做原型可避免浪费大量 token</h3>
+    <p>Thariq 建议，在 mockups、schemas、data models、proof of concepts 等场景中，先构建原型是避免花费大量 tokens 后才发现不想要输出的最佳方式。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2078189833445654714" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>期待通过语音管理 agents，而不是整天盯屏幕</h3>
+    <p>Peter Yang 表示，整天盯着屏幕管理 agents 会让人疲惫，更理想的方式是在户外通过“打电话”给 agents 分配任务，并让它们用语音汇报状态。他期待首个 lab 推出这种体验。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2078276992470794531" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel CEO：继续 ship 更多 agents</h3>
+    <p>Guillermo Rauch 提到“Sandbox data for downloads”，并称“Time to ship more agents”。他还转发“Ship like @shadcn”，延续快速发布与 agent 产品化的 builder 语境。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2078305023784620342" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2078299647689310270" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>AI 成本下降会扩大真实工作负载中的使用量</h3>
+    <p>Aaron Levie 认为，AI 越便宜，生态各层和终端客户越受益。当前瓶颈在于能否以低成本把 AI 部署到真实 workloads。他补充，效率提升也可能增加 frontier closed models 的需求：强模型用于任务 orchestration，便宜或微调模型处理大量 tokens。</p>
+    <div class="links"><a href="https://x.com/levie/status/2078139206946459853" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>building in public：展示产品里真实发生的工作</h3>
+    <p>Zara Zhang 建议，如果做内容像额外工作，就展示产品内部已经发生的东西：一个小录屏、第一版原型，或改变设计的用户行为。她强调 reasoning 比制作质量更重要。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2078086930756202924" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>会议记录默认化正在改变企业文化</h3>
+    <p>Zara Zhang 观察到，几年前很多人还不适应录制会议，如今商业会议默认会被记录，不是给人看，而是给 agents 使用。她认为技术正在改变文化。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2078076500683997446" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">The MAD Podcast with Matt Turck · Podcast</div>
+    <h3>OpenAI’s Compute Chief: We Can’t Build Fast Enough | Sachin Katti</h3>
+    <p>OpenAI head of industrial compute Sachin Katti 讨论 AI 算力建设的物理现实：需求远超 compute supply，数据中心像把 electrons 转成 tokens 的巨型工厂，需要液冷、供电、输电和自建能源能力。他还谈到 OpenAI 更主动参与 compute 建设、液冷规模化、power grid 限制、gas turbines、nuclear，以及 AI 未来帮助设计下一代 AI 所需系统的可能性。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=wEZBlmvxx4o" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>13</strong><span>builders</span></div><div class="stat"><strong>27</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
