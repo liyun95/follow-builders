@@ -1,0 +1,112 @@
+{
+  "date": "2026-07-19",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在实际落地：ChatGPT Work 的 agent 式办公、个人 eval set、企业 AI 扩散路径，以及模型层是否真的会 commoditize。另一条主线是 frontier 与 open-weight 模型在 cyber 等垂直能力上的快速逼近，builder 需要更重视自己的真实任务评测。",
+  "stats": {
+    "xBuilders": 11,
+    "totalTweets": 23,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "ChatGPT Work 正在变成可委派的办公 agent",
+          "summary": "Thibault Sottiaux 表示自己的工作几乎变成了向 ChatGPT Work 委派任务，并展示了一个通过 dictation 让它遍历 Twitter DM、筛选 ChatGPT Work 申请、生成 spreadsheet、自动分类工作场景并评估 workflow 成熟度的长 prompt。他还列出 ChatGPT Work 的用途：创建和托管 sites、管理 email、总结大量 documents、生成 docs、sheets 和 slides，并称其已在 mobile app 或网页端可用，包含在 Plus、Pro、Business 和 Enterprise plans 中。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2078702412085498087",
+            "https://x.com/thsottiaux/status/2078697741455356367",
+            "https://x.com/thsottiaux/status/2078697631019303273"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "用 ChatGPT Site 给孩子做乘法学习游戏",
+          "summary": "Peter Yang 分享他和 8 岁女儿一起构建了一个 @ChatGPTapp Site，用来学习乘法表。项目结合了 ChatGPT Images 生成 UI 和动物角色、音乐，以及 timed boss level，体现了面向家庭和教育场景的轻量 builder workflow。",
+          "urls": [
+            "https://x.com/petergyang/status/2078638568784994686"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Anthropic 团队为 Fable 按时上线冲刺",
+          "summary": "Thariq 提到 Fable 能按时完成来自 Anthropic 多位成员的高强度投入，很多人几乎昼夜工作。他表示一度并不确定能否赶上时间窗口，并对团队成果感到自豪。",
+          "urls": [
+            "https://x.com/trq212/status/2078514180051906864"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 内部 eval 指向 open-weight cyber 能力已到 frontier 级别",
+          "summary": "Guillermo Rauch 基于内部 eval 表示，Kimi K3 在 cybersecurity 上是 top-tier，Sol 在 cyber capability 上明显领先但成本更高；Fable 则在测试中拒绝完成运行。他的结论是 frontier、open-weight 的 cybersecurity capability 已经出现，并建议仅用于 defensive purposes。他同时反思 “AGI” 一词，认为 AI 在多数经济相关任务上远强于人类，但不能替代人的独特性、关怀和表达。",
+          "urls": [
+            "https://x.com/rauchg/status/2078647648307880209",
+            "https://x.com/rauchg/status/2078548458714406959"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "AI 生态价值不会只集中在少数模型公司",
+          "summary": "Aaron Levie 认为过去几个月显示 AI 未来不会只由少数 frontier labs 吃掉全部价值。除模型实验室外，机会正在扩散到：帮助企业或 applied AI 公司训练和运行特定 use case 模型的公司、面向法律/IT/安全/HR/客服/编码等流程的 applied AI、垂直领域新 labs、运行与治理 models 和 agents 的基础设施，以及推动企业 change management 的新服务公司。他还认为单纯 gate keeping models 难以规模化，美国应安全地保持高进展速度、推动技术扩散、建设 infrastructure，并支持 US OSS。",
+          "urls": [
+            "https://x.com/levie/status/2078567715544121815",
+            "https://x.com/levie/status/2078481578779685245"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "每个 builder 都应建立自己的 personal eval set",
+          "summary": "Zara Zhang 建议每个人都为 AI models 准备一组与日常工作和生活真正相关的 personal eval set。行业 benchmark 有参考价值，但未必能反映模型对个人是否有用；更有效的方法是持续用真实任务试探模型边界。她还指出企业 AI adoption 的最大障碍之一，是懂 AI 的人不懂业务，懂业务的人不懂 AI。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2078666187026911488",
+            "https://x.com/zarazhangrui/status/2078492577788268549"
+          ]
+        },
+        {
+          "source": "Matt Turck",
+          "role": "VC at @FirstMarkCap",
+          "headline": "模型层仍未 commoditize",
+          "summary": "Matt Turck 用一句反讽总结模型层讨论：从 2024 到 2026，不断有人说 “The model layer is commoditizing”，但模型层仍然没有 commoditize。对 builder 来说，这意味着模型选择、能力差异和上层产品架构仍然是关键变量。",
+          "urls": [
+            "https://x.com/mattturck/status/2078520552680046920"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@aidotengineer / @latentspacepod",
+          "headline": "全球 AI 人才竞争与 AEO 收入机会",
+          "summary": "Swyx 认为很多人低估了欧洲，那里实际上拥有一些世界顶级 AI engineers；如果能正确发掘人才，欧洲会在全球 AI talent arena 中非常有竞争力。他还提到按当前速度，AEO 明年可能为自己带来 100 万美元收入。",
+          "urls": [
+            "https://x.com/swyx/status/2078628617987518855",
+            "https://x.com/swyx/status/2078581967768166591"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Unsupervised Learning",
+          "role": "Podcast",
+          "headline": "Jürgen Schmidhuber 谈 AI 现状、机器人硬件与 recursive self improvement",
+          "summary": "在 “Ep 90: AI Pioneer Jürgen Schmidhuber on the State of AI Today” 中，Jürgen Schmidhuber 认为从宇宙尺度看 AI 很近，但真正的 AI 不只是屏幕后的模型，还需要现实世界中的机器人和物理硬件；当前 robot hardware 仍远逊于人类身体。他回顾了 meta evolution、self-referential machines、Gödel machine、神经网络自修改权重等 recursive self improvement 路线，并认为当下很多自改进系统是 2003 年 Gödel machine 思想的缩减版，实践上有效但受 gradient descent 限制。他还表示对 AI 技术乐观，但对部分模型公司的经济前景更悲观，并认为 AI safety 风险没有一些人担心得那么高。",
+          "urls": [
+            "https://www.youtube.com/watch?v=RKjR8DQ40po"
+          ]
+        }
+      ]
+    }
+  ]
+}
