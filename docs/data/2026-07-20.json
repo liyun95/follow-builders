@@ -1,0 +1,135 @@
+{
+  "date": "2026-07-20",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在 agentic commerce、AI 成本曲线、Claude/Codex 工作流和一次性软件。一个共同主题是：模型能力之外，真正的 builder 机会在于把 AI 接进权限、支付、反馈和行业流程。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 29,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "用 Claude Cowork 管理日历：把偏好写成可迭代 skill",
+          "summary": "Cat Wu 分享了自己给 Claude Cowork 的 prompt：按周管理日历，会议少于 20 小时、去重冲突会议、参考过去拒绝模式、晚餐不计入会议时长，并在更新邀请前先询问。她强调让 Cowork 构建并持续 refine 一个 skill。",
+          "urls": [
+            "https://x.com/_catwu/status/2079011428380602526"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 修复正在传播，并将复盘 skills 与 system prompts",
+          "summary": "Thariq 提醒遇到相关问题的用户重启 Claude Code，修复应已在传播。他还表示正在写一篇文章，复盘团队学到的经验，以及这些经验如何应用到 skills 和 system prompts 中。",
+          "urls": [
+            "https://x.com/trq212/status/2079103743535280508",
+            "https://x.com/trq212/status/2078901672441790818"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "ChatGPT Work 与 Codex 的文案需要面向非技术用户",
+          "summary": "Peter Yang 认为，很多 ChatGPT Work 的非技术用户未必理解“run this chat in the cloud”是什么意思。他还提到 Codex 中“send to Codex Web”的流程和落地页提示存在混乱，强调产品 copy 对 AI 工具采用很关键。",
+          "urls": [
+            "https://x.com/petergyang/status/2079007381695172797"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "网络安全可能是衡量 superintelligence 的软件工程 IQ test",
+          "summary": "Guillermo Rauch 认为，模型“one-shot 一个 clone”并不是好测试；发现、修补、逆向和利用漏洞更能考验跨语言、跨 runtime、跨 framework 的真实推理能力。他认为 Kimi K3 在这类任务上的表现对 open models 是积极信号。",
+          "urls": [
+            "https://x.com/rauchg/status/2078912929714356698"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "AI token 成本下降会推高 inference 需求",
+          "summary": "Aaron Levie 指出，很多人误以为 AI 成本下降会让总支出下降，但通常相反：更便宜的 token 会让更多任务变得可负担，例如写更多代码、做更多代码审查、在大数据集上运行 agents。他认为这也解释了 AI 中 open source 商业模式为何能成立，因为多数模型仍跑在 infra 上。",
+          "urls": [
+            "https://x.com/levie/status/2078968158006939716"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "open weights 变强后，AI 监管和访问控制的 calculus 需要变化",
+          "summary": "Aaron Levie 认为，当强大的 open source 替代品只略落后于 frontier models 时，过度 gatekeeping frontier model capabilities 可能让企业更不安全、更不具竞争力。他认为 AI regulation 必须考虑 open weights models 强于预期这一现实。",
+          "urls": [
+            "https://x.com/levie/status/2078992778449850769"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "AI 扩散的瓶颈在现实世界反馈，而不只是模型输出",
+          "summary": "Aaron Levie 认为，AI 在 coding 中采用快，是因为代码可大量生成、测试和运行，几乎不需要外部世界改变；但生命科学、销售、合同等领域受现实反馈循环约束。他强调应用层机会在于把 intelligence 嵌入现有行业 workflow，而不是只交付模型输出。",
+          "urls": [
+            "https://x.com/levie/status/2078864191683969212"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Markdown 作为 AI 时代的通用数据格式",
+          "summary": "Garry Tan 认为 Markdown 文件是 universal 的，并且会长期存活。在 intelligence stack 快速变化的背景下，Markdown 作为简单、可迁移的数据格式尤其适合 builder 使用。他还提到 “GSkills”。",
+          "urls": [
+            "https://x.com/garrytan/status/2078803803659452624",
+            "https://x.com/garrytan/status/2078803084785111120"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "AI 让 code/software 变得 disposable",
+          "summary": "Zara Zhang 认为 builder 需要接受“代码和软件可以是一次性的”这一变化。她举例包括：为自己生成 design playgrounds/modals 微调视觉、创建 HTML 页面理解代码、临时搭建 dashboard 只为检查一次数据，使用后即可丢弃。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2078835308905578660"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "AI copy editing 在 Every 内部跨过实用门槛",
+          "summary": "Dan Shipper 表示，过去一周 Every 内部已经能自动完成约 70% 原本需要人工完成的 copy edits，这是他多年尝试后第一次看到这种效果，说明相关能力可能刚刚越过实用门槛。",
+          "urls": [
+            "https://x.com/danshipper/status/2078920115140358585"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "消费者订阅软件为何难做成超大生意",
+          "summary": "Amjad Masad 认为，消费者主要把钱花在食物、房租、娱乐、电话网络和购物上，而软件通常由公司购买。因此除 Netflix、Spotify 等之外，很难想到巨大的 consumer subscription businesses。",
+          "urls": [
+            "https://x.com/amasad/status/2079086360703680583"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "Stripe's AI Chief: How AI Agents Will Buy, Sell, and Pay",
+          "summary": "Matt Turck 与 Stripe 的 head of data and AI Emily Sense 讨论 agentic commerce 的经济栈：agents 如何代表用户买卖和支付，为什么 per seat pricing 正在失效，token monetization 与 token theft 的风险，以及 agents 未来是否可能独立经营业务。Emily 提到，AI 公司超过六分之一 signup 涉及类似“dine and dash for token”的滥用；她还介绍了 Stripe 与 OpenAI 共建的 agentic commerce protocol，用于让商家一次暴露 catalog、inventory 和 prices，并通过 shared payment token 安全完成交易。",
+          "urls": [
+            "https://www.youtube.com/@DataDrivenNYC/videos"
+          ]
+        }
+      ]
+    }
+  ]
+}
