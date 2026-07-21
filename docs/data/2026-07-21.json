@@ -1,0 +1,134 @@
+{
+  "date": "2026-07-21",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 agent 工程化：多模型路由、planner/workhorse 分工、独立 verification agent，以及 AI 时代的招聘与组织形态。另一个主线是 AI 公司护城河与资本规模的再思考：真正可持续的优势仍来自独特 insight、领域理解和持续交付能力。",
+  "stats": {
+    "xBuilders": 14,
+    "totalTweets": 29,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "Latent Space / AI Engineer",
+          "headline": "RLM 论文提示：benchmark 相似训练数据可能制造“前沿”成绩",
+          "summary": "Swyx 指出，RLM paper 中关于 trajectory comparison 的讨论很值得关注：即使不直接训练测试集，模型也可能通过训练“test lookalikes”来追逐 benchmark 数字。对于 open weights 模型，若不公开 datasets 或 RL environments，外界很难验证是否存在这种情况。论文作者尝试用 NLP distance metrics 分析 hidden trajectories，并初步支持 RLMs 能泛化到具有相同 latent structure 的未见任务。",
+          "urls": [
+            "https://x.com/swyx/status/2079411861150429402"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "用一个 agent 做事，另一个 agent 按 rubric 审核",
+          "summary": "Peter Yang 引用 Thariq 的观点：在判断视频 short 是否“好”这类非确定性任务中，应让独立 verification agent 读取 rubric、审查结果并给出反馈。原因是 self-preferential bias：模型在验证自己的输出时往往更宽松，因此生产与审核最好拆成两个 agent。",
+          "urls": [
+            "https://x.com/petergyang/status/2079257646939742542"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "Enterprise AI 是通往 AGI 的关键前沿之一",
+          "summary": "Madhu Guru 认为，通往 AGI 的道路由“具备经济价值的任务”铺成，而这些任务大量存在于企业场景中。因此 enterprise AI 是最重要的前沿之一。他还提到，当前真正重要的 tokenomics 争论已转向 open vs closed weight、inference costs 和 model routing。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2079369965569003691",
+            "https://x.com/realmadhuguru/status/2079227605031829700"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "coding agent 已开始触达实体产品交付",
+          "summary": "Amjad Masad 转发并评论“First physical product shipped by a coding agent?”。虽然原帖细节未在 feed 中展开，但这个信号指向 coding agent 从软件生成扩展到实体产品工作流的讨论。",
+          "urls": [
+            "https://x.com/amasad/status/2079282869063786541"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "AI 时代的核心抽象：everything is code",
+          "summary": "Guillermo Rauch 总结 AI 带来的一个重要产品视角：幻灯片、设计、宣传视频、Excel 自动化都可以被视为 code。这反映出 builder 工具链正在把多种内容与工作流统一到可生成、可编辑、可自动化的形式。",
+          "urls": [
+            "https://x.com/rauchg/status/2079274102129304026"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "多模型 agentic systems：用 frontier planner 搭配低成本 workhorse model",
+          "summary": "Aaron Levie 认为 multi-model agentic systems 会成为未来核心模式。他引用 Cursor 的研究称，用 frontier model 负责 planning 和 orchestration，再把明确指令交给更便宜的 workhorse model 执行，可显著降低项目总 token 成本，带来 15X cost improvement。关键在于复杂任务中只有分解、设计决策和权衡等少数时刻需要 frontier intelligence，其他大量执行步骤可由低成本模型完成。应用层的差异化将来自领域理解和 model routing 能力。",
+          "urls": [
+            "https://x.com/levie/status/2079402164988895293"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "AI 时代的面试：一轮禁用 AI，一轮必须用 AI",
+          "summary": "Zara Zhang 提出新的招聘流程：第一轮线下面试且不允许使用 AI，用来测试候选人的领域知识与即时能力；第二轮设计一个必须借助 AI 才能完成的项目，不只评估结果，也评估候选人与 agents 的 chat transcript。这强调未来能力评估需要同时覆盖基础能力与 AI 协作能力。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2079409165424799889"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "coding agents 之后诞生的公司，从第一天就会不同",
+          "summary": "Zara Zhang 认为，现在公司大致分为两类：coding agents 出现前建立、正在 retrofit 的公司，以及 coding agents 之后成立的公司。后者从第一天起就可能保持十人以下团队、按项目而非部门组织、每个人闭环负责，并大幅减少内部会议。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2079225776545968166"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "Partner @fpvventures",
+          "headline": "AI 没有 moat 不等于 scale 和 capital 就是 moat",
+          "summary": "Nikunj Kothari 提醒 founders：过去 18 个月里，很多人会意识到即便 AI 领域缺少传统 moats，也不意味着规模和资本自动成为主要护城河。他用 Webvan、Groupon、MySpace、Yahoo、AltaVista、Blockbuster、Nokia 等案例说明，结构和资本位置再好，也可能被更独特的 insight 打败，或被自身规模拖垮。founders 需要找到值得十年以上投入的独特 insight，同时避免让资本与规模替代真正优势。",
+          "urls": [
+            "https://x.com/nikunj/status/2079328912912355470"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "CEO @every",
+          "headline": "Every 招聘 senior engineer 参与 agent 产品",
+          "summary": "Dan Shipper 表示 Every 正在招聘 senior engineer 来参与其 agent 项目，并强调候选人必须热爱 agents。这个招聘信号反映出媒体与 AI 产品交叉团队正在继续加码 agent 应用层建设。",
+          "urls": [
+            "https://x.com/danshipper/status/2079331654359818503"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "关于禁用 Chinese models 的观点：可能重演 EV 式 self own",
+          "summary": "Peter Yang 认为，禁止 Chinese models 可能会像禁止 Chinese EVs 一样成为 self own。该观点本身没有展开技术细节，但反映了 builder 圈对模型生态开放性、竞争和可用性的关注。",
+          "urls": [
+            "https://x.com/petergyang/status/2079273815004303477"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Booking.com CEO Glenn Fogel：AI 浪潮与互联网泡沫有相似处，但长期赢家靠持续创新",
+          "summary": "No Priors 采访 Booking Holdings CEO Glenn Fogel。他回顾 Priceline 从 2000 年互联网泡沫时期市值大幅缩水，到后来成长为大型旅行公司的历程，并将当下 AI 热潮与 90 年代末互联网浪潮对比：两者都有技术乐观、资本涌入和投机泡沫，也都会带来失败与损失。但他强调，长期不存在永恒 moat，唯一可持续的办法是不断开发新服务、找到更好的业务方式，并每天争取客户。",
+          "urls": [
+            "https://www.youtube.com/watch?v=8nj_0wZkbtA"
+          ]
+        }
+      ]
+    }
+  ]
+}
