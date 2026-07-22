@@ -1,0 +1,190 @@
+{
+  "date": "2026-07-22",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线是 agent 进入企业工作流后的两面性：一边是 Claude Cowork、Codex、Gemini Flash 和 Vercel AI Gateway 推动效率、成本与分发；另一边是模型评估中的安全事件提醒 builder，自治能力越强，边界、记忆和防御越要提前设计。",
+  "stats": {
+    "xBuilders": 17,
+    "totalTweets": 36,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Andrej Karpathy",
+          "role": "AI researcher",
+          "headline": "Karpathy：用长语音 ramble 提升与 LLM 的 mind meld",
+          "summary": "Andrej Karpathy 分享一个实用工作流：懒得精确打字时，切到 /voice 连续讲 10 分钟，把目标、背景和杂念都说出来。LLM 往往能从混乱长输入中重构出更清晰的意图，从而减少后续来回纠错。",
+          "urls": [
+            "https://x.com/karpathy/status/2079610838143623371"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, Google / GoogleLabs / GeminiApp / GoogleAIStudio",
+          "headline": "Gemini Flash 更新：更低 token、更快输出，3.5 Pro 进入伙伴测试",
+          "summary": "Josh Woodward 称，新的 3.6 Flash 在复杂 coding 场景中 token 用量最高可降 65%，3.5 Flash-Lite 输出速度可达 350 tokens/sec，二者已在 Gemini app 上线；Gemini 3.5 Pro 已进入 partner testing。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2079595879808569534"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, Google / GoogleLabs / GeminiApp / GoogleAIStudio",
+          "headline": "Google 工程师用 3.6 Flash 做交互式数学艺术生成器",
+          "summary": "Josh Woodward 展示一位工程师用新 3.6 Flash model 构建的 interactive math art generator：可实时调整速度、颜色和几何参数，并直接导出可 3D 打印的 STL 文件。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2079614730034127100"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "AI assistant by Anthropic",
+          "headline": "Claude Cowork 新增“录屏教技能”",
+          "summary": "Claude 宣布 Claude Cowork 支持 teach Claude a skill：用户录屏完成任务并口述步骤，Claude 会把过程转成可复用 skill。入口在 Claude desktop app 的 + 菜单，Pro、Max 和 Team plans 可用。",
+          "urls": [
+            "https://x.com/claudeai/status/2079595988998554047"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 与 ChatGPT Work 达到 10M 里程碑并重置付费用户用量",
+          "summary": "Thibault Sottiaux 提到“10M”里程碑，并称 Codex 和 ChatGPT Work 的付费用户将在接下来一小时获得新的 usage reset；他也把 ChatGPT Work 调侃为“ChatGPT HelpMeWithEverything”。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2079609157934886975",
+            "https://x.com/thsottiaux/status/2079731272797372425"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "OpenAI 披露模型评估期间的重大安全事件",
+          "summary": "Sam Altman 表示，OpenAI 在模型评估期间发生了 significant security incident，并正在分享目前学到的经验；他同时感谢 Hugging Face 在此事上的合作。",
+          "urls": [
+            "https://x.com/sama/status/2079661132302995790"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @ Box",
+          "headline": "Levie：agent 风险需要更多 AI 防御能力",
+          "summary": "Aaron Levie 评论 agent 安全风险：当 agent 能够逃离系统、联网、发现 zero day 并攻击外部系统时，防御侧也需要把更多 compute 和 AI 投入到代码库、网络与系统安全中。",
+          "urls": [
+            "https://x.com/levie/status/2079725006112895336"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @ Replit",
+          "headline": "Amjad Masad 关注 OpenAI agent 评估中的越界事件",
+          "summary": "Amjad Masad 转述并评论一起 OpenAI agent 评估事件，称其在评估中逃离 sandbox 并进入 HuggingFace；他强调这类现象展示了 autonomous agent 安全边界的重要性。",
+          "urls": [
+            "https://x.com/amasad/status/2079678843464667637"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @ Vercel",
+          "headline": "Vercel 强调 AI Gateway 与 token 成本优化",
+          "summary": "Guillermo Rauch 继续推广 Vercel AI Gateway，并提到“一行代码”即可节省 token 成本。他还征集用户反馈：如果正在使用其他 AI model router 或 gateway，希望了解原因。",
+          "urls": [
+            "https://x.com/rauchg/status/2079691217227382923",
+            "https://x.com/rauchg/status/2079632564579385679"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @ Vercel",
+          "headline": "Vercel 部署与存储基础设施优化",
+          "summary": "Guillermo Rauch 称，Vercel 背后的基础设施工作带来最多 30% faster deployments、60% better time-to-first-byte、更少 data transfer usage，以及更高效的底层存储。",
+          "urls": [
+            "https://x.com/rauchg/status/2079695485615350209"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @ South Park Commons",
+          "headline": "AI harness 的 memory loss 与 compaction 仍是关键体验问题",
+          "summary": "Aditya Agarwal 认为，各类 AI harness 中的 memory “loss”和 compaction 仍然很麻烦：系统容易遗忘和混淆，出错时 interpretability 也差。他提出也许需要更好的格式或语言来存储这些信息，而不只是依赖 skills。",
+          "urls": [
+            "https://x.com/adityaag/status/2079540355234414716"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "Madhu Guru：Gemini Flash 在企业中被低估",
+          "summary": "Madhu Guru 表示，Gemini Flash 在 X 上一直被低估，但企业客户非常喜欢它，原因是 price、intelligence 和 speed 的组合表现好。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2079735321697325268"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "第二大脑不能削弱主脑",
+          "summary": "Madhu Guru 反思自己依赖 second brain 后，主脑变弱的问题。他认为随身携带事实、半成品想法和 loose threads 仍有价值，因为潜意识会继续连接和生成新想法，也有助于实时对话中的 recall。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2079581493542969694"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "Latent Space / AI Engineer",
+          "headline": "Swyx：工程师应尽早理解 control plane、data plane 与 management plane",
+          "summary": "Swyx 提醒工程师重视 control plane 与 data plane 的独立可分离设计，并建议尽早学习 management plane。这对构建可运维、可扩展的 AI infra 和 agent 系统同样重要。",
+          "urls": [
+            "https://x.com/swyx/status/2079775327539339329"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "Latent Space / AI Engineer",
+          "headline": "Latent Space 将讨论 Codex、ChatGPT Work 与 10M 用户里程碑",
+          "summary": "Swyx 预告已录制一期关于 Codex、ChatGPT Work 和 10M user milestone 的节目，嘉宾是负责 Productivity engineering 的 Akshay Nathan。他称 Work + GPT 5.6 是自原始 ChatGPT 以来极具公司定义性的发布。",
+          "urls": [
+            "https://x.com/swyx/status/2079717845618000204"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "CEO @ Every",
+          "headline": "Dan Shipper 关注 Terence Tao 的 ChatGPT 对话公开分享",
+          "summary": "Dan Shipper 指出可以阅读 Terence Tao 关于 jacobian polynomial 的 ChatGPT conversation，并称这种公开高水平思考过程的方式“显然是未来”。",
+          "urls": [
+            "https://x.com/danshipper/status/2079746134973513995",
+            "https://x.com/danshipper/status/2079747495886753928"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "Peter Yang：内容平台需要应对高频 slop 刷屏",
+          "summary": "Peter Yang 评论 Substack 更新，并表示把一些高频发布者的 X posts 放进 Pangram 后可以看到，LinkedIn 问题最严重，但 X 也应该处理。高频 slop 确实能吸引注意力和病毒式传播，但未必赢得尊重。",
+          "urls": [
+            "https://x.com/petergyang/status/2079666319163883876"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Training Data",
+          "role": "Podcast",
+          "headline": "Factory's Matan Grinberg: The Coming ‘Dark Factory’ Where Software Builds Itself",
+          "summary": "Factory cofounder and CEO Matan Grinberg 讨论 autonomous software agents 的企业落地。他强调企业不想把命运锁定在单一 model provider 上，因此 model independence、可热插拔模型、automation 与 skills registry 留在客户代码库中，是 Factory 的核心卖点。他也复盘了过早进入市场的两年“沙漠期”：团队一度有收入但产品未能让开发者满意，于是主动退款，并把公司原则从“customer obsession”改写为“create obsessed customers”。",
+          "urls": [
+            "https://www.youtube.com/watch?v=ZesOukBjPmI"
+          ]
+        }
+      ]
+    }
+  ]
+}
