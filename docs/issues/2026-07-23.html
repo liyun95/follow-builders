@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月23日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月23日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 AI coding 与 agent 工作流：Claude Code 推出安全插件，Vercel 分享近自主优化 Next.js 的案例，Every 复盘用 AI 完成重要发布。与此同时，关于 open weights、模型路由中立性、AI 对就业的影响，也出现了值得 builder 关注的讨论。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Josh Woodward · VP, Google / GoogleLabs / GeminiApp / GoogleAIStudio</div>
+    <h3>Google Flow 每日开放 50 个免费 credits 至 8 月 31 日</h3>
+    <p>Josh Woodward 表示，使用 Flow 进行创意工作的用户正在增加，现在到 8 月 31 日前每天可获得 50 个免费 credits，鼓励更多创作者尝试该工具。</p>
+    <div class="links"><a href="https://x.com/joshwoodward/status/2079997285778493777" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>OpenAI Codex 相关更新即将到来</h3>
+    <p>Thibault Sottiaux 预告“明天会很 codexy”，暗示 OpenAI Codex 方向可能有新进展。原文未给出具体功能或发布时间之外的更多细节。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2080144499716800513" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · AI tutorials and interviews</div>
+    <h3>/no-ai-slop skill 一天获得 1K stars</h3>
+    <p>Peter Yang 分享他的 /no-ai-slop skill 一天获得 1K stars，并称用户已经厌倦 AI slop。他还提到该 skill 也能反向生成充满 AI cliché 的内容，用于调侃 LinkedIn 风格文本。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2080132334138151410" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/petergyang/status/2080080488119841162" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Sr Director, AI at Meta</div>
+    <h3>open weights 模型不等于训练方获得你的数据</h3>
+    <p>Madhu Guru 解释，使用中国训练的 LLM 并不意味着训练方会拿到你的数据。open weights 模型可被下载并部署在自己的 cloud 环境中，此时模型训练方已经不在链路内，数据留在运行环境里。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2080150245011509593" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Claude Design + Claude Code 的前端工作流体验很好</h3>
+    <p>Thariq 表示自己现在才开始实际输入 /design 有些可惜，因为用 Claude Design 和 Claude Code 做 frontend 的体验“actually so good”。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2080090919832084753" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · CEO @replit</div>
+    <h3>Replit 继续推进 mobile coding，并提醒模型 router 的中立性问题</h3>
+    <p>Amjad Masad 称 Replit 发明了 mobile coding，并正把它带到下一阶段。他还指出，如果平台被激励去推特定模型，那么所谓 router 只是表象，提醒 builder 关注模型路由的商业激励。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2079978232024301848" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/amasad/status/2080126960202903575" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · CEO @vercel</div>
+    <h3>Fable 近自主发现 Turbopack / Next.js 15-30% 内存效率提升</h3>
+    <p>Guillermo Rauch 表示，Fable 几乎自主地在 Turbopack / Next.js 中发现 15-30% 的内存效率提升。他把这类 AI 工程突破称为每周都在发生的“holy s***”时刻，并用“WTFs/day”形容 AI 进步速度。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2080098518535110913" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · CEO @vercel</div>
+    <h3>Shopify + Vercel 将一起为 apps 与 agents 提供基础设施</h3>
+    <p>Guillermo Rauch 称 Shopify 与 Vercel 是“同一枚硬币的两面”：entrepreneur-first、developer-led、web-obsessed。Vercel 将与 Shopify 一起把 apps 和 agents 的基础设施带给数百万商家。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2080005193337377146" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @box</div>
+    <h3>AI 目前更像增强劳动力，而非全面替代岗位</h3>
+    <p>Aaron Levie 引用 Anthropic 经济负责人观点，认为数据中 AI 对工作的负面冲击低于预期。原因是 AI 多数情况下仍需要人来操作、指导和评估；它自动化的是岗位中的具体任务，并可能通过提高产出维持或增加需求。</p>
+    <div class="links"><a href="https://x.com/levie/status/2080156917373214900" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>Thick context, thin prompt：少给方案，多给上下文</h3>
+    <p>Zara Zhang 分享 prompt 经验：有时只描述问题而不指定解决方案或 spec，模型反而会给出更好的方案。她将这种方式概括为“Thick context, thin prompt”。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2080103288834510939" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>今天创业也意味着发明一种新型组织</h3>
+    <p>Zara Zhang 认为，当下创业最令人兴奋的事情之一，是你不仅在创造一门新业务，也在发明一种新的组织类型。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2079956443223269583" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · AI assistant by Anthropic</div>
+    <h3>Claude Security plugin for Claude Code 开放 beta</h3>
+    <p>Claude 宣布 Claude Security plugin for Claude Code 现已 beta 可用。开发者可以在 commit 前扫描代码变更中的漏洞，也可以从 terminal 对整个 codebase 运行扫描，基于已经使用的 Claude inference。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2079990597973057691" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/claudeai/status/2079990599415922802" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Claude · AI assistant by Anthropic</div>
+    <h3>Anthropic Economic Index 可在 Claude connectors 中启用</h3>
+    <p>Claude 表示，用户可在 connectors 菜单的目录中找到并启用 Anthropic Economic Index。它可在任意对话中使用，完整数据集仍可在 Anthropic 网站免费下载。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2079979810881728759" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">AI &amp; I by Every · Podcast</div>
+    <h3>Every 团队复盘如何用 AI 完成史上最大发布</h3>
+    <p>本期讨论 Every 如何推出 All Access 与 Builder Pack，并带来其历史上最大的订阅收入增长。团队复盘了从构想到发布的过程：Builder Pack 聚合 Every 日常使用的 AI 工具权益，如 Codex credits、Cursor access 等；成员还分享如何用 Claude、Cursor、Framer、PostHog 等自动化 A/B testing、growth pipeline 和发布执行，把人从重复配置中解放出来，转向更高杠杆的创意与决策。</p>
+    <div class="links"><a href="https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>17</strong><span>builders</span></div><div class="stat"><strong>35</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>

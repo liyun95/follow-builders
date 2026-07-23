@@ -1,0 +1,154 @@
+{
+  "date": "2026-07-23",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 AI coding 与 agent 工作流：Claude Code 推出安全插件，Vercel 分享近自主优化 Next.js 的案例，Every 复盘用 AI 完成重要发布。与此同时，关于 open weights、模型路由中立性、AI 对就业的影响，也出现了值得 builder 关注的讨论。",
+  "stats": {
+    "xBuilders": 17,
+    "totalTweets": 35,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Josh Woodward",
+          "role": "VP, Google / GoogleLabs / GeminiApp / GoogleAIStudio",
+          "headline": "Google Flow 每日开放 50 个免费 credits 至 8 月 31 日",
+          "summary": "Josh Woodward 表示，使用 Flow 进行创意工作的用户正在增加，现在到 8 月 31 日前每天可获得 50 个免费 credits，鼓励更多创作者尝试该工具。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2079997285778493777"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI Codex 相关更新即将到来",
+          "summary": "Thibault Sottiaux 预告“明天会很 codexy”，暗示 OpenAI Codex 方向可能有新进展。原文未给出具体功能或发布时间之外的更多细节。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2080144499716800513"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "/no-ai-slop skill 一天获得 1K stars",
+          "summary": "Peter Yang 分享他的 /no-ai-slop skill 一天获得 1K stars，并称用户已经厌倦 AI slop。他还提到该 skill 也能反向生成充满 AI cliché 的内容，用于调侃 LinkedIn 风格文本。",
+          "urls": [
+            "https://x.com/petergyang/status/2080132334138151410",
+            "https://x.com/petergyang/status/2080080488119841162"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "open weights 模型不等于训练方获得你的数据",
+          "summary": "Madhu Guru 解释，使用中国训练的 LLM 并不意味着训练方会拿到你的数据。open weights 模型可被下载并部署在自己的 cloud 环境中，此时模型训练方已经不在链路内，数据留在运行环境里。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2080150245011509593"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Design + Claude Code 的前端工作流体验很好",
+          "summary": "Thariq 表示自己现在才开始实际输入 /design 有些可惜，因为用 Claude Design 和 Claude Code 做 frontend 的体验“actually so good”。",
+          "urls": [
+            "https://x.com/trq212/status/2080090919832084753"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Replit 继续推进 mobile coding，并提醒模型 router 的中立性问题",
+          "summary": "Amjad Masad 称 Replit 发明了 mobile coding，并正把它带到下一阶段。他还指出，如果平台被激励去推特定模型，那么所谓 router 只是表象，提醒 builder 关注模型路由的商业激励。",
+          "urls": [
+            "https://x.com/amasad/status/2079978232024301848",
+            "https://x.com/amasad/status/2080126960202903575"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @vercel",
+          "headline": "Fable 近自主发现 Turbopack / Next.js 15-30% 内存效率提升",
+          "summary": "Guillermo Rauch 表示，Fable 几乎自主地在 Turbopack / Next.js 中发现 15-30% 的内存效率提升。他把这类 AI 工程突破称为每周都在发生的“holy s***”时刻，并用“WTFs/day”形容 AI 进步速度。",
+          "urls": [
+            "https://x.com/rauchg/status/2080098518535110913"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @vercel",
+          "headline": "Shopify + Vercel 将一起为 apps 与 agents 提供基础设施",
+          "summary": "Guillermo Rauch 称 Shopify 与 Vercel 是“同一枚硬币的两面”：entrepreneur-first、developer-led、web-obsessed。Vercel 将与 Shopify 一起把 apps 和 agents 的基础设施带给数百万商家。",
+          "urls": [
+            "https://x.com/rauchg/status/2080005193337377146"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "AI 目前更像增强劳动力，而非全面替代岗位",
+          "summary": "Aaron Levie 引用 Anthropic 经济负责人观点，认为数据中 AI 对工作的负面冲击低于预期。原因是 AI 多数情况下仍需要人来操作、指导和评估；它自动化的是岗位中的具体任务，并可能通过提高产出维持或增加需求。",
+          "urls": [
+            "https://x.com/levie/status/2080156917373214900"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Thick context, thin prompt：少给方案，多给上下文",
+          "summary": "Zara Zhang 分享 prompt 经验：有时只描述问题而不指定解决方案或 spec，模型反而会给出更好的方案。她将这种方式概括为“Thick context, thin prompt”。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2080103288834510939"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "今天创业也意味着发明一种新型组织",
+          "summary": "Zara Zhang 认为，当下创业最令人兴奋的事情之一，是你不仅在创造一门新业务，也在发明一种新的组织类型。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2079956443223269583"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "AI assistant by Anthropic",
+          "headline": "Claude Security plugin for Claude Code 开放 beta",
+          "summary": "Claude 宣布 Claude Security plugin for Claude Code 现已 beta 可用。开发者可以在 commit 前扫描代码变更中的漏洞，也可以从 terminal 对整个 codebase 运行扫描，基于已经使用的 Claude inference。",
+          "urls": [
+            "https://x.com/claudeai/status/2079990597973057691",
+            "https://x.com/claudeai/status/2079990599415922802"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "AI assistant by Anthropic",
+          "headline": "Anthropic Economic Index 可在 Claude connectors 中启用",
+          "summary": "Claude 表示，用户可在 connectors 菜单的目录中找到并启用 Anthropic Economic Index。它可在任意对话中使用，完整数据集仍可在 Anthropic 网站免费下载。",
+          "urls": [
+            "https://x.com/claudeai/status/2079979810881728759"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "Every 团队复盘如何用 AI 完成史上最大发布",
+          "summary": "本期讨论 Every 如何推出 All Access 与 Builder Pack，并带来其历史上最大的订阅收入增长。团队复盘了从构想到发布的过程：Builder Pack 聚合 Every 日常使用的 AI 工具权益，如 Codex credits、Cursor access 等；成员还分享如何用 Claude、Cursor、Framer、PostHog 等自动化 A/B testing、growth pipeline 和发布执行，把人从重复配置中解放出来，转向更高杠杆的创意与决策。",
+          "urls": [
+            "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+          ]
+        }
+      ]
+    }
+  ]
+}
