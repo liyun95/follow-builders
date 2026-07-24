@@ -1,0 +1,154 @@
+{
+  "date": "2026-07-24",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线是语音交互、agent 权限边界与推理速度。ChatGPT、Claude 都在把 voice 变成更可用的工作界面；builder 侧则继续围绕 agentic 开发、部署成本、fast inference 和 open weight 模型展开。",
+  "stats": {
+    "xBuilders": 12,
+    "totalTweets": 27,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "swyx inc / Latent Space",
+          "headline": "Swyx 正在 dogfood 一个 agentic GitHub clone",
+          "summary": "Swyx 表示过去一个多月一直在试用一个 agentic GitHub clone，体验已经“quite enjoyable”，并通过 Workers for Platforms 内置 CI/CD。他还提到上线前还有 3 个想法要实现，并欢迎加入团队影响 roadmap。",
+          "urls": [
+            "https://x.com/swyx/status/2080500752183960017"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "swyx inc / Latent Space",
+          "headline": "Swyx 称赞 poolsideAI 对 eval 数据的开放度",
+          "summary": "Swyx 认为 @poolsideai 的开放程度被低估：不仅发布了 coding 表现突出的 Small model 和论文，还公开了完整 eval dataset，覆盖 6 个公开 benchmark、每个 4 次运行、每次包含数百轮 turn，便于外界自行检查是否存在 reward hacking。",
+          "urls": [
+            "https://x.com/swyx/status/2080387171723137440"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "ChatGPT desktop app 推出更像 Jarvis 的语音工作流",
+          "summary": "Thibault Sottiaux 推荐用户尝试 ChatGPT desktop app 中的新语音体验，称其接近 Jarvis / Samantha / TARS 式交互，可以离开键盘完成工作。该动态显示 voice 正在从聊天功能转向工作界面。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2080408012515340394"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "Peter Yang 设想多个 ChatGPT Voice thread 组成语音团队",
+          "summary": "Peter Yang 认为下一步是同时开启多个 ChatGPT Voice thread，让一整支“团队”既能与用户对话，也能彼此对话。他还反馈多线程完成时应有通知，并指出中文发音仍需改进。",
+          "urls": [
+            "https://x.com/petergyang/status/2080508139091427741",
+            "https://x.com/petergyang/status/2080505108216111303"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "agent 数量无限化后，IAM 与审计模型面临重构",
+          "summary": "Madhu Guru 讨论 GPT Sol 事件后的企业安全问题：传统 identity and access management 面向有限员工，而一个员工现在可能生成数百个 agents，agents 还可能继续生成子 agents。关键问题包括权限继承、生命周期定义、子 agent 权限与审计追踪。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2080315474093760714"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Replit autoscale deployments 成本下降 80%",
+          "summary": "Amjad Masad 表示 Replit autoscale deployments 的费用下降 80%，并指出这通常是规模化 app 中最昂贵的部分之一。对 builder 来说，这类平台成本下降会直接影响 AI app 的上线与扩展门槛。",
+          "urls": [
+            "https://x.com/amasad/status/2080513361301925957"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Replit MCP 支撑“autonomous agency”形态",
+          "summary": "Amjad Masad 提到用户 Viktor 先用 Replit 改造 agency 模式并获利，随后希望不只自动化 coding，而是自动化整个 agency。Replit 团队为其构建 MCP 后，他搭建了 autonomous agency，体现“agency as agent loop”的产品化趋势。",
+          "urls": [
+            "https://x.com/amasad/status/2080371567221944657"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @Vercel",
+          "headline": "Vercel 上 Python code 启动速度自动提升 2 倍",
+          "summary": "Guillermo Rauch 表示 Vercel 上的 Python code 现在自动实现 2x 更快启动。对 AI builder 来说，冷启动与响应延迟会直接影响 agent、API 与 serverless 工作负载体验。",
+          "urls": [
+            "https://x.com/rauchg/status/2080454509508387251"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @Vercel",
+          "headline": "Vercel AI Gateway 持续迭代",
+          "summary": "Guillermo Rauch 称 AI Gateway 的产品速度“Unreal”。虽然原帖未展开具体功能，但显示 Vercel 正继续把多模型访问、路由或网关能力作为 AI builder 基础设施推进。",
+          "urls": [
+            "https://x.com/rauchg/status/2080344136625049690"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @Box",
+          "headline": "Aaron Levie：AI 会放大专家能力，而非取代专业判断",
+          "summary": "Aaron Levie 认为 AI 最适合作为已掌握领域的 force multiplier；没有判断力、也无意培养判断力的人，只会产出 slop。随着工具更强，工程师、设计师等专家能更好 steer agents，市场预期提高后，专业化反而更重要。",
+          "urls": [
+            "https://x.com/levie/status/2080471989060559336"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Garry Tan 强调 open weight models 的重要性",
+          "summary": "Garry Tan 表示 open weight models “very very important”。在闭源 API 与开放权重模型并行演进的背景下，这一立场对创业公司、研究者和基础设施 builder 都具有方向意义。",
+          "urls": [
+            "https://x.com/garrytan/status/2080345524620914897"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "OpenClaw / OpenAI",
+          "headline": "Peter Steinberger：必要时直接调用 claude cli",
+          "summary": "Peter Steinberger 表示他们也观察到相关问题，并增加了直接使用 claude cli 的 code paths，称“hard to fight the system”。这反映 builder 在集成 LLM 工具链时，会为稳定性或能力绕过常规路径。",
+          "urls": [
+            "https://x.com/steipete/status/2080318789980201224"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "AI assistant by Anthropic",
+          "headline": "Claude Voice mode 升级：支持更强模型、工具调用和更多语言",
+          "summary": "Claude 宣布 Voice mode 现在可使用更多 chat 中可用模型，包括 Claude Opus 和 Sonnet，并能在对话中访问已连接工具，如 email 和 calendar。新版还支持 Spanish、French、Hindi、Japanese 等更多语言，并在 mobile、desktop、web 以 public beta 推出。",
+          "urls": [
+            "https://x.com/claudeai/status/2080376094939603366",
+            "https://x.com/claudeai/status/2080376096873177300",
+            "https://x.com/claudeai/status/2080376099268169943"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "Cerebras CEO Andrew Feldman 解析 fast inference 与最大芯片",
+          "summary": "本期 Matt Turck 采访 Cerebras CEO Andrew Feldman，从“what is a wafer”讲到为什么 AI 的核心瓶颈转向 tokens per second per user。Feldman 认为 inference speed 决定 AI UX，agentic flows 会放大等待成本；节目还讨论 GPU、TPU、Trainium、ASIC、wafer-scale computing、HBM、CoWoS、3nm、CUDA moat、OpenAI 交易与数据中心 megawatts。",
+          "urls": [
+            "https://www.youtube.com/@DataDrivenNYC/videos"
+          ]
+        }
+      ]
+    }
+  ]
+}
