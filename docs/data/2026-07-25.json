@@ -1,0 +1,213 @@
+{
+  "date": "2026-07-25",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 Claude Opus 5、agentic workflow 与 open weights 讨论。对 builder 来说，重点不只是模型能力提升，而是 prompt、技能、路由、企业评测和真实工作流适配正在同步重构。",
+  "stats": {
+    "xBuilders": 21,
+    "totalTweets": 48,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Claude",
+          "role": "AnthropicAI",
+          "headline": "Claude Opus 5 发布，覆盖付费计划与 Claude API",
+          "summary": "Claude 表示 Opus 5 已在所有付费计划和 Claude API 上线，价格与 Opus 4.8 相同；它是 Claude Max 默认模型，也是 Claude Pro 上最强模型，并提供约 2.5× 默认速度的 Fast mode。",
+          "urls": [
+            "https://x.com/claudeai/status/2080699515271528827"
+          ]
+        },
+        {
+          "source": "Boris Cherny",
+          "role": "Claude Code @anthropicai",
+          "headline": "Opus 5 被称为 Anthropic 最难 prompt inject 的模型之一",
+          "summary": "Boris Cherny 表示，除 coding、data analysis、design、biology 和 knowledge work 外，Opus 5 让他最兴奋的是 prompt injection 防护：结合模型对齐、prompt injection probes 与 Claude Code Auto Mode 后，攻击成功率可降到接近 0。",
+          "urls": [
+            "https://x.com/bcherny/status/2080713091688583312"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "Claude Code 新模型移除约 80% system prompt",
+          "summary": "Thariq 分享称，团队为最新模型移除了约 80% 的 Claude Code system prompt，并总结了为新模型编写 system prompts、skills 和 Claude.MDs 的经验；他还建议将 Opus 5 与 Fable 配合用于规划、头脑风暴和修 hardest bugs。",
+          "urls": [
+            "https://x.com/trq212/status/2080710971228918066",
+            "https://x.com/trq212/status/2080711577867845645",
+            "https://x.com/trq212/status/2080703339306913985"
+          ]
+        },
+        {
+          "source": "Cat Wu",
+          "role": "claude code + cowork @anthropicai",
+          "headline": "Claude Opus 5 强调 long-running autonomous work",
+          "summary": "Cat Wu 表示 Claude Opus 5 很适合长时间 autonomous work，邀请用户试用并反馈。这与 Claude Code 团队围绕 system prompt 和 skills 重构的讨论形成呼应。",
+          "urls": [
+            "https://x.com/_catwu/status/2080707593115516985"
+          ]
+        },
+        {
+          "source": "Alex Albert",
+          "role": "Research @AnthropicAI",
+          "headline": "Opus 5 在 spreadsheets、slide decks 与 token efficiency 上被强调",
+          "summary": "Alex Albert 称 Opus 5 已能生成接近超人类水平的 spreadsheets 和 slide decks，并提到团队在跨领域 token efficiency 上投入很多，同时提高 intelligence bar；他个人在许多 coding 任务中更偏好 Opus 5 而非 Fable 5。",
+          "urls": [
+            "https://x.com/alexalbert__/status/2080731979528679617",
+            "https://x.com/alexalbert__/status/2080703118086693121"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "Every 对 Claude Opus 5 的 Day 0 评价：需要重建 workflows",
+          "summary": "Dan Shipper 称 Every 测试 Opus 5 后发现，它在既有 skills 和 plugins 下容易提前停止或不完全遵循指令；删除旧 workflow、从零开始后表现显著改善。他建议 builder 注意 backward compatibility，并尝试 medium 或 low effort thinking。",
+          "urls": [
+            "https://x.com/danshipper/status/2080700057892815114",
+            "https://x.com/danshipper/status/2080709090909503775"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Box 在 Complex Work Eval 中看到 Opus 5 企业任务提升",
+          "summary": "Aaron Levie 表示，Box 用 Box AI Agent 和 Box's Complex Work Eval 测试 Claude Opus 5，看到它在复杂企业文档任务上相对 Opus 4.8 有明显提升：due diligence +17%、life sciences +30%、legal +12%、technology +19%、healthcare +13%。",
+          "urls": [
+            "https://x.com/levie/status/2080704871934931221"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "headline": "Gemini Spark 面向美国 Google AI Pro 用户上线",
+          "summary": "Josh Woodward 展示 Gemini Spark 的实用场景：把学校日历 PDF 放入 Gemini，让它把所有“No School”日期加入 Google Calendar。他表示 Gemini Spark 已面向美国 Google AI Pro 订阅者上线，接下来将全球扩展。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2080771183944073347"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "ChatGPT Work 已面向所有付费计划全球可用",
+          "summary": "Thibault Sottiaux 称 ChatGPT Work 已在 mobile、web、desktop 上对所有付费计划全球开放，并形容它给 ChatGPT 装上了“jetpack”。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2080876712439747052"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "真实工作流适配 foundation models 将成为关键能力",
+          "summary": "Madhu Guru 认为，未来几年最大机会之一是把 messy real-world workflows 适配到 foundation models。这需要理解工作如何发生、设计 evals、通过 post-training 改进模型，并构建持续反馈循环，让通用模型在特定领域变得 exceptional。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2080707454422413487"
+          ]
+        },
+        {
+          "source": "Matt Turck",
+          "role": "VC at @FirstMarkCap",
+          "headline": "Model routing 成为本周热点",
+          "summary": "Matt Turck 总结本周 model routing 动态：Stripe 被传将以 100 亿美元收购 OpenRouter，Cursor Router、Runway Router 相继发布，同时 Databricks、Vercel、Cloudflare、Dataiku、AWS、Google 等也有不同意义上的 router。",
+          "urls": [
+            "https://x.com/mattturck/status/2080645582209663049"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "AI is cool i guess",
+          "headline": "Sam Altman 支持美国同时赢得 open source 与 proprietary models",
+          "summary": "Sam Altman 表示希望美国在 AI 的 open source 和 proprietary models 两方面都赢，并对相关进展表示高兴。这一表态与当天多位 builder 围绕 open weights 的讨论相呼应。",
+          "urls": [
+            "https://x.com/sama/status/2080683363174945065"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Box 支持 open weights AI，强调非零和",
+          "summary": "Aaron Levie 表示 Box 签署支持 open weights AI 的信，并认为 open weights 能推动更广泛创新、post train 垂直模型、探索安全与 cyber risk 的不同处理方式、降低部分 workload 成本；open 与 closed 不是零和关系。",
+          "urls": [
+            "https://x.com/levie/status/2080675210991443982",
+            "https://x.com/levie/status/2080761484305654091"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Amjad Masad 追问 Anthropic 对 open weight models 的立场",
+          "summary": "Amjad Masad 转发相关讨论并询问 Anthropic 是否会签署，建议 Anthropic 员工要求领导层明确立场：是否支持禁止 open weight models。他也提示长期未用 Replit 的用户会看到很大变化。",
+          "urls": [
+            "https://x.com/amasad/status/2080850075358826871",
+            "https://x.com/amasad/status/2080848381967212975"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Agent 时代，速度成为模型体验核心",
+          "summary": "Zara Zhang 表示她现在最希望模型提升的是速度：intelligence 已经足够好，但每个任务等待 1-5 分钟会卡在既不能进入 deep work、又太久不能盯屏的尴尬区间。她还提到，把 agent 带入群聊和会议后，聊天记录与会议 transcript 会自然变成 PRDs。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2080829737044439444",
+            "https://x.com/zarazhangrui/status/2080617484261249160"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "Autoreview skill 在复杂重构中跑到 66 轮",
+          "summary": "Peter Steinberger 分享其 autoreview skill 创下新纪录，在一次复杂 refactor 中进行了 66 轮 review，展示了 agentic coding workflow 中自动审查能力的耐力与循环深度。",
+          "urls": [
+            "https://x.com/steipete/status/2080899298838098034"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Figma2React 获 Vercel CEO 简短认可",
+          "summary": "Guillermo Rauch 转发并评价 Figma2React：“It’s good”。虽然信息简短，但指向设计到代码自动化在 builder 工具链中的持续热度。",
+          "urls": [
+            "https://x.com/rauchg/status/2080646549336678597"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod",
+          "headline": "SmolForge 增加 customizable skins 与 spritesheet animations",
+          "summary": "Swyx 宣布 SmolForge 新增 4 个功能，其中包括 customizable skins 和 spritesheet animations，延续其围绕 AI builder tooling 与轻量创作工具的迭代。",
+          "urls": [
+            "https://x.com/swyx/status/2080750437133901925"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "YC Startup School 2026 在 San Francisco 预演",
+          "summary": "Garry Tan 分享 YC Startup School 2026 在 Chase Center 的 rehearsal，并欢迎未来 founders 来到 San Francisco。他还提醒，宏观 productivity gain 需要管理者和 CEO 批准 radically different staffing 和 workflow plans，可能需要 10 年而非 2 年。",
+          "urls": [
+            "https://x.com/garrytan/status/2080807733184586232",
+            "https://x.com/garrytan/status/2080699367883980924"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "DoorDash 联合创始人谈 agentic commerce、AI 与自动配送",
+          "summary": "No Priors 采访 DoorDash co-founders Andy Fang 和 Stanley Tang。节目讨论 Ask DoorDash 的自然语言购物体验：餐厅场景中 50% 使用路径会让用户下单从未点过的店，grocery 场景 basket size 提高约 40%。他们还谈到 DoorDash 自 2018 年起探索 robotics、autonomy、drone deliveries，并把 AI、agentic commerce 与物流网络视为未来 DoorDash 形态的一部分。",
+          "urls": [
+            "https://www.youtube.com/watch?v=vNpcg_Ma-FA"
+          ]
+        }
+      ]
+    }
+  ]
+}

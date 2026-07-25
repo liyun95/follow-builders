@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月25日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月25日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 Claude Opus 5、agentic workflow 与 open weights 讨论。对 builder 来说，重点不只是模型能力提升，而是 prompt、技能、路由、企业评测和真实工作流适配正在同步重构。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Claude · AnthropicAI</div>
+    <h3>Claude Opus 5 发布，覆盖付费计划与 Claude API</h3>
+    <p>Claude 表示 Opus 5 已在所有付费计划和 Claude API 上线，价格与 Opus 4.8 相同；它是 Claude Max 默认模型，也是 Claude Pro 上最强模型，并提供约 2.5× 默认速度的 Fast mode。</p>
+    <div class="links"><a href="https://x.com/claudeai/status/2080699515271528827" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Boris Cherny · Claude Code @anthropicai</div>
+    <h3>Opus 5 被称为 Anthropic 最难 prompt inject 的模型之一</h3>
+    <p>Boris Cherny 表示，除 coding、data analysis、design、biology 和 knowledge work 外，Opus 5 让他最兴奋的是 prompt injection 防护：结合模型对齐、prompt injection probes 与 Claude Code Auto Mode 后，攻击成功率可降到接近 0。</p>
+    <div class="links"><a href="https://x.com/bcherny/status/2080713091688583312" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Claude Code 新模型移除约 80% system prompt</h3>
+    <p>Thariq 分享称，团队为最新模型移除了约 80% 的 Claude Code system prompt，并总结了为新模型编写 system prompts、skills 和 Claude.MDs 的经验；他还建议将 Opus 5 与 Fable 配合用于规划、头脑风暴和修 hardest bugs。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2080710971228918066" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/trq212/status/2080711577867845645" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/trq212/status/2080703339306913985" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Cat Wu · claude code + cowork @anthropicai</div>
+    <h3>Claude Opus 5 强调 long-running autonomous work</h3>
+    <p>Cat Wu 表示 Claude Opus 5 很适合长时间 autonomous work，邀请用户试用并反馈。这与 Claude Code 团队围绕 system prompt 和 skills 重构的讨论形成呼应。</p>
+    <div class="links"><a href="https://x.com/_catwu/status/2080707593115516985" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Alex Albert · Research @AnthropicAI</div>
+    <h3>Opus 5 在 spreadsheets、slide decks 与 token efficiency 上被强调</h3>
+    <p>Alex Albert 称 Opus 5 已能生成接近超人类水平的 spreadsheets 和 slide decks，并提到团队在跨领域 token efficiency 上投入很多，同时提高 intelligence bar；他个人在许多 coding 任务中更偏好 Opus 5 而非 Fable 5。</p>
+    <div class="links"><a href="https://x.com/alexalbert__/status/2080731979528679617" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/alexalbert__/status/2080703118086693121" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Dan Shipper · ceo @every</div>
+    <h3>Every 对 Claude Opus 5 的 Day 0 评价：需要重建 workflows</h3>
+    <p>Dan Shipper 称 Every 测试 Opus 5 后发现，它在既有 skills 和 plugins 下容易提前停止或不完全遵循指令；删除旧 workflow、从零开始后表现显著改善。他建议 builder 注意 backward compatibility，并尝试 medium 或 low effort thinking。</p>
+    <div class="links"><a href="https://x.com/danshipper/status/2080700057892815114" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/danshipper/status/2080709090909503775" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Box 在 Complex Work Eval 中看到 Opus 5 企业任务提升</h3>
+    <p>Aaron Levie 表示，Box 用 Box AI Agent 和 Box&#39;s Complex Work Eval 测试 Claude Opus 5，看到它在复杂企业文档任务上相对 Opus 4.8 有明显提升：due diligence +17%、life sciences +30%、legal +12%、technology +19%、healthcare +13%。</p>
+    <div class="links"><a href="https://x.com/levie/status/2080704871934931221" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Josh Woodward · VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio</div>
+    <h3>Gemini Spark 面向美国 Google AI Pro 用户上线</h3>
+    <p>Josh Woodward 展示 Gemini Spark 的实用场景：把学校日历 PDF 放入 Gemini，让它把所有“No School”日期加入 Google Calendar。他表示 Gemini Spark 已面向美国 Google AI Pro 订阅者上线，接下来将全球扩展。</p>
+    <div class="links"><a href="https://x.com/joshwoodward/status/2080771183944073347" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>ChatGPT Work 已面向所有付费计划全球可用</h3>
+    <p>Thibault Sottiaux 称 ChatGPT Work 已在 mobile、web、desktop 上对所有付费计划全球开放，并形容它给 ChatGPT 装上了“jetpack”。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2080876712439747052" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Sr Director, AI at Meta</div>
+    <h3>真实工作流适配 foundation models 将成为关键能力</h3>
+    <p>Madhu Guru 认为，未来几年最大机会之一是把 messy real-world workflows 适配到 foundation models。这需要理解工作如何发生、设计 evals、通过 post-training 改进模型，并构建持续反馈循环，让通用模型在特定领域变得 exceptional。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2080707454422413487" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Matt Turck · VC at @FirstMarkCap</div>
+    <h3>Model routing 成为本周热点</h3>
+    <p>Matt Turck 总结本周 model routing 动态：Stripe 被传将以 100 亿美元收购 OpenRouter，Cursor Router、Runway Router 相继发布，同时 Databricks、Vercel、Cloudflare、Dataiku、AWS、Google 等也有不同意义上的 router。</p>
+    <div class="links"><a href="https://x.com/mattturck/status/2080645582209663049" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Sam Altman · AI is cool i guess</div>
+    <h3>Sam Altman 支持美国同时赢得 open source 与 proprietary models</h3>
+    <p>Sam Altman 表示希望美国在 AI 的 open source 和 proprietary models 两方面都赢，并对相关进展表示高兴。这一表态与当天多位 builder 围绕 open weights 的讨论相呼应。</p>
+    <div class="links"><a href="https://x.com/sama/status/2080683363174945065" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Box 支持 open weights AI，强调非零和</h3>
+    <p>Aaron Levie 表示 Box 签署支持 open weights AI 的信，并认为 open weights 能推动更广泛创新、post train 垂直模型、探索安全与 cyber risk 的不同处理方式、降低部分 workload 成本；open 与 closed 不是零和关系。</p>
+    <div class="links"><a href="https://x.com/levie/status/2080675210991443982" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/levie/status/2080761484305654091" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Amjad Masad 追问 Anthropic 对 open weight models 的立场</h3>
+    <p>Amjad Masad 转发相关讨论并询问 Anthropic 是否会签署，建议 Anthropic 员工要求领导层明确立场：是否支持禁止 open weight models。他也提示长期未用 Replit 的用户会看到很大变化。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2080850075358826871" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/amasad/status/2080848381967212975" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>Agent 时代，速度成为模型体验核心</h3>
+    <p>Zara Zhang 表示她现在最希望模型提升的是速度：intelligence 已经足够好，但每个任务等待 1-5 分钟会卡在既不能进入 deep work、又太久不能盯屏的尴尬区间。她还提到，把 agent 带入群聊和会议后，聊天记录与会议 transcript 会自然变成 PRDs。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2080829737044439444" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/zarazhangrui/status/2080617484261249160" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>Autoreview skill 在复杂重构中跑到 66 轮</h3>
+    <p>Peter Steinberger 分享其 autoreview skill 创下新纪录，在一次复杂 refactor 中进行了 66 轮 review，展示了 agentic coding workflow 中自动审查能力的耐力与循环深度。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2080899298838098034" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Figma2React 获 Vercel CEO 简短认可</h3>
+    <p>Guillermo Rauch 转发并评价 Figma2React：“It’s good”。虽然信息简短，但指向设计到代码自动化在 builder 工具链中的持续热度。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2080646549336678597" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod</div>
+    <h3>SmolForge 增加 customizable skins 与 spritesheet animations</h3>
+    <p>Swyx 宣布 SmolForge 新增 4 个功能，其中包括 customizable skins 和 spritesheet animations，延续其围绕 AI builder tooling 与轻量创作工具的迭代。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2080750437133901925" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>YC Startup School 2026 在 San Francisco 预演</h3>
+    <p>Garry Tan 分享 YC Startup School 2026 在 Chase Center 的 rehearsal，并欢迎未来 founders 来到 San Francisco。他还提醒，宏观 productivity gain 需要管理者和 CEO 批准 radically different staffing 和 workflow plans，可能需要 10 年而非 2 年。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2080807733184586232" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/garrytan/status/2080699367883980924" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">No Priors · Podcast</div>
+    <h3>DoorDash 联合创始人谈 agentic commerce、AI 与自动配送</h3>
+    <p>No Priors 采访 DoorDash co-founders Andy Fang 和 Stanley Tang。节目讨论 Ask DoorDash 的自然语言购物体验：餐厅场景中 50% 使用路径会让用户下单从未点过的店，grocery 场景 basket size 提高约 40%。他们还谈到 DoorDash 自 2018 年起探索 robotics、autonomy、drone deliveries，并把 AI、agentic commerce 与物流网络视为未来 DoorDash 形态的一部分。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=vNpcg_Ma-FA" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>21</strong><span>builders</span></div><div class="stat"><strong>48</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-25.html">2026年7月25日</a></li><li><a href="2026-07-24.html">2026年7月24日</a></li><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
