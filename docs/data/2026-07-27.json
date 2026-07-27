@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-27",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在两条主线：一是 ChatGPT work / agent 从“回答问题”走向替用户完成跨工具任务；二是 AI 落地仍离不开 compute、企业系统、权限信任与行业化工作流。对 builder 来说，机会不只在模型能力本身，更在把 intelligence 接到真实世界的 applied AI layer。",
+  "stats": {
+    "xBuilders": 11,
+    "totalTweets": 21,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "Sam Altman 展示 ChatGPT work 的端到端任务能力",
+          "summary": "Sam Altman 表示 ChatGPT work “remarkable”，并举例称自己从手机发出一个 prompt：基于聊天历史为 9 人长周末旅行规划 3 个方案，做一个 full-stack site 供大家协调偏好，达成一致后订位，并在 Gmail 起草邮件。他称这一流程“just worked”，显示 agent 正从对话走向跨应用执行。",
+          "urls": [
+            "https://x.com/sama/status/2081396796174282900"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Thibault Sottiaux：让 ChatGPT 真正替你 work",
+          "summary": "Thibault Sottiaux 强调 ChatGPT 可以承担生活中的具体任务，例如协商网费、清理垃圾订阅邮件、寻找优惠等。他称这些任务“one prompt away”，并表示自己每天至少让 ChatGPT 做 20 件事，仍会感到惊讶。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2081444811647963244"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "AI agent 采用的关键阻力：用户是否信任它接入 Gmail 和 Calendar",
+          "summary": "Peter Yang 观察到，在非重度 AI 用户中，首要顾虑不是 token 用量，而是是否足够信任 ChatGPT 去连接 Gmail、Calendar、Google Workspace、Microsoft Office 等个人和工作系统。这指出了 agent 产品落地中的权限、隐私与信任门槛。",
+          "urls": [
+            "https://x.com/petergyang/status/2081555286817648738"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @Box",
+          "headline": "Aaron Levie：企业 AI 机会在 applied AI layer",
+          "summary": "Aaron Levie 认为，仅有模型 intelligence 不足以改造企业流程。AI 必须接入企业系统、正确数据、人工决策 UX、反馈循环、合规与监管要求。不同场景如银行客户 onboarding、法律合同审查、生命科学、制造等都需要深度行业化实现；模型越强，可自动化的 workflow 越复杂，对 applied AI layer 的需求反而更大。",
+          "urls": [
+            "https://x.com/levie/status/2081491621162668207"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @Vercel",
+          "headline": "Vercel 支持 Open Weights and American AI Leadership letter",
+          "summary": "Guillermo Rauch 表示 Vercel 联署 Open Weights and American AI Leadership letter，认为 open source、data、protocols 与 research 推动了技术进步，而 open weights 是下一个合理前沿。",
+          "urls": [
+            "https://x.com/rauchg/status/2081546513885622760"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @Vercel",
+          "headline": "Vercel CLI TypeScript 被编译为 1.28MB native binary",
+          "summary": "Guillermo Rauch 称自己用 scriptc 将 vercel CLI TypeScript 编译为 native：binary 大小 1.28MB，平均启动开销 1.5ms，平均编译 2.94s，支持 node:https、node:fs、node:path、node:os、node:crypto，代码由 GLM 5.2 Fast 转换，且不嵌入 v8 / QuickJS、完全静态。",
+          "urls": [
+            "https://x.com/rauchg/status/2081517519303737559"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "Madhu Guru：AI 产品影响仍处在 Phase 1",
+          "summary": "Madhu Guru 认为，外界说 AI 尚未带来大量 shipped impact，是忽视了当前仍在 Phase 1：拥有分发能力的公司正快速扩展到相邻问题，用 AI 更快执行并构建过去需要大量 custom software 的功能，例如 clothes try on。Phase 2 将带来更多全新功能和创新，届时 AI 对软件生态形态的影响会更明显。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2081437850466451736"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @Replit",
+          "headline": "Amjad Masad：攻击者更偏好被补贴的闭源 AI 订阅",
+          "summary": "Amjad Masad 转述一位前 Anthropic 员工的说法：黑客在攻击中更偏好使用被大幅补贴的 lab AI 订阅，而不是 open models。这一观察涉及 AI 安全、成本结构与滥用防护。",
+          "urls": [
+            "https://x.com/amasad/status/2081576172656456076"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "Zara Zhang：AI adoption 不该用 token burned 衡量",
+          "summary": "Zara Zhang 提出，衡量 AI adoption 不应看消耗了多少 token，而应看从用户需求出现到对应功能 shipping 的时间。她也指出通用聊天产品越泛化，用户越容易面对空白输入框不知道该问什么，因此 AI tutorials 才会大量出现。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2081627581997269192",
+            "https://x.com/zarazhangrui/status/2081627109299310684"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "CEO @Every",
+          "headline": "Dan Shipper 将写 OpenAI Codex 诞生史",
+          "summary": "Dan Shipper 表示将休假一周，基于对 OpenAI 内部人士的深度访谈，撰写 Codex 如何诞生的“definitive history”，计划数周后在 Every 发布，并会在过程中分享线索与学习。",
+          "urls": [
+            "https://x.com/danshipper/status/2081412243388788988"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "OpenAI compute 负责人：需求远超供给，物理世界跟不上 AI 速度",
+          "summary": "Matt Turck 采访 OpenAI head of industrial compute Sachin Katti，讨论 AI 数据中心建设的物理现实。Katti 称，只要有 compute 上线就会立刻被消耗，需求远超供给；AI data center 本质是把 electrons 转成 tokens 的大型 supercomputer factory。节目还谈到液冷、芯片与线缆散热、电网与发电基础设施、on-site power、天然气轮机、核能，以及 OpenAI 更主动参与 compute buildout 的新能力。",
+          "urls": [
+            "https://www.youtube.com/watch?v=wEZBlmvxx4o"
+          ]
+        }
+      ]
+    }
+  ]
+}
