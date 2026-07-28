@@ -1,0 +1,131 @@
+{
+  "date": "2026-07-28",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 agent 落地后的真实工程问题：成本口径从 token 转向 task，Codex/Claude Code 开始进入日常工作流，安全隔离、产品组织和企业采用也成为 builder 讨论的重点。",
+  "stats": {
+    "xBuilders": 10,
+    "totalTweets": 17,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "smol_ai / Latent Space",
+          "headline": "AI 成本指标正在从 $/token 转向 $/task",
+          "summary": "Swyx 认为，按 input/output token 计价已经不再是足够相关的成本衡量方式，builder 更应该关注每个 task 的实际成本。他也反思了 agent lab thesis：即使 Claude Code 今年近似“open sourced”，对自身和竞争对手 roadmap 的影响也没有预期中大。",
+          "urls": [
+            "https://x.com/swyx/status/2081904230768816487",
+            "https://x.com/swyx/status/2081890955070980416"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 重置 Codex 与 ChatGPT Work 付费用户使用限制",
+          "summary": "Thibault Sottiaux 表示，为庆祝 ChatGPT Work 的快速采用，Codex 和 ChatGPT Work 所有付费用户的 usage limits 已经重置。他提到 ultra 和 /fast，并暗示本周还会有更多 ChatGPT 与 Codex 相关进展。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2081940052154933696",
+            "https://x.com/thsottiaux/status/2081899343091843463"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "Codex 被用于手机远程完成视频修改与 Slack 反馈循环",
+          "summary": "Peter Yang 分享了对 @jxnlco 的采访片段：对方在骑车时用手机远程连接，让 Codex 通过 computer use 编辑 launch video、导出并发回 Slack，随后每 30 分钟检查反馈并生成 V2、V3、V4，最终视频在他回家前通过审批。",
+          "urls": [
+            "https://x.com/petergyang/status/2081775399097549083",
+            "https://x.com/petergyang/status/2081767570198401263",
+            "https://x.com/petergyang/status/2081767558408175867"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "Linear 产品负责人谈把聪明人投入核心产品体验",
+          "summary": "Nan Yu 强调，优秀产品体验来自很多聪明人长期打磨。如果团队里有非常聪明的人，就应该让他们把自家产品做得足够好用，同时把非核心协作需求交给成熟工具并支付合理费用。",
+          "urls": [
+            "https://x.com/thenanyu/status/2081768780045156358"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "高质量产品评审应该模拟市场反应，而不是状态更新",
+          "summary": "Madhu Guru 认为，最好的 product review 能在一小时内压缩数月学习，前提是参会者真正理解领域、有强 product sense、观点明确且经常正确。很多评审退化成状态同步、领导可见性和跨职能对齐后，就会变成让人反感的 overhead。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2081781952437486052"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit CEO：AI agents 将带来对计算宇宙的探索",
+          "summary": "Amjad Masad 将 AI agents 的潜力类比为新一轮探索：人类曾绘制地球、探索太空，而这一代人可能探索由 algorithms、programs、proofs 和 designs 组成的 computational universe。",
+          "urls": [
+            "https://x.com/amasad/status/2082000490066592127"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel CEO 关注 cybersecurity benchmark 与 agent 隔离边界",
+          "summary": "Guillermo Rauch 称，在最新 cybersecurity AI model benchmark 中，Grok 4.5 在价格性能比上表现突出，成本显著低于 Sol、Opus 5 和 Kimi K3，同时性能接近 Kimi。他也引用 Kimi paper 强调 agent 运行安全边界：container-level isolation 不够，Firecracker microVMs 更安全。",
+          "urls": [
+            "https://x.com/rauchg/status/2081852481517318560",
+            "https://x.com/rauchg/status/2081842439304995169"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Box CEO：企业正在用 AI 扩张能力，而不只是裁减成本",
+          "summary": "Aaron Levie 表示，他接触的大量企业仍在招聘，只是岗位结构发生变化：AI 让企业能解决以前无法处理的问题，因此继续招聘工程师、销售和内部 FDE 来部署 AI。他认为，只把 AI 用于降本的公司最终会被更好服务客户、推动突破的公司超越。他也转发称 k3 weights 已到。",
+          "urls": [
+            "https://x.com/levie/status/2081930301752942703",
+            "https://x.com/levie/status/2081760710108012702"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "OpenClaw / OpenAI",
+          "headline": "Agent-to-agent 工作流：一个 agent 报 bug，另一个 agent 当晚修复",
+          "summary": "Peter Steinberger 分享了一个 agent 协作案例：他的 agent 报告了 bug，@jarredsumner 的 agent 在同一晚修复。他还回应安全质疑，称团队与全球顶级安全团队合作，但外界仍认为相关系统不安全。",
+          "urls": [
+            "https://x.com/steipete/status/2081767828278170002",
+            "https://x.com/steipete/status/2081790109415002468"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "把 Claude Code 当作旅行主界面并生成复盘",
+          "summary": "Nikunj Kothari 表示，他在两周旅行中把 Claude Code 作为主要 interface 使用，旅行结束后又让它做完整 retrospective，分析下次如何改进。这是 Claude Code 从 coding assistant 扩展到个人运营与计划复盘的一个轻量信号。",
+          "urls": [
+            "https://x.com/nikunj/status/2081992618649547100"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "podcast",
+          "headline": "Granolah CEO 谈第一波 AI apps 之后的机会",
+          "summary": "本期采访 Granolah cofounder and CEO，讨论 $1.5B 估值后的真实挑战。他认为 meeting notes 不是最终价值，AI-native work interface 才是更大的机会；即使 startup 已经增长到 60-70 人、产品有效，仍像“knife fight”。节目还谈到如何在扩大团队时保持产品的 soul，以及 PM、design、engineering 的传统分工在 AI 时代可能需要重构。",
+          "urls": [
+            "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+          ]
+        }
+      ]
+    }
+  ]
+}

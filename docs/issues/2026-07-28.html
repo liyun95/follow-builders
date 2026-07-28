@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月28日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月28日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 agent 落地后的真实工程问题：成本口径从 token 转向 task，Codex/Claude Code 开始进入日常工作流，安全隔离、产品组织和企业采用也成为 builder 讨论的重点。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Swyx · smol_ai / Latent Space</div>
+    <h3>AI 成本指标正在从 $/token 转向 $/task</h3>
+    <p>Swyx 认为，按 input/output token 计价已经不再是足够相关的成本衡量方式，builder 更应该关注每个 task 的实际成本。他也反思了 agent lab thesis：即使 Claude Code 今年近似“open sourced”，对自身和竞争对手 roadmap 的影响也没有预期中大。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2081904230768816487" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/swyx/status/2081890955070980416" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>OpenAI 重置 Codex 与 ChatGPT Work 付费用户使用限制</h3>
+    <p>Thibault Sottiaux 表示，为庆祝 ChatGPT Work 的快速采用，Codex 和 ChatGPT Work 所有付费用户的 usage limits 已经重置。他提到 ultra 和 /fast，并暗示本周还会有更多 ChatGPT 与 Codex 相关进展。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2081940052154933696" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2081899343091843463" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · AI tutorials and interviews</div>
+    <h3>Codex 被用于手机远程完成视频修改与 Slack 反馈循环</h3>
+    <p>Peter Yang 分享了对 @jxnlco 的采访片段：对方在骑车时用手机远程连接，让 Codex 通过 computer use 编辑 launch video、导出并发回 Slack，随后每 30 分钟检查反馈并生成 V2、V3、V4，最终视频在他回家前通过审批。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2081775399097549083" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/petergyang/status/2081767570198401263" target="_blank" rel="noopener noreferrer">原文 2</a><a href="https://x.com/petergyang/status/2081767558408175867" target="_blank" rel="noopener noreferrer">原文 3</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nan Yu · head of product @linear</div>
+    <h3>Linear 产品负责人谈把聪明人投入核心产品体验</h3>
+    <p>Nan Yu 强调，优秀产品体验来自很多聪明人长期打磨。如果团队里有非常聪明的人，就应该让他们把自家产品做得足够好用，同时把非核心协作需求交给成熟工具并支付合理费用。</p>
+    <div class="links"><a href="https://x.com/thenanyu/status/2081768780045156358" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Madhu Guru · Sr Director, AI at Meta</div>
+    <h3>高质量产品评审应该模拟市场反应，而不是状态更新</h3>
+    <p>Madhu Guru 认为，最好的 product review 能在一小时内压缩数月学习，前提是参会者真正理解领域、有强 product sense、观点明确且经常正确。很多评审退化成状态同步、领导可见性和跨职能对齐后，就会变成让人反感的 overhead。</p>
+    <div class="links"><a href="https://x.com/realmadhuguru/status/2081781952437486052" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Replit CEO：AI agents 将带来对计算宇宙的探索</h3>
+    <p>Amjad Masad 将 AI agents 的潜力类比为新一轮探索：人类曾绘制地球、探索太空，而这一代人可能探索由 algorithms、programs、proofs 和 designs 组成的 computational universe。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2082000490066592127" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel CEO 关注 cybersecurity benchmark 与 agent 隔离边界</h3>
+    <p>Guillermo Rauch 称，在最新 cybersecurity AI model benchmark 中，Grok 4.5 在价格性能比上表现突出，成本显著低于 Sol、Opus 5 和 Kimi K3，同时性能接近 Kimi。他也引用 Kimi paper 强调 agent 运行安全边界：container-level isolation 不够，Firecracker microVMs 更安全。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2081852481517318560" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/rauchg/status/2081842439304995169" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Box CEO：企业正在用 AI 扩张能力，而不只是裁减成本</h3>
+    <p>Aaron Levie 表示，他接触的大量企业仍在招聘，只是岗位结构发生变化：AI 让企业能解决以前无法处理的问题，因此继续招聘工程师、销售和内部 FDE 来部署 AI。他认为，只把 AI 用于降本的公司最终会被更好服务客户、推动突破的公司超越。他也转发称 k3 weights 已到。</p>
+    <div class="links"><a href="https://x.com/levie/status/2081930301752942703" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/levie/status/2081760710108012702" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · OpenClaw / OpenAI</div>
+    <h3>Agent-to-agent 工作流：一个 agent 报 bug，另一个 agent 当晚修复</h3>
+    <p>Peter Steinberger 分享了一个 agent 协作案例：他的 agent 报告了 bug，@jarredsumner 的 agent 在同一晚修复。他还回应安全质疑，称团队与全球顶级安全团队合作，但外界仍认为相关系统不安全。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2081767828278170002" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/steipete/status/2081790109415002468" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nikunj Kothari · partner @fpvventures</div>
+    <h3>把 Claude Code 当作旅行主界面并生成复盘</h3>
+    <p>Nikunj Kothari 表示，他在两周旅行中把 Claude Code 作为主要 interface 使用，旅行结束后又让它做完整 retrospective，分析下次如何改进。这是 Claude Code 从 coding assistant 扩展到个人运营与计划复盘的一个轻量信号。</p>
+    <div class="links"><a href="https://x.com/nikunj/status/2081992618649547100" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">AI &amp; I by Every · podcast</div>
+    <h3>Granolah CEO 谈第一波 AI apps 之后的机会</h3>
+    <p>本期采访 Granolah cofounder and CEO，讨论 $1.5B 估值后的真实挑战。他认为 meeting notes 不是最终价值，AI-native work interface 才是更大的机会；即使 startup 已经增长到 60-70 人、产品有效，仍像“knife fight”。节目还谈到如何在扩大团队时保持产品的 soul，以及 PM、design、engineering 的传统分工在 AI 时代可能需要重构。</p>
+    <div class="links"><a href="https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>10</strong><span>builders</span></div><div class="stat"><strong>17</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-28.html">2026年7月28日</a></li><li><a href="2026-07-27.html">2026年7月27日</a></li><li><a href="2026-07-25.html">2026年7月25日</a></li><li><a href="2026-07-24.html">2026年7月24日</a></li><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
