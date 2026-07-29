@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-29",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 Codex 与 ChatGPT Work 的真实使用反馈：能力提升带来 token 消耗、工具调用和配额体验的新问题。另一个主题是 builder 工作流继续向 voice mode、Claude Design、Claude Code 等多工具协作迁移。",
+  "stats": {
+    "xBuilders": 10,
+    "totalTweets": 23,
+    "blogPosts": 0,
+    "podcastEpisodes": 0
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 重置 ChatGPT Work 和 Codex 用户用量，并解释 GPT-5.6 Sol 的 token 消耗",
+          "summary": "Thibault Sottiaux 表示，OpenAI 已为所有 ChatGPT Work 和 Codex 用户重置 usage limits，并预计 GPT-5.6 Sol 在典型使用中可让用量延长约 18%。他解释称，Sol 更愿意长时间工作、进行更多 tool calls，并跨工具和 subagents 协调复杂 workflow；code mode 也带来更多并行调用、cached input tokens 和响应次数。OpenAI 将恢复五小时限制，并继续优化效率。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2082317452755751098"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 发布用于代码安全扫描的 CLI 和 TypeScript SDK",
+          "summary": "Thibault Sottiaux 宣布发布开源 CLI 和 TypeScript SDK，用于在代码中发现、验证和修复安全漏洞。该工具支持扫描 repositories、review changes、持续跟踪 findings，并可在 CI 中运行 security checks。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2082241164850364555"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@smol_ai, @cognition, @aidotengineer, @latentspacepod",
+          "headline": "Swyx：招聘市场正在偏向 AI-native IC 与 player-coach",
+          "summary": "Swyx 观察到当前招聘出现明显分化：AI-native IC 和 player-coach 处于强牛市，而传统“heads of X”管理者处于熊市。他用一句话概括趋势：有一年管理 10 个 agents 的经验，可能比十年管理 10 到 100 人的经验更有价值。",
+          "urls": [
+            "https://x.com/swyx/status/2082199414656127010"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 用 Claude Design 和 Claude Code 构建 Tastemaker",
+          "summary": "Peter Yang 发布 Tastemaker，一个用于集中收藏、评分和分享电影、电视剧与游戏的个人 profile 产品。他还表示将分享完整制作过程，包括创建 design.md 和 HTML spec、在 Claude Design 中原型设计页面，以及用 Claude Code 构建和迭代产品。",
+          "urls": [
+            "https://x.com/petergyang/status/2082254840655405293",
+            "https://x.com/petergyang/status/2082254852600873376"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "CEO @every",
+          "headline": "Dan Shipper 用 ChatGPT for Work voice mode 完成 Codex 历史文章写作流程",
+          "summary": "Dan Shipper 称，他正在写一篇 Codex 的完整历史，基于与 @thsottiaux、@ajambrosino 和 @gdb 等团队成员的深度访谈。他表示从整理采访、构建 timeline、写作、编辑到修订，整个流程都通过 ChatGPT for Work 的 voice mode 完成，几乎没有碰键盘和鼠标，并认为这对 creative work 很强。",
+          "urls": [
+            "https://x.com/danshipper/status/2082130836485259530"
+          ]
+        }
+      ]
+    }
+  ]
+}
