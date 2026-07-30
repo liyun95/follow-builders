@@ -1,0 +1,165 @@
+{
+  "date": "2026-07-30",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在 agent 进入企业后的安全边界、AI design 工具的品味分化，以及更便宜 intelligence 对科研和产品形态的推动。值得注意的是，builder 们也开始反思 AI productivity 的副作用：从不读原文到随时被 agent 牵走注意力。",
+  "stats": {
+    "xBuilders": 16,
+    "totalTweets": 32,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 暗示继续发布，并强调“intelligence too cheap to meter”",
+          "summary": "Thibault Sottiaux 表示本周主题是“intelligence too cheap to meter”，并称“Tomorrow we ship again”。他还提到 GPT-5.6 Sol 在 ARC-AGI-3 上达到 SoTA，关键在于允许模型推理，并借助 canonical compaction 在多个 context windows 上工作。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2082655731204096275",
+            "https://x.com/thsottiaux/status/2082609662231502932"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "模型评测需要照顾好 harness",
+          "summary": "他转发并称赞 Ilan Bigio 和 Sander Sted 的 investigation 与 post，提醒 builder 注意自己的 harness：模型会受评测与执行环境影响，“your model will thank you”。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2082637967852806207"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "AI productivity 的三个暗模式：不读原文、被 agent 分心、偏好和 agent 交流",
+          "summary": "Peter Yang 反思 AI 提升效率的同时带来的副作用：过度依赖 AI summary 而不读原文；外出时不断打开 ChatGPT 或 Claude 给 agent 反馈，误以为 productive；以及在 brainstorm 时有时更愿意和 ChatGPT Voice 交流，而不是房间里的真人。",
+          "urls": [
+            "https://x.com/petergyang/status/2082642205811106158"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Claude Design 的 clarifying questions 成为设计需求整理利器",
+          "summary": "Peter Yang 认为 Claude Design 一个简单但重要的特性是：在创建任何内容前总会先问 clarifying questions。这些问题能帮助他梳理设计需求，他也建议用 design md 约束颜色、字体等风格，避免 AI 设计同质化。",
+          "urls": [
+            "https://x.com/petergyang/status/2082579428090192192",
+            "https://x.com/petergyang/status/2082519030859264086"
+          ]
+        },
+        {
+          "source": "Google Labs",
+          "role": "Google’s home for latest AI tools and experiments",
+          "headline": "Google DeepMind 发布 Lyria 3.5，并接入 Google Flow Music",
+          "summary": "Google Labs 宣布 Google DeepMind 发布 Lyria 3.5，并直接接入 Google Flow Music。更新包括更好的 prompt adherence、支持精确 BPM 和导出 stems、升级人声表现，以及更自然的音乐编排流动。",
+          "urls": [
+            "https://x.com/GoogleLabs/status/2082501360466174163"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit Design 用多模型组合提升 AI design 审美",
+          "summary": "Amjad Masad 表示，不同模型在 CSS、SVG、animations 等能力上各有强项，Replit Design 结合 open 和 closed models，以生成更好的 aesthetics。他称这是“post-prompt era”，并认为该工具在品味和易用性上表现突出。",
+          "urls": [
+            "https://x.com/amasad/status/2082508826767679668",
+            "https://x.com/amasad/status/2082505558293467363",
+            "https://x.com/amasad/status/2082504898801999990"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "agent sandbox escape 暴露企业 AI 扩散前的安全硬化需求",
+          "summary": "Aaron Levie 认为 openai agent sandbox escape 对企业 AI 扩散有现实影响：agent 能力越强，越需要环境隔离、audit trails、governance、访问控制、快速阻断与防御机制。他指出这会放大数据与系统风险，也为 startup 和 security 生态创造机会。",
+          "urls": [
+            "https://x.com/levie/status/2082514776392175844"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "推理资源会流向最有经济价值的任务，但市场竞争可能压低价格",
+          "summary": "Aaron Levie 评论 Dwarkesh 的观点称，随着 AI 更强，inference 边际上会流向最有经济价值的任务，其他任务可能被挤出。但他认为模型提供商和 infra 玩家竞争这些 workload，会持续推动价格下降，直到 capacity 跟上。",
+          "urls": [
+            "https://x.com/levie/status/2082658870523248967"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "Cursor on iOS：把 agents 带到移动端",
+          "summary": "Ryo Lu 宣布“your agents, anywhere”，邀请用户试用 Cursor on iOS，指向 agent 工作流正在从桌面 IDE 扩展到手机场景。",
+          "urls": [
+            "https://x.com/ryolu_/status/2082539893729972320"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "AI-native 与深领域经验结合，成为 builder 的复利优势",
+          "summary": "Zara Zhang 认为，如果一个人既有 deep domain expertise 与经验，又是 AI-native、持续重塑工作方式，几乎会变得“invincible”。她还强调 marketing 能力不仅服务增长，也会反哺产品，因为许多技术人仍在为想象中的用户构建产品。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2082705944782520462",
+            "https://x.com/zarazhangrui/status/2082684904136134881"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "ChatGPT for Work 的 voice mode 获得 Every 团队强烈正反馈",
+          "summary": "Dan Shipper 表示 @every 几乎每个人都在惊叹 ChatGPT for Work 的 voice mode 表现，称很久没见到团队对某个 AI 功能有这么高的 vibes，并建议没试过的人尝试。",
+          "urls": [
+            "https://x.com/danshipper/status/2082613916706693560"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "敏感数据公司需要 automated agentic defense systems",
+          "summary": "Dan Shipper 评论一篇关于模型 exploit 的 write up，认为未来坏人显然会有意用模型做类似事情。正面信号是 OpenAI safety classifiers 当时被关闭，且 HG 的 AI 自动发现了攻击；但处理敏感客户数据的公司仍需要 automated agentic defense systems。",
+          "urls": [
+            "https://x.com/danshipper/status/2082608994275725650"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SouthPkCommons",
+          "headline": "Demo Faire 观察：frontier tech 热度上升，普通 agent-for-X 门槛提高",
+          "summary": "Aditya Agarwal 总结 Demo Faire：更大的投资者社区对 robots、drones、semiconductors 等 frontier technology 兴趣强烈；软件里的“great”门槛明显提高，如果只是 vertical SaaS 或 agent-for-X，必须展示真正不同的愿景或惊人的增长斜率。",
+          "urls": [
+            "https://x.com/adityaag/status/2082538703432630398"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "AI is cool i guess",
+          "headline": "Sam Altman：接近能显著加速科学发现的模型",
+          "summary": "Sam Altman 表示，非常接近能够显著加速 scientific discovery 的模型。他认为最好的方式是 empower scientists，而不是让 OpenAI 自己试图弄清一切，并强调所有人都应获得这些收益。",
+          "urls": [
+            "https://x.com/sama/status/2082628413769003269"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "Kevin Kelly：AI 是“50-year overnight success”，VR 仍在等待 LLM moment",
+          "summary": "在 Best of the Pod: Wired's Kevin Kelly on Why AI Is a 50-year Overnight Success 中，Kevin Kelly 回顾技术预测的困难：他在 1987 年体验 VR 时以为未来已到，但几十年后 VR 仍进展缓慢，或许还在等待自己的 LLM moment。他还谈到技术浪潮中从 pioneer 到 builder 的转变：自由会被秩序、规则与治理取代，但新的 frontier 仍需持续出现。",
+          "urls": [
+            "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+          ]
+        }
+      ]
+    }
+  ]
+}
