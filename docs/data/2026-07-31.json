@@ -1,0 +1,162 @@
+{
+  "date": "2026-07-31",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 agent 工程化：sandbox 安全、部署链路、企业环境加固、token 成本下降，以及 physical AI 的真实落地。值得注意的是，多个 builder 都把焦点从模型能力转向系统边界、数据资产和可运营性。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 35,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "OpenAI 宣布 GPT-5.6 系列大幅降价与 API Fast mode",
+          "summary": "Sam Altman 表示目标是在每个层级提供最佳 price/intelligence tradeoff，并宣布 GPT-5.6 Luna input token 价格降 80% 至每百万 $0.20、output token 至每百万 $1.20；GPT-5.6 Terra 降至 $2/$12；GPT-5.6 Sol 在 API 中加入 Fast mode，速度最高 2.5 倍，价格为 2 倍。",
+          "urls": [
+            "https://x.com/sama/status/2082880720989532597",
+            "https://x.com/sama/status/2082880884525482061"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Replit：AI sandbox 安全要以 zero-trust 和分层防护为前提",
+          "summary": "Amjad Masad 认为近期“AI escaping sandbox”的讨论不应简单归因为 AI 可怕，很多 AI 公司和 sandbox provider 犯的是基础安全错误。Replit 自 2016 年运行 sandbox，他的核心建议是默认 zero-days 存在，在 zero-trust framework 下做多层防护。",
+          "urls": [
+            "https://x.com/amasad/status/2083034412598579403"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 缩短 CLI 到 Live URL 部署链路，面向自主软件工厂",
+          "summary": "Guillermo Rauch 表示 Vercel 将许多 app 从 CLI 到 Live URL 的端到端部署过程最多缩短约 7 秒，并强调开发者可通过 CLI/MCP/API 集成 Vercel infra，在其上构建自定义 software factory。他也表示欢迎正在构建自主构建与部署软件的 agent 或平台联系。",
+          "urls": [
+            "https://x.com/rauchg/status/2082876367629381719"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Grok Build 应用由 Vercel hosting 和 CDN 支撑",
+          "summary": "Guillermo Rauch 称 Grok Build apps（*.grok.me）使用 @vercel hosting 和 CDN infrastructure。用户可通过 prompt 让 @grok 构建软件，点击 Publish 发布，场景包括游戏、网站、内部应用和个人软件。",
+          "urls": [
+            "https://x.com/rauchg/status/2082841035093467229"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "Box CEO：agent 时代企业安全核心是环境加固",
+          "summary": "Aaron Levie 认为相关事件的教训不是“AI 可怕”，而是 agent 时代必须把安全做好。给定工具和任务，agent 会在足够 compute 下尽力完成目标；配置错误或误以为已锁定的系统会成为风险向量。企业需要投入大量工作来 harden environments。",
+          "urls": [
+            "https://x.com/levie/status/2082997703458570412"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "AI 单任务成本下降将推动更广泛经济扩散",
+          "summary": "Aaron Levie 指出，按任务类型归一化后的 AI 成本下降，是推动 AI 在经济中扩散的关键因素。frontier models 会继续更强、更贵，但随后效率提升和竞争会降低非最前沿任务的成本，形成能力提升与价格下降的循环。",
+          "urls": [
+            "https://x.com/levie/status/2082911418349920617"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+          "headline": "Gemini Mac app 支持按 Fn 语音输入并直接生成润色文本",
+          "summary": "Josh Woodward 分享了 Gemini Mac app 的一个工作流：按住 Fn、说话，清理后的 polished text 会直接出现在光标位置，无需编辑或复制粘贴。他表示该应用可免费获取。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2082926031543967896"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod",
+          "headline": "Swyx：可 distil model，也可 distil agent harness",
+          "summary": "Swyx 提出一个面向 builder 的简洁判断：如果你能 distil models，也可以 distil agent harnesses。这暗示 agent 系统中的工具编排、评测、运行框架和流程本身也可能成为可压缩、可迁移的工程资产。",
+          "urls": [
+            "https://x.com/swyx/status/2083073422410821846"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod",
+          "headline": "高质量 pretrain 数据可能迫使实验室自建私有低频搜索基础设施",
+          "summary": "Swyx 认为，如果预训练足够重视数据质量到 commoncrawl 不够用，就必须构建 Whole Web scraper；若还要保持数据新鲜，就需要 indexing，最终可能在预训练副项目中做出一个私有低频 Google clone，并可复用于 agent inference 侧。",
+          "urls": [
+            "https://x.com/swyx/status/2083016652032188669"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "非技术团队 AI 培训：直接办 install party",
+          "summary": "Zara Zhang 给管理者的建议是，用 install party 培训非技术团队：每个人带电脑，现场安装 agents，并当场完成一个有意义的任务。她认为抽象宣讲不如直接上手，安装和配置本身就是 80% 的障碍。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2083084770763002350"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 团队征集日常体验改进建议",
+          "summary": "Thibault Sottiaux 向用户征集 Codex 改进方向，强调“不嫌小”，关注 everyday experience。这类公开反馈征集显示 coding agent 产品仍在快速打磨开发者日常细节。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2083048892405604681"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 发布 Claude 端到端构建 full-stack app 教程",
+          "summary": "Peter Yang 表示其最新教程获得不少反馈，主题是如何使用 Claude 从设计到构建端到端完成一个 full-stack app。该内容面向希望把 AI coding workflow 用到完整产品构建的 builder。",
+          "urls": [
+            "https://x.com/petergyang/status/2082881415478415682"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "GCC 政策拒绝 LLM-based code 引发质疑",
+          "summary": "Peter Steinberger 称 GCC 改变政策并直接拒绝 LLM-based code，他质疑如何证明代码是否由 LLM 生成，并认为这一做法不合理。该讨论触及开源项目对 AI-generated code 的治理边界。",
+          "urls": [
+            "https://x.com/steipete/status/2083019629379612728"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SPC, Co-Founder @Bevel_Health",
+          "headline": "Preseen 私测：面向量化与 hedge funds 的风险预测",
+          "summary": "Aditya Agarwal 提到 @AskPreseen 已在 private beta 数周，一些全球领先的 quant/hedge funds 正在使用它来避免重大风险暴露。他将其定位为风险预测能力的一种未来形态。",
+          "urls": [
+            "https://x.com/adityaag/status/2083039973666644039",
+            "https://x.com/adityaag/status/2082992228214149470"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "Samsara CEO Sanjit Biswas 谈 physical AI：从 IoT 数据到现实世界 agent",
+          "summary": "Matt Turck 采访 Samsara CEO Sanjit Biswas，讨论 physical AI 如何作用于交通、施工、能源、公用事业等物理场景。Samsara 通过 GPS trackers、dash cameras、asset trackers、cloud services 和 AI 应用 digitize physical operations。节目提到公司跨过 $2B ARR、盈利且增长 30%，每年处理 25 trillion data points，覆盖数百万车辆与 frontline workers，并声称去年帮助预防约 380,000 起道路事故。",
+          "urls": [
+            "https://www.youtube.com/watch?v=3FHsGiONOGw"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年7月31日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年7月31日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 agent 工程化：sandbox 安全、部署链路、企业环境加固、token 成本下降，以及 physical AI 的真实落地。值得注意的是，多个 builder 都把焦点从模型能力转向系统边界、数据资产和可运营性。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Sam Altman · OpenAI</div>
+    <h3>OpenAI 宣布 GPT-5.6 系列大幅降价与 API Fast mode</h3>
+    <p>Sam Altman 表示目标是在每个层级提供最佳 price/intelligence tradeoff，并宣布 GPT-5.6 Luna input token 价格降 80% 至每百万 $0.20、output token 至每百万 $1.20；GPT-5.6 Terra 降至 $2/$12；GPT-5.6 Sol 在 API 中加入 Fast mode，速度最高 2.5 倍，价格为 2 倍。</p>
+    <div class="links"><a href="https://x.com/sama/status/2082880720989532597" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/sama/status/2082880884525482061" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · CEO @replit</div>
+    <h3>Replit：AI sandbox 安全要以 zero-trust 和分层防护为前提</h3>
+    <p>Amjad Masad 认为近期“AI escaping sandbox”的讨论不应简单归因为 AI 可怕，很多 AI 公司和 sandbox provider 犯的是基础安全错误。Replit 自 2016 年运行 sandbox，他的核心建议是默认 zero-days 存在，在 zero-trust framework 下做多层防护。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2083034412598579403" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel 缩短 CLI 到 Live URL 部署链路，面向自主软件工厂</h3>
+    <p>Guillermo Rauch 表示 Vercel 将许多 app 从 CLI 到 Live URL 的端到端部署过程最多缩短约 7 秒，并强调开发者可通过 CLI/MCP/API 集成 Vercel infra，在其上构建自定义 software factory。他也表示欢迎正在构建自主构建与部署软件的 agent 或平台联系。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2082876367629381719" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Grok Build 应用由 Vercel hosting 和 CDN 支撑</h3>
+    <p>Guillermo Rauch 称 Grok Build apps（*.grok.me）使用 @vercel hosting 和 CDN infrastructure。用户可通过 prompt 让 @grok 构建软件，点击 Publish 发布，场景包括游戏、网站、内部应用和个人软件。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2082841035093467229" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @box</div>
+    <h3>Box CEO：agent 时代企业安全核心是环境加固</h3>
+    <p>Aaron Levie 认为相关事件的教训不是“AI 可怕”，而是 agent 时代必须把安全做好。给定工具和任务，agent 会在足够 compute 下尽力完成目标；配置错误或误以为已锁定的系统会成为风险向量。企业需要投入大量工作来 harden environments。</p>
+    <div class="links"><a href="https://x.com/levie/status/2082997703458570412" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · CEO @box</div>
+    <h3>AI 单任务成本下降将推动更广泛经济扩散</h3>
+    <p>Aaron Levie 指出，按任务类型归一化后的 AI 成本下降，是推动 AI 在经济中扩散的关键因素。frontier models 会继续更强、更贵，但随后效率提升和竞争会降低非最前沿任务的成本，形成能力提升与价格下降的循环。</p>
+    <div class="links"><a href="https://x.com/levie/status/2082911418349920617" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Josh Woodward · VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio</div>
+    <h3>Gemini Mac app 支持按 Fn 语音输入并直接生成润色文本</h3>
+    <p>Josh Woodward 分享了 Gemini Mac app 的一个工作流：按住 Fn、说话，清理后的 polished text 会直接出现在光标位置，无需编辑或复制粘贴。他表示该应用可免费获取。</p>
+    <div class="links"><a href="https://x.com/joshwoodward/status/2082926031543967896" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod</div>
+    <h3>Swyx：可 distil model，也可 distil agent harness</h3>
+    <p>Swyx 提出一个面向 builder 的简洁判断：如果你能 distil models，也可以 distil agent harnesses。这暗示 agent 系统中的工具编排、评测、运行框架和流程本身也可能成为可压缩、可迁移的工程资产。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2083073422410821846" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod</div>
+    <h3>高质量 pretrain 数据可能迫使实验室自建私有低频搜索基础设施</h3>
+    <p>Swyx 认为，如果预训练足够重视数据质量到 commoncrawl 不够用，就必须构建 Whole Web scraper；若还要保持数据新鲜，就需要 indexing，最终可能在预训练副项目中做出一个私有低频 Google clone，并可复用于 agent inference 侧。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2083016652032188669" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>非技术团队 AI 培训：直接办 install party</h3>
+    <p>Zara Zhang 给管理者的建议是，用 install party 培训非技术团队：每个人带电脑，现场安装 agents，并当场完成一个有意义的任务。她认为抽象宣讲不如直接上手，安装和配置本身就是 80% 的障碍。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2083084770763002350" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 团队征集日常体验改进建议</h3>
+    <p>Thibault Sottiaux 向用户征集 Codex 改进方向，强调“不嫌小”，关注 everyday experience。这类公开反馈征集显示 coding agent 产品仍在快速打磨开发者日常细节。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2083048892405604681" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Peter Yang 发布 Claude 端到端构建 full-stack app 教程</h3>
+    <p>Peter Yang 表示其最新教程获得不少反馈，主题是如何使用 Claude 从设计到构建端到端完成一个 full-stack app。该内容面向希望把 AI coding workflow 用到完整产品构建的 builder。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2082881415478415682" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>GCC 政策拒绝 LLM-based code 引发质疑</h3>
+    <p>Peter Steinberger 称 GCC 改变政策并直接拒绝 LLM-based code，他质疑如何证明代码是否由 LLM 生成，并认为这一做法不合理。该讨论触及开源项目对 AI-generated code 的治理边界。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2083019629379612728" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aditya Agarwal · General Partner @SPC, Co-Founder @Bevel_Health</div>
+    <h3>Preseen 私测：面向量化与 hedge funds 的风险预测</h3>
+    <p>Aditya Agarwal 提到 @AskPreseen 已在 private beta 数周，一些全球领先的 quant/hedge funds 正在使用它来避免重大风险暴露。他将其定位为风险预测能力的一种未来形态。</p>
+    <div class="links"><a href="https://x.com/adityaag/status/2083039973666644039" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/adityaag/status/2082992228214149470" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">The MAD Podcast with Matt Turck · Podcast</div>
+    <h3>Samsara CEO Sanjit Biswas 谈 physical AI：从 IoT 数据到现实世界 agent</h3>
+    <p>Matt Turck 采访 Samsara CEO Sanjit Biswas，讨论 physical AI 如何作用于交通、施工、能源、公用事业等物理场景。Samsara 通过 GPS trackers、dash cameras、asset trackers、cloud services 和 AI 应用 digitize physical operations。节目提到公司跨过 $2B ARR、盈利且增长 30%，每年处理 25 trillion data points，覆盖数百万车辆与 frontline workers，并声称去年帮助预防约 380,000 起道路事故。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=3FHsGiONOGw" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>15</strong><span>builders</span></div><div class="stat"><strong>35</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-07-31.html">2026年7月31日</a></li><li><a href="2026-07-30.html">2026年7月30日</a></li><li><a href="2026-07-29.html">2026年7月29日</a></li><li><a href="2026-07-28.html">2026年7月28日</a></li><li><a href="2026-07-27.html">2026年7月27日</a></li><li><a href="2026-07-25.html">2026年7月25日</a></li><li><a href="2026-07-24.html">2026年7月24日</a></li><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
