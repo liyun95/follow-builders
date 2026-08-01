@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年8月1日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年8月1日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的 builder 讨论集中在 agentic 软件工厂、AI harness、用量与成本控制，以及个人 AI 的下一阶段。一个清晰趋势是：模型能力之外，如何组织任务、接入工具、设置证据门槛和运行闭环，正在成为产品与工程团队的关键竞争点。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 和 ChatGPT Work 重置使用限制</h3>
+    <p>Thibault Sottiaux 表示，为庆祝效率提升的一周，并让用户在周末运行 100,000 个 Luna threads，他已重置 Codex 和 ChatGPT Work 的使用限制。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2083395449814229287" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nan Yu · head of product @linear</div>
+    <h3>Linear 中常见的 Issue → Agent → PR → Release 闭环</h3>
+    <p>Nan Yu 分享，Linear 中最常见的 loop 是 Issue &gt; Agent &gt; PR &gt; Release 的变体，约 30% 的 bug 会完整走完该流程。她强调 prompt 应要求 agent 深入研究根因，并使用 Datadog 和 Sentry MCPs 收集证据；只有高确定性时才修复，否则会消耗大量 token。</p>
+    <div class="links"><a href="https://x.com/thenanyu/status/2083230295206121807" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel AI Gateway 强调预算、故障切换与可观测性</h3>
+    <p>Guillermo Rauch 表示，AI Gateway 为企业提供让 AI 投资更高效的关键 infra，包括按 key、team、project 设置预算，failover，模型与 provider 选择，以及 realtime observability。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2083319868766699699" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>软件项目正转向 agentic software factories</h3>
+    <p>Guillermo Rauch 认为 Issue → Agent → PR → Release 将成为常态。作者或 maintainer 的工作会转向设计能产出高质量产品的 loop，并设定应该处理什么任务的标准。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2083208578526314513" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>AI stack 中 harness 的重要性正在上升</h3>
+    <p>Aaron Levie 认为，在模型能力之外，harness 将成为 AI stack 中最重要的变量之一。随着任务从数十万、数百万 token 扩展到数千万甚至数亿 token，harness 如何拆解工作、选择合适模型，将直接影响准确率与成本。</p>
+    <div class="links"><a href="https://x.com/levie/status/2083389460679373135" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>YC 团队开源个人 AI 与公司大脑 harness</h3>
+    <p>Garry Tan 表示，个人 AI 或 company brain 需要干净的 harness，并分享了其团队每天使用的 free and open source 方案。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2083353760701833546" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>agent interface 正从 terminal 走向协作工具</h3>
+    <p>Zara Zhang 提到一场关于 Claude Tag 如何改变 Anthropic 工作方式的访谈：Anthropic 产品与工程团队中 65% 的 PR 现在由 Claude Tag raised。她认为对非工程团队来说，最终的 agent interface 会出现在他们已经使用的 Slack 等协作工具中。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2083161173563003268" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod</div>
+    <h3>Swyx 继续看好 /loop 和 /goal</h3>
+    <p>Swyx 表示，自己仍在积极使用 /loop 和 /goal，尤其适用于需要在 steerability 与 autonomy 之间取得平衡、或希望产生开放式“loop that generates loops”结果的场景。他认为很多人是在 g5.6/c5 era 过早放弃了这些模式。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2083439562437673053" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Replit CEO 分享 8b 模型的棋力实验</h3>
+    <p>Amjad Masad 称一个约 1500 Elo 的 8b 模型能够稳定击败 frontier models 和 Stockfish level 0，并且每步只花 1-2 秒，而不是 30 秒。他认为看到 8b 模型在 high reasoning 与 response chaining 下有这样的表现很有趣。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2083424608993300824" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Sam Altman · AI is cool i guess</div>
+    <h3>ChatGPT Work 的家庭日程播客用例</h3>
+    <p>Sam Altman 分享了一个 ChatGPT Work 用例：连接家庭日历并说明孩子们的兴趣后，每天早上为上学路上生成 podcast，内容包括孩子当天的足球比赛、即将到来的生日和新闻等。</p>
+    <div class="links"><a href="https://x.com/sama/status/2083221585792762171" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>模型处理并发指令的体验改善</h3>
+    <p>Peter Steinberger 认为，过去 queue 是更好的方式，但在 5.5 之后，模型不再容易混乱，用户可以在模型工作时继续丢任务给它，它会认真处理输入内容。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2083369880599015713" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Dan Shipper · ceo @every</div>
+    <h3>OpenAI 与 Anthropic 竞争中的势头变化</h3>
+    <p>Dan Shipper 提到自己出现在 @WSJ 一篇关于 OpenAI vs Anthropic 的文章中，并表示从早春以来，势头正在转向 @openai，这是一段有意思的 comeback story。</p>
+    <div class="links"><a href="https://x.com/danshipper/status/2083380721607921904" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">Unsupervised Learning · Podcast</div>
+    <h3>xAI Co-Founder Igor Babushkin 谈模型开发、personal AI 与 River AI</h3>
+    <p>Ep 92 访谈 Igor Babushkin。他回顾了在 DeepMind、OpenAI、xAI 的经历，包括 StarCraft、AlphaCode、早期 reasoning 工作，以及 xAI 的 Colossus 和模型进展。节目还讨论了他的新公司 River AI、personal AI、local hardware、coding agents 之后的下一波 agent 应用，以及模型在非可验证领域继续进步所需的条件。</p>
+    <div class="links"><a href="https://www.youtube.com/@RedpointAI" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>13</strong><span>builders</span></div><div class="stat"><strong>31</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-08-01.html">2026年8月1日</a></li><li><a href="2026-07-31.html">2026年7月31日</a></li><li><a href="2026-07-30.html">2026年7月30日</a></li><li><a href="2026-07-29.html">2026年7月29日</a></li><li><a href="2026-07-28.html">2026年7月28日</a></li><li><a href="2026-07-27.html">2026年7月27日</a></li><li><a href="2026-07-25.html">2026年7月25日</a></li><li><a href="2026-07-24.html">2026年7月24日</a></li><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>

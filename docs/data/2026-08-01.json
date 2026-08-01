@@ -1,0 +1,142 @@
+{
+  "date": "2026-08-01",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的 builder 讨论集中在 agentic 软件工厂、AI harness、用量与成本控制，以及个人 AI 的下一阶段。一个清晰趋势是：模型能力之外，如何组织任务、接入工具、设置证据门槛和运行闭环，正在成为产品与工程团队的关键竞争点。",
+  "stats": {
+    "xBuilders": 13,
+    "totalTweets": 31,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 和 ChatGPT Work 重置使用限制",
+          "summary": "Thibault Sottiaux 表示，为庆祝效率提升的一周，并让用户在周末运行 100,000 个 Luna threads，他已重置 Codex 和 ChatGPT Work 的使用限制。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2083395449814229287"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "Linear 中常见的 Issue → Agent → PR → Release 闭环",
+          "summary": "Nan Yu 分享，Linear 中最常见的 loop 是 Issue > Agent > PR > Release 的变体，约 30% 的 bug 会完整走完该流程。她强调 prompt 应要求 agent 深入研究根因，并使用 Datadog 和 Sentry MCPs 收集证据；只有高确定性时才修复，否则会消耗大量 token。",
+          "urls": [
+            "https://x.com/thenanyu/status/2083230295206121807"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel AI Gateway 强调预算、故障切换与可观测性",
+          "summary": "Guillermo Rauch 表示，AI Gateway 为企业提供让 AI 投资更高效的关键 infra，包括按 key、team、project 设置预算，failover，模型与 provider 选择，以及 realtime observability。",
+          "urls": [
+            "https://x.com/rauchg/status/2083319868766699699"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "软件项目正转向 agentic software factories",
+          "summary": "Guillermo Rauch 认为 Issue → Agent → PR → Release 将成为常态。作者或 maintainer 的工作会转向设计能产出高质量产品的 loop，并设定应该处理什么任务的标准。",
+          "urls": [
+            "https://x.com/rauchg/status/2083208578526314513"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "AI stack 中 harness 的重要性正在上升",
+          "summary": "Aaron Levie 认为，在模型能力之外，harness 将成为 AI stack 中最重要的变量之一。随着任务从数十万、数百万 token 扩展到数千万甚至数亿 token，harness 如何拆解工作、选择合适模型，将直接影响准确率与成本。",
+          "urls": [
+            "https://x.com/levie/status/2083389460679373135"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "YC 团队开源个人 AI 与公司大脑 harness",
+          "summary": "Garry Tan 表示，个人 AI 或 company brain 需要干净的 harness，并分享了其团队每天使用的 free and open source 方案。",
+          "urls": [
+            "https://x.com/garrytan/status/2083353760701833546"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "agent interface 正从 terminal 走向协作工具",
+          "summary": "Zara Zhang 提到一场关于 Claude Tag 如何改变 Anthropic 工作方式的访谈：Anthropic 产品与工程团队中 65% 的 PR 现在由 Claude Tag raised。她认为对非工程团队来说，最终的 agent interface 会出现在他们已经使用的 Slack 等协作工具中。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2083161173563003268"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod",
+          "headline": "Swyx 继续看好 /loop 和 /goal",
+          "summary": "Swyx 表示，自己仍在积极使用 /loop 和 /goal，尤其适用于需要在 steerability 与 autonomy 之间取得平衡、或希望产生开放式“loop that generates loops”结果的场景。他认为很多人是在 g5.6/c5 era 过早放弃了这些模式。",
+          "urls": [
+            "https://x.com/swyx/status/2083439562437673053"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "Replit CEO 分享 8b 模型的棋力实验",
+          "summary": "Amjad Masad 称一个约 1500 Elo 的 8b 模型能够稳定击败 frontier models 和 Stockfish level 0，并且每步只花 1-2 秒，而不是 30 秒。他认为看到 8b 模型在 high reasoning 与 response chaining 下有这样的表现很有趣。",
+          "urls": [
+            "https://x.com/amasad/status/2083424608993300824"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "AI is cool i guess",
+          "headline": "ChatGPT Work 的家庭日程播客用例",
+          "summary": "Sam Altman 分享了一个 ChatGPT Work 用例：连接家庭日历并说明孩子们的兴趣后，每天早上为上学路上生成 podcast，内容包括孩子当天的足球比赛、即将到来的生日和新闻等。",
+          "urls": [
+            "https://x.com/sama/status/2083221585792762171"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "模型处理并发指令的体验改善",
+          "summary": "Peter Steinberger 认为，过去 queue 是更好的方式，但在 5.5 之后，模型不再容易混乱，用户可以在模型工作时继续丢任务给它，它会认真处理输入内容。",
+          "urls": [
+            "https://x.com/steipete/status/2083369880599015713"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "OpenAI 与 Anthropic 竞争中的势头变化",
+          "summary": "Dan Shipper 提到自己出现在 @WSJ 一篇关于 OpenAI vs Anthropic 的文章中，并表示从早春以来，势头正在转向 @openai，这是一段有意思的 comeback story。",
+          "urls": [
+            "https://x.com/danshipper/status/2083380721607921904"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Unsupervised Learning",
+          "role": "Podcast",
+          "headline": "xAI Co-Founder Igor Babushkin 谈模型开发、personal AI 与 River AI",
+          "summary": "Ep 92 访谈 Igor Babushkin。他回顾了在 DeepMind、OpenAI、xAI 的经历，包括 StarCraft、AlphaCode、早期 reasoning 工作，以及 xAI 的 Colossus 和模型进展。节目还讨论了他的新公司 River AI、personal AI、local hardware、coding agents 之后的下一波 agent 应用，以及模型在非可验证领域继续进步所需的条件。",
+          "urls": [
+            "https://www.youtube.com/@RedpointAI"
+          ]
+        }
+      ]
+    }
+  ]
+}
