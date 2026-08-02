@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年8月2日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年8月2日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的高信号来自 agent 落地：从 Karpathy 的一次 1M token 世界生成实验，到 Netic 面向 HVAC 等真实服务企业的 AI-first 工作流，再到开源 issue、CRM、硬件调试等具体 builder 场景，讨论正从模型能力转向可执行系统。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Andrej Karpathy · I like training large deep neural nets.</div>
+    <h3>Karpathy 用 Opus 5 和 1M token 预算生成 LoTR 交互世界</h3>
+    <p>Andrej Karpathy 让 Opus 5 基于《Lord of the Rings》第一段文字，在约 1M token、约 10 美元预算内写 three.js 渲染代码。模型运行约 2 小时，生成 5500 行代码，程序化渲染并动画化故事场景。他认为这类“没人会手写但 LLM 可以耐心完成”的超定制世界，可能催生按需生成的临时 GTA 式体验；同时也暴露出 LLM 难以原生审计视频和玩游戏的问题。</p>
+    <div class="links"><a href="https://x.com/karpathy/status/2083749667410727319" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · smol_ai, dxtipshq, cognition, aidotengineer, latentspacepod</div>
+    <h3>Swyx：面向 AI 的编程语言应当“slop-tolerant”</h3>
+    <p>Swyx 推荐 Boundary 的演讲“fighting slop with slop”，并提到 @btaylor 曾在播客中呼吁 AI native programming language。他认为，重新从第一性原理思考代码如何运行很有价值；在 AI 生成内容环境下，对“slop”具备容错能力，比单纯反对 slop 更重要。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2083753582160191988" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Peter Yang：Opus 5 的对话风格相比 Opus 4.6 有退步感</h3>
+    <p>Peter Yang 认为 Opus 4.6 是 Opus 系列里人格和写作风格最好的版本，而 Opus 5 的回复更容易过长、频繁出现 Claude-speak，如“here&#39;s the honest truth”，并显得更评判式。他的反馈聚焦在模型可用性中的语气、信任感和日常对话体验。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2083755374994415904" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Peter Yang 反馈 OpenAI plugins 影响 /no-ai-slop skill 发布体验</h3>
+    <p>Peter Yang 请求 OpenAI 查看 plugins 相关 bug，称他在尝试把自己的 /no-ai-slop skill 作为 plugin 发布时，遇到问题并影响用户体验。该动态反映出 builder 在把 skill、plugin 和产品化体验连接起来时，仍会受平台细节影响。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2083594381748302160" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nan Yu · head of product @linear</div>
+    <h3>Nan Yu 提议为开源 issue 质押 token，按需调用 cloud coding agent</h3>
+    <p>Nan Yu 提出，用户在开源 repo 提 issue 时应可质押 tokens，并在 issue 中写清 spec。如果 maintainer 接受，GitHub 可把 issue 原文交给 cloud coding agent，并由请求者付费执行。他认为这能减少无质量的 slop PR，让 agent 工作与 maintainer 接受流程绑定。</p>
+    <div class="links"><a href="https://x.com/thenanyu/status/2083722999430050281" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nan Yu · head of product @linear</div>
+    <h3>Nan Yu 描述 agent issue loop：评论中附上下文，用户补充后继续执行</h3>
+    <p>Nan Yu 补充说明一个 agent 工作流：循环会在 issue 下留下评论并附上全部上下文；当用户回复评论补充细节、解除阻塞后，agent 会继续工作。这类设计强调把 agent 的状态、上下文和人工介入点留在现有协作界面中。</p>
+    <div class="links"><a href="https://x.com/thenanyu/status/2083534333428580501" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Guillermo Rauch 关注开源 agentic CRM：model-agnostic、自托管、serverless</h3>
+    <p>Guillermo Rauch 转发并评价一个开源 agentic CRM，称其基于相关技术与 @nextjs，具备 model-agnostic、自托管或 serverless 部署、多渠道和 headless 等特性，并表示“This is the way”。该方向代表 AI 应用从聊天界面走向可组合业务系统。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2083684679362965605" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Guillermo Rauch 询问人机交互：打字还是语音 STT</h3>
+    <p>Guillermo Rauch 发起关于用户是通过键盘打字还是通过 speech-to-text 与电脑交互的提问。虽然是简短问题，但对 builder 有实际信号：随着 AI agent 和工具调用增多，输入方式本身可能成为产品体验与工作流设计的关键变量。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2083709589862936786" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>Aaron Levie：AI 在深领域能力将与日常生产力体验显著分化</h3>
+    <p>Aaron Levie 认为，AI 在个人生活和日常生产力中的提升，与在数学、科学、法律、coding 等深领域中的进展会越来越分化。通用模型达到基础可用后，深领域工作会更快“垂直上升”，但许多能力提升需要与数据集和工作流结合，才会转化为生命科学、自动化、网络能力等实际突破。</p>
+    <div class="links"><a href="https://x.com/levie/status/2083589132660711452" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Garry Tan · President &amp; CEO @ycombinator</div>
+    <h3>Garry Tan：OpenAI 2026 的平台姿态更像开放 utility</h3>
+    <p>Garry Tan 观察到一个 2026 vibe shift：OpenAI 看起来更像是在成为开放平台。他强调“intelligence on tap as a utility”和“全栈集成最优”的差别，暗示 builder 在平台选择上可能更关注可接入的智能基础设施，而不是单一封闭全栈。</p>
+    <div class="links"><a href="https://x.com/garrytan/status/2083684825333105107" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Nikunj Kothari · partner @fpvventures</div>
+    <h3>Nikunj Kothari：模型扩散将是未来数十年的核心工作</h3>
+    <p>Nikunj Kothari 指出，一边是模型在解决 NP-hard 问题，另一边传统企业仍在抱怨 token spend 的 ROI。他认为未来数十年要做的核心工作，是让模型能力扩散到企业与实际流程中。这与“能力突破”和“组织采纳”之间的落差相呼应。</p>
+    <div class="links"><a href="https://x.com/nikunj/status/2083502573546263002" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>Peter Steinberger 给 agent 接入 webcam，端到端测试 ESP32 claw node</h3>
+    <p>Peter Steinberger 正在 ESP32 芯片上构建 claw node，并让 agent 访问 webcam 做 e2e 测试。他描述 agent 为调试语音唤醒命令不断喊“HI ESP”。这是 agent 从代码辅助走向硬件、语音和物理设备调试的具体 builder 场景。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2083694161933594703" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Steinberger · @OpenClaw + @OpenAI</div>
+    <h3>Peter Steinberger：让 agent 帮自己安装工具改善 Gmail 视觉体验</h3>
+    <p>Peter Steinberger 称自己多年忍受 Gmail 视觉不适后，最终让 agent 帮忙安装了一个工具。这个小例子显示，agent 的价值不只在生成代码，也可以承担本地环境配置、工具发现与个性化工作流改造。</p>
+    <div class="links"><a href="https://x.com/steipete/status/2083759812970786997" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Dan Shipper · ceo @every</div>
+    <h3>Dan Shipper：AI 会为人类专家创造更多工作</h3>
+    <p>Dan Shipper 转发并指出“AI creates more work for human experts”。该观点与许多企业落地现象一致：AI 自动化并不总是直接减少专家工作，反而可能通过扩大产出、暴露更多问题、增加审核与决策需求，让专家承担更高阶的判断和协调。</p>
+    <div class="links"><a href="https://x.com/danshipper/status/2083750803437724016" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">No Priors · Podcast</div>
+    <h3>Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak</h3>
+    <p>No Priors 采访 Netic founder and CEO Melisa Tokmak。Netic 面向 HVAC、plumbing、electric、consumer wellness、hospitality、automotive、pet services 等真实服务企业构建 AI agents，处理客户来电、短信、网站入口、需求理解、调度和运营规则匹配。Melisa 表示，很多客户已进入“Netic first”模式，超过 70% 客户的首次交互由 Netic agents 承接。她也解释了为何选择做可扩展产品而非 AI roll-up：自己更擅长 builder、engineering 和 product，并希望让更多真实世界企业运行在 Netic 上。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=wWbX3NL6_Uo" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>15</strong><span>builders</span></div><div class="stat"><strong>30</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-08-02.html">2026年8月2日</a></li><li><a href="2026-08-01.html">2026年8月1日</a></li><li><a href="2026-07-31.html">2026年7月31日</a></li><li><a href="2026-07-30.html">2026年7月30日</a></li><li><a href="2026-07-29.html">2026年7月29日</a></li><li><a href="2026-07-28.html">2026年7月28日</a></li><li><a href="2026-07-27.html">2026年7月27日</a></li><li><a href="2026-07-25.html">2026年7月25日</a></li><li><a href="2026-07-24.html">2026年7月24日</a></li><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>

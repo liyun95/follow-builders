@@ -1,0 +1,160 @@
+{
+  "date": "2026-08-02",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号来自 agent 落地：从 Karpathy 的一次 1M token 世界生成实验，到 Netic 面向 HVAC 等真实服务企业的 AI-first 工作流，再到开源 issue、CRM、硬件调试等具体 builder 场景，讨论正从模型能力转向可执行系统。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 30,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Andrej Karpathy",
+          "role": "I like training large deep neural nets.",
+          "headline": "Karpathy 用 Opus 5 和 1M token 预算生成 LoTR 交互世界",
+          "summary": "Andrej Karpathy 让 Opus 5 基于《Lord of the Rings》第一段文字，在约 1M token、约 10 美元预算内写 three.js 渲染代码。模型运行约 2 小时，生成 5500 行代码，程序化渲染并动画化故事场景。他认为这类“没人会手写但 LLM 可以耐心完成”的超定制世界，可能催生按需生成的临时 GTA 式体验；同时也暴露出 LLM 难以原生审计视频和玩游戏的问题。",
+          "urls": [
+            "https://x.com/karpathy/status/2083749667410727319"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "smol_ai, dxtipshq, cognition, aidotengineer, latentspacepod",
+          "headline": "Swyx：面向 AI 的编程语言应当“slop-tolerant”",
+          "summary": "Swyx 推荐 Boundary 的演讲“fighting slop with slop”，并提到 @btaylor 曾在播客中呼吁 AI native programming language。他认为，重新从第一性原理思考代码如何运行很有价值；在 AI 生成内容环境下，对“slop”具备容错能力，比单纯反对 slop 更重要。",
+          "urls": [
+            "https://x.com/swyx/status/2083753582160191988"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang：Opus 5 的对话风格相比 Opus 4.6 有退步感",
+          "summary": "Peter Yang 认为 Opus 4.6 是 Opus 系列里人格和写作风格最好的版本，而 Opus 5 的回复更容易过长、频繁出现 Claude-speak，如“here's the honest truth”，并显得更评判式。他的反馈聚焦在模型可用性中的语气、信任感和日常对话体验。",
+          "urls": [
+            "https://x.com/petergyang/status/2083755374994415904"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Peter Yang 反馈 OpenAI plugins 影响 /no-ai-slop skill 发布体验",
+          "summary": "Peter Yang 请求 OpenAI 查看 plugins 相关 bug，称他在尝试把自己的 /no-ai-slop skill 作为 plugin 发布时，遇到问题并影响用户体验。该动态反映出 builder 在把 skill、plugin 和产品化体验连接起来时，仍会受平台细节影响。",
+          "urls": [
+            "https://x.com/petergyang/status/2083594381748302160"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "Nan Yu 提议为开源 issue 质押 token，按需调用 cloud coding agent",
+          "summary": "Nan Yu 提出，用户在开源 repo 提 issue 时应可质押 tokens，并在 issue 中写清 spec。如果 maintainer 接受，GitHub 可把 issue 原文交给 cloud coding agent，并由请求者付费执行。他认为这能减少无质量的 slop PR，让 agent 工作与 maintainer 接受流程绑定。",
+          "urls": [
+            "https://x.com/thenanyu/status/2083722999430050281"
+          ]
+        },
+        {
+          "source": "Nan Yu",
+          "role": "head of product @linear",
+          "headline": "Nan Yu 描述 agent issue loop：评论中附上下文，用户补充后继续执行",
+          "summary": "Nan Yu 补充说明一个 agent 工作流：循环会在 issue 下留下评论并附上全部上下文；当用户回复评论补充细节、解除阻塞后，agent 会继续工作。这类设计强调把 agent 的状态、上下文和人工介入点留在现有协作界面中。",
+          "urls": [
+            "https://x.com/thenanyu/status/2083534333428580501"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Guillermo Rauch 关注开源 agentic CRM：model-agnostic、自托管、serverless",
+          "summary": "Guillermo Rauch 转发并评价一个开源 agentic CRM，称其基于相关技术与 @nextjs，具备 model-agnostic、自托管或 serverless 部署、多渠道和 headless 等特性，并表示“This is the way”。该方向代表 AI 应用从聊天界面走向可组合业务系统。",
+          "urls": [
+            "https://x.com/rauchg/status/2083684679362965605"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Guillermo Rauch 询问人机交互：打字还是语音 STT",
+          "summary": "Guillermo Rauch 发起关于用户是通过键盘打字还是通过 speech-to-text 与电脑交互的提问。虽然是简短问题，但对 builder 有实际信号：随着 AI agent 和工具调用增多，输入方式本身可能成为产品体验与工作流设计的关键变量。",
+          "urls": [
+            "https://x.com/rauchg/status/2083709589862936786"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "Aaron Levie：AI 在深领域能力将与日常生产力体验显著分化",
+          "summary": "Aaron Levie 认为，AI 在个人生活和日常生产力中的提升，与在数学、科学、法律、coding 等深领域中的进展会越来越分化。通用模型达到基础可用后，深领域工作会更快“垂直上升”，但许多能力提升需要与数据集和工作流结合，才会转化为生命科学、自动化、网络能力等实际突破。",
+          "urls": [
+            "https://x.com/levie/status/2083589132660711452"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Garry Tan：OpenAI 2026 的平台姿态更像开放 utility",
+          "summary": "Garry Tan 观察到一个 2026 vibe shift：OpenAI 看起来更像是在成为开放平台。他强调“intelligence on tap as a utility”和“全栈集成最优”的差别，暗示 builder 在平台选择上可能更关注可接入的智能基础设施，而不是单一封闭全栈。",
+          "urls": [
+            "https://x.com/garrytan/status/2083684825333105107"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "Nikunj Kothari：模型扩散将是未来数十年的核心工作",
+          "summary": "Nikunj Kothari 指出，一边是模型在解决 NP-hard 问题，另一边传统企业仍在抱怨 token spend 的 ROI。他认为未来数十年要做的核心工作，是让模型能力扩散到企业与实际流程中。这与“能力突破”和“组织采纳”之间的落差相呼应。",
+          "urls": [
+            "https://x.com/nikunj/status/2083502573546263002"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "Peter Steinberger 给 agent 接入 webcam，端到端测试 ESP32 claw node",
+          "summary": "Peter Steinberger 正在 ESP32 芯片上构建 claw node，并让 agent 访问 webcam 做 e2e 测试。他描述 agent 为调试语音唤醒命令不断喊“HI ESP”。这是 agent 从代码辅助走向硬件、语音和物理设备调试的具体 builder 场景。",
+          "urls": [
+            "https://x.com/steipete/status/2083694161933594703"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "@OpenClaw + @OpenAI",
+          "headline": "Peter Steinberger：让 agent 帮自己安装工具改善 Gmail 视觉体验",
+          "summary": "Peter Steinberger 称自己多年忍受 Gmail 视觉不适后，最终让 agent 帮忙安装了一个工具。这个小例子显示，agent 的价值不只在生成代码，也可以承担本地环境配置、工具发现与个性化工作流改造。",
+          "urls": [
+            "https://x.com/steipete/status/2083759812970786997"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "Dan Shipper：AI 会为人类专家创造更多工作",
+          "summary": "Dan Shipper 转发并指出“AI creates more work for human experts”。该观点与许多企业落地现象一致：AI 自动化并不总是直接减少专家工作，反而可能通过扩大产出、暴露更多问题、增加审核与决策需求，让专家承担更高阶的判断和协调。",
+          "urls": [
+            "https://x.com/danshipper/status/2083750803437724016"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "No Priors",
+          "role": "Podcast",
+          "headline": "Building an Autonomous Enterprise for Real-World Services with Netic Founder Melisa Tokmak",
+          "summary": "No Priors 采访 Netic founder and CEO Melisa Tokmak。Netic 面向 HVAC、plumbing、electric、consumer wellness、hospitality、automotive、pet services 等真实服务企业构建 AI agents，处理客户来电、短信、网站入口、需求理解、调度和运营规则匹配。Melisa 表示，很多客户已进入“Netic first”模式，超过 70% 客户的首次交互由 Netic agents 承接。她也解释了为何选择做可扩展产品而非 AI roll-up：自己更擅长 builder、engineering 和 product，并希望让更多真实世界企业运行在 Netic 上。",
+          "urls": [
+            "https://www.youtube.com/watch?v=wWbX3NL6_Uo"
+          ]
+        }
+      ]
+    }
+  ]
+}
