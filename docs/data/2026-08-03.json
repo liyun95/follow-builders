@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-03",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的高信号集中在 agent 进入真实工作流后的边界：公司级内部 agent、Codex computer use、LLM 下棋，以及数学、代码等可验证领域的自动化加速。另一条主线是模型架构与 test-time learning，大家都在追问：从 benchmark 到现实任务，中间还缺什么。",
+  "stats": {
+    "xBuilders": 12,
+    "totalTweets": 26,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Andrej Karpathy",
+          "role": "I like training large deep neural nets.",
+          "headline": "把 pelican on bicycle test 做成可浏览器运行的源码项目",
+          "summary": "Andrej Karpathy 转发 Simon Willison 关于“pelican on the bicycle test”的更多讨论，并表示已上传源码，让这个测试可以在浏览器中运行、fork 和修改。他还调侃“GTA Hobbiton”会在 GTA VI 之前上线。",
+          "urls": [
+            "https://x.com/karpathy/status/2083948654377996480"
+          ]
+        },
+        {
+          "source": "Swyx",
+          "role": "@smol_ai, @dxtipshq, @cognition, @aidotengineer, @latentspacepod",
+          "headline": "为 computer use 播客收集 Codex CUA 的“wow moments”",
+          "summary": "Swyx 表示正在为一期 computer use 播客准备素材，记录 Codex CUA 的高光时刻。他展示了一个场景：bot 代他与客服沟通并争取更快解决问题，对方并不知道自己在和 bot 对话，bot 还用完整 receipts 回应对方推责。",
+          "urls": [
+            "https://x.com/swyx/status/2084156733027701164"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "Hermes 用 Curator 清理 agent 的 skills 与 memory",
+          "summary": "Peter Yang 引述 NousResearch co-founder Karan 的解释：Hermes 的一大优势是会构建自己的 skills 来帮助完成工作。为避免 slop，Hermes Curator 会作为 background task 在 agent 内定期清理 skills 和 memory，并且因为是 open source，用户可以定义自己的 slop 标准，让系统按自己的方式重写清理循环。",
+          "urls": [
+            "https://x.com/petergyang/status/2083968605432267139"
+          ]
+        },
+        {
+          "source": "Thariq",
+          "role": "Claude Code @anthropicai",
+          "headline": "数学领域已能看到 Jevons paradox",
+          "summary": "Thariq 认为数学中已经能看到 Jevons paradox：AI 让更多事情发生，也让理解变得更容易，数学家有更多时间在更高抽象层次上讨论问题。因此，对“会思考且懂数学的人”的需求反而会上升。他还补充，这与国际象棋曾发生的变化有很多相似之处。",
+          "urls": [
+            "https://x.com/trq212/status/2083977795290734975",
+            "https://x.com/trq212/status/2083978109376987365"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "ceo @replit",
+          "headline": "LLM chess engine 已在 LiChess 自主对弈",
+          "summary": "Amjad Masad 表示自己的 LLM chess engine 已经在 LiChess 上自主与真人和 bot 下棋，当前 Elo 为 1253。他还提到可以在网站上实时观看对局，并说该引擎当时正在同时进行 3 盘棋。",
+          "urls": [
+            "https://x.com/amasad/status/2083926395403821427",
+            "https://x.com/amasad/status/2083936067355635948"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "@vercel CEO",
+          "headline": "Vercel 用 @𝚟 作为公司内部运营 agent 与 router",
+          "summary": "Guillermo Rauch 介绍 Vercel 内部运营 agent @𝚟：它已经参与公司日常工作，交互量和 token 使用量快速增长，覆盖 finance、comms、docs、marketing、engineering、business analytics 等场景。@𝚟 既是 agent 也是 router，包含 sub-agents、skills，并能把工作委派给其他 agents。Rauch 认为企业应控制自己的 agent，从 source 到 runtime、data、token 都掌握在自己手里。",
+          "urls": [
+            "https://x.com/rauchg/status/2084042561690456157",
+            "https://x.com/rauchg/status/2084060157085143512"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "ceo @box",
+          "headline": "可验证领域可能最先被自动化",
+          "summary": "Aaron Levie 指出，一些世界上最“难”的工作可能因为可验证性而更早被自动化，尤其是 math、cyber 和 code。这些领域能客观测试正确性，因此既能为模型训练提供更清晰的 reward signals，也能在运行时规模化验证结果。相比之下，法律、营销、销售、财务规划等知识工作没有单一正确答案，依赖上下文、操作者偏好和风险水平，因此 applied AI layer 和流程重构仍会很重要。",
+          "urls": [
+            "https://x.com/levie/status/2083965372747882741"
+          ]
+        },
+        {
+          "source": "Ryo Lu",
+          "role": "Design @Cursor_ai",
+          "headline": "离开 app 世界后，软件还会留下哪些可见部分",
+          "summary": "Ryo Lu 回忆早期影响自己的 app，包括 Rdio、Mailbox 和 Apple：它们创造了让软件更简单、更直觉、可触摸的新模式。面向 AI 之后可能“离开 app 世界”的未来，他提出问题：软件还会有哪些部分保持可见，它又会以什么方式被感知？",
+          "urls": [
+            "https://x.com/ryolu_/status/2083939454017053179"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "AI 会带来难以想象的经济增长",
+          "summary": "Garry Tan 继续强调增长叙事，认为 AI 将创造难以想象的经济增长，是重要的乐观信号。他还写道，当 wonder 的数量正在指数级增长时，人们的惊奇感反而消失了。",
+          "urls": [
+            "https://x.com/garrytan/status/2083957110711386439",
+            "https://x.com/garrytan/status/2083923385193828612"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "AI tailwind 下 VC 进入“vibes capital”阶段",
+          "summary": "Nikunj Kothari 从投资人视角观察到，早中期 VC 市场已很大程度变成 vibes capital，融资结果与基本面脱节：有些几乎没有成果的轮次异常火热，有些看似稳妥的公司却融资困难。他认为在 dry powder 和 AI tailwind 作用下，这种状态至少还会持续 12 到 18 个月。长期看，盈利、清晰 cap table 和掌控自身命运仍然重要，但短期资本市场波动会继续加剧。",
+          "urls": [
+            "https://x.com/nikunj/status/2083873335998333227"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "ceo @every",
+          "headline": "AI 带来的 agency rupture 会经历三阶段重建",
+          "summary": "Dan Shipper 描述人在看到 language model 接管自己曾经逐步参与的任务时，会经历 agency rupture：先只看到 AI 在做事，随后逐渐意识到人类 scaffolding 的存在，最后重建 agency，把模型视为工具，将 AI 的贡献变得“隐形”。他认为，把这种断裂代谢成 playfulness 和 curiosity，可能是能否适应新 AI economy 的领先指标。",
+          "urls": [
+            "https://x.com/danshipper/status/2084038453831020916"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Training Data",
+          "role": "Podcast",
+          "headline": "Core Automation 谈自动化 AGI Lab、transformer 边界与 test-time learning",
+          "summary": "本期 Training Data 采访 Core Automation 的 Jerry Tworek 和 Rohan Anil。Jerry 认为，过去几年行业已经掌握了大规模 pre training 和大规模 reinforcement learning，但更聪明系统的瓶颈可能在 architecture 本身。他提出，模型在 lab 中训练、却在真实世界分布上部署，这是核心张力；benchmark 与训练任务相近，但现实任务更混乱。因此未来需要能在 test time 与用户数据、真实任务一起学习的模型。现有 in-context learning 受上下文长度限制，fine tuning 又有 catastrophic forgetting 与数据效率问题，可能需要在架构层表达新的 meta learning 算法。",
+          "urls": [
+            "https://www.youtube.com/watch?v=2RJiaf0SY8s"
+          ]
+        }
+      ]
+    }
+  ]
+}
