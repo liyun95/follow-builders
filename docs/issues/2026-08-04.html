@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Builders 简报 · 2026年8月4日</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f8f7f2'/%3E%3Cpath d='M14 18h36M14 30h36M14 42h22' stroke='%239d3728' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Site">
+      <div><a href="../index.html">AI Builders 简报</a></div>
+      <div>Follow builders, not influencers.</div>
+    </nav>
+    <header class="masthead">
+      <div>
+        <div class="kicker">AI News Briefing</div>
+        <h1>AI Builders 简报</h1>
+      </div>
+      <div class="date">2026年8月4日</div>
+    </header>
+    <div class="layout">
+      <article>
+        <section class="editor-note">
+          <strong>编辑手记</strong>
+          今天的信号集中在 agent 工作流、open weights 模型与基础设施体验：Codex、Claude Code、Next.js 和 Replit 都在把 AI 从对话推向可执行系统；同时，open model 的成本、许可与地缘依赖仍是 builder 需要持续评估的变量。
+        </section>
+        <section class="section">
+      <h2>Builder 动态</h2>
+      <article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>Codex 正成为前沿 AI 使用方式演进的 harness</h3>
+    <p>Thibault Sottiaux 表示，近期结果显示 Codex 是一个有效的 harness，但它在 2-3 个月内可能会显得原始；下一代模型需要的不只是用户的 laptop。他还提到，在 OpenAI 可以用 Codex 生成 PR 并向 10 亿用户发布改进。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2084483765158719542" target="_blank" rel="noopener noreferrer">原文 1</a><a href="https://x.com/thsottiaux/status/2084196918071357707" target="_blank" rel="noopener noreferrer">原文 2</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thibault Sottiaux · Codex &amp; ChatGPT @OpenAI</div>
+    <h3>GPT-5.6 Luna 降价 80% 被称为永久调整</h3>
+    <p>Thibault Sottiaux 澄清，GPT-5.6 Luna 价格降低 80% 不是临时活动，而是永久性的；理由是效率提升不会消失。</p>
+    <div class="links"><a href="https://x.com/thsottiaux/status/2084506501834829833" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>Hermes Agent 的核心在于记忆、技能与可塑性</h3>
+    <p>Peter Yang 总结了与 NousResearch co-founder Karan 的访谈要点：personal agent 的“个人性”来自对话记忆和技能，而不只是模型；可以用不同 personality 调整风格；还建议用独立 agent 做评估，避免模型迎合用户。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2084289426012897433" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Peter Yang · Practical AI tutorials and interviews</div>
+    <h3>NousResearch 希望让开源智能成为公共能力</h3>
+    <p>Peter Yang 分享 Karan 对 open source 的立场：希望 open source 最终获胜，让更多人获得同等智能，并把 Hermes 塑造成属于自己的 agent。</p>
+    <div class="links"><a href="https://x.com/petergyang/status/2084330985689428290" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amanda Askell · @AnthropicAI</div>
+    <h3>对齐与无害不是同一条轴线</h3>
+    <p>Amanda Askell 认为，模型像人类一样，可能在行为上 aligned，却仍因获得错误情境信息而造成 harm。因此不应把 aligned 与 harmless 视为同一条线上的两端，而应理解为不同维度。</p>
+    <div class="links"><a href="https://x.com/AmandaAskell/status/2084369056765989224" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Thariq · Claude Code @anthropicai</div>
+    <h3>Claude Connector 可扩展到 Claude Code 与 Artifacts</h3>
+    <p>Thariq 提醒，如果用户连接了 Claude Connector，例如 gmail、calendar、slack 等，Claude Code 也能使用这些连接，包括在 Artifacts 中调用相关能力。</p>
+    <div class="links"><a href="https://x.com/trq212/status/2084387303959740449" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Amjad Masad · ceo @replit</div>
+    <h3>Replit 构建自驾驶语义层，让数据、对话和文档可查询可 join</h3>
+    <p>Amjad Masad 表示，Replit 在数据库、对话和文档之上构建了 self-driving、self-correcting 的共享 semantic layer。不同来源的信息都可 query 和 join，使团队成员能提出过去需要数据科学家数周完成的问题。</p>
+    <div class="links"><a href="https://x.com/amasad/status/2084415670486499779" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Next.js 16.3 强调更快构建与 agent-native DX</h3>
+    <p>Guillermo Rauch 列出 Next.js 16.3 亮点：更快的 dev 与 build、增量 next build cache、instant navigations，以及给 agent 提供更清晰选择的 DX，包括 Suspense fallback 和版本化 docs。他称这是面向 agents 的最佳版本。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2084411344623902994" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>Vercel AI Gateway logs UI 获得更新关注</h3>
+    <p>Guillermo Rauch 展示了新的 AI Gateway logs UI，并称其体验 delightful。这对使用 AI Gateway 调试与观察模型调用的 builder 有参考价值。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2084426730241220703" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Guillermo Rauch · @vercel CEO</div>
+    <h3>从 PLG 到 ALG：让 agents 先采用产品</h3>
+    <p>Guillermo Rauch 提出对 startups 来说 ALG 会很关键：先让 agents 采用你的产品，再在必要时开会。相比从会议开始的公司，能被 agents 先使用的产品可能更接近理想客户路径。</p>
+    <div class="links"><a href="https://x.com/rauchg/status/2084445517678064092" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Aaron Levie · ceo @box</div>
+    <h3>open weights 模型正在改变 AI 行业成本与竞争结构</h3>
+    <p>Aaron Levie 认为，接近 frontier 的 open weights 模型不断发布，意味着模型不可能长期只留在闭源墙内；AI inference 价格会更接近底层基础设施成本，行业专用模型也能更快发展，经济价值会在模型层与应用层之间重新分配。</p>
+    <div class="links"><a href="https://x.com/levie/status/2084510498519933318" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Zara Zhang · Builder</div>
+    <h3>用 Codex 做旅行规划：从预订截图生成 Google Calendar 日程</h3>
+    <p>Zara Zhang 分享了一个简单但有效的 Codex 使用场景：把餐厅、火车和活动预订截图交给 Codex，让它整理并放入 Google Calendar。</p>
+    <div class="links"><a href="https://x.com/zarazhangrui/status/2084536363668611491" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+<article class="item">
+    <div class="source">Swyx · @smol_ai, @cognition, @aidotengineer, @latentspacepod</div>
+    <h3>captcha 在 bots 可通过后是否仍有意义</h3>
+    <p>Swyx 将讨论指向一个更实际的问题：当 bots 已经能通过 captcha 时，是否还需要 captcha。这反映了 agent 与自动化能力提升后，传统反机器人机制的有效性正在受到挑战。</p>
+    <div class="links"><a href="https://x.com/swyx/status/2084312752437481937" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+<section class="section">
+      <h2>播客精选</h2>
+      <article class="item">
+    <div class="source">Unsupervised Learning · Podcast</div>
+    <h3>AI Vibe Check: Chinese Open Models, Distillation &amp;amp; The Hugging Face Breach</h3>
+    <p>本期讨论 OpenAI 与 Hugging Face 事件、Chinese open source models、Kimi k three 的能力、distillation 对模型进步的解释力度，以及 frontier labs 向应用层竞争会如何影响客户与模型发展。嘉宾还谈到未来政府可能如何处理 frontier model releases。</p>
+    <div class="links"><a href="https://www.youtube.com/watch?v=_GlSkJjRDMM" target="_blank" rel="noopener noreferrer">原文 1</a></div>
+  </article>
+    </section>
+      </article>
+      <aside class="sidebar">
+        <section class="side-panel">
+          <div class="side-panel-title">今日统计</div>
+          <div class="stats-grid"><div class="stat"><strong>12</strong><span>builders</span></div><div class="stat"><strong>22</strong><span>tweets</span></div><div class="stat"><strong>0</strong><span>blogs</span></div><div class="stat"><strong>1</strong><span>podcasts</span></div></div>
+        </section>
+        <section class="side-panel">
+          <div class="side-panel-title">往期简报</div>
+          <ul class="archive-list"><li><a href="2026-08-04.html">2026年8月4日</a></li><li><a href="2026-08-03.html">2026年8月3日</a></li><li><a href="2026-08-02.html">2026年8月2日</a></li><li><a href="2026-08-01.html">2026年8月1日</a></li><li><a href="2026-07-31.html">2026年7月31日</a></li><li><a href="2026-07-30.html">2026年7月30日</a></li><li><a href="2026-07-29.html">2026年7月29日</a></li><li><a href="2026-07-28.html">2026年7月28日</a></li><li><a href="2026-07-27.html">2026年7月27日</a></li><li><a href="2026-07-25.html">2026年7月25日</a></li><li><a href="2026-07-24.html">2026年7月24日</a></li><li><a href="2026-07-23.html">2026年7月23日</a></li><li><a href="2026-07-22.html">2026年7月22日</a></li><li><a href="2026-07-21.html">2026年7月21日</a></li><li><a href="2026-07-20.html">2026年7月20日</a></li><li><a href="2026-07-19.html">2026年7月19日</a></li><li><a href="2026-07-18.html">2026年7月18日</a></li><li><a href="2026-07-17.html">2026年7月17日</a></li><li><a href="2026-07-16.html">2026年7月16日</a></li><li><a href="2026-07-15.html">2026年7月15日</a></li><li><a href="2026-07-14.html">2026年7月14日</a></li><li><a href="2026-07-13.html">2026年7月13日</a></li><li><a href="2026-07-12.html">2026年7月12日</a></li><li><a href="2026-07-11.html">2026年7月11日</a></li><li><a href="2026-07-10.html">2026年7月10日</a></li><li><a href="2026-07-09.html">2026年7月9日</a></li><li><a href="2026-07-08.html">2026年7月8日</a></li><li><a href="2026-07-07.html">2026年7月7日</a></li><li><a href="2026-07-06.html">2026年7月6日</a></li><li><a href="2026-07-05.html">2026年7月5日</a></li><li><a href="2026-07-04.html">2026年7月4日</a></li><li><a href="2026-07-03.html">2026年7月3日</a></li><li><a href="2026-07-02.html">2026年7月2日</a></li><li><a href="2026-07-01.html">2026年7月1日</a></li><li><a href="2026-06-30.html">2026年6月30日</a></li><li><a href="2026-06-29.html">2026年6月29日</a></li><li><a href="2026-06-28.html">2026年6月28日</a></li><li><a href="2026-06-27.html">2026年6月27日</a></li><li><a href="2026-06-26.html">2026年6月26日</a></li><li><a href="2026-06-25.html">2026年6月25日</a></li><li><a href="2026-06-24.html">2026年6月24日</a></li><li><a href="2026-06-23.html">2026年6月23日</a></li><li><a href="2026-06-22.html">2026年6月22日</a></li></ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer">Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders</footer>
+  </main>
+</body>
+</html>
