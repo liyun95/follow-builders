@@ -1,0 +1,146 @@
+{
+  "date": "2026-08-05",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的主线是 AI 产品从“能用”走向“可规模化”：builder 们在讨论 frontier model 原型、成本优化、企业 agent 策略、AI 采用的社会传播，以及生物药物设计中的 scaling lesson。低信号闲聊与政治内容已跳过。",
+  "stats": {
+    "xBuilders": 16,
+    "totalTweets": 35,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "smol_ai / cognition / Latent Space",
+          "headline": "知识图谱重新升温：便宜智能让 KG 的难点变得可承受",
+          "summary": "Swyx 认为 ontologies 和 graph knowledge 现在重新流行，一个关键原因是“足够好”的 intelligence 已经便宜到接近按量无限供应。KG 过去最难、最贵的部分正在被 commoditized intelligence 改写，因而互补资产的价值上升。",
+          "urls": [
+            "https://x.com/swyx/status/2084832553895444570"
+          ]
+        },
+        {
+          "source": "Josh Woodward",
+          "role": "VP, Google / Google Labs / GeminiApp / GoogleAIStudio",
+          "headline": "Notebook 强调统一 prompt bar，而不是更多模式切换",
+          "summary": "Josh Woodward 表示 Notebook 的设计目标是“built for thinking, not toggling”：不堆叠更多 modes，而是在单一统一的 prompt bar 中完成用户想做的事。Ultra 和 Pro 订阅者已可使用，之后会向所有人推出。",
+          "urls": [
+            "https://x.com/joshwoodward/status/2084746170576892342"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "OpenAI 将迎来 Halvar Flake，强化 Cyber 方向",
+          "summary": "Thibault Sottiaux 发文称“Better Cyber”，并表示期待 Halvar Flake 很快加入团队。这表明 OpenAI 在 cyber 能力与相关人才上继续投入。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2084859308165271658"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "vibe code 的 SaaS 可作为高价服务漏斗，而非只靠 SaaS 变现",
+          "summary": "Peter Yang 观察到，现在 vibe code 一个 SaaS，可能更适合作为 self-serve funnel，把用户导向更高价的 services offering，而不是指望 SaaS 本身赚很多钱。但他也指出，services 容易回到“用时间换钱”的咨询模式。",
+          "urls": [
+            "https://x.com/petergyang/status/2084855632029774167"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "AI 产品验证先用最强 frontier model，生产再做成本优化",
+          "summary": "Madhu Guru 总结 founder playbook：早期产品验证应先用最强 frontier models，不要先被成本和延迟束缚；等 workflow 和 UX 被验证后，再通过 prompt engineering、model routing、harnesses、小模型、fine tuning 等方式优化成本与 latency。他强调不要一开始就选最便宜模型。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2084809416105472070",
+            "https://x.com/realmadhuguru/status/2084667443046502631"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @Vercel",
+          "headline": "Vercel 推进后端与 AI token 成本优化叙事",
+          "summary": "Guillermo Rauch 表示 FactoryAI 使用 Vercel Fluid compute 支撑其 API services，每月处理数十亿请求；他还称 @aisdk 中一行代码可在 DeepSeek v4 Flash AI Gateway token 上节省 90% 或更多，突出 AI app infra 的成本优化空间。",
+          "urls": [
+            "https://x.com/rauchg/status/2084804138169446449",
+            "https://x.com/rauchg/status/2084779435866398801"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @Box",
+          "headline": "企业 AI 落地仍高度异构，市场格局远未定型",
+          "summary": "Aaron Levie 认为，企业 AI 实施策略比早期 cloud 更分散：coding agent 策略、end-user productivity agents、模型选择、OSS model 探索、数据访问方式、agent 身份与 guardrails 都存在多种模式。由于早期就如此异构，他认为未来多年 landscape 仍会持续变化，过早预测终局很可能出错。",
+          "urls": [
+            "https://x.com/levie/status/2084828773808239080"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "技术采用是社会过程，不只是效率理性决策",
+          "summary": "Zara Zhang 提醒 builder：多数人不会仅因为新技术更高效就采用它。采用往往来自情绪与社会影响，例如看到相似的人成功使用，或感觉周围人都已采用而担心落后。因此 AI 产品传播不应只强调“10x efficient”，还要展示可共鸣对象的正向结果。她还建议公司做 AI enablement 时，可以把 agent 拉进团队群聊，让员工直接观察它工作。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2084828855404294266",
+            "https://x.com/zarazhangrui/status/2084635984164237792"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "高效会议的标准：会中完成行动，而不是留下 to-do list",
+          "summary": "Zara Zhang 提出，真正高效的会议不应留下待办清单，因为行动应在会议进行时由实时监听的 agents 或人类完成。她的标准是“说”和“做”之间的 gap 为零，让会议变成实际完成工作的 session。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2084601752817729811"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SPC, Co-Founder @Bevel_Health",
+          "headline": "TryRivo 想做 self-driving finance：让现金在支出前持续赚取收益",
+          "summary": "Aditya Agarwal 介绍 @TryRivo 的 self-driving finance：agents 连接用户已有 checking account，学习现金流，把资金扫入 Treasury-backed yield，并在账单到期前转回。他指出难点是 asymmetric cost 下的预测：早一天转回只是少赚收益，晚一天则可能导致账单失败并破坏信任。",
+          "urls": [
+            "https://x.com/adityaag/status/2084691244496625793",
+            "https://x.com/adityaag/status/2084691249332649995"
+          ]
+        },
+        {
+          "source": "Aditya Agarwal",
+          "role": "General Partner @SPC, Co-Founder @Bevel_Health",
+          "headline": "大规模部署 AI 需要理解其工作方式，而不是接受黑箱",
+          "summary": "Aditya Agarwal 表示，大规模部署 AI 的正确方式是能够理解其工作机制；AI 不必是 black box。理解 LLM 内部发生了什么，是推动可靠部署的关键一步。",
+          "urls": [
+            "https://x.com/adityaag/status/2084676740924764625"
+          ]
+        },
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "Sam Altman：宁可做努力的乐观主义者，也不要只写“不可能”",
+          "summary": "Sam Altman 表示，他更愿意做一个努力工作的 optimist，而不是不断发帖解释事情为什么不会成功的 pessimist。虽然尝试更难且最可能失败，但如果没人尝试，社会就不会前进。",
+          "urls": [
+            "https://x.com/sama/status/2084663673570971990"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "Training Data",
+          "role": "Podcast",
+          "headline": "Chai Discovery：药物设计也可能是 scaling problem",
+          "summary": "本期采访 Chai Discovery 联合创始人 Josh 和 Matt，讨论如何用 AI 把 drug discovery 推向更像 engineering 的 drug design。核心观点包括：模型与实验室验证形成闭环；protein folding、antibody design、diffusion models 等进展正在改变边界；团队强调 simplicity，认为减少复杂 submodules 有助于更快迭代和发现 scaling directions。",
+          "urls": [
+            "https://www.youtube.com/watch?v=wv53mDmY-k0"
+          ]
+        }
+      ]
+    }
+  ]
+}
