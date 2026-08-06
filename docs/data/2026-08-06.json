@@ -1,0 +1,133 @@
+{
+  "date": "2026-08-06",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 agent 工作流、AI 产品形态和企业 token 消耗三条线上：builder 们一边把 Codex、Claude Code 接入真实 review 与测试流程，一边反思 prompt、model、agent 等术语对普通用户的门槛。播客部分则把 AI 消费产品的下一步指向 social 与 UGC。",
+  "stats": {
+    "xBuilders": 16,
+    "totalTweets": 34,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Swyx",
+          "role": "smol_ai / dxtips / Cognition / AI Engineer / Latent Space",
+          "headline": "用线程拼出早期 multi-agent 工作流",
+          "summary": "Swyx 描述了一种原始但实用的近未来 multi-agent 模式：让一个线程在完成后 ping 回来，从而形成隐式的 kanban 或 waterfall 依赖图；每个线程保留自己的上下文、工作结果和 agent 状态。他认为现在已经可以在多数 coding agents 中手工搭出这一模式，只是还缺一个更好的 UI。",
+          "urls": [
+            "https://x.com/swyx/status/2085253030417461661"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex reset 请求密度高到平均每 6 分钟一次",
+          "summary": "Thibault Sottiaux 表示，他让 Codex 拉了一些统计，发现自己平均每 6 分钟就会收到一条 DM 或邮件，请求 Codex reset。他偶尔会在对方提供扎实反馈或有趣互动时帮忙处理，侧面反映 Codex 用户对额度和重置的高频需求。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2085221386713198988"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "Practical AI tutorials and interviews",
+          "headline": "给 Codex 和 Claude Code 加一个 /human-review 视觉审阅环节",
+          "summary": "Peter Yang 发布了新的 /human-review skill，用于直接编辑 HTML 和 Markdown 文件。用户可让 Codex 或 Claude Code 安装该 skill，然后输入 /human-review 加文档名，打开可视化编辑器修改文字、调整图片、像 Google Doc 一样留下反馈，最后点击“Send to agent”让 AI 应用修改。他把它定位为 agent 完成最后 10% 打磨时的人类审阅层。",
+          "urls": [
+            "https://x.com/petergyang/status/2085055745410945126"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "AI 普及慢，是因为产品仍要求用户理解实验室黑话",
+          "summary": "Madhu Guru 认为 AI diffusion 偏慢的原因之一，是产品把用户带到空白窗口前，要求他们写 prompt、选 model、判断是否需要 agent，还要理解 context windows、reasoning、MCP、memory、skills 等概念。多数用户并不关心这些术语，只想把事情完成。他预计未来 12 个月会出现一个能突破这一问题的产品。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2085036386781221257"
+          ]
+        },
+        {
+          "source": "Google Labs",
+          "role": "Google’s home for latest AI tools and experiments",
+          "headline": "Dreambeans 扩展到美国 AI Pro 订阅用户",
+          "summary": "Google Labs 宣布 Dreambeans 扩展可用范围：除美国 AI Ultra 用户外，美国 AI Pro subscribers 也可以使用。Dreambeans 会提供每日个性化故事集合，主打发现用户想读的 deep dives 和 hidden gems。",
+          "urls": [
+            "https://x.com/GoogleLabs/status/2085048743322345545"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @Vercel",
+          "headline": "Vercel CEO 强调 agent compute 的并发与 CPU 配额",
+          "summary": "Guillermo Rauch 转发并强调“infinite agent compute”：10,000 concurrent、每分钟 5,000 CPU cores，且这些 quotas 可以提升。对 builder 来说，这类基础设施信号指向 agent 工作负载从单次调用走向大规模并行执行。",
+          "urls": [
+            "https://x.com/rauchg/status/2085077900190208080"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @Box",
+          "headline": "企业场景将消耗全球 99% 的 token",
+          "summary": "Aaron Levie 认为，全球 99% 的 token 最终会在企业语境中被消耗，用于写代码、处理生命科学研究、自动化制造、企业安全、欺诈检测等具有明显经济价值的任务。他也提醒，agent 在经济中的扩散需要多年时间，因为工作流必须被重新设计以纳入 AI，而不是一夜之间完成。",
+          "urls": [
+            "https://x.com/levie/status/2085200776159490111"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @Y Combinator",
+          "headline": "当 AI 足够好，检测 AI 生成可能不再重要",
+          "summary": "Garry Tan 认为，等 AI 足够好之后，围绕“检测是否由 AI 生成”的争论会变得不那么重要。他用机器压制餐叉类比手工银器：没人因为叉子不是手工制作而抱怨，关键是想法质量和最终效用。",
+          "urls": [
+            "https://x.com/garrytan/status/2085038756906901656"
+          ]
+        },
+        {
+          "source": "Peter Steinberger",
+          "role": "OpenClaw / OpenAI",
+          "headline": "给 Codex 接入带视频的远程 KVM 做 iMessage e2e 测试",
+          "summary": "Peter Steinberger 表示，他给 Codex 配了一个 video-enabled remote KVM，让它可以为 OpenClaw 的 iMessage integration 自动做 e2e test。原因是 iMessage 在 VM 中不可靠，且某些功能如 read receipts 需要关闭 SIP。这是把 coding agent 接入真实设备与系统级测试的具体案例。",
+          "urls": [
+            "https://x.com/steipete/status/2084988316324397312"
+          ]
+        },
+        {
+          "source": "Dan Shipper",
+          "role": "CEO @Every",
+          "headline": "Google 的短期竞争压力与长期研究方向可能出现张力",
+          "summary": "Dan Shipper 解读称，Google 眼下若要保持竞争力，需要追上 frontier coding；但 Demis Hassabis 可能认为 world models 等不同基础研究方向，对其长期目标更重要，即使它们在当下竞争中没有 frontier coding 那么关键。",
+          "urls": [
+            "https://x.com/danshipper/status/2085048990899315142"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "partner @fpvventures",
+          "headline": "AI 技术圈接下来会更常说这些词",
+          "summary": "Nikunj Kothari 预测，未来 6 到 9 个月 AI 技术圈会更频繁使用一组术语，包括 out of distribution、control plane、unverifiable fields、rails、intelligence per watt、cope 和 angst。他认为其中一些已经在流行，但出现频率会继续上升。",
+          "urls": [
+            "https://x.com/nikunj/status/2085209022115029132"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "AI & I by Every",
+          "role": "Podcast",
+          "headline": "Why the Next Hit AI Product Will Be Social",
+          "summary": "本期讨论 AI 消费产品的下一阶段：早期范式常由深技术团队打开，例如 Google 和 ChatGPT 都把复杂后端压缩成一个简单输入框；当底层技术更成熟后，优势会逐渐转向产品体验与 social 机制。嘉宾认为，ChatGPT 仍偏 single player，custom GPTs 的社区体验还不够 social，未来可能出现 UGC 型社区，让擅长 prompt 和 AI workflow 的人帮助大众更容易使用这项技术，并形成多人网络效应与 status seeking。",
+          "urls": [
+            "https://www.youtube.com/watch?v=dlI-5W7d7uU"
+          ]
+        }
+      ]
+    }
+  ]
+}
