@@ -1,0 +1,154 @@
+{
+  "date": "2026-08-07",
+  "title": "AI Builders 简报",
+  "editorNote": "今天的信号集中在 agent 落地：从 OpenAI 免费用户文本聊天、Claude 生物安全回退优化，到企业 workflow、long-horizon agent、devtools Plugin 标准。值得关注的是，多位 builder 都在强调：agent 不是问答框，而更像需要 spec、上下文与治理的工作执行者。",
+  "stats": {
+    "xBuilders": 15,
+    "totalTweets": 31,
+    "blogPosts": 0,
+    "podcastEpisodes": 1
+  },
+  "sections": [
+    {
+      "id": "x",
+      "title": "Builder 动态",
+      "items": [
+        {
+          "source": "Sam Altman",
+          "role": "OpenAI",
+          "headline": "OpenAI 称免费用户可使用 unlimited text chat",
+          "summary": "Sam Altman 表示 5.6 Sol 在 chat 中表现更好，并提到 free users 获得 unlimited text chat。该动态与 ChatGPT 免费层、模型体验和消费级 AI 可及性相关。",
+          "urls": [
+            "https://x.com/sama/status/2085454964814753990"
+          ]
+        },
+        {
+          "source": "Thibault Sottiaux",
+          "role": "Codex & ChatGPT @OpenAI",
+          "headline": "Codex 搭配 GPT-5.6 Sol 被描述为可完成复杂任务",
+          "summary": "Thibault Sottiaux 称，可以向 Codex with GPT-5.6 Sol 提出“看似需要数周工作”的需求，等待一段时间后任务就完成；他也提到 ChatGPT free users 现在由 GPT-5.6 Luna 支持 unlimited text chats。",
+          "urls": [
+            "https://x.com/thsottiaux/status/2085597685948813610",
+            "https://x.com/thsottiaux/status/2085610231707623750"
+          ]
+        },
+        {
+          "source": "Claude",
+          "role": "Claude by Anthropic",
+          "headline": "Claude Fable 5 更新 biology safeguards，减少误拒",
+          "summary": "Claude 表示正在更新 Claude Fable 5 的生物安全防护，以降低 false positives。测试中，biology-related fallbacks 在产品表面减少约 85%。Fable 可回答更多日常健康和教育问题，但涉及 virology、toxicology、molecular design 等 dual-use 请求仍会 fallback to Opus 5。",
+          "urls": [
+            "https://x.com/claudeai/status/2085563808773189680"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "企业 agent 采用更像管理流程，而不是提问 chatbot",
+          "summary": "Aaron Levie 强调，agent adoption 的关键不只是向 AI 提问，而是像管理流程中的执行者：prompting an agent 更接近写 spec，需要明确 scope 和 done 的定义。企业还要调整数据访问、跨组织边界和 human-in-the-loop review。",
+          "urls": [
+            "https://x.com/levie/status/2085587079405425146"
+          ]
+        },
+        {
+          "source": "Aaron Levie",
+          "role": "CEO @box",
+          "headline": "agent 时代可能强化 workflow 和系统记录平台",
+          "summary": "Aaron Levie 认为，在 agents 生成更多代码、处理大量数据、跨系统做决策的环境下，管理数据和 workflow 的平台会更重要。企业仍然关心 governance、security、compliance、guardrails 和安全数据访问。",
+          "urls": [
+            "https://x.com/levie/status/2085474309943030032"
+          ]
+        },
+        {
+          "source": "Guillermo Rauch",
+          "role": "CEO @vercel",
+          "headline": "AI coding agents 需要 open source 与统一可扩展 Plugin 标准",
+          "summary": "Guillermo Rauch 表示 devtools 必须 open source 且 universally extensible，而 AI coding agents 是行业史上最重要的 devtools。他认为 Plugin standard 能让 builder 一次构建 Plugin，就在 CLIs、IDEs、cloud agents 和 personal assistants 等 agent 形态中获得分发。",
+          "urls": [
+            "https://x.com/rauchg/status/2085403169551790359"
+          ]
+        },
+        {
+          "source": "Amjad Masad",
+          "role": "CEO @replit",
+          "headline": "Replit 早期押注 coding-specific models，认为 no-code 终局是解决 code 本身",
+          "summary": "Amjad Masad 回顾 2021/2022 年曾寻求与 Google、Meta 等训练 coding-specific models，但当时对方更看重 NLP use cases，Replit 后来训练了 Replit-code-3b。他还认为 UI 无法构建任意软件，让软件更易用的路径一直是解决 code 本身。",
+          "urls": [
+            "https://x.com/amasad/status/2085544020424716723",
+            "https://x.com/amasad/status/2085451197323034902"
+          ]
+        },
+        {
+          "source": "Peter Yang",
+          "role": "AI tutorials and interviews",
+          "headline": "消费级 AI 的关键不只是模型，而是 onboarding、信任和 app 连接",
+          "summary": "Peter Yang 认为 consumer AI 主要是 ChatGPT 和 Google 的市场。ChatGPT 已有大量用户，关键是让用户连接常用 apps 并使用 agents 工作；Google Gemini 也有接近十亿用户，优势是用户可能更信任它连接 email、calendar、Workspace、Chrome 等。对普通用户而言，最强模型不如可靠完成工作和正确 onboarding 重要。",
+          "urls": [
+            "https://x.com/petergyang/status/2085427222836658600"
+          ]
+        },
+        {
+          "source": "Madhu Guru",
+          "role": "Sr Director, AI at Meta",
+          "headline": "用语音讲清想法，再让 AI 做基础整理",
+          "summary": "Madhu Guru 观察到，人们口头解释新想法时往往比写文档更清楚。他建议团队先像对朋友解释一样录下想法，再用 AI 做 basic cleanup，但保留原始结构和 flow，最后共享成文档。",
+          "urls": [
+            "https://x.com/realmadhuguru/status/2085390240899043406"
+          ]
+        },
+        {
+          "source": "Matt Turck",
+          "role": "VC at @FirstMarkCap; Host: MAD Podcast",
+          "headline": "如何构建 long-horizon AI agents：behavior specs、ontologies、process supervision",
+          "summary": "Matt Turck 发布与 Basis co-founder Mitch Troyanovsky 的对谈提纲，聚焦 long-horizon AI agents。主题包括 LLM 缺乏长期记忆、AutoGPT 局限、reasoning models、coding agents 为什么先胜出、100 evals pass 的不足、behavior specs、context as runtime training data、ontologies 和 self-improving agent systems。",
+          "urls": [
+            "https://x.com/mattturck/status/2085402933579964730",
+            "https://x.com/mattturck/status/2085402938101379487"
+          ]
+        },
+        {
+          "source": "Garry Tan",
+          "role": "President & CEO @ycombinator",
+          "headline": "Personal AGI 被定义为“长期了解你的 AI”",
+          "summary": "Garry Tan 分享他对 personal AGI 的看法：不是任何人都能拥有的普通 chatbot，而是一个现在和未来都能独特了解你的系统。该观点指向个性化、长期记忆和个人上下文在 AI 产品中的重要性。",
+          "urls": [
+            "https://x.com/garrytan/status/2085446068461043722"
+          ]
+        },
+        {
+          "source": "Zara Zhang",
+          "role": "Builder",
+          "headline": "团队级 agent 的真实 use cases 仍在探索",
+          "summary": "Zara Zhang 询问是否有团队在重度使用 Claude Tag 或类似 team agents，并征集最重要的 use cases 和 aha moments。该问题反映 team-level agents 在协作场景中的早期探索。",
+          "urls": [
+            "https://x.com/zarazhangrui/status/2085371310042169630"
+          ]
+        },
+        {
+          "source": "Nikunj Kothari",
+          "role": "Partner @fpvventures",
+          "headline": "给 seed 和 Series A founder 的募资建议",
+          "summary": "Nikunj Kothari 分享 August fundraising season 的募资经验：要理解 VC firm 内部谁有真正 leverage，尽量通过 founder 或 angel 获取 warm intro；融资金额和 dilution 需要合理计划；不要夸大 term sheet；市场高度共识时，非热门赛道 founder 需要说明为什么是 contrarian bet，并规划 default alive path。",
+          "urls": [
+            "https://x.com/nikunj/status/2085382457457828153"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精选",
+      "items": [
+        {
+          "source": "The MAD Podcast with Matt Turck",
+          "role": "Podcast",
+          "headline": "How to Build Long-Horizon AI Agents — Mitch Troyanovsky, Basis",
+          "summary": "本期对谈 Basis cofounder Mitch Troyanovsky，围绕能运行数小时到数天的 long-horizon autonomous agents。核心观点包括：agent 需要大量 context；语音输入比写文档更适合给 AI 提供完整背景；LLM 默认有大 working memory，但缺少短期和长期记忆；真实世界 agent 难点不只是 eval pass，而是过程是否可验证、behavior specs 是否清晰、ontology 和 process supervision 是否支撑生产环境。",
+          "urls": [
+            "https://www.youtube.com/@DataDrivenNYC/videos"
+          ]
+        }
+      ]
+    }
+  ]
+}
